@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.1.251">
+
+  <meta name="author" content="Mick McQuaid">
+  <meta name="dcterms.date" content="2022-11-09">
+  <title>Info &amp; Interaction Design: Visual Design of Information</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="style.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-dark">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">Info &amp; Interaction Design:<br>Visual Design of Information</h1>
+  <p class="author">Mick McQuaid</p>
+  <p class="date">2022-11-09</p>
+</section>
+
+<section class="slide level2 center">
+
+<div class="r-fit-text">
+<p>Week TWELVE</p>
+</div>
+</section>
+<section>
+<section id="visual-design-of-information" class="title-slide slide level1 center">
+<h1>Visual Design of Information</h1>
+
+</section>
+<section id="different-perspectives-drive-different-views" class="slide level2 center">
+<h2>Different perspectives drive different views</h2>
+<p>When we analyze what people see, we bring a perspective, in part based on where we are and what we do. Think about some bases for your perspective on the visible variables in presenting information, such as professional, cultural and biological.</p>
+</section>
+<section id="an-important-perspective" class="slide level2 center">
+<h2>An important perspective</h2>
+<p><em>When art critics get together they talk about Form and Structure and Meaning. When artists get together they talk about where you can buy cheap turpentine.</em></p>
+<div style="text-align: right;">
+<p>— Pablo Picasso</p>
+<p>quoted by Steve McConnell, <em>Code Complete</em> (1993)</p>
+</div>
+</section>
+<section id="another-perspective" class="slide level2 center">
+<h2>Another perspective</h2>
+<p><em>Modern philosophers have had little to say about the nature of aesthetic interest; … The concentration has been on the philosophy of art, and in particular on puzzles created by boring impostors like Duchamp: is this signed urinal a work of art? etc. This makes for an exceedingly dull literature, devoted to questions which can be answered in any way while leaving everything important exactly as it is.</em></p>
+<div style="text-align: right;">
+<p>—Roger Scruton, <em>Modern Philosophy</em> (1994), p.&nbsp;589</p>
+</div>
+</section>
+<section id="essence" class="slide level2 center">
+<h2>Essence</h2>
+<p>Several famous pictures in the twentieth century illustrate the quest to depict the essence of things. The difficulty of doing so and the effort required to see the essence before depicting it can be found in a series of lithographs created by Picasso in a short period of time. There are essays about this series available online and many versions of pictures of them. This particular version is chronologically read first from left to right then top to bottom.</p>
+</section>
+<section id="section" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiPicassoBulls.jpg" class="r-stretch quarto-figure-center"><p class="caption">Picasso’s Bull Lithographs</p></section>
+<section id="more-on-essence" class="slide level2 center">
+<h2>More on Essence</h2>
+<p>There are many ways to interpret the word essence in the above series and I leave that to the essays mentioned above, that discuss the bull as the essence of masculinity or of Spain itself. Let me just add this proposed Olympics poster, undoubtedly influenced by Picasso in particular and Cubism in general.</p>
+
+<img data-src="fiMadridOlympics.jpg" class="r-stretch"></section>
+<section id="gestalt-principles" class="slide level2 center">
+<h2>Gestalt principles</h2>
+<p><small></small></p><small>
+<ul>
+<li>proximity: proximate images form a group</li>
+<li>similarity: similar images form a group</li>
+<li>closure: perception completes images that appear to have missing parts</li>
+<li>symmetry: perception links unconnected symmetric images</li>
+<li>common fate: images perceived to have common fate (follow a path) form a group</li>
+<li>continuity: continuous images form a group</li>
+<li>prägnanz: images that seem to work well together form a group</li>
+</ul>
+</small><p><small></small></p>
+<aside class="notes">
+<p>In 1923, Max Wertheimer published principles of visual grouping (in German) as follows. These principles were later widely translated and influenced people in a wide range of professions and cultures. The Gestalt psychologists themselves made extensive contacts among artists and scientists the world over. They were dispersed from Germany and never re-coalesced into a group in their lifetimes so the magnitude of their influence on others is not always clear in history books. In addition to the following short list, they formulated many other principles they shared with artists of the Bauhaus and famous scientists in various disciplines.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-1" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiGestaltPrinc1.png" class="r-stretch"></section>
+<section id="section-2" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiGestaltPrinc2.jpg" class="r-stretch"></section>
+<section id="section-3" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiGestaltPrinc3.png" class="r-stretch"></section>
+<section id="dieter-rams" class="slide level2 center">
+<h2>Dieter Rams</h2>
+<p><small></small></p><small>
+<ul>
+<li>Good design is innovative.</li>
+<li>Good design makes a product useful.</li>
+<li>Good design is aesthetic.</li>
+<li>Good design helps us to understand a product.</li>
+<li>Good design is unobtrusive.</li>
+<li>Good design is honest.</li>
+<li>Good design is durable.</li>
+<li>Good design is consequent to the last detail.</li>
+<li>Good design is concerned with the environment.</li>
+<li>Good design is as little design as possible.</li>
+</ul>
+</small><p><small></small></p>
+<aside class="notes">
+<p>An industrial designer often cited as the primary design influence on contemporary Apple products, Rams articulated the following design principles, often quoted in popular media.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="edward-tufte" class="slide level2 center">
+<h2>Edward Tufte</h2>
+<ul>
+<li>Comparisons–Show comparisons, contrasts, differences</li>
+<li>Causality, Mechanism, Structure, Explanation</li>
+<li>Multivariate Analysis—Show more than 1 or 2 variables</li>
+<li>Integration of Evidence—Integrate words, numbers, images, diagrams</li>
+<li>Documentation—label what data you have and measurements, etc.</li>
+<li>Content Counts Most of All—depend on quality, relevance, and integrity</li>
+</ul>
+<aside class="notes">
+<p>Formerly a public policy scholar, Tufte has carved out a career publishing coffee-table quality books, such as <span class="citation" data-cites="Tufte2001">Tufte (<a href="#/references" role="doc-biblioref" onclick="">2001</a>)</span>, about quantitative graphics. For years, he promoted a principle called <em>data ink ratio maximization</em>. The principle sought to evaluate graphics by comparing the ink expended on portraying data and the ink expended on other purposes, such as meaningless decoration. This turned out to be a problematic principle. What do you suppose could possibly go wrong with it?</p>
+<p>More recently, Tufte has promoted the above list of principles, found in the chapter “Fundamental Principles of Analytic Design” <em>Beautiful Evidence</em>, pp 123–155.</p>
+<p>Tufte’s work is characterized in part on a reliance on high-resolution print media. His books are published by a fine art press and he advocates against powerlesspoint-type slide shows, claiming that their information density is too low to match the cognitive capabilities of humans. He suggests instead that speakers produce high-resolution pictures to be printed and provided to audiences to accompany talks instead of what he calls pee pee pfluff.</p>
+<p>Tufte’s advocacy began when slide shows were being projected using lcd technology, capable of about <span class="math inline">\(640\times 480\)</span> pixel resolution and a brightness of a few hundred lumens, displayed on makeshift screens (often no more than white walls) at sizes of perhaps a hundred inches diagonal. As I write in 2017, there are mainstream phones with a 3,820 <span class="math inline">\(\times\)</span> 2,160 pixel resolution on a daylight-readable screen of about a 5.7 inch diagonal (specs of Sony’s Xperia Z5 Premium). Do you think this rapid advance in display technology affects or should affect Tufte’s advice?</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="contemporary-perspectives-on-design-principles" class="slide level2 center">
+<h2>Contemporary Perspectives on Design Principles</h2>
+<aside class="notes">
+<p>One set of contemporary perspectives on design principles can be found in a recent seven-part series on <em>Smashing Magazine</em>. I provide these ephemeral links not so much as an endorsement of the views expressed as much because you need to know what others are thinking. As much as I am loath to share links due to link rot, it is vastly easier to find work of this kind than contemporary books (although I believe the author of this series of posts is extracting from his own book), especially with the conversation that takes place in the comments.</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="get-a-grip-and-forget-about-crap" class="slide level2 center">
+<h2>Get a GRIP and forget about CRAP</h2>
+<ul>
+<li>grouping: group like elements together; separate disparate elements</li>
+<li>restatement: clarify meaning by repetition</li>
+<li>implied lines: align objects to minimize visual distraction</li>
+<li>popout: make some objects appear more prominently than others</li>
+</ul>
+<aside class="notes">
+<p>Practitioners sometimes use the unfortunate acronym CRAP, standing for contrast, repetition, alignment, and proximity. As far as I am concerned, CRAP is crap and I will deduct points from any assignment that uses it. If you say you did not see this I will deduct additional points for failure to read required materials. If you require an acronym for the concepts covered by that poorly conceived acronym, I will accept GRIP:</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section id="visual-information-components" class="title-slide slide level1 center">
+<h1>Visual Information Components</h1>
+<ul>
+<li>Color</li>
+<li>Typography</li>
+<li>Layout</li>
+<li>Animation</li>
+</ul>
+</section>
+
+<section>
+<section id="color" class="title-slide slide level1 center">
+<h1>Color</h1>
+
+</section>
+<section id="section-4" class="slide level2 center">
+<h2></h2>
+<div class="r-fit-text">
+<p>〈pause for color video〉</p>
+</div>
+</section>
+<section id="problem-app-in-video-ceased-to-exist" class="slide level2 center">
+<h2>Problem: App in video ceased to exist!</h2>
+<ul>
+<li>Taken off App store</li>
+<li>Replaced with a paid website</li>
+<li>Seems to invalidate much of the reason for making it an iPad-only app</li>
+<li>I’ve written to the developers with no response</li>
+</ul>
+</section>
+<section id="section-5" class="slide level2 center">
+<h2></h2>
+<p>Color is an enormous concept, recently explored in the CHI community by <span class="citation" data-cites="Shugrina2019">Shugrina et al. (<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span>. It can be the subject of entire semester-long courses in several disciplines, including psychology, neurology, biology, and optical science.</p>
+<p>I would like to limit my further discussion to two issues among the very many that should be of interest to you as designers. The first is education about color and the second is color words.</p>
+</section>
+<section id="education-about-color" class="slide level2 center">
+<h2>Education about color</h2>
+<p>Josef Albers was without peer in educating art students about color in the twentieth century. His kit, often referred to as a book, is called <em>Interaction of Color</em>. Its most important sentence is perhaps “Color is the most relative medium.”</p>
+<aside class="notes">
+<p>I had read a popular paperback edition of the book years before I ever saw the actual kit, which consisted of a box full of colors on various kinds of paper, cardstock, and other materials, along with a guide book, a version of the paperback I had read.</p>
+<p>Albers conceived of education about color as putting different color cards together in different configurations and examining the effects of these configurations on the student’s perceptions of color. This kind of education can not be conveyed in a book alone. It is difficult not only to rearrange the colors but also to control the actual printed colors. Believe it or not, it is quite expensive to reproduce intended colors with any kind of precision in a mass printing. No wonder William Blake preferred to produce his books by hand! (Okay, he had other reasons, including the desire to master all the related arts and the desire to ensure that the final product would have a luminous quality achievable only with the use of watercolor.)</p>
+<p>There is now at least one version and perhaps more versions of <em>Interaction of Color</em> available electronically. For years it was a daunting task because only the most expensive monitors could reproduce colors well. Now it seems that at least someone believes in the color fidelity of the iPad enough to release the rights to produce a version in that medium.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="color-word-research" class="slide level2 center">
+<h2>Color word research</h2>
+</section>
+<section id="section-6" class="slide level2 center">
+<h2></h2>
+<p>Following are quotations from <a href="http://www.putlearningfirst.com/language/research/colour_words.html">color word research</a> contributed by a previous student.</p>
+<!-- ![](fiColorWords.png) -->
+
+<img data-src="fiBasicColorTerms.jpg" class="r-stretch"></section>
+<section id="section-7" class="slide level2 center">
+<h2></h2>
+<p>The website mentioned on the previous slide continued as follows:</p>
+<p><em>A prominent doctrine in linguistics and anthropology holds that each language and culture expresses a unique world view by its particular way of slicing up reality into named categories. (See Sapir-Whorf hypothesis).</em></p>
+<aside class="notes">
+<p>This says that it is difficult to make exact translations between languages because hearers see the world in a way governed by their own language.</p>
+<p>Colour vocabulary is a possible example of this.</p>
+<p>According to accepted doctrine, basic colour words are not translatable across languages.</p>
+<p>Analysing ninety-eight languages Berlin and Kay (1969) found that eleven colour words act as focal points of all the basic colour words in all the languages of the world. This set of eleven seems therefore to be a semantic universal. Basic colour words <em>are</em> translatable.</p>
+<p>They also found that words for the basic colours arose in different languages in a regular sequence:</p>
+<ul>
+<li><p>all languages with only two basic colour words have words for black and white;</p></li>
+<li><p>languages with exactly three basic colour words have words for black, white and red.</p></li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="not-everyone-agrees" class="slide level2 center">
+<h2>Not everyone agrees</h2>
+
+<img data-src="fiGooglingColorWords.png" class="r-stretch"></section>
+<section id="color-names-in-computing" class="slide level2 center">
+<h2>Color names in computing</h2>
+<p><a href="http://arstechnica.com/information-technology/2015/10/tomato-versus-ff6347-the-tragicomic-history-of-css-color-names/">arstechnica on color name history</a> ran a sad and funny article in Fall 2015 on the names of colors as used in computing, from the X Window System project in the eighties through contemporary CSS3.</p>
+<aside class="notes">
+<p>Read this article for a lesson in knowledge representation, inertia, standards bodies, rapid technical progress, and computer history. One important detail that is passed over too lightly is that people remember words like tomato better than hexadecimal codes like FF6347. Memory for words and the underlying phenomenon of spreading activation of neurons that leads to well-formed searches are among the great drivers for Google. I would love to be able to search for hexadecimal representations of color by word. Oh, wait! I can! Check what google returns for <em>tomato color</em>! The very second hit when I tried it was for <em>coloreminder</em>, a wonderful service whose name I can not remember but which will appear for some of the less obvious color names mentioned in the above article. For colors that men can stereotypically not appreciate, like fuschia or puce, there is a Wikipedia entry as the first result. By the way, a recent survey of differences between men and women in naming colors found, contrary to stereotype, that men and women seem to be able to appreciate almost exactly as many colors as each other. Searching for it, I found a 2012 study that seems to say exactly the opposite. The devil may be in the details.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="typography" class="title-slide slide level1 center">
+<h1>Typography</h1>
+<div>
+<ul>
+<li class="fragment">You’re experiencing it right now!</li>
+<li class="fragment">I’m using default typefaces!</li>
+<li class="fragment">People have prejudices, e.g., Comic Sans, Papyrus</li>
+<li class="fragment">It’s not just fonts!</li>
+<li class="fragment">LaTeX and Adobe InDesign do the best spacing and line breaking</li>
+</ul>
+</div>
+<aside class="notes">
+<p>Some authors give very definite advice when space is constrained: use this or that typeface, use only serif or only sans serif type, set only ragged right or only justified. This seems like banal advice to me. It is predicated on the fact that you may not have much time to devote to typography, certainly not as much as someone who majors in typography!</p>
+<p>Despite your limited time spent practicing typography, you probably do spend a <em>lot</em> of time consuming typography. So, just like my advice about color is that you sharpen your eye, so too is my advice about typography: sharpen your eye.</p>
+<p>It would be nice if you had time to read and reread the two books I’m depending on, Robert Bringhurst’s <em>Elements of Typographic Style</em> (2004) and Rutter’s <em>Web Typography</em> (2017), but there is a good chance that you will at most browse these texts and perhaps visit a few websites like <a href="https://ikern.com">https://ikern.com</a>.</p>
+<p>So what are the most important things to say about typography? Well, I can start by commenting on the above-mentioned resources and some of the concepts they stress.</p>
+<p>Perhaps the most important concept is Bringhurst’s assertion that typography should serve its content. Bringhurst gives the example that you would probably not set a nineteenth century English text in a seventeenth century French typeface unless you were trying to make a point, and perhaps a point that would overshadow rather than serve the text. Now what happens if you don’t know the difference between the above-mentioned typefaces? This problem raises two points. First, that you can and should sharpen your eye. You make statements with your typography whether you know it or not. You may be saying “I am smugly above caring about typography.” Compare that assertion to Bringhurst’s admonition to serve the text. Do you serve the text by purposeful ignorance? I think not, but I don’t have time to devote much to typography, so I gradually try to sharpen my eye by periodically studying a little about typography.</p>
+<p>The second point raised by the problem of the two typefaces is that typography is referential. Typography is an art and craft of its time and, as a servant of messages embedded in time, it is sensitive to the content of those messages. Typography has changed, both because of changes in technology and changes in ideas about reading and writing. Some typography prizes hand writing, especially at the dawn of typesetting. Some typography prizes exquisite use of the available technology. For example, some typefaces use extremely thin and extremely thick strokes, stressing out the machines that produce the typeset page, as well as the paper and ink applied to it. Other typefaces are designed to degrade gracefully as the components of the machine age and friction takes its toll or poorer quality paper or ink is employed, perhaps in times of hardship.</p>
+<p>At the heart of typography is the individual letterform and a series of letterforms, constituting a text. One characteristic of type is <em>legibility</em>, the extent to which one letterform can be distinguished from another. Another characteristic is <em>readability</em>, the extent to which a series of letterforms can be perceived smoothly and easily. These two concepts are, to some extent, in conflict. To see why this is so, consider a simple example, the lowercase r and n in a sans serif font. Imagine these two letters coming slowly together. At some point as they approach each other, they will resemble a lowercase m more than they represent themselves. How close together should they be? The farther they are apart, the more legible they will be, but the closer together they are, the more readable they will be. A compromise is needed.</p>
+<p>Another characteristic of text is <em>color</em>. The typographic concept of color is defined as the density of ink on the page (or screen for that matter), not the general meaning of color. The color of a page (or screen) is darker or lighter, depending on the density of the ink (or pixels) overall. Typographers try to control the color of a text, although with a lower priority than the legibility or readability of the text.</p>
+<p>There are two major sources for knowledge about typography, typographers themselves and the nascent field of reading psychology. When you see studies asserting that serif typefaces are better than sans serif, or the reverse, they come from the field of reading psychology. I’d like you to look at an article by Kevin Larson and Rosalind Picard from 2005, called <em>The aesthetics of reading</em>. In that article they make the point that the results of studies supporting one or another characteristic are unstable, difficult to reproduce on different samples of readers. They posit that our human vision system is robust to all sorts of difficulties bad typography creates. I had the good fortune to meet the authors and asked one of them about this. He (Larson) responded that he was interested in the received wisdom of typographers even if it couldn’t be supported by repeatable studies. In the article, they provide a measure that may be better than those used by other studies, the perception of time passing. They claim that, when a reading task is enjoyable, less time seems to be passing. This might be a valuable measure for future studies of typography.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="how-do-people-experience-typography" class="slide level2 center">
+<h2>How do people experience typography?</h2>
+<ul>
+<li>Books</li>
+<li>Magazines</li>
+<li>Browser</li>
+<li>Apps</li>
+<li><span class="emph">All different!</span> Yet much of typography is the same—defaults!</li>
+</ul>
+</section>
+<section id="where-does-type-come-from" class="slide level2 center">
+<h2>Where does type come from?</h2>
+<ul>
+<li>Typographers and their traditions</li>
+<li>Designers with little typography education</li>
+<li>Software developers with no typography education</li>
+<li>Reading psychologists who do research</li>
+</ul>
+</section>
+<section id="who-can-you-rely-on-for-advice" class="slide level2 center">
+<h2>Who can you rely on for advice?</h2>
+<ul>
+<li>Robert Bringhurst, <span class="citation" data-cites="Bringhurst2004">Bringhurst (<a href="#/references" role="doc-biblioref" onclick="">2004</a>)</span></li>
+</ul>
+</section>
+<section id="section-8" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiBringhurst.png" class="r-stretch"><aside class="notes">
+<p>I can’t pretend to substitute for reading Bringhurst, but I can make a few comments about his treatment. First, he begins with a brief historical overview of eight periods in typographic history, emphasizing the axis of the “pen” forming the letters, the modulation of the stroke, the style of serifs and terminals, the aperture (the openings in letters like o and p), and the relationship of italic to roman type. Examining his diagrams will help to sharpen your eye.</p>
+<p>Second, Bringhurst gives examples from many languages and alphabets, reminding you that many aspects of your typograhy must change with an international audience. His examples are mostly Western, but still show a great variety to an American familiar only with English language customs.</p>
+<p>Third, Bringhurst begins with a <em>Grand Design</em> including some first principles that he summarizes as the services typography provides for the reader:</p>
+<ul>
+<li>invite the reader into the text</li>
+<li>reveal the tenor and meaning of the text</li>
+<li>clarify the structure and order of the text</li>
+<li>link the text with other existing elements</li>
+<li>induce a state of energetic repose, which is the ideal condition for reading</li>
+</ul>
+<p>Beginning with the second chapter, Bringhurst becomes quite technical and it may be difficult to follow his advice when you design an app or a website because of constraints that are not directly addressed in the book. In general, his advice is not hard to understand but it may be difficult to relate to tools available to you, such as CSS. For example, Bringhurst describes the em. This is a measure of horizontal spacing equal to the type size in points. It may seem alien to you to measure your type size this way or to introduce spaces of exactly the number of points as the type size. It may further seem difficult to set minimum and maximum spaces between words according to the measurements Bringhurst provides.</p>
+<p>Still, you should read this advice and realize that the core of it is independent of technology. For example, Bringhurst says to “Choose a comfortable measure” where measure is a typographic term meaning the length of a line, counted in characters (both letters and spaces). Bringhurst gives an ideal measure of 66 and that can be translated to any technology quite easily. Of course, the ideal measure may vary based on things like the x-height (the distance from the baseline to the top of a lowercase x) of the typeface being used, and the amount of leading (pronounced ledding and referring to vertical space between lines) employed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-9" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiRichardRutter.png" class="r-stretch"></section>
+<section id="section-10" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiRutter.png" class="r-stretch"><aside class="notes">
+<p>To get a more web-focused and perhaps more app-focused look at typography, I’ll ask you to look at Richard Rutter’s <em>Web Typography</em> (2017) and the website that preceded it, .</p>
+<p>Rutter’s website is paired well with Bringhurst’s book. It omits the first chapter of general advice and gives CSS techniques for following Bringhurst’s advice of the second and third chapters. The table of contents alone is a good refresher of advice about typography.</p>
+<p>Rutter’s book is far more extensive than his website. It contains a sort of cheatsheet near the end called <em>If you read nothing else, read this</em>. I agree that you should read this and dip into the chapters where you need specifics or have forgotten or are unclear on some point.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="changes-in-type-over-time" class="slide level2 center">
+<h2>Changes in type over time</h2>
+<p>Typography began in earnest in the 1450s. (There had been typesetting in China 200 years before this but the art invented there was never communicated outside a small community and was not widely known until archeologists in the 20th century rediscovered the long-lost artifacts.)</p>
+</section>
+<section id="emulating-handwriting" class="slide level2 center">
+<h2>Emulating handwriting</h2>
+<aside class="notes">
+<p>The earliest use of type was to emulate handwriting. The earliest type founders (people who made type) imagined that the human hand represented the zenith of writing and that the best a typographer could do would be to emulate human handwriting or calligraphy. This pattern is repeated in many art forms such as filmmaking where some early filmmakers attempted to emulate theater rather than recognizing film as a distinct medium.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-first-famous-type-founders" class="slide level2 center">
+<h2>The first famous type founders</h2>
+<aside class="notes">
+<p>The first famous type founders are those who recognized the technical characteristics of type that distinguish it from handwriting. For example, prior to the contemporary era, type was realized on elements that would wear out after being used a number of times.</p>
+<p>It was expensive for printers to purchase sets of type. Benjamin Franklin, for instance, purchased a couple of sets of type made by William Caslon in England, had them shipped to him in Pennsylvania, and produced most of the early copies of the circulated documents of the United States using them. So a printer would keep using one set of type through various stages of image degradation. A great type founder was, in part, one who could create type that would degrade gracefully. It was desirable to printers to have type that performed similarly when new as after extended usage. William Caslon was especially good at this and, to this day, typefaces bearing his name are used to produce documents that connote historical importance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="materials" class="slide level2 center">
+<h2>Materials</h2>
+<aside class="notes">
+<p>Another aspect of typography has to do with the materials used. Prior to computing the relationship between paper, ink, metal or wood surfaces, and machines to blend them were highly variable. The ability to work with various tools was important and difficult. For example, type founders like Firmin Didot and Giambattista Bodoni, developed type with hair thin lines and extremely broad lines. it is quite difficult to apply ink evenly to cover both kinds of line. It is also problematic to make the type degrade gracefully and requires a more extensive understanding of tools and materials to create durable type.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bodoni-stressed-out-the-machine" class="slide level2 center">
+<h2>Bodoni stressed out the machine</h2>
+
+<img data-src="fiBodoniVitaN.png" class="r-stretch quarto-figure-center"><p class="caption">La Vita Nuova</p><aside class="notes">
+<p>A facsimile of lines from Dante’s “La Vita Nuova” offers a contemporary interpretation of Bodoni’s ideas, available as “Bodoni vita nuova facsimile sepia” by James Arboghast - Own work. Licensed under CC BY-SA 3.0 via <a href="http://en.wikipedia.org/wiki/File:Bodoni_vita_nuova_facsimile_sepia.png#/media/File:Bodoni_vita_nuova_facsimile_sepia.png">Wikipedia.</a></p>
+<p>That document was first published with Bodoni types by the Officina Bodoni in 1925. The actual font in the figure is the digital Bodoni Monotype published in 1999. A key change in the last century has been the opportunity to precisely reproduce a given typeface. Now typefaces are named and somewhat uniform. The typefaces named after Bodoni, Garamond, Baskerville, Goudy, and other past masters, represent contemporary interpretations with considerable less variability than the originals on which they are based. The masters of the 1700s and 1800s had no way to reliably reproduce their own type.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="challenges-for-type" class="slide level2 center">
+<h2>Challenges for type</h2>
+<p>Traditional typography for a given page of a book represents three widely recognized challenges, legibility (ability to distinguish each letterform), readability (of the entire page), and color (technical term used to mean ink density).</p>
+<aside class="notes">
+<p>Sites like <a href="http://typomil.com/anatomy/index.html">typomil</a> detail the parts of a letterform that concern typographers. Changing these parts changes legibility (ability to distinguish each letterform), but also affects readability and color. For instance, serif brackets shaped like arrows can help the eye move from right to left or left to right, depending on the language, but make each letter look more like the other.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="reading-psychology" class="slide level2 center">
+<h2>Reading psychology</h2>
+<p>This a sub-discipline of cognitive psychology that is the source for many studies of reading comprehension and comparisons of various contributors to reading comprehension, including typography.</p>
+<aside class="notes">
+<p>Studies in psychology today face an important credibility challenge connected to the recent popular interest in statistics. Books like <span class="citation" data-cites="Reinhart2015">Reinhart (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span> highlight some of the issues, such as the <a href="http://www.statisticsdonewrong.com/p-value.html">base rate fallacy</a>. You can not use the research in psychology that underpins much of HCI without understanding the issues raised in <span class="citation" data-cites="Reinhart2015">Reinhart (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span>. I should add that a review of that book, <span class="citation" data-cites="Wass2015">Wass (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span>, points out that the book <em>raises</em> the issues. You have to do a lot of further study after reading the book (which can be done in one sitting) to employ the ideas.</p>
+<p>I once had the opportunity to speak to a major figure in this field who had his own lab at Microsoft Research. I asked him why so many studies in his field seemed to directly contradict each other. As an example, for every study claiming serif types to be superior to sans serif types for reading, another could be found making the opposite claim.</p>
+<p>He responded that he believed that the human brain can generally overpower bad design by an order of magnitude, such that many effects found in reading studies are not stable and not reproducible in future studies. He added that he was quite interested in the traditional beliefs of typographers, typesetters, book designers, and printers. He suspected that their accumulated wisdom was worthwhile even if not uniformly reproducible in controlled studies.</p>
+<p>This researcher told me that there were some reproducible effects, but fewer than might be popularly supposed. He felt that his field was in its infancy and just finding its way and that it might be misleading to rely too much on any individual study.</p>
+<p>If what this researcher said is true, should we keep an open mind about research findings or simply denounce them all? The popular media has, of course, chosen the latter approach and the blogosphere is filled with fatheads telling you that this typeface is better than that typeface and that you should use this or that typeface. I suggest that you run away from such blowhards as fast as you can and instead try to identify mechanisms at work in the use of type. Once the words <em>better</em> and <em>should</em> come into play, you may as well start playing dice games.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="type-in-a-menu" class="slide level2 center">
+<h2>Type in a menu</h2>
+<p>In the film <em>AI</em> (2001), the character portrayed by Jude Law is invited to choose from a context sensitive menu by the holographic cartoon Dr.&nbsp;Know, as voiced by Robin Williams. When the Jude Law character asks about a concept, Dr.&nbsp;Know asks for the context in which he asks, since the concept has different meanings in different contexts.</p>
+</section>
+<section id="section-11" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiDrKnowMenu1.png" class="r-stretch quarto-figure-center"><p class="caption">art nouveau connotes fairy tales</p><aside class="notes">
+<p>The menu provided for context includes fairy tales as among the contexts and portrays the words <em>fairy tale</em> in an Art Nouveau typeface. Why is this? Fairy tales were a preferred theme in Art Nouveau, with its fantastic colors, landscapes, and supernatural figures.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-12" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiDrKnowMenu2.png" class="r-stretch quarto-figure-center"><p class="caption">basic writing connotes primal</p><aside class="notes">
+<p>The word <em>primal</em> may mean many things but is likely here to refer to the psychological definition, here given by Google: <em>of, relating to, or denoting the needs, fears, or behavior that are postulated (especially in Freudian theory) to form the origins of emotional life.</em> The most basic writing associated with early learning of writing may suggest the same period in development.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-13" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiDrKnowMenu3.png" class="r-stretch quarto-figure-center"><p class="caption">small caps connotes officialdom</p><aside class="notes">
+<p>Believe it or not, small caps differ from other capital letters. In a full type family, you should not be able to find an exact match for a small cap among the standard uppercase letters. They are an exaggerated form of uppercase letters and contain features somewhat large in proportion to letter height. In the era of printed materials, typographers eschewed the use of boldface type in favor of small caps and italics. The reason for this has to do with the disparity in ink laid down by boldface type with others. This is both technically difficult and disturbs the color (in the typographic sense) of a page. Hence, many encyclopedias, dictionaries, legal books, and other artifacts of officialdom make extensive use of small caps.</p>
+<p>It is the disturbance of page color that has forced me to use boldface type in these lecture notes. I used to use only small caps and italics for emphasis or headings. Students insisted that headings using these devices were invisible and that, for instance, they did not know how much to read before an exam because they could not tell where one chapter ended and another began. The boldface headings here are my way of compromising with such students, whose rejected demands included Helvetica, endless white space, callouts repeating the important points, underlining of important vocabulary, and fewer words overall. On the other hand, I also had a student claim she missed answering questions on the last page of an exam because she was confused by the staple being on the right side when all other teachers put the staple on the left side. I have not compromised on staples. I just don’t know how to control the printer.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-14" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiDrKnowMenu4.png" class="r-stretch quarto-figure-center"><p class="caption">blackletter script connotes religion</p><aside class="notes">
+<p>Because of the early liturgical emphasis of typography, there are vastly many variations of type for religious texts. The most general term for these typefaces is blackletter.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-15" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiDieNeueTypographie.jpg" class="r-stretch"><aside class="notes">
+<p>Die Neue Typographie</p>
+<p>You can google <em>tschichold posters</em> to see examples of this movement of the early twentieth century, spearhead by Jewish artists working in Germany like Jan Tschichold. Like the Gestalt psychologists and the artists of the Bauhaus, they were driven out of Germany in the nineteen thirties. The Nazis banned the use of what they called the <em>Schwabacher Jew letters</em> used in books such as prayer books and missals, as well as much <em>decadent</em> artwork, including posters using the Neue Typographie. After the war, Tschichold rejected Die Neue Typographie, saying that the severity of its pronouncements reminded him of the severity of the Nazi pronouncements about typography. This example suggests that typography may be intertwined with social and political upheavals as much as any other art form.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="chunking-words-especially-in-menus" class="slide level2 center">
+<h2>Chunking words, especially in menus</h2>
+<p>Hick’s law predicts the time it will take for a user to make a choice, given the number of choices. Hick’s law can be expressed similarly to Fitts’s Law as</p>
+<p><span class="math display">\[t = b \log_2 (n + 1)\]</span></p>
+<p>Here, <span class="math inline">\(t\)</span> is reaction time, <span class="math inline">\(b\)</span> is a constant to be found empirically, and <span class="math inline">\(n\)</span> is the number of choices with which the user is confronted. The extra <span class="math inline">\(1\)</span> represents the concept <em>none of the above</em>.</p>
+</section>
+<section id="the-magic-number-seven-2" class="slide level2 center">
+<h2>The magic number seven ± 2</h2>
+<p>An important publication, <span class="citation" data-cites="Miller1956">Miller (<a href="#/references" role="doc-biblioref" onclick="">1956</a>)</span>, influenced thinking about appropriate chunk size forever after.</p>
+<p><em>First, the span of absolute judgment and the span of immediate memory impose severe limitations on the amount of information that we are able to receive, process, and remember. By organizing the stimulus input simultaneously into several dimensions and successively into a sequence of chunks, we manage to break (or at least stretch) this informational bottleneck.</em></p>
+<aside class="notes">
+<p>Above is a quote from <span class="citation" data-cites="Miller1956">Miller (<a href="#/references" role="doc-biblioref" onclick="">1956</a>)</span>, a milestone article that has led many people to chunk choices into groups of seven, plus or minus two. I attended a talk by the author once in which he said that this article made more modest claims than its adherents. Miller said he was appalled at how popular literature has twisted the original article to shoehorn all kinds of choices into groups of seven, plus or minus two. He said that he had studied a limited number of cases and was modest in his conclusions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-16" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiTypColor.jpg" class="r-stretch"></section>
+<section id="section-17" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiRandN.png" class="r-stretch"></section>
+<section id="section-18" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiXHeight.jpg" class="r-stretch"></section></section>
+<section>
+<section id="layout" class="title-slide slide level1 center">
+<h1>Layout</h1>
+
+</section>
+<section id="past-advice" class="slide level2 center">
+<h2>Past advice</h2>
+<div>
+<ul>
+<li class="fragment">Layout on a twelve column grid</li>
+<li class="fragment">Easy to reduce to 9,6 or 8,4 for responsiveness</li>
+<li class="fragment">But <span class="citation" data-cites="Pickering2022">Pickering and Bell (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> advises against this</li>
+<li class="fragment">They claim it’s too rigid</li>
+<li class="fragment">Instead, they urge you to learn a dozen reusable components and endlessly combine them</li>
+</ul>
+</div>
+</section>
+<section id="css" class="slide level2 center">
+<h2>CSS</h2>
+<p>Let’s look at <span class="citation" data-cites="Pickering2022">Pickering and Bell (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span> for layout advice, all web-based</p>
+</section>
+<section class="slide level2 center">
+
+<div class="r-fit-text">
+<p><em>Everything in web design is a box</em></p>
+</div>
+<aside class="notes">
+<p>Here they quote Rachel Andrew. Notice that not everything looks like a box but, on the web, everything takes up a boxlike space.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="the-box-model" class="slide level2 center">
+<h2>The box model</h2>
+
+<img data-src="fiBoxModel.png" class="r-stretch"></section>
+<section id="chrome-paragraphs" class="slide level2 center">
+<h2>Chrome paragraphs</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1"></a>p {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>  <span class="kw">list-style-type</span>: <span class="dv">disc</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>  <span class="kw">margin-block-start</span>: <span class="dv">1</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="kw">margin-block-end</span>: <span class="dv">1</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="kw">margin-inline-start</span>: <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7"></a>  <span class="kw">margin-inline-end</span>: <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>  <span class="kw">padding-inline-start</span>: <span class="dv">40</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="chrome-unordered-lists" class="slide level2 center">
+<h2>Chrome unordered lists</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1"></a>ul {</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  <span class="kw">display</span>: <span class="dv">block</span><span class="op">;</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="kw">list-style-type</span>: <span class="dv">disc</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>  <span class="kw">margin-block-start</span>: <span class="dv">1</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>  <span class="kw">margin-block-end</span>: <span class="dv">1</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>  <span class="kw">margin-inline-start</span>: <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="kw">margin-inline-end</span>: <span class="dv">0</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>  <span class="kw">padding-inline-start</span>: <span class="dv">40</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="display-property" class="slide level2 center">
+<h2>Display property</h2>
+<p>Block elements <span class="math inline">\(\sim\)</span> paragraph (takes all space)</p>
+<p>Inline elements <span class="math inline">\(\sim\)</span> word (takes only content space)</p>
+<aside class="notes">
+<p>Notice that this doesn’t say if the space is horizontal or vertical</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="logical-properties" class="slide level2 center">
+<h2>Logical properties</h2>
+<p>Eschew terms like “left” and “right” instead using start and end, e.g.,</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">.icon</span> {</span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="kw">margin-inline-end</span>: <span class="dv">0.5</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="formatting-contexts" class="slide level2 center">
+<h2>Formatting contexts</h2>
+<p><code class="sourceCode css">display<span class="in">: flex</span></code> or <code class="sourceCode css">display<span class="in">: grid</span></code> causes a <code class="sourceCode css">&lt;div<span class="op">&gt;</span></code> to continue to behave like a <code class="sourceCode css">block</code>, but changes its child elements’ behavior. Now the flow direction changes from vertical to horizontal, as the child elements distribute themselves horizontally. Composite layouts consist of nested formatting contexts.</p>
+</section>
+<section id="content-in-boxes" class="slide level2 center">
+<h2>Content in boxes</h2>
+<p>The web is responsive by default! Content makes <code class="sourceCode css">inline</code> elements grow horizontally and <code class="sourceCode css">block</code> elements grow vertically. Static representations are misleading!</p>
+</section>
+<section id="box-sizing" class="slide level2 center">
+<h2>Box sizing</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1"></a><span class="op">*</span> {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="kw">box-sizing</span>: <span class="dv">border-box</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>makes calculating and anticipating box dimensions easier.</p>
+</section>
+<section id="exception" class="slide level2 center">
+<h2>Exception</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb5-1"><a href="#cb5-1"></a><span class="op">*</span> {</span>
+<span id="cb5-2"><a href="#cb5-2"></a>  <span class="kw">box-sizing</span>: <span class="dv">border-box</span><span class="op">;</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a>}</span>
+<span id="cb5-4"><a href="#cb5-4"></a>center-l {</span>
+<span id="cb5-5"><a href="#cb5-5"></a>  <span class="kw">box-sizing</span>: <span class="dv">content-box</span><span class="op">;</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="lesson" class="slide level2 center">
+<h2>Lesson:</h2>
+<p>“Dimensions of elements should be largely derived from their inner content and outer context. When we try to prescribe dimensions, things tend to go amiss. All we should be doing as visual designers is making suggestions as to how the layout should take shape. We might, for instance, apply a <code class="sourceCode css">min-height</code> or proffer a <code class="sourceCode css">flex-basis</code>.</p>
+<p>The CSS of suggestion is at the heart of algorithmic layout design. Instead of telling browsers what to do, we allow browsers to make their own calculations, and draw their own conclusions, to best suit the user, their screen, and device. Nobody should experience obscured content under any circumstances.”</p>
+</section>
+<section id="composition-over-inheritance" class="slide level2 center">
+<h2>Composition over inheritance</h2>
+<p>Combining simple independent parts gives you more flexibility and leads to more efficiency than connecting everything through interitance to a shared origin.</p>
+</section>
+<section id="illustration-how-to-make-this" class="slide level2 center">
+<h2>Illustration: how to make this?</h2>
+
+<img data-src="fiDialogBox.png" class="r-stretch"></section>
+<section id="the-wrong-way-inherited-properties" class="slide level2 center">
+<h2>The wrong way: inherited properties</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">.dialog</span> {</span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="co">/* ... */</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>}</span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="fu">.dialog_header</span> {</span>
+<span id="cb6-6"><a href="#cb6-6"></a>  <span class="co">/* ... */</span></span>
+<span id="cb6-7"><a href="#cb6-7"></a>}</span>
+<span id="cb6-8"><a href="#cb6-8"></a></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="fu">.dialog_body</span> {</span>
+<span id="cb6-10"><a href="#cb6-10"></a>  <span class="co">/* ... */</span></span>
+<span id="cb6-11"><a href="#cb6-11"></a>}</span>
+<span id="cb6-12"><a href="#cb6-12"></a></span>
+<span id="cb6-13"><a href="#cb6-13"></a><span class="fu">.dialog_foot</span> {</span>
+<span id="cb6-14"><a href="#cb6-14"></a>  <span class="co">/* ... */</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="the-right-way-layout-primitives" class="slide level2 center">
+<h2>The right way: layout primitives</h2>
+
+<img data-src="fiLayoutPrimitives.png" class="r-stretch"></section>
+<section id="why" class="slide level2 center">
+<h2>Why?</h2>
+<p>Because with the <code>.dialog</code> classes, you’ll have a lot of repeated code—CSS bloat.</p>
+<p>But with the same layout primitives, you can build other structures.</p>
+</section>
+<section id="registration-form" class="slide level2 center">
+<h2>Registration form</h2>
+
+<img data-src="fiRegistrationForm.png" class="r-stretch"></section>
+<section id="slide-layout" class="slide level2 center">
+<h2>Slide Layout</h2>
+
+<img data-src="fiSlideLayout.png" class="r-stretch"></section>
+<section id="layouts-intrinsically-responsive" class="slide level2 center">
+<h2>Layouts: intrinsically responsive</h2>
+<div class="container">
+<div class="col">
+<ul>
+<li>The stack</li>
+<li>The box</li>
+<li>The center</li>
+<li>The cluster</li>
+<li>The sidebar</li>
+<li>The switcher</li>
+</ul>
+</div>
+<div class="col">
+<ul>
+<li>The cover</li>
+<li>The grid</li>
+<li>The frame</li>
+<li>The reel</li>
+<li>The imposter</li>
+<li>The icon</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="example-the-stack" class="slide level2 center">
+<h2>Example: The stack</h2>
+<p>Problem</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb7-1"><a href="#cb7-1"></a>p {</span>
+<span id="cb7-2"><a href="#cb7-2"></a>  <span class="kw">margin-bottom</span>: <span class="dv">1.5</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Solution</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">.stack</span> <span class="op">&gt;</span> <span class="op">*</span> <span class="op">+</span> <span class="op">*</span> {</span>
+<span id="cb8-2"><a href="#cb8-2"></a>  <span class="kw">margin-block-start</span>: <span class="dv">1.5</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<aside class="notes">
+<p>The problem is that, if the paragraph is followed by another element, this property is desirable. In the case of a last paragraph, it is not.</p>
+<p>The solution is to style the context rather than the elements. The stack layout primitive injects margin between elements via their common parent. The <span class="math inline">\(+\)</span> is the adjacent sibling combinator and the <span class="math inline">\(*\)</span> or wildcard ensures that any separating elements are connected. The property is only applied if an element is preceded by another element. The <span class="math inline">\(* + *\)</span> construct is called an owl.</p>
+<p>The <span class="math inline">\(&gt;\)</span> selector is the child selector. It only selects children of the parent element.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="animation" class="title-slide slide level1 center">
+<h1>Animation</h1>
+
+</section>
+<section id="section-19" class="slide level2 center">
+<h2></h2>
+
+<img data-src="fiIllusionOfLife2.jpg" class="r-stretch"></section>
+<section id="twelve-principles-of-animation" class="slide level2 center">
+<h2>Twelve Principles of Animation</h2>
+<div class="container">
+<div class="col">
+<ol type="1">
+<li>Squash and stretch</li>
+<li>Anticipation</li>
+<li>Staging</li>
+<li>Straight ahead action and pose to pose</li>
+<li>Follow through and overlapping action</li>
+<li>Slow in and slow out</li>
+</ol>
+</div>
+<div class="col">
+<ol start="7" type="1">
+<li>Arc</li>
+<li>Secondary action</li>
+<li>Timing</li>
+<li>Exaggeration</li>
+<li>Solid drawing</li>
+<li>Appeal</li>
+</ol>
+</div>
+</div>
+<aside class="notes">
+<p>The principles are well described on a Wikipedia page devoted to them: <a href="https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation">https://en.wikipedia.org/wiki/Twelve_basic_principles_of_animation</a></p>
+<p>Squash and stretch</p>
+<p>The squash and stretch principle: rigid, non-dynamic movement of a ball is compared to a “squash” at impact and a “stretch” during the fall and after the bounce. Also, the ball moves less in the beginning and end (the “slow in and slow out” principle).</p>
+<p>The purpose of squash and stretch is to give a sense of weight and flexibility to drawn or computer animated objects. It can be applied to simple objects, like a bouncing ball, or more complex constructions, like the musculature of a human face. Taken to an extreme, a figure stretched or squashed to an exaggerated degree can have a comical effect. In realistic animation, however, the most important aspect of this principle is that an object’s volume does not change when squashed or stretched. If the length of a ball is stretched vertically, its width (in three dimensions, also its depth) needs to contract correspondingly horizontally.</p>
+<p>Anticipation</p>
+<p>Anticipation: a baseball player making a pitch prepares for the action by winding his arm back.</p>
+<p>Anticipation is used to prepare the audience for an action, and to make the action appear more realistic. A dancer jumping off the floor has to bend the knees first; a golfer making a swing has to swing the club back first. The technique can also be used for less physical actions, such as a character looking off-screen to anticipate someone’s arrival, or attention focusing on an object that a character is about to pick up.</p>
+<p>Staging</p>
+<p>This principle is akin to staging, as it is known in theatre and film. Its purpose is to direct the audience’s attention, and make it clear what is of greatest importance in a scene; Johnston and Thomas defined it as “the presentation of any idea so that it is completely and unmistakably clear”, whether that idea is an action, a personality, an expression, or a mood. This can be done by various means, such as the placement of a character in the frame, the use of light and shadow, or the angle and position of the camera. The essence of this principle is keeping focus on what is relevant, and avoiding unnecessary detail.</p>
+<p>Straight ahead action and pose to pose</p>
+<p>These are two different approaches to the drawing process. Straight ahead action scenes are animated frame by frame from beginning to end, while “pose to pose” involves starting with drawing key frames, and then filling in the intervals later. “Straight ahead action” creates a more fluid, dynamic illusion of movement, and is better for producing realistic action sequences. On the other hand, it is hard to maintain proportions and to create exact, convincing poses along the way. “Pose to pose” works better for dramatic or emotional scenes, where composition and relation to the surroundings are of greater importance. A combination of the two techniques is often used.</p>
+<p>In computer animation</p>
+<p>Computer animation removes the problems of proportion related to “straight ahead action” drawing; however, “pose to pose” is still used for computer animation, because of the advantages it brings in composition. The use of computers facilitates this method and can fill in the missing sequences in between poses automatically. It is still important to oversee this process and apply the other principles.</p>
+<p>Follow through and overlapping action</p>
+<p>Follow through and overlapping action: the galloping race horse’s mane and tail follow the body. Sequence of photos taken by Eadweard Muybridge.</p>
+<p>Follow through and overlapping action is a general heading for two closely related techniques which help to render movement more realistically, and help to give the impression that characters follow the laws of physics, including the principle of inertia. “Follow through” means that loosely tied parts of a body should continue moving after the character has stopped and the parts should keep moving beyond the point where the character stopped only to be subsequently “pulled back” towards the center of mass or exhibiting various degrees of oscillation damping. “Overlapping action” is the tendency for parts of the body to move at different rates (an arm will move on different timing of the head and so on). A third, related technique is “drag”, where a character starts to move and parts of them take a few frames to catch up. These parts can be inanimate objects like clothing or the antenna on a car, or parts of the body, such as arms or hair. On the human body, the torso is the core, with arms, legs, head and hair appendices that normally follow the torso’s movement. Body parts with much tissue, such as large stomachs and breasts, or the loose skin on a dog, are more prone to independent movement than bonier body parts. Again, exaggerated use of the technique can produce a comical effect, while more realistic animation must time the actions exactly, to produce a convincing result.</p>
+<p>The “moving hold” animates between two very similar positions; even characters sitting still, or hardly moving, can display some sort of movement, such as breathing, or very slightly changing position. This prevents the drawing from becoming “dead”.</p>
+<p>Slow in and slow out</p>
+<p>The movement of objects in the real world, such as the human body, animals, vehicles, etc. needs time to accelerate and slow down. For this reason, more pictures are drawn near the beginning and end of an action, creating a slow in and slow out effect in order to achieve more realistic movements. This concept emphasizes the object’s extreme poses. Inversely, fewer pictures are drawn within the middle of the animation to emphasize faster action. This principle applies to characters moving between two extreme poses, such as sitting down and standing up, but also for inanimate, moving objects, like the bouncing ball in the above illustration.</p>
+<p>Arc</p>
+<p>Most natural action tends to follow an arched trajectory, and animation should adhere to this principle by following implied “arcs” for greater realism. This technique can be applied to a moving limb by rotating a joint, or a thrown object moving along a parabolic trajectory. The exception is mechanical movement, which typically moves in straight lines.</p>
+<p>As an object’s speed or momentum increases, arcs tend to flatten out in moving ahead and broaden in turns. In baseball, a fastball would tend to move in a straighter line than other pitches; while a figure skater moving at top speed would be unable to turn as sharply as a slower skater, and would need to cover more ground to complete the turn.</p>
+<p>An object in motion that moves out of its natural arc for no apparent reason will appear erratic rather than fluid. For example, when animating a pointing finger, the animator should be certain that in all drawings in between the two extreme poses, the fingertip follows a logical arc from one extreme to the next. Traditional animators tend to draw the arc in lightly on the paper for reference, to be erased later.</p>
+<p>Secondary action</p>
+<p>Adding secondary actions to the main action gives a scene more life, and can help to support the main action. A person walking can simultaneously swing their arms or keep them in their pockets, speak or whistle, or express emotions through facial expressions. The important thing about secondary actions is that they emphasize, rather than take attention away from the main action. If the latter is the case, those actions are better left out. For example, during a dramatic movement, facial expressions will often go unnoticed. In these cases, it is better to include them at the beginning and the end of the movement, rather than during.</p>
+<p>Timing</p>
+<p>“Timing (animation)” redirects here. For the animation technique, see Blocking (animation). For sheet timing, see Exposure sheet.</p>
+<p>Timing refers to the number of drawings or frames for a given action, which translates to the speed of the action on film. On a purely physical level, correct timing makes objects appear to obey the laws of physics. For instance, an object’s weight determines how it reacts to an impetus, like a push; as a lightweight object will react faster than a heavy one. Timing is critical for establishing a character’s mood, emotion, and reaction. It can also be a device to communicate aspects of a character’s personality.</p>
+<p>Exaggeration</p>
+<p>Exaggeration is an effect especially useful for animation, as animated motions that strive for a perfect imitation of reality can look static and dull. The level of exaggeration depends on whether one seeks realism or a particular style, like a caricature or the style of a specific artist. The classical definition of exaggeration, employed by Disney, was to remain true to reality, just presenting it in a wilder, more extreme form. Other forms of exaggeration can involve the supernatural or surreal, alterations in the physical features of a character; or elements in the storyline itself. It is important to employ a certain level of restraint when using exaggeration. If a scene contains several elements, there should be a balance in how those elements are exaggerated in relation to each other, to avoid confusing or overawing the viewer.</p>
+<p>Solid drawing</p>
+<p>The principle of solid drawing means taking into account forms in three-dimensional space, or giving them volume and weight. The animator needs to be a skilled artist and has to understand the basics of three-dimensional shapes, anatomy, weight, balance, light and shadow, etc. For the classical animator, this involved taking art classes and doing sketches from life. One thing in particular that Johnston and Thomas warned against was creating “twins”: characters whose left and right sides mirrored each other, and looked lifeless.</p>
+<p>In computer animation</p>
+<p>Modern-day computer animators draw less because of the facilities computers give them, yet their work benefits greatly from a basic understanding of animation principles, and their additions to basic computer animation.</p>
+<p>Appeal</p>
+<p>Appeal in a cartoon character corresponds to what would be called charisma in an actor. A character who is appealing is not necessarily sympathetic; villains or monsters can also be appealing. The important thing is that the viewer feels the character is real and interesting. There are several tricks for making a character connect better with the audience; for likable characters, a symmetrical or particularly baby-like face tends to be effective. A complicated or hard to read face will lack appeal or ‘captivation’ in the composition of the pose or character design.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-20" class="slide level2 center">
+<h2></h2>
+<div class="r-fit-text">
+<p>〈pause for illusion of life video〉</p>
+</div>
+</section>
+<section id="things-you-can-animate" class="slide level2 center">
+<h2>Things you can animate</h2>
+<ul>
+<li>Position</li>
+<li>Scale</li>
+<li>Rotate</li>
+<li>Origin</li>
+<li>Opacity</li>
+</ul>
+<aside class="notes">
+<p>From <a href="https://markgeyer.com/pres/the-art-of-ui-animations">https://markgeyer.com/pres/the-art-of-ui-animations</a></p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="section-21" class="slide level2 center">
+<h2></h2>
+<div class="container">
+<div class="col">
+<p>It’s all done with curves!</p>
+</div>
+<div class="col">
+<p><img data-src="fiTransition.png" style="width:70.0%"></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="references" class="title-slide slide level1 smaller scrollable">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Bringhurst2004" class="csl-entry" role="doc-biblioentry">
+Bringhurst, Robert. 2004. <em>The Elements of Typographic Style, Version 3.0</em>. Point Roberts, WA: Hartley &amp; Marks.
+</div>
+<div id="ref-Miller1956" class="csl-entry" role="doc-biblioentry">
+Miller, George A. 1956. <span>“The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information.”</span> <em>The Psychological Review</em> 63: 81–97.
+</div>
+<div id="ref-Pickering2022" class="csl-entry" role="doc-biblioentry">
+Pickering, Heydon, and Andy Bell. 2022. <span>“Every Layout: Relearn <span>CSS</span> Layout by Example, 3rd Ed.”</span> <a href="https://every-layout.dev" class="uri">https://every-layout.dev</a>.
+</div>
+<div id="ref-Reinhart2015" class="csl-entry" role="doc-biblioentry">
+Reinhart, Alex. 2015. <em>Statistics Done Wrong: The Woefully Complete Guide</em>. San Francisco, CA: No Starch Press.
+</div>
+<div id="ref-Shugrina2019" class="csl-entry" role="doc-biblioentry">
+Shugrina, Maria, Wenjia Zhang, Fanny Chevalier, Sanja Fidler, and Karan Singh. 2019. <span>“Color Builder: A Direct Manipulation Interface for Versatile Color Theme Authoring.”</span> In <em>Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems</em>, 1–12. CHI ’19. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3290605.3300686">https://doi.org/10.1145/3290605.3300686</a>.
+</div>
+<div id="ref-Tufte2001" class="csl-entry" role="doc-biblioentry">
+Tufte, Edward R. 2001. <em>The Visual Display of Quantitative Information</em>. Cheshire, Conn: Graphics Press.
+</div>
+<div id="ref-Wass2015" class="csl-entry" role="doc-biblioentry">
+Wass, John A. 2015. <span>“Book Review: Statistics Done Wrong.”</span> <em>Scientific Computing</em>.
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<div class="r-fit-text">
+<p>END</p>
+</div>
+</section></section>
+<section id="colophon" class="title-slide slide level1 center">
+<h1>Colophon</h1>
+<p>This slideshow was produced using <code>quarto</code></p>
+<p>Fonts are <em>League Gothic</em> and <em>Lato</em></p>
+
+<img src="iSchoolLogo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        setTimeout(function() {
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>

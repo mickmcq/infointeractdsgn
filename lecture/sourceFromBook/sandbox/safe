@@ -1,0 +1,18 @@
+\RequirePackage{pdfmanagement-testphase}
+\DeclareDocumentMetadata{testphase=tagpdf,activate=tagging,uncompress}
+\documentclass[12pt]{article}
+\input{macros.tex}
+\begin{document}
+
+\tableofcontents
+
+\section{bla}
+bla bla bla
+
+\section{bla bla}
+bla bla bla
+
+\subsection{bla bla bla}
+bla bla bla
+
+\end{document}

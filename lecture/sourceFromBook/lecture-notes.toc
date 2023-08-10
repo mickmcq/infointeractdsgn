@@ -1,0 +1,192 @@
+\contentsline {section}{\numberline {}Introduction}{10}{section.1}
+\contentsline {subsection}{\hypertarget {materials-you-need}{Materials You Need}}{10}{framenumber.2}
+\contentsline {subsection}{\hypertarget {definitions}{Definitions}}{11}{framenumber.3}
+\contentsline {subsection}{\hypertarget {groups}{Groups}}{15}{framenumber.4}
+\contentsline {subsection}{\hypertarget {grading}{Grading}}{15}{framenumber.5}
+\contentsline {subsection}{\hypertarget {whether-perfect-should-be-average}{Whether perfect should be average}}{17}{framenumber.6}
+\contentsline {subsection}{\hypertarget {powerlesspoint}{Powerlesspoint}}{19}{framenumber.7}
+\contentsline {section}{\numberline {}Background Radiation}{21}{section.2}
+\contentsline {subsection}{\hypertarget {roles}{Roles}}{21}{framenumber.8}
+\contentsline {subsection}{\hypertarget {people}{People}}{22}{framenumber.9}
+\contentsline {subsection}{\hypertarget {urls}{URLs}}{24}{framenumber.10}
+\contentsline {subsection}{\hypertarget {institutions}{Institutions}}{25}{framenumber.11}
+\contentsline {subsection}{\hypertarget {technologies}{Technologies}}{25}{framenumber.12}
+\contentsline {subsection}{\hypertarget {design-guidelines-from-vendors}{Design Guidelines from Vendors}}{26}{framenumber.13}
+\contentsline {subsection}{\hypertarget {misc}{Misc}}{26}{framenumber.14}
+\contentsline {subsection}{\hypertarget {being-the-center-of-the-universe}{Being the center of the universe}}{28}{framenumber.15}
+\contentsline {section}{\numberline {}Audience}{31}{section.3}
+\contentsline {subsection}{\hypertarget {academic-communities}{Academic Communities}}{31}{framenumber.16}
+\contentsline {subsection}{\hypertarget {industrial-and-government-communities}{Industrial and Government Communities}}{33}{framenumber.17}
+\contentsline {subsection}{\hypertarget {historical-perspective}{Historical perspective}}{33}{framenumber.18}
+\contentsline {subsection}{\hypertarget {idealized-user}{Idealized user}}{33}{framenumber.19}
+\contentsline {subsection}{\hypertarget {nondiscretionary-use}{Nondiscretionary use}}{33}{framenumber.20}
+\contentsline {subsection}{\hypertarget {hierarchical-collaboration}{Hierarchical collaboration}}{34}{framenumber.21}
+\contentsline {subsection}{\hypertarget {workgroup-cooperation}{Workgroup cooperation}}{34}{framenumber.22}
+\contentsline {subsection}{\hypertarget {discretionary-computing}{Discretionary computing}}{34}{framenumber.23}
+\contentsline {subsection}{\hypertarget {ubiquitous-computing}{Ubiquitous computing}}{34}{framenumber.24}
+\contentsline {subsection}{\hypertarget {communities-of-practice}{Communities of Practice}}{34}{framenumber.25}
+\contentsline {subsection}{\hypertarget {communities-of-life}{Communities of Life}}{35}{framenumber.26}
+\contentsline {subsection}{\hypertarget {disability-specific-design}{Disability-specific design}}{40}{framenumber.27}
+\contentsline {subsection}{\hypertarget {popularization-via-bad-design}{Popularization via bad design}}{41}{framenumber.28}
+\contentsline {section}{\numberline {}Interaction Design}{46}{section.4}
+\contentsline {subsection}{\hypertarget {contextual-design}{Contextual Design}}{46}{framenumber.29}
+\contentsline {subsection}{\hypertarget {three-ways-to-study-users}{Three ways to study users}}{46}{framenumber.30}
+\contentsline {subsection}{\hypertarget {contextual-inquiry}{Contextual inquiry}}{46}{framenumber.31}
+\contentsline {subsection}{\hypertarget {participatory-design}{Participatory design}}{47}{framenumber.32}
+\contentsline {subsection}{\hypertarget {ethnography}{Ethnography}}{47}{framenumber.33}
+\contentsline {section}{\numberline {}Contextual Inquiry Process}{47}{section.5}
+\contentsline {subsection}{\hypertarget {immersion}{Immersion}}{48}{framenumber.34}
+\contentsline {subsection}{\hypertarget {share-interview-techniques}{Share interview techniques}}{48}{framenumber.35}
+\contentsline {subsection}{\hypertarget {protocol-and-verbal-analysis}{Protocol and verbal analysis}}{50}{framenumber.36}
+\contentsline {section}{\numberline {}Personas and Scenarios}{51}{section.6}
+\contentsline {section}{\numberline {}Prototyping}{52}{section.7}
+\contentsline {subsection}{\hypertarget {iterative-development}{Iterative development}}{53}{framenumber.37}
+\contentsline {subsection}{\hypertarget {iterative-model-diagram}{Iterative model diagram}}{53}{framenumber.38}
+\contentsline {subsection}{\hypertarget {expense-of-iterative-development}{Expense of iterative development}}{53}{framenumber.39}
+\contentsline {subsection}{\hypertarget {lack-of-planning-detail-in-iterative-method}{Lack of planning detail in iterative method}}{53}{framenumber.40}
+\contentsline {subsection}{\hypertarget {extra-products-of-the-iterative-method}{Extra products of the iterative method}}{54}{framenumber.41}
+\contentsline {subsection}{\hypertarget {getting-everyone-on-the-same-page}{Getting everyone on the same page}}{54}{framenumber.42}
+\contentsline {subsection}{\hypertarget {evaluation-in-iterative-development}{Evaluation in iterative development}}{55}{framenumber.43}
+\contentsline {subsection}{\hypertarget {fidelity-of-prototyping}{Fidelity of prototyping}}{55}{framenumber.44}
+\contentsline {subsection}{\hypertarget {paper-prototyping}{Paper prototyping}}{56}{framenumber.45}
+\contentsline {subsection}{\hypertarget {your-second-prototype}{Your second prototype}}{56}{framenumber.46}
+\contentsline {subsection}{\hypertarget {design-as-an-input-to-a-prototype}{Design as an input to a prototype}}{56}{framenumber.47}
+\contentsline {subsection}{\hypertarget {alternative-generation}{Alternative generation}}{56}{framenumber.48}
+\contentsline {subsection}{\hypertarget {choices-reflecting-constraints}{Choices reflecting constraints}}{58}{framenumber.49}
+\contentsline {subsection}{\hypertarget {implementation}{Implementation}}{60}{framenumber.50}
+\contentsline {subsection}{\hypertarget {craftsmanship}{Craftsmanship}}{60}{framenumber.51}
+\contentsline {subsection}{\hypertarget {social-presence}{Social presence}}{60}{framenumber.52}
+\contentsline {subsection}{\hypertarget {form-factor}{Form factor}}{61}{framenumber.53}
+\contentsline {subsection}{\hypertarget {project-focus}{Project focus}}{61}{framenumber.54}
+\contentsline {section}{\numberline {}Personal Information}{61}{section.8}
+\contentsline {subsection}{\hypertarget {personal-information-systems}{Personal information systems}}{61}{framenumber.55}
+\contentsline {subsection}{\hypertarget {knives-in-the-home}{Knives in the home}}{61}{framenumber.56}
+\contentsline {subsection}{\hypertarget {filing-using-hierarchies-to-organize-information}{Filing: using hierarchies to organize information}}{62}{framenumber.57}
+\contentsline {subsection}{\hypertarget {piling-using-tags-to-organize-information}{Piling: using tags to organize information}}{62}{framenumber.58}
+\contentsline {subsection}{\hypertarget {exercise-share-best-practices}{Exercise: share best practices}}{63}{framenumber.59}
+\contentsline {section}{\numberline {}Information}{65}{section.9}
+\contentsline {subsection}{\hypertarget {unstructured-information}{Unstructured information}}{66}{framenumber.60}
+\contentsline {subsection}{\hypertarget {semistructured-information}{Semistructured information}}{66}{framenumber.61}
+\contentsline {subsection}{\hypertarget {structured-information}{Structured information}}{67}{framenumber.62}
+\contentsline {subsection}{\hypertarget {relational-data}{Relational data}}{67}{framenumber.63}
+\contentsline {subsection}{\hypertarget {hierarchical-data}{Hierarchical data}}{68}{framenumber.64}
+\contentsline {subsection}{\hypertarget {big-data}{Big data}}{69}{framenumber.65}
+\contentsline {subsection}{\hypertarget {memes}{Memes}}{69}{framenumber.66}
+\contentsline {subsection}{\hypertarget {organizing-information}{Organizing information}}{71}{framenumber.67}
+\contentsline {subsection}{\hypertarget {labeling}{Labeling}}{71}{framenumber.68}
+\contentsline {subsection}{\hypertarget {grouping}{Grouping}}{71}{framenumber.69}
+\contentsline {subsection}{\hypertarget {flat-and-hierarchical-grouping}{Flat and hierarchical grouping}}{72}{framenumber.70}
+\contentsline {subsection}{\hypertarget {automatic-and-supervised-grouping}{Automatic and supervised grouping}}{72}{framenumber.71}
+\contentsline {subsection}{\hypertarget {human-computation}{Human computation}}{72}{framenumber.72}
+\contentsline {subsection}{\hypertarget {networked-information}{Networked information}}{73}{framenumber.73}
+\contentsline {subsection}{\hypertarget {supply-chain-information}{Supply chain information}}{73}{framenumber.74}
+\contentsline {section}{\numberline {}Connecting Concepts}{74}{section.10}
+\contentsline {subsection}{\hypertarget {understanding-labels}{Understanding labels}}{74}{framenumber.75}
+\contentsline {subsection}{\hypertarget {learning-navigational-behavior}{Learning navigational behavior}}{75}{framenumber.76}
+\contentsline {subsection}{\hypertarget {social-network-influence-on-navigation}{Social network influence on navigation}}{75}{framenumber.77}
+\contentsline {subsection}{\hypertarget {information-structure}{Information structure}}{75}{framenumber.78}
+\contentsline {subsection}{\hypertarget {flexibility-of-representation}{Flexibility of representation}}{76}{framenumber.79}
+\contentsline {section}{\numberline {}Information Design Patterns}{76}{section.11}
+\contentsline {subsection}{\hypertarget {design-pattern-definitions}{Design Pattern Definitions}}{76}{framenumber.80}
+\contentsline {subsection}{\hypertarget {design-patterns-were-first-observed}{Design patterns were first observed}}{76}{framenumber.81}
+\contentsline {subsection}{\hypertarget {a-pattern-language}{A Pattern Language}}{77}{framenumber.82}
+\contentsline {subsection}{\hypertarget {components-of-a-pattern-language}{Components of a Pattern Language}}{77}{framenumber.83}
+\contentsline {subsection}{\hypertarget {an-example-of-a-pattern-is-a-place-to-wait}{An example of a pattern is a place to wait}}{77}{framenumber.84}
+\contentsline {subsection}{\hypertarget {an-example-of-a-pattern-is-a-useful-cooking-layout}{An example of a pattern is a useful cooking layout}}{77}{framenumber.85}
+\contentsline {subsection}{\hypertarget {computer-scientists-popularized-design-patterns}{Computer scientists popularized design patterns}}{77}{framenumber.86}
+\contentsline {subsection}{\hypertarget {gang-of-four-book}{Gang of Four book}}{78}{framenumber.87}
+\contentsline {subsection}{\hypertarget {gang-of-four-pattern-definition}{Gang of Four pattern definition}}{78}{framenumber.88}
+\contentsline {subsection}{\hypertarget {a-pattern-has-four-things}{A pattern has four things}}{78}{framenumber.89}
+\contentsline {subsection}{\hypertarget {a-pattern-name-is-a-tool}{A pattern name is a tool}}{78}{framenumber.90}
+\contentsline {subsection}{\hypertarget {a-problem-may-be-of-several-kinds}{A problem may be of several kinds}}{78}{framenumber.91}
+\contentsline {subsection}{\hypertarget {a-solution-is-a-description-of-objects-and-classes}{A solution is a description of objects and classes}}{79}{framenumber.92}
+\contentsline {subsection}{\hypertarget {a-consequence-is-a-result-or-trade-off}{A consequence is a result or trade-off}}{79}{framenumber.93}
+\contentsline {subsection}{\hypertarget {design-patterns-in-information-architecture}{Design patterns in information architecture}}{79}{framenumber.94}
+\contentsline {subsection}{\hypertarget {magic-fairy-dust}{Magic fairy dust}}{79}{framenumber.95}
+\contentsline {section}{\numberline {}Finding Information}{80}{section.12}
+\contentsline {subsection}{\hypertarget {search-engines}{Search engines}}{80}{framenumber.96}
+\contentsline {subsection}{\hypertarget {information-scent}{Information scent}}{81}{framenumber.97}
+\contentsline {subsection}{\hypertarget {information-credibility}{Information credibility}}{81}{framenumber.98}
+\contentsline {subsection}{\hypertarget {getting-help}{Getting help}}{82}{framenumber.99}
+\contentsline {subsection}{\hypertarget {exercise-comparing-help-for-two-browsers}{Exercise: comparing help for two browsers}}{83}{framenumber.100}
+\contentsline {section}{\numberline {}Navigating Information}{84}{section.13}
+\contentsline {subsection}{\hypertarget {analytics}{Analytics}}{85}{framenumber.101}
+\contentsline {subsection}{\hypertarget {google-analytics}{Google analytics}}{87}{framenumber.102}
+\contentsline {subsection}{\hypertarget {gaming-the-system}{Gaming the system}}{87}{framenumber.103}
+\contentsline {subsection}{\hypertarget {metadata}{Metadata}}{88}{framenumber.104}
+\contentsline {subsection}{\hypertarget {information-architecture-tools}{Information architecture tools}}{89}{framenumber.105}
+\contentsline {subsection}{\hypertarget {information-hiding}{Information hiding}}{90}{framenumber.106}
+\contentsline {subsection}{\hypertarget {information-comparison}{Information comparison}}{91}{framenumber.107}
+\contentsline {subsection}{\hypertarget {organizational-maturity}{Organizational maturity}}{92}{framenumber.108}
+\contentsline {section}{\numberline {}Visual Information}{93}{section.14}
+\contentsline {subsection}{\hypertarget {visual-information-example}{Visual information example}}{93}{framenumber.109}
+\contentsline {subsection}{\hypertarget {the-invariant}{The Invariant}}{93}{framenumber.110}
+\contentsline {subsection}{\hypertarget {the-components}{The components}}{94}{framenumber.111}
+\contentsline {subsection}{\hypertarget {retinal-variables}{Retinal Variables}}{95}{framenumber.112}
+\contentsline {section}{\numberline {}Visual Design of Information}{97}{section.15}
+\contentsline {subsection}{\hypertarget {different-perspectives-drive-different-views}{Different perspectives drive different views}}{97}{framenumber.113}
+\contentsline {subsection}{\hypertarget {essence}{Essence}}{97}{framenumber.114}
+\contentsline {subsection}{\hypertarget {gestalt-principles}{Gestalt principles}}{98}{framenumber.115}
+\contentsline {subsection}{\hypertarget {dieter-rams-1}{Dieter Rams}}{99}{framenumber.116}
+\contentsline {subsection}{\hypertarget {edward-tufte-1}{Edward Tufte}}{99}{framenumber.117}
+\contentsline {subsection}{\hypertarget {contemporary-perspectives-on-design-principles}{Contemporary Perspectives on Design Principles}}{100}{framenumber.118}
+\contentsline {subsection}{\hypertarget {get-a-grip-and-forget-about-crap}{Get a GRIP and forget about CRAP}}{101}{framenumber.119}
+\contentsline {subsection}{\hypertarget {changes-in-type-over-time}{Changes in type over time}}{102}{framenumber.120}
+\contentsline {subsection}{\hypertarget {challenges-for-type}{Challenges for type}}{104}{framenumber.121}
+\contentsline {subsection}{\hypertarget {reading-psychology}{Reading psychology}}{104}{framenumber.122}
+\contentsline {subsection}{\hypertarget {type-in-a-menu}{Type in a menu}}{105}{framenumber.123}
+\contentsline {subsection}{\hypertarget {die-neue-typographie}{Die Neue Typographie}}{108}{framenumber.124}
+\contentsline {subsection}{\hypertarget {chunking-words-especially-in-menus}{Chunking words, especially in menus}}{109}{framenumber.125}
+\contentsline {subsection}{\hypertarget {color}{Color}}{109}{framenumber.126}
+\contentsline {subsection}{\hypertarget {education-about-color}{Education about color}}{110}{framenumber.127}
+\contentsline {subsection}{\hypertarget {color-word-research}{Color word research}}{110}{framenumber.128}
+\contentsline {subsection}{\hypertarget {color-names-in-computing}{Color names in computing}}{111}{framenumber.129}
+\contentsline {subsection}{\hypertarget {swim-lane-diagrams}{Swim lane diagrams}}{112}{framenumber.130}
+\contentsline {subsection}{\hypertarget {an-exemplary-swim-lane-diagram}{An exemplary swim lane diagram}}{115}{framenumber.131}
+\contentsline {subsection}{\hypertarget {bertins-theory}{Bertin’s Theory}}{116}{framenumber.132}
+\contentsline {subsection}{\hypertarget {theories}{Theories}}{116}{framenumber.133}
+\contentsline {subsection}{\hypertarget {efficiency}{Efficiency}}{117}{framenumber.134}
+\contentsline {subsection}{\hypertarget {categories-of-information-graphics}{Categories of information graphics}}{117}{framenumber.135}
+\contentsline {subsection}{\hypertarget {symbols}{Symbols}}{117}{framenumber.136}
+\contentsline {subsection}{\hypertarget {diagrams}{Diagrams}}{118}{framenumber.137}
+\contentsline {subsection}{\hypertarget {networks}{Networks}}{118}{framenumber.138}
+\contentsline {subsection}{\hypertarget {maps}{Maps}}{119}{framenumber.139}
+\contentsline {subsection}{\hypertarget {simplification}{Simplification}}{119}{framenumber.140}
+\contentsline {section}{\numberline {}Milestones}{120}{section.16}
+\contentsline {subsection}{\hypertarget {create-a-project-website}{Create a project website}}{121}{framenumber.141}
+\contentsline {subsection}{\hypertarget {diverge-then-converge}{Diverge, then converge}}{122}{framenumber.142}
+\contentsline {subsection}{\hypertarget {milestone-1.-project-focus}{Milestone 1. project focus}}{123}{framenumber.143}
+\contentsline {subsection}{\hypertarget {milestone-2.-contextual-inquiry}{Milestone 2. contextual inquiry}}{124}{framenumber.144}
+\contentsline {subsection}{\hypertarget {milestone-3.-personas}{Milestone 3. personas}}{128}{framenumber.145}
+\contentsline {subsection}{\hypertarget {milestone-4.-lo-fi-prototype}{Milestone 4. lo-fi prototype}}{129}{framenumber.146}
+\contentsline {subsection}{\hypertarget {milestone-5.-hi-fi-prototype}{Milestone 5. hi-fi prototype}}{129}{framenumber.147}
+\contentsline {subsection}{\hypertarget {final-project-presentation}{Final project presentation}}{129}{framenumber.148}
+\contentsline {subsection}{\hypertarget {milestone-critiques}{Milestone critiques}}{130}{framenumber.149}
+\contentsline {subsection}{\hypertarget {project-management}{Project management}}{130}{framenumber.150}
+\contentsline {section}{\numberline {}Exercises}{132}{section.17}
+\contentsline {subsection}{\hypertarget {completing-exercises}{Completing exercises}}{132}{framenumber.151}
+\contentsline {subsection}{\hypertarget {exercise-list}{Exercise list}}{135}{framenumber.152}
+\contentsline {subsection}{\hypertarget {draw-a-face}{Draw a face}}{136}{framenumber.153}
+\contentsline {subsection}{\hypertarget {picking-up-a-key}{Picking up a key}}{136}{framenumber.154}
+\contentsline {subsection}{\hypertarget {harrison-bergeron}{Harrison Bergeron}}{137}{framenumber.155}
+\contentsline {subsection}{\hypertarget {extreme-emphasis}{Extreme emphasis}}{138}{framenumber.156}
+\contentsline {subsection}{\hypertarget {record-interaction}{Record interaction}}{139}{framenumber.157}
+\contentsline {subsection}{\hypertarget {identify-domains-and-skills}{Identify domains and skills}}{139}{framenumber.158}
+\contentsline {subsection}{\hypertarget {widget-redesign}{Widget redesign}}{141}{framenumber.159}
+\contentsline {subsection}{\hypertarget {ambient-notification}{Ambient notification}}{141}{framenumber.160}
+\contentsline {subsection}{\hypertarget {thousand-floor-elevator}{Thousand floor elevator}}{142}{framenumber.161}
+\contentsline {subsection}{\hypertarget {corporate-directory-navigator}{Corporate directory navigator}}{142}{framenumber.162}
+\contentsline {subsection}{\hypertarget {business-card-calendar}{Business card calendar}}{143}{framenumber.163}
+\contentsline {subsection}{\hypertarget {affordance-matrix}{Affordance matrix}}{143}{framenumber.164}
+\contentsline {subsection}{\hypertarget {affordance-device}{Affordance device}}{144}{framenumber.165}
+\contentsline {subsection}{\hypertarget {revisit-picking-up-a-key}{Revisit picking up a key}}{144}{framenumber.166}
+\contentsline {subsection}{\hypertarget {anti-affordance-matrix}{Anti-affordance matrix}}{145}{framenumber.167}
+\contentsline {subsection}{\hypertarget {waiting-in-line}{Waiting in line}}{145}{framenumber.168}
+\contentsline {subsection}{\hypertarget {favorite-movie}{Favorite movie}}{145}{framenumber.169}
+\contentsline {subsection}{\hypertarget {packing}{Packing}}{145}{framenumber.170}
+\contentsline {subsection}{\hypertarget {unoccupied-room}{Unoccupied room}}{145}{framenumber.171}
+\contentsline {subsection}{\hypertarget {two-characters}{Two characters}}{146}{framenumber.172}
+\contentsline {subsection}{\hypertarget {captions}{Captions}}{146}{framenumber.173}
+\contentsline {subsection}{\hypertarget {exercise-reflection}{Exercise reflection}}{149}{framenumber.174}
+\contentsline {subsection}{\hypertarget {exercise-objectives}{Exercise objectives}}{152}{framenumber.175}
+\contentsline {section}{References}{155}{framenumber.175}

@@ -1,0 +1,231 @@
+---
+title: "UT-Austin iSchool Syllabus<br>I320U<br>Information and Interaction Design<br>Fall 2023"
+date: today
+format:
+  html:
+    toc: true
+    theme:
+      - lux
+      - theme.scss
+bibliography: syllabus.bib
+---
+
+# Description
+
+This course focuses on the unique design practice of (1) representing and organizing information to facilitate perception and understanding (information architecture) and (2) specifying the appropriate mechanisms for accessing and manipulating task and play information (interaction design). This course also explores design patterns appropriate for the UX professional.
+
+# Details
+
+Important note:
+The information presented in this syllabus is subject to expansion, contraction, change, or stasis during the semester. In case of conflict between versions, the copy on Canvas takes precedence.
+
+## Course Number
+28390
+
+## Prerequisites
+
+- I301 Intro to Informatics
+- I310U Intro to UX Design
+
+## Time
+MW 1230--1400
+
+## Place
+PMA 5.124
+
+## Dates
+August 21--December 4, 2023
+
+## Final Exam
+Take-home, due at our official exam time
+
+## Instructor
+Mick McQuaid
+
+## Email
+`mcq@utexas.edu`
+
+## Office
+1616 Guadalupe St, Room 5.402
+
+## Office Hours
+MW 1415--1515, iSchool - West Mall Location, Flawn Academic Center 2304 Whitis Ave, Suite 18 or by appointment at my UTA office
+
+## Academic Assistant
+Samarth Nayyar
+
+## Academic Assistant Email
+samarthnayyar@utexas.edu
+
+# Objectives - skills
+
+- Identify complementary skills and congruent
+    domains among potential project group partners.
+- Conduct iterative design, including design, prototyping, and evaluation.
+- Conduct a contextual inquiry.
+- Construct personas suggested by a contextual
+  inquiry.
+- Construct a low fidelity prototype using pencil and
+  paper.
+- Construct a high fidelity prototype using tools of your
+  own choosing.
+- Evaluate a high fidelity prototype using heuristic
+  evaluation or methods of your own choosing.
+- Sketch designs quickly and with facility.
+- Solve generic design problems quickly in an ad hoc
+  group, mastering both the divergent and convergent
+  activities required.
+- Tell the story of a design problem and solution
+  through a series of sketches.
+- Contribute to a project group over the course of a
+  semester and overcome project group problems.
+- Create a project group website that communicates the
+  substance of your semester-long project.
+- Work with a client whose constraints are not under your
+  control.
+
+# Objectives - concepts
+
+- Understand the role of constraints in design.
+- Understand affordances.
+- Understand the history of and basic definitions
+    common in interaction design.
+- Understand theories in human computer interaction
+    such as Fitts's Law and Hick's Law and the
+    characteristics of theories.
+- Understand interaction paradigms.
+- Understand four common interaction styles and the
+    characteristics favoring their use.
+- Understand two different ways to elicit and interpret verbal
+    information from users of a system, protocol analysis
+    and verbal analysis.
+- Understand the role of collaboration among users in interaction
+    design.
+- Understand several ways to measure quality of service.
+- Understand the role of emotion in interaction design.
+- Understand relevant characteristics of a range of interaction
+    devices.
+- Understand software documentation and the
+    phenomena taking its place.
+
+# Materials
+
+## Textbook
+We will rely on portions of four books: @Cooper2014, @Dodson2006, @Holtzblatt2005, and @Rosenfeld2015. I am apparently allowed to put three chapters of any book on Canvas, and I have done so with these books. In addition, some of them are available for free at the library.
+
+The study guide (on Canvas) is the only other required textbook for the course.
+
+## Notebook
+You should bring a paper notebook to class every day and be prepared to upload pictures from it frequently. The notebook should be the size of the Moleskine Cahier notebook, 5 $\times$ 8.25 inches. It is widely available in packs of three for about 15\textsc{usd}. Substitute any sketchbook of similar size, e.g., Malvern Books has Leuchturm sketchbooks, which have higher quality paper than Moleskine but are more expensive. Why do I insist on this size? You actually draw differently on larger notebooks due to the average shape and size of the human hand.
+
+You should only write or draw in the notebook and not staple or paste scans or photos into it. All the work in the notebook should be in pen or pencil, preferably pencil.
+
+## Phone or tablet with camera
+You should bring a phone or tablet or some device with a camera to class and be prepared to photograph your work to share it with the class.
+
+## Technology
+Except for Framer, specific software packages will not be taught in this course. Students should use judgment to select and use helpful software and should share their experiences with different software packages during discussion. Different students have different software needs. It makes sense to try a lot of different software packages to keep you open-minded but to polish your skills with a few to help you meet tight deadlines.
+
+# Schedule
+The estimated course schedule follows. All dates, lecture topics, and assignments are subject to reasonable change at the discretion of your instructor.  Any changes will be announced in class.
+
+# Schedule
+
+[Week 1 (21 Aug, 23 Aug)]{.weekn}
+Introduction, Team options ---
+Design thinking exercise
+
+[Week 2 (28 Aug, 30 Aug)]{.weekn}
+Background radiation ---
+Exercise 1, 05 points (drawing a face $+$ 2 examples of good design)
+
+[Week 3 (6 Sep)]{.weekn}
+(Note that Monday is Labor Day) ---
+Audience ---
+Milestone 1,                          05 points (proj focus)
+
+[Week 4 (11 Sep, 13 Sep)]{.weekn}
+Contextual Inquiry ---
+Exercise 2, 05 points (picking up a key $+$ 2 examples of good design)
+
+[Week 5 (18 Sep, 20 Sep)]{.weekn}
+Personas ---
+No graded work due
+
+[Week 6 (25 Sep, 27 Sep)]{.weekn}
+Scenarios ---
+Milestone 2,                          10 points (contextual inquiry) 
+
+[Week 7 (2 Oct, 4 Oct)]{.weekn}
+Prototyping ---
+Exercise 3, 05 points (widget redesign $+$ 2 examples of good design)
+
+[Week 8 (9 Oct, 11 Oct)]{.weekn}
+Personal Information ---
+Milestone 3,                          05 points (personas)
+
+[Week 9 (16 Oct, 18 Oct)]{.weekn}
+Information ---
+Exercise 4, 05 points (record interaction $+$ 2 examples of good design)
+
+[Week 10 (23 Oct, 25 Oct)]{.weekn}
+Information design patterns ---
+Milestone 4,                          05 points (scenarios)
+
+[Week 11 (30 Oct, 1 Nov)]{.weekn}
+Finding information ---
+Exercise 5, 05 points (ambient notification $+$ 2 examples of good design)
+
+[Week 12 (6 Nov, 8 Nov)]{.weekn}
+Navigating information ---
+Exercise 6, 05 points (corporate directory $+$ 2 examples of good design)
+
+[Week 13 (13 Nov, 15 Nov)]{.weekn}
+Visualization ---
+Exercise 7, 05 points (captions $+$ 2 examples of good design)
+
+[Fall Break!]{.weekn}
+
+[Week 14 (27 Nov, 29 Nov)]{.weekn}
+Visual design theories ---
+Milestone 5                           10 points (prototype)
+
+[Week 15 (4 Dec)]{.weekn}
+Summary ---
+Exercise 8, 05 points (elevator $+$ 2 examples of good design);
+Peer eval, project grades;
+Final exam, 15 points
+
+Attendance, 10 points (your fraction of attendance is your attendance grade, for example, if you attend 85 percent of the classes, you'll get 8.5 out of 10 points)
+
+# Grading
+I plan to grade assignments within two weeks of their due date except where circumstances interfere.
+The grading scale used along with the grade components follow.
+
+- A  >= 94.0%
+- A- >= 90.0% & < 94%
+- B+ >= 87.0% & < 90%
+- B  >= 83.0% & < 87%
+- B- >= 80.0% & < 83%
+- C+ >= 77.0% & < 80.0%
+- C  >= 73.0% & < 77.0%
+- C- >= 70.0% & < 73.0%
+- D  >= 60.0% & < 70.0%
+- F  < 60.0%
+
+## Attendance
+I will take attendance every day and your percentage of attendance will count for ten percent of your grade.
+
+If you have a legitimate need for absence, such as illness or job interview, notify the instructor by email as soon as possible and you may receive an excused absence.
+
+# Lectures Online
+This class is using the Lectures Online recording system. This system records the audio and video material presented in class for you to review after class. Links for the recordings will appear in the Lectures Online tab on the Canvas page for this class. You will find this tab along the left side navigation in Canvas.
+
+To review a recording, simply click on the Lectures Online navigation tab and follow the instructions presented to you on the page. You can learn more about how to use the Lectures Online system at [https://sites.la.utexas.edu/lecturesonline/students/how-to-access-recordings/](https://sites.la.utexas.edu/lecturesonline/students/how-to-access-recordings/).
+
+You can find additional information about Lectures Online at: [https://sites.la.utexas.edu/lecturesonline/](https://sites.la.utexas.edu/lecturesonline/).
+
+{{< include _utBoilerplate.qmd >}}
+
+# References
+

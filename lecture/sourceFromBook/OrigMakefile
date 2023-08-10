@@ -1,0 +1,45 @@
+rerun    = "Rerun to get cross-references right"
+basename = lecture
+latex    = xelatex
+
+all : $(basename)-content.tex
+	$(latex) $(basename)-notes.tex || true
+	grep -q $(rerun) $(basename)-notes.log \
+	     && $(latex) $(basename)-notes.tex \
+	     || true
+
+$(basename)-content.tex : $(basename)-tmp2.tex
+	gobbleblank < $(basename)-tmp2.tex     \
+	            > $(basename)-content.tex
+
+$(basename)-tmp2.tex : $(basename)-tmp1.tex
+	notesSlidesOnly < $(basename)-tmp1.tex \
+	                > $(basename)-tmp2.tex
+
+$(basename)-tmp1.tex : $(basename)-content.md
+	pandoc                           \
+	  -t beamer                      \
+	  --bibliography $(basename).bib \
+	  --slide-level=2                \
+	  --template pandocNotes         \
+	     $(basename)-content.md      \
+	  -o $(basename)-tmp1.tex
+
+$(basename)-content.md : 0*.md 1*.md
+	cat                           \
+	  00intro-content.md          \
+	  01bkgrndRad-content.md      \
+	  02audience-content.md       \
+	  03contextInquiry-content.md \
+	  04proto-content.md          \
+	  05personalinfo-content.md   \
+	  06infoStruct-content.md     \
+	  07findingInfo-content.md    \
+	  08visInfo-content.md        \
+	  09milestones-content.md     \
+	  10exercises-content.md      \
+	  11references-content.md     \
+	  > $(basename)-content.md
+
+clean :
+	rm $(basename)-content.md *.log *.aux *.out *~ *-tmp1.tex *-tmp2.tex *-content.tex

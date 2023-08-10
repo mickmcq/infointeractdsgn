@@ -1,0 +1,256 @@
+\contentsline {section}{\numberline {}Introduction}{12}{section.1}%
+\contentsline {subsection}{\numberline {}Materials You Need}{12}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {}(A) Sketchbook}{12}{subsubsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {}(B) Camera}{13}{subsubsection.1.1.2}%
+\contentsline {subsubsection}{\numberline {}(C) Prototyping Tools}{13}{subsubsection.1.1.3}%
+\contentsline {subsection}{\numberline {}Definitions}{13}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {}(A) Information}{13}{subsubsection.1.2.1}%
+\contentsline {subsubsection}{\numberline {}(B) Interaction}{17}{subsubsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {}(C) Design}{17}{subsubsection.1.2.3}%
+\contentsline {subsection}{\numberline {}Groups}{18}{subsection.1.3}%
+\contentsline {subsection}{\numberline {}Grading}{18}{subsection.1.4}%
+\contentsline {subsection}{\numberline {}Whether perfect should be average}{20}{subsection.1.5}%
+\contentsline {subsection}{\numberline {}Powerlesspoint}{22}{subsection.1.6}%
+\contentsline {section}{\numberline {}Background Radiation}{24}{section.2}%
+\contentsline {subsection}{\numberline {}Roles}{24}{subsection.2.1}%
+\contentsline {subsection}{\numberline {}People}{25}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {}Rudolph Arnheim}{26}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {}Chris Bangle}{26}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {}Bill Buxton}{26}{subsubsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {}Matias Duarte}{26}{subsubsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {}Jonathan Grudin}{26}{subsubsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {}Jony Ive}{26}{subsubsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {}Steve Krug}{26}{subsubsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {}Peter Morville}{27}{subsubsection.2.2.8}%
+\contentsline {subsubsection}{\numberline {}Jakob Nielsen}{27}{subsubsection.2.2.9}%
+\contentsline {subsubsection}{\numberline {}Don Norman}{27}{subsubsection.2.2.10}%
+\contentsline {subsubsection}{\numberline {}Dieter Rams}{27}{subsubsection.2.2.11}%
+\contentsline {subsubsection}{\numberline {}Jeff Raskin}{27}{subsubsection.2.2.12}%
+\contentsline {subsubsection}{\numberline {}Aza Raskin}{27}{subsubsection.2.2.13}%
+\contentsline {subsubsection}{\numberline {}Edward Tufte}{28}{subsubsection.2.2.14}%
+\contentsline {subsection}{\numberline {}URLs}{28}{subsection.2.3}%
+\contentsline {subsection}{\numberline {}Institutions}{29}{subsection.2.4}%
+\contentsline {subsection}{\numberline {}Technologies}{29}{subsection.2.5}%
+\contentsline {subsection}{\numberline {}Design Guidelines from Vendors}{29}{subsection.2.6}%
+\contentsline {subsection}{\numberline {}Misc}{30}{subsection.2.7}%
+\contentsline {subsection}{\numberline {}Being the center of the universe}{32}{subsection.2.8}%
+\contentsline {section}{\numberline {}Audience}{36}{section.3}%
+\contentsline {subsection}{\numberline {}Academic Communities}{36}{subsection.3.1}%
+\contentsline {subsection}{\numberline {}Industrial and Government Communities}{38}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {}Suppliers of IT}{38}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {}Customers of IT}{38}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {}Historical perspective}{39}{subsection.3.3}%
+\contentsline {subsection}{\numberline {}Idealized user}{39}{subsection.3.4}%
+\contentsline {subsection}{\numberline {}Nondiscretionary use}{39}{subsection.3.5}%
+\contentsline {subsection}{\numberline {}Hierarchical collaboration}{39}{subsection.3.6}%
+\contentsline {subsection}{\numberline {}Workgroup cooperation}{40}{subsection.3.7}%
+\contentsline {subsection}{\numberline {}Discretionary computing}{40}{subsection.3.8}%
+\contentsline {subsection}{\numberline {}Ubiquitous computing}{40}{subsection.3.9}%
+\contentsline {subsection}{\numberline {}Communities of Practice}{40}{subsection.3.10}%
+\contentsline {subsection}{\numberline {}Communities of Life}{40}{subsection.3.11}%
+\contentsline {subsection}{\numberline {}Disability-specific design}{47}{subsection.3.12}%
+\contentsline {subsection}{\numberline {}Popularization via bad design}{47}{subsection.3.13}%
+\contentsline {subsubsection}{\numberline {}Flat design risks}{48}{subsubsection.3.13.1}%
+\contentsline {subsubsection}{\numberline {}Bad door}{48}{subsubsection.3.13.2}%
+\contentsline {subsubsection}{\numberline {}Bad and less bad door}{49}{subsubsection.3.13.3}%
+\contentsline {subsubsection}{\numberline {}Anti-ADA door}{49}{subsubsection.3.13.4}%
+\contentsline {subsubsection}{\numberline {}Bad dryer}{50}{subsubsection.3.13.5}%
+\contentsline {subsubsection}{\numberline {}Bad iPad}{50}{subsubsection.3.13.6}%
+\contentsline {subsubsection}{\numberline {}Bad iPad's ancestor}{51}{subsubsection.3.13.7}%
+\contentsline {subsubsection}{\numberline {}Bad elevators}{51}{subsubsection.3.13.8}%
+\contentsline {section}{\numberline {}Interaction Design}{52}{section.4}%
+\contentsline {subsection}{\numberline {}Contextual Design}{53}{subsection.4.1}%
+\contentsline {subsection}{\numberline {}Three ways to study users}{53}{subsection.4.2}%
+\contentsline {subsection}{\numberline {}Contextual inquiry}{53}{subsection.4.3}%
+\contentsline {subsection}{\numberline {}Participatory design}{53}{subsection.4.4}%
+\contentsline {subsection}{\numberline {}Ethnography}{54}{subsection.4.5}%
+\contentsline {section}{\numberline {}Contextual Inquiry Process}{54}{section.5}%
+\contentsline {subsection}{\numberline {}Immersion}{55}{subsection.5.1}%
+\contentsline {subsection}{\numberline {}Share interview techniques}{55}{subsection.5.2}%
+\contentsline {subsection}{\numberline {}Protocol and verbal analysis}{57}{subsection.5.3}%
+\contentsline {section}{\numberline {}Personas and Scenarios}{58}{section.6}%
+\contentsline {section}{\numberline {}Prototyping}{60}{section.7}%
+\contentsline {subsection}{\numberline {}Iterative development}{60}{subsection.7.1}%
+\contentsline {subsection}{\numberline {}Iterative model diagram}{60}{subsection.7.2}%
+\contentsline {subsection}{\numberline {}Expense of iterative development}{60}{subsection.7.3}%
+\contentsline {subsection}{\numberline {}Lack of planning detail in iterative method}{61}{subsection.7.4}%
+\contentsline {subsection}{\numberline {}Extra products of the iterative method}{62}{subsection.7.5}%
+\contentsline {subsection}{\numberline {}Getting everyone on the same page}{62}{subsection.7.6}%
+\contentsline {subsection}{\numberline {}Evaluation in iterative development}{62}{subsection.7.7}%
+\contentsline {subsection}{\numberline {}Another perspective on iteration}{63}{subsection.7.8}%
+\contentsline {subsection}{\numberline {}Fidelity of prototyping}{63}{subsection.7.9}%
+\contentsline {subsection}{\numberline {}Paper prototyping}{64}{subsection.7.10}%
+\contentsline {subsection}{\numberline {}Your second prototype}{64}{subsection.7.11}%
+\contentsline {subsection}{\numberline {}Design as an input to a prototype}{65}{subsection.7.12}%
+\contentsline {subsection}{\numberline {}Alternative generation}{65}{subsection.7.13}%
+\contentsline {subsection}{\numberline {}Choices reflecting constraints}{67}{subsection.7.14}%
+\contentsline {subsection}{\numberline {}Implementation}{69}{subsection.7.15}%
+\contentsline {subsection}{\numberline {}Craftsmanship}{69}{subsection.7.16}%
+\contentsline {subsection}{\numberline {}Social presence}{69}{subsection.7.17}%
+\contentsline {subsection}{\numberline {}Form factor}{70}{subsection.7.18}%
+\contentsline {subsection}{\numberline {}Project focus}{70}{subsection.7.19}%
+\contentsline {section}{\numberline {}Personal Information}{70}{section.8}%
+\contentsline {subsection}{\numberline {}Personal information systems}{70}{subsection.8.1}%
+\contentsline {subsection}{\numberline {}Knives in the home}{71}{subsection.8.2}%
+\contentsline {subsection}{\numberline {}Filing: using hierarchies to organize information}{71}{subsection.8.3}%
+\contentsline {subsection}{\numberline {}Piling: using tags to organize information}{71}{subsection.8.4}%
+\contentsline {subsection}{\numberline {}Exercise: share best practices}{72}{subsection.8.5}%
+\contentsline {subsection}{\numberline {}Advice on PKM}{74}{subsection.8.6}%
+\contentsline {section}{\numberline {}Information}{75}{section.9}%
+\contentsline {subsection}{\numberline {}Unstructured information}{77}{subsection.9.1}%
+\contentsline {subsection}{\numberline {}Semistructured information}{77}{subsection.9.2}%
+\contentsline {subsection}{\numberline {}Structured information}{78}{subsection.9.3}%
+\contentsline {subsection}{\numberline {}Relational data}{79}{subsection.9.4}%
+\contentsline {subsection}{\numberline {}Hierarchical data}{79}{subsection.9.5}%
+\contentsline {subsection}{\numberline {}Big data}{80}{subsection.9.6}%
+\contentsline {subsection}{\numberline {}Memes}{81}{subsection.9.7}%
+\contentsline {subsection}{\numberline {}Organizing information}{82}{subsection.9.8}%
+\contentsline {subsection}{\numberline {}Labeling}{83}{subsection.9.9}%
+\contentsline {subsection}{\numberline {}Card sorting}{83}{subsection.9.10}%
+\contentsline {subsection}{\numberline {}Interrater reliability}{83}{subsection.9.11}%
+\contentsline {subsection}{\numberline {}Grouping}{90}{subsection.9.12}%
+\contentsline {subsection}{\numberline {}Flat and hierarchical grouping}{91}{subsection.9.13}%
+\contentsline {subsection}{\numberline {}Automatic and supervised grouping}{91}{subsection.9.14}%
+\contentsline {subsection}{\numberline {}Human computation}{91}{subsection.9.15}%
+\contentsline {subsection}{\numberline {}Networked information}{92}{subsection.9.16}%
+\contentsline {subsection}{\numberline {}Supply chain information}{92}{subsection.9.17}%
+\contentsline {section}{\numberline {}Connecting Concepts}{94}{section.10}%
+\contentsline {subsection}{\numberline {}Understanding labels}{94}{subsection.10.1}%
+\contentsline {subsection}{\numberline {}Learning navigational behavior}{94}{subsection.10.2}%
+\contentsline {subsection}{\numberline {}Social network influence on navigation}{95}{subsection.10.3}%
+\contentsline {subsection}{\numberline {}Information structure}{95}{subsection.10.4}%
+\contentsline {subsection}{\numberline {}Flexibility of representation}{95}{subsection.10.5}%
+\contentsline {section}{\numberline {}Information Design Patterns}{95}{section.11}%
+\contentsline {subsection}{\numberline {}Design Pattern Definitions}{96}{subsection.11.1}%
+\contentsline {subsection}{\numberline {}Design patterns were first observed}{96}{subsection.11.2}%
+\contentsline {subsection}{\numberline {}A Pattern Language}{96}{subsection.11.3}%
+\contentsline {subsection}{\numberline {}Components of a Pattern Language}{97}{subsection.11.4}%
+\contentsline {subsection}{\numberline {}An example of a pattern is a place to wait}{97}{subsection.11.5}%
+\contentsline {subsection}{\numberline {}An example of a pattern is a useful cooking layout}{97}{subsection.11.6}%
+\contentsline {subsection}{\numberline {}Computer scientists popularized design patterns}{97}{subsection.11.7}%
+\contentsline {subsection}{\numberline {}Gang of Four book}{98}{subsection.11.8}%
+\contentsline {subsection}{\numberline {}Gang of Four pattern definition}{98}{subsection.11.9}%
+\contentsline {subsection}{\numberline {}A pattern has four things}{98}{subsection.11.10}%
+\contentsline {subsection}{\numberline {}A pattern name is a tool}{98}{subsection.11.11}%
+\contentsline {subsection}{\numberline {}A problem may be of several kinds}{98}{subsection.11.12}%
+\contentsline {subsection}{\numberline {}A solution is a description of objects and classes}{98}{subsection.11.13}%
+\contentsline {subsection}{\numberline {}A consequence is a result or trade-off}{99}{subsection.11.14}%
+\contentsline {subsection}{\numberline {}Design patterns in information architecture}{99}{subsection.11.15}%
+\contentsline {subsection}{\numberline {}Magic fairy dust}{99}{subsection.11.16}%
+\contentsline {section}{\numberline {}Finding Information}{100}{section.12}%
+\contentsline {subsection}{\numberline {}Search engines}{100}{subsection.12.1}%
+\contentsline {subsection}{\numberline {}Information scent}{101}{subsection.12.2}%
+\contentsline {subsection}{\numberline {}Information credibility}{102}{subsection.12.3}%
+\contentsline {subsection}{\numberline {}Getting help}{103}{subsection.12.4}%
+\contentsline {subsection}{\numberline {}Exercise: comparing help for two browsers}{104}{subsection.12.5}%
+\contentsline {section}{\numberline {}Navigating Information}{104}{section.13}%
+\contentsline {subsection}{\numberline {}Analytics}{106}{subsection.13.1}%
+\contentsline {subsection}{\numberline {}Google analytics}{108}{subsection.13.2}%
+\contentsline {subsection}{\numberline {}Gaming the system}{109}{subsection.13.3}%
+\contentsline {subsection}{\numberline {}Metadata}{109}{subsection.13.4}%
+\contentsline {subsection}{\numberline {}Information Architecture}{110}{subsection.13.5}%
+\contentsline {subsection}{\numberline {}Information architecture tools}{111}{subsection.13.6}%
+\contentsline {subsection}{\numberline {}Information hiding}{112}{subsection.13.7}%
+\contentsline {subsection}{\numberline {}Information comparison}{113}{subsection.13.8}%
+\contentsline {subsection}{\numberline {}Organizational maturity}{114}{subsection.13.9}%
+\contentsline {section}{\numberline {}Visual Information}{116}{section.14}%
+\contentsline {subsection}{\numberline {}Visual information example}{116}{subsection.14.1}%
+\contentsline {subsection}{\numberline {}The Invariant}{116}{subsection.14.2}%
+\contentsline {subsection}{\numberline {}The components}{117}{subsection.14.3}%
+\contentsline {subsection}{\numberline {}Retinal Variables}{119}{subsection.14.4}%
+\contentsline {section}{\numberline {}Visual Design of Information}{120}{section.15}%
+\contentsline {subsection}{\numberline {}Different perspectives drive different views}{120}{subsection.15.1}%
+\contentsline {subsection}{\numberline {}Essence}{121}{subsection.15.2}%
+\contentsline {subsection}{\numberline {}Gestalt principles}{122}{subsection.15.3}%
+\contentsline {subsection}{\numberline {}Dieter Rams}{123}{subsection.15.4}%
+\contentsline {subsection}{\numberline {}Edward Tufte}{123}{subsection.15.5}%
+\contentsline {subsection}{\numberline {}Contemporary Perspectives on Design Principles}{124}{subsection.15.6}%
+\contentsline {subsection}{\numberline {}Get a GRIP and forget about CRAP}{125}{subsection.15.7}%
+\contentsline {subsection}{\numberline {}Changes in type over time}{126}{subsection.15.8}%
+\contentsline {subsection}{\numberline {}Challenges for type}{128}{subsection.15.9}%
+\contentsline {subsection}{\numberline {}Reading psychology}{128}{subsection.15.10}%
+\contentsline {subsection}{\numberline {}Type in a menu}{130}{subsection.15.11}%
+\contentsline {subsection}{\numberline {}Die Neue Typographie}{132}{subsection.15.12}%
+\contentsline {subsection}{\numberline {}Chunking words, especially in menus}{133}{subsection.15.13}%
+\contentsline {subsection}{\numberline {}Color}{134}{subsection.15.14}%
+\contentsline {subsection}{\numberline {}Education about color}{134}{subsection.15.15}%
+\contentsline {subsection}{\numberline {}Color word research}{135}{subsection.15.16}%
+\contentsline {subsection}{\numberline {}Color names in computing}{136}{subsection.15.17}%
+\contentsline {subsection}{\numberline {}Swim lane diagrams}{137}{subsection.15.18}%
+\contentsline {subsection}{\numberline {}An exemplary swim lane diagram}{140}{subsection.15.19}%
+\contentsline {subsection}{\numberline {}Bertin's Theory}{141}{subsection.15.20}%
+\contentsline {subsection}{\numberline {}Theories}{141}{subsection.15.21}%
+\contentsline {subsection}{\numberline {}Efficiency}{142}{subsection.15.22}%
+\contentsline {subsection}{\numberline {}Categories of information graphics}{143}{subsection.15.23}%
+\contentsline {subsection}{\numberline {}Symbols}{143}{subsection.15.24}%
+\contentsline {subsection}{\numberline {}Diagrams}{143}{subsection.15.25}%
+\contentsline {subsection}{\numberline {}Networks}{144}{subsection.15.26}%
+\contentsline {subsection}{\numberline {}Maps}{144}{subsection.15.27}%
+\contentsline {subsection}{\numberline {}Simplification}{145}{subsection.15.28}%
+\contentsline {section}{\numberline {}Milestones}{146}{section.16}%
+\contentsline {subsection}{\numberline {}Create a project website}{147}{subsection.16.1}%
+\contentsline {subsection}{\numberline {}Diverge, then converge}{149}{subsection.16.2}%
+\contentsline {subsection}{\numberline {}Milestone 1. project focus}{150}{subsection.16.3}%
+\contentsline {subsection}{\numberline {}Milestone 2. contextual inquiry}{150}{subsection.16.4}%
+\contentsline {subsubsection}{\numberline {}Revising milestone 1}{151}{subsubsection.16.4.1}%
+\contentsline {subsubsection}{\numberline {}Products}{151}{subsubsection.16.4.2}%
+\contentsline {subsubsection}{\numberline {}Planning}{151}{subsubsection.16.4.3}%
+\contentsline {subsubsection}{\numberline {}Interviews}{151}{subsubsection.16.4.4}%
+\contentsline {subsubsection}{\numberline {}Interpretation session}{152}{subsubsection.16.4.5}%
+\contentsline {subsubsection}{\numberline {}Affinity Diagram}{152}{subsubsection.16.4.6}%
+\contentsline {subsubsection}{\numberline {}Affinity diagram details}{154}{subsubsection.16.4.7}%
+\contentsline {subsubsection}{\numberline {}Miro}{157}{subsubsection.16.4.8}%
+\contentsline {subsection}{\numberline {}Milestone 3. personas}{157}{subsection.16.5}%
+\contentsline {subsection}{\numberline {}Milestone 4. lo-fi prototype}{158}{subsection.16.6}%
+\contentsline {subsection}{\numberline {}Milestone 5. hi-fi prototype}{159}{subsection.16.7}%
+\contentsline {subsection}{\numberline {}Final project presentation}{160}{subsection.16.8}%
+\contentsline {subsection}{\numberline {}Milestone critiques}{160}{subsection.16.9}%
+\contentsline {subsection}{\numberline {}Project management}{161}{subsection.16.10}%
+\contentsline {section}{\numberline {}Exercises}{163}{section.17}%
+\contentsline {subsection}{\numberline {}Completing exercises}{164}{subsection.17.1}%
+\contentsline {subsubsection}{\numberline {}General directives}{164}{subsubsection.17.1.1}%
+\contentsline {subsubsection}{\numberline {}Using your sketchbook}{165}{subsubsection.17.1.2}%
+\contentsline {subsubsection}{\numberline {}Diverge then converge}{166}{subsubsection.17.1.3}%
+\contentsline {subsubsection}{\numberline {}Allocate your time}{166}{subsubsection.17.1.4}%
+\contentsline {subsubsection}{\numberline {}Tell a story}{167}{subsubsection.17.1.5}%
+\contentsline {subsection}{\numberline {}Exercise list}{167}{subsection.17.2}%
+\contentsline {subsection}{\numberline {}Draw a face}{167}{subsection.17.3}%
+\contentsline {subsection}{\numberline {}Picking up a key}{168}{subsection.17.4}%
+\contentsline {subsection}{\numberline {}Harrison Bergeron}{169}{subsection.17.5}%
+\contentsline {subsection}{\numberline {}Extreme emphasis}{170}{subsection.17.6}%
+\contentsline {subsection}{\numberline {}Record interaction}{171}{subsection.17.7}%
+\contentsline {subsection}{\numberline {}Identify domains and skills}{171}{subsection.17.8}%
+\contentsline {subsection}{\numberline {}Widget redesign}{173}{subsection.17.9}%
+\contentsline {subsection}{\numberline {}Ambient notification}{174}{subsection.17.10}%
+\contentsline {subsection}{\numberline {}Thousand floor elevator}{174}{subsection.17.11}%
+\contentsline {subsection}{\numberline {}Corporate directory navigator}{175}{subsection.17.12}%
+\contentsline {subsection}{\numberline {}Business card calendar}{176}{subsection.17.13}%
+\contentsline {subsection}{\numberline {}Signifier matrix}{176}{subsection.17.14}%
+\contentsline {subsection}{\numberline {}Signifier device}{176}{subsection.17.15}%
+\contentsline {subsection}{\numberline {}Revisit picking up a key}{177}{subsection.17.16}%
+\contentsline {subsection}{\numberline {}Anti-signifier matrix}{177}{subsection.17.17}%
+\contentsline {subsection}{\numberline {}Waiting in line}{178}{subsection.17.18}%
+\contentsline {subsection}{\numberline {}Favorite movie}{178}{subsection.17.19}%
+\contentsline {subsection}{\numberline {}Packing}{178}{subsection.17.20}%
+\contentsline {subsection}{\numberline {}Unoccupied room}{178}{subsection.17.21}%
+\contentsline {subsection}{\numberline {}Two characters}{179}{subsection.17.22}%
+\contentsline {subsection}{\numberline {}Captions}{179}{subsection.17.23}%
+\contentsline {subsection}{\numberline {}Exercise reflection}{183}{subsection.17.24}%
+\contentsline {subsubsection}{\numberline {}Critiques}{183}{subsubsection.17.24.1}%
+\contentsline {subsubsection}{\numberline {}Domination}{184}{subsubsection.17.24.2}%
+\contentsline {subsubsection}{\numberline {}Parochialism}{184}{subsubsection.17.24.3}%
+\contentsline {subsubsection}{\numberline {}THINK acronym}{184}{subsubsection.17.24.4}%
+\contentsline {subsubsection}{\numberline {}Identify interactions}{185}{subsubsection.17.24.5}%
+\contentsline {subsubsection}{\numberline {}Display information}{185}{subsubsection.17.24.6}%
+\contentsline {subsection}{\numberline {}Exercise objectives}{186}{subsection.17.25}%
+\contentsline {subsubsection}{\numberline {}Graphical self intro}{186}{subsubsection.17.25.1}%
+\contentsline {subsubsection}{\numberline {}Drawing a face}{187}{subsubsection.17.25.2}%
+\contentsline {subsubsection}{\numberline {}Picking up a key}{188}{subsubsection.17.25.3}%
+\contentsline {subsubsection}{\numberline {}Widget redesign}{188}{subsubsection.17.25.4}%
+\contentsline {subsubsection}{\numberline {}Record interaction}{189}{subsubsection.17.25.5}%
+\contentsline {subsubsection}{\numberline {}Small interaction}{189}{subsubsection.17.25.6}%
+\contentsline {subsubsection}{\numberline {}Corp directory}{189}{subsubsection.17.25.7}%
+\contentsline {subsubsection}{\numberline {}Model work}{189}{subsubsection.17.25.8}%
+\contentsline {subsubsection}{\numberline {}Elevator}{189}{subsubsection.17.25.9}%
+\contentsline {subsubsection}{\numberline {}Ambient notification}{189}{subsubsection.17.25.10}%
+\contentsline {section}{\numberline {}References}{190}{section.18}%

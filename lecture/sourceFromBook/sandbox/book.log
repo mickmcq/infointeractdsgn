@@ -1,0 +1,210 @@
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021)  (format=lualatex 2021.8.29)  3 SEP 2021 19:15
+ restricted system commands enabled.
+**book
+(./book.tex
+LaTeX2e <2021-06-01> patch level 1
+Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
+Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "/usr/local/texlive/2021/texmf-var/l
+uatex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2021-05-20.lua" from kpse-res
+olved path "/usr/local/texlive/2021/texmf-dist/tex/luatex/luaotfload/fontloader-
+2021-05-20.lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 3.116
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 3
+luaotfload | conf : Root cache directory is "/usr/local/texlive/2021/texmf-var/l
+uatex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
+er'.
+Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 4
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2021-08-27>
+Inserting `tracingstacklevels' at position 1 in `input_level_string'.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-testphase.sty
+Package: pdfmanagement-testphase 2021-08-28 v0.95i LaTeX PDF management testpha
+se bundle
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-testphase.ltx
+File: pdfmanagement-testphase.ltx 2021-08-28 v0.95i PDF management code (testph
+ase)
+\g__pdfmanagement_EmbeddedFiles_int=\count179
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3experimental/l3bitset/l3bitset.
+sty
+Package: l3bitset 2021-08-27 L3 Experimental bitset support
+\l__bitset_internal_int=\count180
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-08-27 L3 programming layer (loader) 
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-luatex.def
+File: l3backend-luatex.def 2021-08-04 L3 backend support: PDF output (LuaTeX)
+\l__color_backend_stack_int=\count181
+\l__pdf_internal_box=\box50
+))
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfmanagement-testphase/l3backend
+-testphase-luatex.def
+File: l3backend-testphase-luatex.def 2021-08-28 LaTeX PDF management testphase 
+bundle backend support:PDFoutput(LuaTeX)
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfmanagement-testphase/l3ref-tmp
+.sty
+Package: l3ref-tmp 2021-06-23 L3 Experimental cross-referencing
+)
+\l__pdf_backend_tmpa_box=\box51
+\l__pdf_backend_tmpb_box=\box52
+\g__pdf_backend_resourceid_int=\count182
+\g__pdf_backend_name_int=\count183
+\g__pdf_backend_page_int=\count184
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tagpdf/tagpdf.sty
+Package: tagpdf 2021-07-03 v0.91  A package to experiment with pdf tagging 
+\l__tag_tmpa_int=\count185
+\l__tag_loglevel_int=\count186
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tagpdf/tagpdf-luatex.def
+File: tagpdf-luatex.def 2021-07-03 v0.91 tagpdf driver for luatex
+luaotfload | db : Font names database loaded from /usr/local/texlive/2021/texmf-
+var/luatex-cache/generic/names/luaotfload-names.luc
+Lua module: tagpdf 2021-07-03 0.91 tagpdf lua code
+Lua-only attribute g__tag_mc_type_attr = 5
+Lua-only attribute g__tag_mc_cnt_attr = 6
+Lua-only attribute g__tag_interwordspace_attr = 7
+Lua-only attribute g__tag_interwordfont_attr = 8)
+\g__tag_para_int=\count187
+\c@g__tag_MCID_abs_int=\count188
+\g__tag_MCID_tmp_bypage_int=\count189
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/tagpdf/tagpdf-mc-code-lua.sty
+Package: tagpdf-mc-code-lua 2021-07-03 v0.91 tagpdf - mc code only for the luam
+ode 
+)
+\c@g__tag_parenttree_obj_int=\count190
+\c@g__tag_struct_abs_int=\count191
+)
+Inserting `markspaces' at position 2 in `pre_linebreak_filter'.
+Inserting `markspaces' at position 3 in `hpack_filter'.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfmanagement-testphase/pdfmanage
+ment-firstaid.sty
+Package: pdfmanagement-firstaid 2021-08-28 v0.95i LaTeX PDF management testphas
+e bundle / firstaid-patches
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pdfmanagement-testphase/output-pa
+tches-tmp-ltx.sty
+Package: output-patches-tmp-ltx 2021-08-20 v0.95 Temporary patches of output co
+mmands
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count192
+)
+Patching header in \@outputpage
+Patching footer in \@outputpage
+Patching \@makecol for tagging
+Patching \@makecol for tagging
+)
+
+Package pdfmanagement Info: loading pdfmanagement firstaid code for pgf
+
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count193
+\c@section=\count194
+\c@subsection=\count195
+\c@subsubsection=\count196
+\c@paragraph=\count197
+\c@subparagraph=\count198
+\c@figure=\count199
+\c@table=\count266
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (./macros.tex)
+(./book.aux)
+\openout1 = book.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+Inserting `tagpdf' at position 1 in `pre_shipout_filter'.
+Inserting `tagpdf' at position 2 in `pre_shipout_filter'.
+(./book.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+)
+\tf@toc=\write3
+
+\openout3 = book.toc
+ [1
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./book
+.aux))
+
+Here is how much of LuaTeX's memory you used:
+ 2303 strings out of 478152
+ 125297,460012 words of node,token memory allocated
+ 417 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 2 glyph, 5 attribute, 48 glue_spec,
+ 5 attribute_list, 1 write nodes
+   avail lists: 1:3,2:290,3:122,4:6,5:45,6:20,7:418,8:1,9:72,11:2
+ 22611 multiletter control sequences out of 65536+600000
+ 39 fonts using 4060063 bytes
+ 57i,5n,63p,1463b,125s stack positions out of 5000i,500n,10000p,200000b,80000s
+</Users/mjmics/Library/Fonts/lmroman12-regular.otf></Users/mjmics/Library/Fonts/
+lmroman12-bold.otf>
+Output written on book.pdf (1 page, 11255 bytes).
+
+PDF statistics: 40 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 86 words of extra memory for PDF output out of 10000 (max. 100000000)
+

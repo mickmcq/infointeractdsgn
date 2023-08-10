@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.1.251">
+
+  <meta name="author" content="Mick McQuaid">
+  <meta name="dcterms.date" content="2022-10-19">
+  <title>Info &amp; Interaction Design: Information</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+      }
+    pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+    div.sourceCode
+      { color: #f8f8f2;  }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #f07178; background-color: #2a0f15; font-weight: bold; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #00e0e0; } /* Attribute */
+    code span.bn { color: #d4d0ab; } /* BaseN */
+    code span.bu { color: #abe338; } /* BuiltIn */
+    code span.cf { color: #ffa07a; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffd700; } /* Constant */
+    code span.co { color: #f8f8f2; font-style: italic; } /* Comment */
+    code span.cv { color: #ffd700; } /* CommentVar */
+    code span.do { color: #f8f8f2; } /* Documentation */
+    code span.dt { color: #ffa07a; } /* DataType */
+    code span.dv { color: #d4d0ab; } /* DecVal */
+    code span.er { color: #f07178; text-decoration: underline; } /* Error */
+    code span.ex { color: #00e0e0; font-weight: bold; } /* Extension */
+    code span.fl { color: #d4d0ab; } /* Float */
+    code span.fu { color: #ffa07a; } /* Function */
+    code span.im { color: #abe338; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; font-weight: bold; } /* Keyword */
+    code span.op { color: #ffa07a; } /* Operator */
+    code span.ot { color: #00e0e0; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.re { color: #00e0e0; background-color: #f8f8f2; } /* RegionMarker */
+    code span.sc { color: #abe338; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #00e0e0; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #dcc6e0; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="style.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-captioned.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-captioned) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-captioned.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-captioned .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-captioned .callout-caption  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-captioned.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-captioned.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-caption {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-caption {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-caption {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-captioned .callout-body > .callout-content > :last-child {
+    margin-bottom: 0.5rem;
+  }
+
+  .callout.callout-captioned .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-captioned) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-caption {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-caption {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-caption {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-caption {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-caption {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-dark">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <h1 class="title">Info &amp; Interaction Design: Information</h1>
+  <p class="author">Mick McQuaid</p>
+  <p class="date">2022-10-19</p>
+</section>
+
+<section class="slide level2 center">
+
+<div class="r-fit-text">
+<p>Week NINE</p>
+</div>
+</section>
+<section>
+<section id="information" class="title-slide slide level1 center">
+<h1>Information</h1>
+
+</section>
+<section id="information-overload" class="slide level2 center">
+<h2>Information Overload</h2>
+<ul>
+<li>An old concept</li>
+<li>Passing the basketball illustrates attentional blindness</li>
+<li>London map experiment illustrates the same principle</li>
+<li>Terms like cognitive overload, change blindness are related</li>
+</ul>
+<aside class="notes">
+<p>People studied <em>information overload</em> long before the Internet made it a tired phrase. In psychology classes you may have seen videos of famous experiments such as passing the basketball. In this experiment, a person watches a group of people passing basketballs and is asked to count the number of total passes and keep them in mind. The person is told that accuracy is very important. The real purpose of the basketball passing is to overload the person with information. Meanwhile, a person wearing a gorilla costume walks through the room. After the exercise, the researchers ask the person if anything unusual happened. The person invariably replies that nothing unusual has happened. The researchers then show the person a video of the preceding few minutes, including the person in the gorilla costume. Invariably the person is shocked. The person almost <em>never</em> accepts that someone in a gorilla costume walked in front of them until they see the video evidence. This demonstrates the astounding power of information overload to shut down our perceptions of our environment.</p>
+<p>Similar experiments abound. There is, for instance, one experiment where a researcher with a map in hand walks up to someone on a crowded London sidewalk and asks for directions. While the bystander tries to think of the best route, two uniformed workmen walk between the researcher and the bystander, carrying a large heavy mirror. Concealed behind the mirror is another researcher of a different race and sex but carrying an identical map in the same folded orientation. The original researcher moves along with the two workmen who speed past so that there is only a moment when the bystander can’t see the researcher. The new researcher, of a different race and sex, tries to carry on the same line of questioning as if nothing had happened. Video of the encounters suggests that the bystander usually does not realize the change because of the information overload resulting from trying to visualize the landmark under discussion and the route information.</p>
+<p>Both these experiments and similar ones are described online under information overload or cognitive overload or related terms such as change blindness or selective attention.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="information-itself" class="slide level2 center">
+<h2>Information itself</h2>
+<ul>
+<li>Information theory (<span class="citation" data-cites="Shannon1948">Shannon (<a href="#/references" role="doc-biblioref" onclick="">1948</a>)</span>, <span class="citation" data-cites="Cover2006">Cover and Thomas (<a href="#/references" role="doc-biblioref" onclick="">2006</a>)</span>)</li>
+<li>Information architecture (<span class="citation" data-cites="Rosenfeld2015">Rosenfeld, Morville, and Arango (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span>)</li>
+<li>Information Design (<span class="citation" data-cites="Redish2014">Redish (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span>)</li>
+</ul>
+<aside class="notes">
+<p>In addition to studying the effects of information, there are many scientists studying information itself and the characteristics that define information and distinguish one kind of information from another.</p>
+<p>Following is one approach to examining information. There are others. Notable examples include Information Theory, first promulgated by <span class="citation" data-cites="Shannon1948">Shannon (<a href="#/references" role="doc-biblioref" onclick="">1948</a>)</span> and typically introduced to students via <span class="citation" data-cites="Cover2006">Cover and Thomas (<a href="#/references" role="doc-biblioref" onclick="">2006</a>)</span>. This introductory textbook describes entropy, data compression, channel capacity, rate distortion, and multi-user theory. It has applications in communicatons, statistics, complexity theory, and investment. A second example is the view popularly called Information Architecture, espoused in <span class="citation" data-cites="Rosenfeld2015">Rosenfeld, Morville, and Arango (<a href="#/references" role="doc-biblioref" onclick="">2015</a>)</span>. This view is mostly concerned with the organization of large websites. A third example is similar but is often called Information Design, and is espoused by <span class="citation" data-cites="Redish2014">Redish (<a href="#/references" role="doc-biblioref" onclick="">2014</a>)</span> and is concerned mostly with the organization of text on websites. I (Mick) have chosen a set of topics that seem relevant to HCI specialists and have little overlap with the above-mentioned texts, so I refer the diligent reader to those texts for different perspectives.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="unstructured-information" class="slide level2 center">
+<h2>Unstructured information</h2>
+<ul>
+<li>Term “unstructured” may be misleading</li>
+<li>There is structure but it follows no strict rules</li>
+<li>Examples include news articles and blog posts</li>
+<li>“Unstructured” is a matter of degree and is best understood by comparing it to semistructured and structured information</li>
+</ul>
+<aside class="notes">
+<p>The term unstructured information may be a bit misleading. It typically refers to information that is indeed structured but whose content does not follow very strict rules.</p>
+<p>For example, a news article or a blog post could be considered unstructured information. An article usually has a title but not always. It does not follow a strict rule as to whether or not it is titled or subtitled. It may or may not have pictures. It may have varying numbers of paragraphs, tables, diagrams, comments from users, links to related articles, or other features. The key is that it is completely flexible about these things and the person who presents the article does not have to think about conveying the structure of the article to a computer program, only to a human reader. Human readers are much more forgiving of lapses in structure than are computer programs.</p>
+<p>This lack of structure is really a matter of degree and is best understood by comparing it to the following terms.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="semistructured-information" class="slide level2 center">
+<h2>Semistructured information</h2>
+<ul>
+<li>Labeled information, e.g., forms filled out by people</li>
+<li>There are rules, but it’s often easy to break them</li>
+<li>Hence, human intervention is required to deal with rule breakage</li>
+</ul>
+<aside class="notes">
+<p>Semistructured information refers to labeled information such as is found in forms filled out by people. When you fill out a form, each place where you can insert information contains a label telling you what kind of information belongs there. There are some rules but it is often quite easy to break rules for completing forms.</p>
+<p>Some forms enforce rules by not allowing you to type in any information that violates the rules. A good example of this can be found in income tax forms online.</p>
+<p>Yet most online forms allow the person filling them in some flexibility and may contain instructions that can be disobeyed. For instance, you may be transgendered and asked to fill in M or F in a box marked gender. You may be able to enter a T or leave the box blank, depending on how much time and money was spent on developing the form. If you do enter something unexpected, the person or program processing the form has to decide how to handle it.</p>
+<p>It is a hallmark of semistructured information that some human intervention is required to process it because some entered information can not be anticipated.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="structured-information" class="slide level2 center">
+<h2>Structured information</h2>
+<ul>
+<li>Obeys strict rules</li>
+<li>Can be processed rapidly in large volumes</li>
+<li>Can be easily aggregated to tell, for instance, how many orange shirts size L were ordered on game days in the 2021 season</li>
+<li>Often passed from one computer program to another</li>
+<li>Uses techniques to diminish the effect of human error, such as bar code readers</li>
+<li>Usually presented as relations (tables with rows and columns) or hierarchies (trees)</li>
+</ul>
+<aside class="notes">
+<p>Structured information obeys strict rules and can be processed rapidly in large volumes and can be aggregated easily to determine, for instance, how many orange shirts in size L were ordered on game days in the 2021 season. Structured information is often passed from one computer program to another. Systems that process structured information use various techniques to diminish the effects of human error, including bar code readers, credit card readers, qr code readers, nfc readers and similar devices to obtain information. When human input is needed, it is often restricted. For instance, when a fast-food cashier takes an order, they often press a touchscreen area with a picture of the item being ordered rather than trying to type a name or a price, both of which are supplied by a computer program reading the touchscreen.</p>
+<p>Most structured information in and between large organizations is presented in one of two main ways, as relations or as hierarchies.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="relational-data" class="slide level2 center">
+<h2>Relational data</h2>
+<ul>
+<li>By far the most prevalent <em>within</em> organizations</li>
+<li>Tables of rows (entities) and columns (attributes)</li>
+<li>Tables are linked to each other</li>
+<li>Good tables are long (many rows) and thin (few columns)</li>
+</ul>
+<aside class="notes">
+<p>By far, the most prevalent form of data in large organizations today is relational data, stored in database products such as Oracle, SQL Server, MySQL, and PostreSQL.</p>
+<p>Relational data is presented in tables consisting of rows and columns. The rows refer to entities and the columns refer to attributes of the entities. An example of an entity is a customer. An example of an attribute is a zip code for that customer.</p>
+<p>A key characteristic of relational data is that the rows and columns of one table are linked to the rows and columns of many other tables. In order to speed processing of relational data, a given table should be long (many rows) and thin (few columns). So, rather than have a table that describes a customer, the information about a customer may be spread over many tables, each with only a few columns.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="hierarchical-data" class="slide level2 center">
+<h2>Hierarchical data</h2>
+<ul>
+<li>Second most common <em>within</em> organizations and most common <em>between</em> organizations</li>
+<li>Example: Fedex international waybill</li>
+</ul>
+<aside class="notes">
+<p>The second most frequent way to store enterprise data is in a hierarchical format. XML and JSON are among the most common hierchical formats in general use. To illustrate what the term <em>hierarchical</em> means, consider a waybill as an example. One international waybill used by FedEx has four main headings and some required subheadings and optional subheadings. For instance, there can be an intermediate consignee in addition to an ultimate consignee. The description of commodities to be shipped has a number of subheadings, not all of which are applicable to every kind of commodity. Hence, for each commodity there is a choice of entering number or unit in addition to quantity. Each commodity has a number, a description, a weight, and a value.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="so-an-example-hierarchy-might-look-like-this" class="slide level2 center">
+<h2>So an example hierarchy might look like this</h2>
+<p><small></small></p><small>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a> <span class="ex">Sender</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>   <span class="ex">Sender</span> Name</span>
+<span id="cb1-3"><a href="#cb1-3"></a>   <span class="ex">Sender</span> Address</span>
+<span id="cb1-4"><a href="#cb1-4"></a>   <span class="ex">Sender</span> Account Number</span>
+<span id="cb1-5"><a href="#cb1-5"></a> <span class="ex">Recipient</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>   <span class="ex">Recipient</span> Name</span>
+<span id="cb1-7"><a href="#cb1-7"></a>   <span class="ex">Recipient</span> Address</span>
+<span id="cb1-8"><a href="#cb1-8"></a> <span class="ex">Commodities</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>   <span class="ex">Commodity</span> 1</span>
+<span id="cb1-10"><a href="#cb1-10"></a>     <span class="ex">Quantity</span></span>
+<span id="cb1-11"><a href="#cb1-11"></a>     <span class="ex">Unit</span> / Number</span>
+<span id="cb1-12"><a href="#cb1-12"></a>     <span class="ex">Weight</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>     <span class="ex">Value</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>   <span class="ex">Commodity</span> 2</span>
+<span id="cb1-15"><a href="#cb1-15"></a>     <span class="ex">Quantity</span></span>
+<span id="cb1-16"><a href="#cb1-16"></a>     <span class="ex">Unit</span> / Number</span>
+<span id="cb1-17"><a href="#cb1-17"></a>     <span class="ex">Weight</span></span>
+<span id="cb1-18"><a href="#cb1-18"></a>     <span class="ex">Value</span></span>
+<span id="cb1-19"><a href="#cb1-19"></a> <span class="ex">Authorization</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</small><p><small></small></p>
+<aside class="notes">
+<p>A key characteristic of this hierarchical form is that it can present exactly the same data as in the relational form above. In other words, the above hierarchy could be converted to tables of rows and columns. Many computer programs just translate between one form and the other, depending on immediate needs.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="big-data" class="slide level2 center">
+<h2>Big data</h2>
+<ul>
+<li>Usually means data too big to be processed on a single computer, instead requiring a cluster</li>
+<li>Sometimes means VVVV, where the Vs stand for Volume, Velocity, Variety, Variability (sometimes adding an extra V for more bigness)</li>
+<li>Google’s breakthrough in big data on cheap computers became a generic term, MapReduce</li>
+</ul>
+<aside class="notes">
+<p>The term <em>big data</em> refers to collections of data that can not be processed on a single computer. The traditional tools of computing are inappropriate for <em>big data</em> because they require that the data be available for processing on a computer.</p>
+<p>A major breakthrough for everyday computing occurred when the founders of Google developed a way to process <em>big data</em> using large numbers of very inexpensive connected computers. The method they used has become the standard for working with <em>big data</em>. MapReduce was the name Google gave to its original framework and it has become a generic term, like Kleenex, to describe other examples of the framework, such as Hadoop, the most popular implementation.</p>
+<p>The way in which these very inexpensive connected computers work together is in a kind of tree structure, where one computer at the top of the tree gives orders to other computers in the tree and receives results from them.</p>
+<p>Two key characteristics of this approach are that no one computer in the tree has all the data and that no one computer is unique. These two characteristics enable scalability and fault-tolerance.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="memes" class="slide level2 center">
+<h2>Memes</h2>
+<ul>
+<li>Richard Dawkins coined the term in 1976</li>
+<li>Dawkins thought of memes as patterns that encourage proliferation</li>
+</ul>
+<aside class="notes">
+<p><span class="citation" data-cites="Dawkins1976">Dawkins (<a href="#/references" role="doc-biblioref" onclick="">1976</a>)</span> coined the word <em>meme</em> in the following paragraphs, which follow a discussion of the primordial soup and of the gene as the prevalent replicator on Earth.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="quote-from-the-selfish-gene-1976" class="slide level2 center">
+<h2>Quote from <em>The Selfish Gene</em> (1976)</h2>
+<p><em>The new soup is the soup of human culture. We need a name for the new replicator, a noun that conveys the idea of a unit of cultural transmission, or a unit of imitation. ‘Mimeme’ comes from a suitable Greek root, but I want a monosyllable that sounds a bit like ‘gene’. I hope my classicist friends will forgive me if I abbreviate mimeme to meme. If it is any consolation, it could alternatively be thought of as being related to ‘memory’, or to the French word même. It should be pronounced to rhyme with ‘cream’.</em></p>
+<aside class="notes">
+<p>Examples of memes are tunes, ideas, catch-phrases, clothes fashions, ways of making pots or of building arches. Just as genes propagate themselves in the gene pool by leaping from body to body via sperms or eggs, so memes propagate themselves in the meme pool by leaping from brain to brain via a process which, in the broad sense, can be called imitation. If a scientist hears, or reads about, a good idea, he passes it on to his colleagues and students. He mentions it in his articles and his lectures. If the idea catchs on, it can be said to propagate itself, spreading from brain to brain. As my colleague N. K. Humphrey neatly summed up an earlier draft of this chapter: ‘memes should be regarded as living structures, not just metaphorically but technically. When you plant a fertile meme in my mind you literally parasitize my brain, turning it into a vehicle for the meme’s propagation in just the way that a virus may parasitize the genetic mechanism of a host cell. And this isn’t just a way of talking—the meme for, say, “belief in life after death” is actually realized physically, millions of times over, as a structure in the nervous systems of individual men the world over.’</p>
+<p>In the years since Dawkins coined the term, it has become popular to study the concept of memes and to track memes, thanks to the Web. Our awareness of memes as a force informs our interaction design in many ways. There can be no doubt that the most successful users of the web, such as Google and Facebook, maintain a keen sensitivity to memes. As a thought exercise, examine an electronic artifact, such as a website or smartphone app, and try to identify the presence and influence of any memes upon it. As a similar thought exercise, try to identify memes in your own work.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="organizing-information" class="slide level2 center">
+<h2>Organizing information</h2>
+<p>Designers use an almost folkloric understanding of how people organize information to design information artifacts to work with rather than against people. Some of the borrowings from other disciplines studying the organization of information include the following.</p>
+</section>
+<section id="labeling" class="slide level2 center">
+<h2>Labeling</h2>
+<p>We can group information together under labels or without labels. The latter activity is usually called clustering while the former is often called categorization. If we have labels, the question arises as to where the labels come from and who gets to identify them. Famously, Melvil Dewey reserved many labels in his library classification system for items familiar to him and European men like him, but few labels for items that were familiar to the vast majority of humans.</p>
+</section>
+<section id="card-sorting" class="slide level2 center">
+<h2>Card sorting</h2>
+<p>Card sorting is a common way to elicit labels. You can give a person a set of cards with terms written on them and ask the person to sort the cards into piles of similar terms. Then ask them to name the piles. This is typically called an open card sort, described by <span class="citation" data-cites="Spencer2009">Spencer (<a href="#/references" role="doc-biblioref" onclick="">2009</a>)</span>. An alternative might be to provide a set of category cards in addition to the content cards and ask a person to place the content cards adjacent to the appropriate category card. This exemplifies a closed card sort, described by <span class="citation" data-cites="Spencer2009">Spencer (<a href="#/references" role="doc-biblioref" onclick="">2009</a>)</span>. There are many variations of card sorts and an extensive literature on using them to label concepts.</p>
+</section>
+<section id="interrater-reliability" class="slide level2 center">
+<h2>Interrater reliability</h2>
+<p>After you conduct a card sort, how do you evaluate your results? If you’ve recorded several people sorting the same cards, you can measure interrater reliability, using Cohen’s <span class="math inline">\(\kappa\)</span> (pronounced Kappa).</p>
+</section>
+<section id="wikipedia-definition-of-cohens-kappa" class="slide level2 center">
+<h2>Wikipedia definition of Cohen’s <span class="math inline">\(\kappa\)</span></h2>
+<p><span class="math display">\[\kappa \equiv \frac{p_o-p_e}{1-p_e} = 1 - \frac{1-p_o}{1-p_e}\]</span></p>
+<p>where <span class="math inline">\(p_o\)</span> is the proportion of observed agreement between raters (same as accuracy, defined as the number of agreed items divided by the total number of items), and</p>
+<p><span class="math display">\[p_e= \frac{1}{N^2}\sum_k n_{k1}n_{k2}\]</span></p>
+<p>for <span class="math inline">\(k\)</span> categories and <span class="math inline">\(N\)</span> items and the number of times rater <span class="math inline">\(i\)</span> predicted category <span class="math inline">\(k\)</span>: <span class="math inline">\(n_{ki}\)</span>.</p>
+</section>
+<section id="more-on-cohens-kappa" class="slide level2 center">
+<h2>More on Cohen’s <span class="math inline">\(\kappa\)</span></h2>
+<p>Cohen’s original 1960 article also defines <span class="math inline">\(\kappa\)</span> in terms of frequencies of observed agreement, <span class="math inline">\(f_o\)</span>, and agreement expected by chance, <span class="math inline">\(f_c\)</span>:</p>
+<p><span class="math display">\[\kappa = \frac{f_o-f_c}{N-f_c}\]</span></p>
+<p>Why should you use this measure of interrater reliability? The problem is that people will agree to some extent by chance. You should try to account for chance agreement in a measure of agreement.</p>
+</section>
+<section id="synthetic-example-in-r" class="slide level2 center">
+<h2>synthetic example in R</h2>
+<p>Suppose you have two raters and twenty items. Each item can be rated as 0 or 1. You can simulate this easily with random binomial draws as follows.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>theta <span class="ot">&lt;-</span> <span class="fl">0.5</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>N <span class="ot">&lt;-</span> <span class="dv">20</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>rater1 <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="at">n =</span> N, <span class="at">size =</span> <span class="dv">1</span>, <span class="at">prob =</span> theta)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>rater2 <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(<span class="at">n =</span> N, <span class="at">size =</span> <span class="dv">1</span>, <span class="at">prob =</span> theta)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>twentyitems <span class="ot">&lt;-</span> <span class="fu">cbind</span>(rater1, rater2)</span>
+<span id="cb2-6"><a href="#cb2-6"></a>twentyitems</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>The output of <code>twentyitems</code> is as follows in one example run. Each run will differ because of the random number generation.</p>
+</section>
+<section id="sample-run" class="slide level2 center">
+<h2>Sample run</h2>
+<p><small></small></p><small>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>      rater1 rater2</span>
+<span id="cb3-2"><a href="#cb3-2"></a> [<span class="dv">1</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a> [<span class="dv">2</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a> [<span class="dv">3</span>,]      <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a> [<span class="dv">4</span>,]      <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a> [<span class="dv">5</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a> [<span class="dv">6</span>,]      <span class="dv">1</span>      <span class="dv">1</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a> [<span class="dv">7</span>,]      <span class="dv">1</span>      <span class="dv">1</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a> [<span class="dv">8</span>,]      <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a> [<span class="dv">9</span>,]      <span class="dv">0</span>      <span class="dv">1</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>[<span class="dv">10</span>,]      <span class="dv">0</span>      <span class="dv">1</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a>[<span class="dv">11</span>,]      <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>[<span class="dv">12</span>,]      <span class="dv">1</span>      <span class="dv">1</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>[<span class="dv">13</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>[<span class="dv">14</span>,]      <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>[<span class="dv">15</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>[<span class="dv">16</span>,]      <span class="dv">0</span>      <span class="dv">1</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a>[<span class="dv">17</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>[<span class="dv">18</span>,]      <span class="dv">1</span>      <span class="dv">0</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>[<span class="dv">19</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>[<span class="dv">20</span>,]      <span class="dv">0</span>      <span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</small><p><small></small></p>
+<aside class="notes">
+<p>You can see that there is plenty of agreement and plenty of disagreement between the two raters from the above table. Now load the <code>irr</code> package to first see how much the two raters agreed.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="using-the-irr-package" class="slide level2 center">
+<h2>Using the irr package</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(irr)) {</span>
+<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">install.packages</span>(<span class="st">"irr"</span>)</span>
+<span id="cb4-3"><a href="#cb4-3"></a>  <span class="fu">library</span>(irr)</span>
+<span id="cb4-4"><a href="#cb4-4"></a>}</span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="fu">agree</span>(twentyitems,<span class="at">tolerance=</span><span class="dv">0</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output" class="slide level2 center">
+<h2>Output</h2>
+<p>The output of <code>agree()</code> is as follows.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a> Percentage <span class="fu">agreement</span> (<span class="at">Tolerance=</span><span class="dv">0</span>)</span>
+<span id="cb5-2"><a href="#cb5-2"></a></span>
+<span id="cb5-3"><a href="#cb5-3"></a> Subjects <span class="ot">=</span> <span class="dv">20</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>   Raters <span class="ot">=</span> <span class="dv">2</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>  %<span class="sc">-</span>agree <span class="ot">=</span> <span class="dv">55</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="tolerance" class="slide level2 center">
+<h2>Tolerance</h2>
+<p>The <code>tolerance=0</code> parameter says that you don’t allow similar scores to be interpreted as the same. For example, suppose instead of 0 or 1, the raters could choose any integer from 0 to 100. You might want the difference between 50 and 52 to be interpreted differently than the difference between 10 and 90. You might even say that they agree if their scores are 50 and 52. The <code>tolerance</code> parameter allows you to tune for this.</p>
+</section>
+<section id="calculating-kappa" class="slide level2 center">
+<h2>Calculating <span class="math inline">\(\kappa\)</span></h2>
+<p>Now calculate Cohen’s <span class="math inline">\(\kappa\)</span> to adjust for the possibility of chance agreement.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">kappa2</span>(twentyitems)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><small></small></p><small>
+<pre><code> Cohen's Kappa for 2 Raters (Weights: unweighted)
+
+ Subjects = 20
+   Raters = 2
+    Kappa = 0.0625
+
+        z = 0.294
+  p-value = 0.769</code></pre>
+</small><p><small></small></p>
+<aside class="notes">
+<p>The score should be smaller than the percent agreement although your results should differ from mine because we’re both using random number generators. When I last ran it, <span class="math inline">\(\kappa\)</span> was negative. Different books recommend different cutoffs for an acceptable <span class="math inline">\(\kappa\)</span> value for action. I was taught 0.7. The appropriate procedure if you have a lower <span class="math inline">\(\kappa\)</span> is to discuss your views and re-rate independently. In other words, you discuss your views without looking at specific items then re-rate without looking at each other’s items.</p>
+<p>You may be able to guess that the hardest part of this process is coding the table of ratings. You need numbers and those numbers can be 0 or 1 to signify yes or no or a series of coding numbers to signify different bins.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="open-coding-and-closed-coding" class="slide level2 center">
+<h2>Open coding and closed coding</h2>
+<ul>
+<li>Difference is whether researcher supplies the labels or participants do</li>
+<li>Open coding involves an extra step to account for synonyms</li>
+</ul>
+<aside class="notes">
+<p>It is harder to conduct this procedure for open coding than for closed coding. As a reminder, in closed coding you supply the labels and the participant associates each item with one of the labels. In open coding, the participant creates labels after sorting the items into different groups. You have to decide whether to accept synonymous labels or to have some additional disagreement based on different labeling schemes.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="example-of-closed-card-sort" class="slide level2 center">
+<h2>Example of closed card sort</h2>
+<p>Now suppose you have five piles of cards in a closed card sort. I can simulate this with random numbers uniformly distributed from 1 to 5.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>N <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a>rater1 <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(<span class="at">n =</span> N, <span class="at">min =</span> <span class="dv">1</span>, <span class="at">max =</span> <span class="dv">5</span>))</span>
+<span id="cb8-3"><a href="#cb8-3"></a>rater2 <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(<span class="at">n =</span> N, <span class="at">min =</span> <span class="dv">1</span>, <span class="at">max =</span> <span class="dv">5</span>))</span>
+<span id="cb8-4"><a href="#cb8-4"></a>rater3 <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(<span class="at">n =</span> N, <span class="at">min =</span> <span class="dv">1</span>, <span class="at">max =</span> <span class="dv">5</span>))</span>
+<span id="cb8-5"><a href="#cb8-5"></a>rater4 <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">runif</span>(<span class="at">n =</span> N, <span class="at">min =</span> <span class="dv">1</span>, <span class="at">max =</span> <span class="dv">5</span>))</span>
+<span id="cb8-6"><a href="#cb8-6"></a>fiveitems <span class="ot">&lt;-</span> <span class="fu">cbind</span>(rater1, rater2, rater3, rater4)</span>
+<span id="cb8-7"><a href="#cb8-7"></a>fiveitems </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output-1" class="slide level2 center">
+<h2>Output</h2>
+<p>The output of <code>fiveitems</code> is as follows. Note that your results will differ with the same code because of random number generation.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>     rater1 rater2 rater3 rater4</span>
+<span id="cb9-2"><a href="#cb9-2"></a>[<span class="dv">1</span>,]      <span class="dv">2</span>      <span class="dv">5</span>      <span class="dv">1</span>      <span class="dv">2</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>[<span class="dv">2</span>,]      <span class="dv">4</span>      <span class="dv">2</span>      <span class="dv">3</span>      <span class="dv">5</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>[<span class="dv">3</span>,]      <span class="dv">3</span>      <span class="dv">4</span>      <span class="dv">3</span>      <span class="dv">4</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>[<span class="dv">4</span>,]      <span class="dv">4</span>      <span class="dv">2</span>      <span class="dv">3</span>      <span class="dv">4</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a>[<span class="dv">5</span>,]      <span class="dv">3</span>      <span class="dv">4</span>      <span class="dv">1</span>      <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="kappa-with-more-than-two-raters" class="slide level2 center">
+<h2><span class="math inline">\(\kappa\)</span> with more than two raters</h2>
+<p>You can’t use the exact same function as with two raters but there are a couple of other <span class="math inline">\(\kappa\)</span> functions for multiple raters.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">library</span>(irr)</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">agree</span>(fiveitems)</span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="fu">kappam.fleiss</span>(fiveitems)</span>
+<span id="cb10-4"><a href="#cb10-4"></a><span class="fu">kappam.light</span>(fiveitems)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output-2" class="slide level2 center">
+<h2>Output</h2>
+<p><small> The output for <code class="sourceCode r"><span class="fu">agree</span>(fiveitems)</code> is</small></p><small>
+<pre><code> Percentage agreement (Tolerance=0)
+
+ Subjects = 5
+   Raters = 4
+  %-agree = 0</code></pre>
+<p>The output for <code>kappam.fleiss(fiveitems)</code> is</p>
+<pre><code> Fleiss' Kappa for m Raters
+
+ Subjects = 5
+   Raters = 4
+    Kappa = -0.0965
+
+        z = -0.975
+  p-value = 0.329</code></pre>
+<p>The output for <code>kappam.light(fiveitems)</code> is</p>
+<pre><code> Light's Kappa for m Raters
+
+ Subjects = 5
+   Raters = 4
+    Kappa = -0.0286
+
+        z = NaN
+  p-value = NaN
+Warning message:
+In sqrt(varkappa) : NaNs produced</code></pre>
+</small><p><small></small></p>
+</section>
+<section id="comments-on-output" class="slide level2 center">
+<h2>Comments on output</h2>
+<p>When I run these, they give slightly different results. I’m not sure how much that matters but my guess is not much. You should report which function you used. One nice thing about Fleiss’s <span class="math inline">\(\kappa\)</span> is that it allows missing values. That is to say that, if you have some piles that differ from others, you could leave part of a row blank if only some raters have a score for it.</p>
+<p>Light’s <span class="math inline">\(\kappa\)</span> is briefly described in <span class="citation" data-cites="Hallgren2012">Hallgren (<a href="#/references" role="doc-biblioref" onclick="">2012</a>)</span>. That tutorial gives R code for several versions of <span class="math inline">\(\kappa\)</span>, including Cohen’s weighted <span class="math inline">\(\kappa\)</span>, described above as <code>kappa2()</code>, and both Fleiss’s and Light’s <span class="math inline">\(\kappa\)</span>.</p>
+</section>
+<section id="grouping-information-items" class="slide level2 center">
+<h2>Grouping information items</h2>
+<ul>
+<li>Classical approach uses similar attributes</li>
+<li>Prototype approach uses comparison to a specific thing</li>
+</ul>
+<aside class="notes">
+<p>When we group information together, we typically have a purpose. For example, some people studying animals have proposed labeling the classification of animals according to a food chain and features of animals such as their teeth and jaws that predispose them to eating similar things. On the other hand, cooks group animals in an entirely different way.</p>
+<p>Psychologists who study grouping used to believe in the notion that people group things together by a process that can be approximated by counting similar attributes shared by different things.</p>
+<p>More recently, psychologists led by Eleanor Rosch have claimed that people hold mental images of what they call prototypes of groups. Here the word prototype is NOT related to the sense in which we use it in this class. The prototype for grouping is a thing that best represents the group. For example, an early experiment found that, for North Americans, the robin is the prototype for birds. Rather than evaluating attributes of other things, the mental process to group things together as birds is to compare them to the mental picture of the robin.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="flat-and-hierarchical-grouping" class="slide level2 center">
+<h2>Flat and hierarchical grouping</h2>
+<ul>
+<li>Piling vs Filing again!</li>
+<li>Hierarchies require each thing to be in one location</li>
+<li>Tagging allows each thing to be in multiple locations</li>
+</ul>
+<aside class="notes">
+<p>We have already considered the problem of hierarchical groupings when we said that a file could only be placed in one location but that a file could have many tags. This same idea occurs in grouping of information except that one approach allows the item of information to be replicated in as many clusters as are appropriate. This concept of flat clustering is identical to tagging in practice. Hierarchical clustering requires that no piece of information be copied so that every clustered item is unique.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="automatic-and-supervised-grouping" class="slide level2 center">
+<h2>Automatic and supervised grouping</h2>
+<ul>
+<li>Labels require an authority to say which things belong to which label</li>
+<li>Authority is usually a person or group of people</li>
+<li>Grouping without labels can be done by a machine</li>
+<li>Training and testing sets are employed by machines as a form of supervision</li>
+</ul>
+<aside class="notes">
+<p>If we accept labels, we need some authority to define which things belong with which labels. That authority is usually some kind of person or group of people. If we do not require labels, on the other hand, a machine may automatically group things together without human supervision.</p>
+<p>Supervision in this case may be very limited. For example, a person can identify the meaning of <em>red</em> quite easily so that a machine can be trained to retrieve images with large patches of red. You can probably imagine a spectrum of supervision from easy and broad on the one hand to difficult and specialized on the other hand. At the opposite end of the spectrum from <em>red</em> might be a hard concept like <em>evidence</em>. It is much harder to tell a machine what constitutes <em>evidence</em> than to tell a machine what constitutes <em>red</em>.</p>
+<p>A common approach to helping a machine to group things together is to provide a training set and a testing set, a set of things that have been grouped to train the machine and a set of unlabeled things to evaluate the outcome of the machine’s training.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="human-computation" class="slide level2 center">
+<h2>Human computation</h2>
+<ul>
+<li>Relatively new field in computer science</li>
+<li>Asks people to do what machines can’t</li>
+<li>Gameifies tasks, such as identifying craters on the moon</li>
+<li>Origin of captchas</li>
+</ul>
+<aside class="notes">
+<p>Historically it has been difficult to obtain judgments of humans to label enough things to help computers. Recently, under the banner of human computation, scientists have developed ways to turn small tasks that are difficult for computers into games that are fun to play. An example would be to recognize birds species in pictures. By carefully arranging for different people to try to label the same picture, it is possible to obtain useful labels. Pornographers also use the results of this research to defeat captchas, which are themselves outgrowths of this research. Visitors to pornographic sites or other sites with illicit content, are asked to solve captchas to obtain admittance. These captchas are ones that the host site’s robots encountered while trying to harvest content from competitors or other gated communities.</p>
+<p>While human computation was hailed as the solution to spam ten years ago, it has turned out to have some value and some unexpected consequences.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="networked-information" class="slide level2 center">
+<h2>Networked information</h2>
+<ul>
+<li>Network may mean connections between computers</li>
+<li>Network may be used in the sense of network science, which studies all networked phenomena, such as social networks</li>
+</ul>
+<aside class="notes">
+<p>The term <em>network</em> is used in two main ways in the computing world. Both of these senses are critical for an understanding of the flow of information but they are very very different.</p>
+<p>The first, and oldest, sense of the word is to describe the physical connections between computers. This includes the hardware and software that allows one computer to communicate with another computer and with larger groups of computers including the largest group of computers, the internet.</p>
+<p>The second sense in which the word <em>network</em> is used comes from the emerging discipline of network science. This field of study has only been named in the past twenty-five years but draws on ideas dating back much further. It is relevant to us because it explains the behavior of all kinds of networks, including computer networks. Recent advances in network science have identified phenomena like <em>the long tail</em> and growth and decline of online communities such as Facebook and Myspace.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="supply-chain-information" class="slide level2 center">
+<h2>Supply chain information</h2>
+<ul>
+<li>Information flows between productive enterprises</li>
+<li>Usually have a channel captain who dictates information format</li>
+<li>Typically use XML</li>
+<li>XML can be read by humans but is inefficient for internal processing</li>
+</ul>
+<aside class="notes">
+<p>Supply chains typically have a channel captain, such as Walmart in the retail world or General Motors in the US automotive world. These channel captains can dictate the flow of information through the supply chain. They typically use formal documents structured as XML or some conceptually similar format to communicate with other members of the supply chain, even though internally they are much more likely to use relational databases to organize information.</p>
+<p>XML stands for eXtensible Markup Language and it belongs to the same family as HTML and SGML, as well as other such markup languages. XML is easy to transport between organizations but inefficient for detailed processing. Humans can look at XML documents and figure out what they mean or are supposed to mean. XML documents can even contain definitions of themselves within the document to help an unfamiliar reader figure them out.</p>
+<p>When I say that XML is inefficient for detailed processing, I am contrasting it with enterprise databases. These require painstaking development and rules for entering data but allow an enterprise to say, update its inventory on a website in real time. An external partner can not afford the expense of writing directly to an enterprise database with its draconian requirements. Moreover, I do not want to let my external partners write directly to my enterprise database. The speed with which I can process a transaction depends on my ability to control glitches in the enterprise database.</p>
+<p>Hopefully you can see that these two fundamentally different ways of organizing information can achieve different but complementary goals: exchanging information with external partners and using information internally.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="connecting-concepts" class="title-slide slide level1 center">
+<h1>Connecting Concepts</h1>
+<p>The following concepts: card sort, monitoring navigation, monitoring social networks, and flexibility of information representation, all come together to give us tools to build information containers. Let us briefly review them.</p>
+</section>
+<section id="understanding-labels" class="slide level2 center">
+<h2>Understanding labels</h2>
+<p>We discussed card sort as a means of understanding the labels people use to describe things of interest. We considered the issue of cognitive dissonance in the labeling of information containers and card sorting as a means to overcome it. We can connect the concepts of information hiding and labeling to see how labeling helps to limit information overload.</p>
+</section>
+<section id="learning-navigational-behavior" class="slide level2 center">
+<h2>Learning navigational behavior</h2>
+<ul>
+<li>Google learns from user navigational behavior</li>
+<li>Search behavior is bartered by information brokers</li>
+<li>LSOs (locally stored objects) are often used instead of cookies, as are tracking pixels</li>
+<li>A-B testing is the most common tool for understanding navigational behavior</li>
+</ul>
+<aside class="notes">
+<p>We have discussed the overwhelming influence of Google and its skill in rapidly changing information artifacts by learning the navigational behavior of its users. We have discussed the sharing of consumer information by commercial interests on the web through information brokers. We have discussed the local storage of tracking information on individual devices and some ways, such as LSOs (locally stored objects) used by commercial interests to thwart privacy preservation. We discussed the fact that many large websites, as well as many local network storage appliances, are better served by Google search than by any designed navigational aids. We considered the implications of that situation for expending effort to design navigational aids.</p>
+<p>One thing I may have neglected to mention is A-B testing, a common practice where commercial websites compare the conversion rates of two features by randomly assigning visitors to one (A) or the other (B). This is a common way to choose design features. The conversion rate is the rate at which visits to a commercial site are converted to successful commercial transactions.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="social-network-influence-on-navigation" class="slide level2 center">
+<h2>Social network influence on navigation</h2>
+<p>All commercial interests have recognized the significance of social networks and have devised ways to exploit social networks to influence navigation. Many navigational features in common use today are the result of specialists in a new field called network science drawing together research in many fields to understand human behavior and influence in networks. They use terms like betweenness centrality and network closeness. Major figures in the field include M.E.J. Newman, Stanley Wasserman, Albert-László Barabási, Duncan Watts, and Lada Adamic.</p>
+</section>
+<section id="information-structure" class="slide level2 center">
+<h2>Information structure</h2>
+<p>We have extensively discussed how and whether information is structured, using as a principle the degree to which human intervention is required to process information. We have discussed hierarchical and relational ways of organizing and storing information.</p>
+</section>
+<section id="flexibility-of-representation" class="slide level2 center">
+<h2>Flexibility of representation</h2>
+<p>We have touched on the notion that information structures are more or less amenable to change. Brittle structures may be symptomatic of technical shortcomings or may be symptoms of authoritarian governance. We discussed whether the speed with which we can modify an information artifact matters in a given context. We saw that we may put together an information artifact with little planning if we expect to take advantage of user behavior to improve it but that, if we can can not or will not change an information artifact after publishing it, we can not realize the value of understanding navigational behavior.</p>
+</section></section>
+<section>
+<section id="information-design-patterns" class="title-slide slide level1 center">
+<h1>Information Design Patterns</h1>
+<p>We discussed several elements that information architecture authors have referred to as information design patterns. To determine whether these elements deserve the label of <em>design pattern</em>, we must examine the coinage and past use of the term.</p>
+</section>
+<section id="design-pattern-definitions" class="slide level2 center">
+<h2>Design Pattern Definitions</h2>
+<p>The term <em>design pattern</em> is popularly used in many ways. Popular usage leads to an abbreviation of the original usage that may lose some of the original essence. Following are a few popular borderline uses of the term that barely work.</p>
+<ul>
+<li>A general reusable solution to a commonly occurring problem within a given context</li>
+<li>A description (or template) for how to solve a problem, it can be used in many different situations</li>
+<li>An enumeration of the consequences of the use of the pattern in a given context</li>
+<li>Patterns are formalized best practices</li>
+</ul>
+</section>
+<section id="design-patterns-were-first-observed" class="slide level2 center">
+<h2>Design patterns were first observed</h2>
+<p>Design patterns originated as a architectural concept by <span class="citation" data-cites="Alexander1977">Alexander (<a href="#/references" role="doc-biblioref" onclick="">1977</a>)</span>. Alexander examined architecture from the standpoint of its value to a community of people in daily life. Alexander’s ideas were largely ignored or rejected by architects but soon gained a cult following among computer scientists. Eventually his books became so popular outside architecture that they began to influence architecture.</p>
+</section>
+<section id="a-pattern-language" class="slide level2 center">
+<h2>A Pattern Language</h2>
+<p>Alexander describes it as a structured method of describing good design practices within a field of expertise. <a href="http://www.youtube.com/watch?v=ad5XAPgKJoM">Interview</a> The term was coined by Christopher Alexander and popularized by his book <em>A Pattern Language</em>. This book was followed by another book intended to explain the first book. Alexander has continued to try to explain the concept to this day.</p>
+</section>
+<section id="components-of-a-pattern-language" class="slide level2 center">
+<h2>Components of a Pattern Language</h2>
+<p>The Syntax describes where the solution fits into the larger design. The Grammar describes how the solution solves the problem. For example, “Balconies and porches which are less than 6 feet deep are hardly ever used.”</p>
+</section>
+<section id="an-example-of-a-pattern-is-a-place-to-wait" class="slide level2 center">
+<h2>An example of a pattern is a place to wait</h2>
+<p>The problem is that the process of waiting has inherent conflicts in it. The solution: In places where people end up waiting (for a bus, for an appointment, for a plane), create a situation which makes the waiting positive.</p>
+</section>
+<section id="an-example-of-a-pattern-is-a-useful-cooking-layout" class="slide level2 center">
+<h2>An example of a pattern is a useful cooking layout</h2>
+<p>The problem is that cooking is uncomfortable if the kitchen counter is too short and also if it is too long. Solution: To strike the balance between the kitchen which is too small, and the kitchen which is too spread out, place the stove, sink, and food storage and counter in such a way that:</p>
+<ol type="1">
+<li>No two of the four are more than 10 feet apart.</li>
+<li>The total length of the counter—excluding sink, stove, and refrigerator—is at least 12 feet.</li>
+<li>No one section of the counter is less than 4 feet long.</li>
+</ol>
+</section>
+<section id="computer-scientists-popularized-design-patterns" class="slide level2 center">
+<h2>Computer scientists popularized design patterns</h2>
+<p>The Gang of Four (commonly abbreviated GoF) were among computer scientists seeking a basis to make code less arcane, more scientific and, above all, reusable.</p>
+<p>One aspect of Alexander’s description was so general that it seemed applicable to any field in which design plays a role. This key aspect was the notion of a <em>quality that could not be named</em> but that could be understood through experience—the quality shared by successful designs. Specific and non-obvious combinations of characteristics could support this quality.</p>
+</section>
+<section id="gang-of-four-book" class="slide level2 center">
+<h2>Gang of Four book</h2>
+<p><span class="citation" data-cites="Gamma1994">Gamma et al. (<a href="#/references" role="doc-biblioref" onclick="">1994</a>)</span> exploded on the software scene and propelled Alexander to greater fame at the same time as solidifying Object Orientation’s place in mainstream software development.</p>
+<p>The GoF argue that great writers use patterns, e.g., all of Shakespeare’s plays were based on earlier, less successful plays or stories. The GoF refer to <em>tragically flawed hero</em> or <em>boy-meets-girl, boy-loses-girl</em> as patterns with infinite variety The GoF book serves two purposes, to tell what patterns are and to catalog 23 well-known patterns.</p>
+</section>
+<section id="gang-of-four-pattern-definition" class="slide level2 center">
+<h2>Gang of Four pattern definition</h2>
+<p>A design pattern is a description of communicating objects and classes customized to solve a general design problem in a particular context. (from the introduction to <em>Design Patterns</em>, 1994)</p>
+</section>
+<section id="a-pattern-has-four-things" class="slide level2 center">
+<h2>A pattern has four things</h2>
+<ol type="1">
+<li>Pattern name</li>
+<li>Problem</li>
+<li>Solution</li>
+<li>Consequences</li>
+</ol>
+</section>
+<section id="a-pattern-name-is-a-tool" class="slide level2 center">
+<h2>A pattern name is a tool</h2>
+<p>The pattern name must be good enough to become part of the design vocabulary. The pattern must be useful in conversation, documentation, and thinking. The GoF spent a lot of its time on the names of the 23 patterns in the catalog.</p>
+</section>
+<section id="a-problem-may-be-of-several-kinds" class="slide level2 center">
+<h2>A problem may be of several kinds</h2>
+<p>The first kind includes basic design problems such as algorithm design. Another kind includes commonly occurring classes or object structures known to be problematic. A third kind includes lists of conditions that, if they occur together, create a generic problem.</p>
+</section>
+<section id="a-solution-is-a-description-of-objects-and-classes" class="slide level2 center">
+<h2>A solution is a description of objects and classes</h2>
+<p>It is not a solution in a packaged sense. A solution is abstract, not implementation specific. A solution is a description of the elements of the solution (objects and classes). The description must identify</p>
+<ul>
+<li>Relationships between elements</li>
+<li>Responsibilities of elements</li>
+<li>Collaborations between elements</li>
+</ul>
+</section>
+<section id="a-consequence-is-a-result-or-trade-off" class="slide level2 center">
+<h2>A consequence is a result or trade-off</h2>
+<p>The application of a pattern may resolve conflicts of various kinds, most often conflicts of space and time. To contemplate the use of a design pattern is to evaluate the design decision with awareness of the consequences. Consequences may have implementation issues, unlike the solution. If you feel tempted to talk about implementation, do so under the consequences banner instead of under the solution banner. Keep the solution a description, not an evaluation of itself.</p>
+</section>
+<section id="design-patterns-in-information-architecture" class="slide level2 center">
+<h2>Design patterns in information architecture</h2>
+<ul>
+<li>Not (in my view) real design patterns</li>
+<li>They are anything commonly used on the web, such as “tabbed menus”, “hierarchies”, or “hub-and-spoke” structures</li>
+<li>They would need elements from Alexander’s original concept to elevate them to the level of design patterns</li>
+</ul>
+<aside class="notes">
+<p>Information architects like Donna Spencer and the Information Architecture Institute use the term <em>design pattern</em> to refer to any observed pattern seen in numerous successful information containers, such as “tabbed menus”, “hierarchies”, and “hub-and-spoke”. These are potentially useful structural elements. They simply don’t rise to the level of design patterns in that they represent casual intuitive observation and nothing more. Alexander and the GoF spent years as master practitioners analyzing observed patterns and cataloging details, separating minutiae from valuable clues. I urge you to build on casual, intuitive observations and to do more. As you practice design, you may attain insights enabling you to develop genuine design patterns. But it will not be as easy as casual intuitive observation.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="magic-fairy-dust" class="slide level2 center">
+<h2>Magic fairy dust</h2>
+<p>A pioneer of HCI, Gary Olson, once told me that his main interdisciplinary frustration was that practitioners in other fields often wanted him to sprinkle magic fairy dust on their products. As HCI practitioners, you must avoid the complementary trap: don’t mistake the work of Alexander and the GoF as magic fairy dust that can be sprinkled on your information architecture.</p>
+</section>
+<section id="what-would-a-real-design-pattern-look-like" class="slide level2 center">
+<h2>What would a real design pattern look like?</h2>
+<ul>
+<li>Nick Belkin (personal communication) gave the example of the Warburg Institute</li>
+<li>It contains a discovery system organized around the activities of scholars interested in the Renaissance</li>
+<li>It permits serendipitous discoveries by placing items close together if they are likely to be used together</li>
+<li>It’s a few blocks from the world’s largest library, yet scholars use it</li>
+</ul>
+<aside class="notes">
+<p>Abby Warburg, scion of the Warburg banking family of Hamburg, was not interested in banking but in classical antiquity as rediscovered in the Renaissance. His father gave him a blank check for books on the subject, which is the genesis of the Warburg Institute. It is known primarily for its unique organization system that permits discovery of new things by the kinds of scholars interested in its subject. The British Museum houses vastly more material only a few blocks away, but scholars still flock to the Warburg Institute to engage in a <em>journey of discovery</em>.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="alexanders-point-applied-to-digital-artifacts" class="slide level2 center">
+<h2>Alexander’s point applied to digital artifacts</h2>
+<ul>
+<li>There is this quality that cannot be named that characterizes what communities find useful and enduring</li>
+<li>Our job as designers is to find the context of use by the community and organize according to it</li>
+<li>What is enduring on the web or in apps? Why? (Much is forced by monopolies, but some is driven by community)</li>
+</ul>
+</section></section>
+<section>
+<section id="references" class="title-slide slide level1 smaller scrollable">
+<h1>References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-Alexander1977" class="csl-entry" role="doc-biblioentry">
+Alexander, Christopher. 1977. <em>A Pattern Language: Towns, Buildings, Construction</em>. New York, NY: Oxford University Press.
+</div>
+<div id="ref-Cover2006" class="csl-entry" role="doc-biblioentry">
+Cover, Thomas M, and Joy A Thomas. 2006. <em>Elements of Information Theory</em>. Hoboken, NJ: John Wiley &amp; Sons.
+</div>
+<div id="ref-Dawkins1976" class="csl-entry" role="doc-biblioentry">
+Dawkins, Richard. 1976. <em>The Selfish Gene</em>. New York, NY: Oxford University Press.
+</div>
+<div id="ref-Gamma1994" class="csl-entry" role="doc-biblioentry">
+Gamma, Erich, Richard Helm, Ralph Johnson, and John Vlissides. 1994. <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>. Upper Saddle River, NJ: Addison-Wesley Professional.
+</div>
+<div id="ref-Hallgren2012" class="csl-entry" role="doc-biblioentry">
+Hallgren, Kevin A. 2012. <span>“Computing Inter-Rater Reliability for Observational Data: An Overview and Tutorial.”</span> <em>Tutor Quant Methods Psychol</em> 8 (1): 23–34.
+</div>
+<div id="ref-Redish2014" class="csl-entry" role="doc-biblioentry">
+Redish, Janice. 2014. <em>Letting Go of the Words: Writing Web Content That Works</em>. 2nd ed. Waltham, MA: Morgan Kaufman.
+</div>
+<div id="ref-Rosenfeld2015" class="csl-entry" role="doc-biblioentry">
+Rosenfeld, Louis, Peter Morville, and Jorge Arango. 2015. <em>Information Architecture: For the Web and Beyond</em>. 4th ed. Sebastopol, CA: O’Reilly Media.
+</div>
+<div id="ref-Shannon1948" class="csl-entry" role="doc-biblioentry">
+Shannon, Claude E. 1948. <span>“A Mathematical Theory of Communication.”</span> <em>Bell System Technical Journal</em> 27 (3): 379–423.
+</div>
+<div id="ref-Spencer2009" class="csl-entry" role="doc-biblioentry">
+Spencer, Donna. 2009. <em>Card Sorting: Designing Usable Categories</em>. Brooklyn, NY: Rosenfeld Media.
+</div>
+</div>
+</section>
+<section class="slide level2 center">
+
+<div class="r-fit-text">
+<p>END</p>
+</div>
+</section></section>
+<section id="colophon" class="title-slide slide level1 center">
+<h1>Colophon</h1>
+<p>This slideshow was produced using <code>quarto</code></p>
+<p>Fonts are <em>League Gothic</em> and <em>Lato</em></p>
+
+<img src="iSchoolLogo.png" class="slide-logo r-stretch"><div class="footer footer-default">
+
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'smaller': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        target: function(trigger) {
+          return trigger.previousElementSibling;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        setTimeout(function() {
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn) {
+        const config = {
+          allowHTML: true,
+          content: contentFn,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'quarto-reveal',
+          placement: 'bottom-start'
+        };
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+        tippyHover(ref, function() {
+          var popup = window.document.createElement('div');
+          cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    });
+    </script>
+    
+
+</body></html>

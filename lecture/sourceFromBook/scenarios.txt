@@ -1,0 +1,35 @@
+
+### Scenarios
+
+You can use @Cooper2014,
+chapter 4 to complete the scenario portion of this milestone.
+
+Expect your scenarios to differ from those produced by other teams.
+Most teams will provide context scenarios and will use
+them to address questions such as the following.
+(1) What is the setting in which the product will be
+used?
+(2) Will it be used for extended periods of time?
+(3) Will the persona be subject to frequent
+interruption?
+(4) Are there multiple users of a single device?
+(5) What other products is it used with?
+(6) How much complexity is permissible, based on
+persona skill and frequency of use?
+(7) What primary activities does the persona need to
+accomplish to meet his / her goals?
+(8) How does the product relate to the user's higher
+goals?
+(9) What is the expected result of using the product?
+
+Not every team will address all these questions, nor
+will every team use context scenarios.  Most teams will
+create scenarios of users successfully reaching goals,
+rather than scenarios showing dysfunctional outcomes.
+It's often the case that the most we can say about
+dysfunctional scenarios is "Okay, don't do that then."
+We usually prefer richer scenarios than would be
+possible in a scenario that shows failure to meet goals.
+
+
+

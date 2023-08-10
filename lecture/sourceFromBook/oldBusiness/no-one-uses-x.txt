@@ -1,0 +1,123 @@
+Whenever I'm in a conversation with another software user,
+it will eventually drop that I use X. I don't mean X11, I
+mean X as a placeholder for some kind of software (or
+hardware, for that matter).
+
+Often (although I am embarking on a killing spree soon, so
+the frequency may decline) my conversational partner will
+respond with, "Oh, so you're one of the two or so people
+left in the world who uses X." (hence the upcoming killing
+spree)
+
+This kind of conversation has led me into the field of
+HCI. Here is one semi-legitimate academic discipline where I
+can smack someone who says "No one uses X."
+
+Everywhere else, computer users can put on a set of blinders
+and insist that, if they don't do it, no one else does
+either.
+
+Of course, I am leading up to the fact that HCI people,
+though they supposedly know better, are terrible offenders.
+
+My favorite anecdote to illustrate this pot-kettle
+phenomenon comes from a contest at CHI to develop an app to
+improve public transit. One of the contestants developed a
+hardware device to support the conductors on buses in India.
+The conductor would hold this device in one hand and click
+on icons on it with the other hand, all while conversing
+(yelling) with bus passengers.
+
+I should interrupt this anecdote with two facts: buses in
+much of India have conductors. The CHI contest was in
+California. There was some communication difficulty from the
+audience as to whether the 1.1 billion people of India were
+total idiots for not running their buses in the same manner
+as the buses within five square blocks of the auditorium.
+Oh, well.
+
+Back to my anecdote ... The intrepid developer of the
+Conductor Assistance Device, hereafter CAD, fielded a lot of
+"questions" about whether conductors should be eliminated
+from all Indian buses based on the sage advice of CHI
+attendees. Then he received the showstopper.
+
+The showstopper, in any presentation, is dreaded by the
+presenter because the contest is effectively lost after the
+showstopper question is asked. There is no recovery from the
+showstopper. The developer may have put in a year of work
+and the project may have considerable merit but it does no
+good in the face of the showstopper.
+
+Sometimes, it's not clear whether a question is a
+showstopper. Most questions in CHI presentations are
+variations of these three timeless questions.
+
+1. "Have you seen my important work in this
+area?"
+
+2. "Isn't this really just a minor revision to some
+project from a previous decade and, since you know nothing
+about that project, we can't really discuss it but you
+should know that you're wrong and should not be allowed to
+present such drivel?" (What, you don't think that is a
+question? How little you know!)
+
+3. "You have done a thing. Why didn't you do this other
+thing?"
+
+These three questions are the bulwark of any academic
+community and, if you think I am saying that from
+personal bitterness, then, no I do not have tenure.
+
+Anyway, back once again to the anecdote and now to the
+showstopper. An observant audience member asked, "Why not
+just develop a system that allows passengers to use their
+cell phones rather than communicate with the conductor?"
+
+The presenter, as so often happens, did not realize that the
+showstopper had just been asked. He patiently explained that
+Indians are too poor to have cell phones and that,
+therefore, we can't have a system that would rely on cell
+phones the way we would in the wealthy, elitist environments
+of the West. He pointed out that we need compassion for the
+poor, who are the most prevalent users of buses anyway.
+
+The presenter blathered on about poverty for quite some
+time, finally slowing as he realized something strange was
+going on in the audience. He petered out altogether as he
+realized that many in the audience were pointing at the
+screen behind him, where he was displaying a mosaic of
+photographs of Indians on buses, with a conductor
+prominently displayed in many of the photos.
+
+After he turned to examine his own photos, it finally began
+to dawn on him that many, if not most of the bus passengers
+visible were holding cell phones. His hopes of winning the
+contest wafted away like smoke on the wind as he very
+quietly acknowledged that in these particular cases everyone
+had a cell phone and tried to quickly think of some reason
+why these cell phones might not be adequate to the task of
+communicating extremely simple information about bus stops.
+He rambled for a while and even tried out a phrase like
+"Most people don't have cell phones" to see how it would
+sound but it didn't sound too good in the face of his own
+photos.
+
+Let me underscore two things about this anecdote. First, the
+audience was very dismissive of the notion of conductors on
+buses, violating the principle that not everyone is like
+you. Second, the presenter was very dismissive of the notion
+of poor people having cell phones, another violation of the
+same principle. Sure, the presenter was the one who suffered
+that day but everyone was guilty. The scuttlebutt was "Wow,
+he really screwed up!" but the larger truth was that he
+committed an infraction no different from that of many vocal
+members of the HCI community.
+
+Does that mean that these people all suck and are cultural
+imperialists? No, it means that it is hard to put yourself
+into the shoes of another. Every day I read that Samsung or
+Google or Apple is a complete idiot because of some UI
+feature that someone doesn't like. Really? Really? No, they
+are not idiots. They have a hard job.

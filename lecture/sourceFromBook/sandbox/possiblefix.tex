@@ -1,0 +1,15 @@
+% table of contents with underlined links
+\iffalse % disable if option colorlinks is used
+\@ifpackagelater{hyperref}{2006/06/01}{%
+  \newcommand*{\saved@tableofcontents}{}%
+  \let\saved@tableofcontents\tableofcontents
+  \renewcommand*{\tableofcontents}{%
+    \begingroup
+      \hypersetup{pdfborderstyle={/S/U/W 1}}%
+      \saved@tableofcontents
+    \endgroup
+  }%
+}{}
+\fi
+
+

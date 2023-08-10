@@ -1,0 +1,60 @@
+Everybody's gonna want that app if everybody else has it!
+
+                                              ---Yogi Berra
+
+The greatest catcher in the history of baseball passed away
+yesterday (as I write this) and so I thought should
+commemorate his passing in some way. After all, Yogi Berra
+once advised that you should always go to other people's
+funerals or else they won't come to yours.
+
+Of course, I don't care about baseball. It was Yogi Berra's
+other identity, as the supposed coiner of many of the
+deepest and strangest sayings in common currency. Many of
+his sayings were presented to the public yesterday in
+obituaries (and probably listicles of the top ten Yogiisms).
+Among them was was one of his most recent. When his wife
+asked where he wanted to be buried---he was 90 after
+all---he replied, after some thought, "Surprise me."
+
+But what is remarkable is not that pundits repeat Yogiisms
+but that people I meet repeat them. And they repeat them for
+a reason. These are sayings that make you look at life in a
+different way. As Yogi once said, you can observe a lot by
+watching, and hearing a Yogiism widens our focus and helps
+watch with heightened acuity.
+
+Like many Yogiisms, there may be no evidence that Yogi Berra
+ever said or even heard the epigram above. In fact, I have
+been revising it over the past 24 hours trying to fashion it
+into something more likely to be said by Yogi Berra, who
+would probably not have publicly used the term referenced,
+network externalities. Network externality is the value a
+node adds to a network by joining that network. Economists
+have liked to put it that way since the days when the use of
+telephones began to mushroom as the number of people they
+could reach by telephone blossomed. These days, network
+scientists like to use the expression as well and they are
+even more likely to use the word node. They may also call it
+a vertex or a place and the connections between nodes may be
+called arcs or edges or links. Network scientists measure
+the value that, for instance, each person on Facebook adds
+for each of their friends.
+
+The problem with many ideas is that they assume a critical
+mass of connected nodes upon which their app depends. If
+only everyone were connected via our app, we could give
+everyone so much! When I say it like this, it seems obvious
+but so many students don't see that they are 
+thinking about the steady state *after* they've achieved
+critical mass. This term, I even heard one student insist
+that they would achieve critical mass through excellent
+marketing. This student provided no evidence of excellent
+marketing. In any case, this student is a designer, not an
+excellent marketer. Excellent marketing is not his business.
+It is not clear to me that it is any easier to get excellent
+marketing than to get excellent design. If I have an
+excellent marketer, I might ask her which design would be
+easier to work with, rather than go to a designer with an
+unproven idea and ask if they would like to take advantage
+of my excellent marketer.

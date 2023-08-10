@@ -1,0 +1,21 @@
+\documentclass[10pt]{article}
+
+\input{preambleCover.tex}
+\begin{document}
+
+\begin{tikzpicture}[remember picture,overlay]% needs at least two compilation runs!
+ % gray background:
+ \fill[gray!10] (current page.north west) rectangle (current page.south east);
+ % or image background:
+ % \node[anchor=south west] at (current page.south west) {\includegraphics[width=\paperwidth,height=\paperheight]{...};
+ % rotated text above the center of the page:
+ \draw (current page.center) ++ (0,0.25in) node[rotate=-90,scale=1.1] {
+   {\sc business statistics}\quad
+   \textcolor{gray}{\textit{introduction to multiple regression analysis}}\quad
+   {\sc study guide}
+};
+\end{tikzpicture}
+
+\input{cover.tex}
+
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage[hyphens]{url}
+\def\UrlBigBreaks{\do\/\do-\do:}
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%  save the current one
+      \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j%
+      \do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t%
+      \do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D%
+      \do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N%
+      \do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X%
+      \do\Y\do\Z}
+\usepackage{beamerarticle}
+%\setjobnamebeamerversion{main-slides}
+% Above would need actual name, e.g. nssa220-slides in
+% this case. It would then allow the insertion of slides
+% into the article.
+\input{preamble.tex}
+\input{preamble-notes.tex}
+\input{pandocSyntax.tex}
+\LetLtxMacro{\OldIncludegraphics}{\includegraphics}
+
+%\renewcommand{\thesection}{\roman{section}}
+%\renewcommand{\thesubsection}{\alph{subsection}}
+% \titleformat{\section}[runin]
+%               {\normalfont\bfseries}
+%               {\ \thesection.}{.5em}{}[.---]
+%             \titlespacing{\section}
+%               {\parindent}{1.5ex plus .1ex minus .2ex}{0pt}
+
+ \titleformat{\subsection}[runin]
+               {\normalfont\bfseries}
+               {\ \thesection.\thesubsection}{.5em}{}[.---]
+             \titlespacing{\subsection}
+               {\parindent}{1.5ex plus .1ex minus .2ex}{0pt}
+\input{dbnotation.tex}
+\usepackage{longtable}
+
+\newlength{\photowidth}
+\newlength{\portraitwidth}
+\newlength{\verynarrowwidth}
+\newlength{\narrowwidth}
+\newlength{\sqrwidth}
+\newlength{\beyondsqrwidth}
+\newlength{\nearlylandscapewidth}
+\newlength{\landscapewidth}
+% \setlength{\photowidth}{3.125in}
+\setlength{\photowidth}{2.25in}
+\setlength{\portraitwidth}{1.75in}
+\setlength{\verynarrowwidth}{1.25in}
+\setlength{\narrowwidth}{1.5in}
+\setlength{\sqrwidth}{2.5in}
+\setlength{\beyondsqrwidth}{2.5in}
+\setlength{\nearlylandscapewidth}{3.0in}
+\setlength{\landscapewidth}{3.000in}
+
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+\input{bothNotesSlides.tex}
+\lstset{language=SQL,upquote=true}
+\newcommand{\qq}{\symbol{34}} % 34 is the decimal ascii code for "
+\renewcommand{\includegraphics}[2][]{\OldIncludegraphics[%
+  height=6cm,%
+  #1]{#2}}
+\input{\topicname-content.tex}
+
+\end{document}
+

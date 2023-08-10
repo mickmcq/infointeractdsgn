@@ -1,0 +1,13 @@
+\makeatletter
+\newcommand{\mysection}[1]{%
+  \@ifstar{%
+    \tagpdfparaOff\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}%
+    \section*{#1}\tagmcend\tagstructend\tagpdfparaOn%
+  }{%
+    \tagpdfparaOff\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}%
+    \section{#1}\tagmcend\tagstructend\tagpdfparaOn%
+  }%
+}%
+\makeatother
+
+

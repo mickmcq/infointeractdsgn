@@ -1,0 +1,305 @@
+\usepackage{beamerarticle}
+\setjobnamebeamerversion{main-slides}
+\setbeamertemplate{frametitle}
+{
+  \begin{centering}
+    \color[rgb]{0.0,0.2,0.3}
+    \textit{\insertframetitle}
+    \par
+  \end{centering}
+}
+\usepackage[left=6.75in,right=1.00in,top=0.5in,bottom=0.75in,paperheight=8.5in,paperwidth=11.5in]{geometry}
+\usepackage{comment}
+% Uncomment following to process comment environments
+% \includecomment{comment}
+
+% begin original titlesec segment
+\begin{comment}
+\usepackage{titlesec}
+%\titleformat{cmnd    }[shape]{format             }{label}{sep}{before}[after]
+\definecolor{sectcolor}{rgb}{0.0,0.3,0.4}
+\def\thesection{\Roman{section}}
+%\def\thesubsection{\arabic{subsection}}
+\def\thesubsection{(\alph{subsection})}
+\titleformat{\section}[block]
+  {\scshape\fillast}
+  {\bfseries\footnotesize\textcolor{sectcolor}\thesection\enspace}
+  {1ex minus 0.1ex}
+  {\color{sectcolor}\normalsize}
+\titlespacing{\section}{3pc}{*3}{*2}[3pc]
+\titleformat{\subsection}[hang]
+  {}
+  {\small\bfseries\thesubsection\enspace}
+  %{1ex minus 0.1ex}
+  {0ex}
+  %{\small}
+  {}
+\titlespacing{\subsection}{0pc}{*1}{*0}[3pc]
+\usepackage{titletoc}
+\contentsmargin{60pt}
+\titlecontents*{section}[1.5pc]
+{\small}{\scshape\thecontentslabel\ }{\scshape}
+{,~\thecontentspage}[.\quad ][. ]
+
+\titlecontents*{subsection}[1.5pc]
+{\scriptsize}{\itshape}{\itshape}
+{,~\thecontentspage}[.\quad ][.\quad ][]
+% above is based on p. 19 of titlesec.pdf
+\end{comment}
+% end original titlesec segment
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% titlesec defines the appearance of section / subsection headings {{{
+\usepackage{titlesec}
+\newcommand{\periodafter}[1]{#1.}
+\def\thesection {\Roman{section}.}
+\def\thesubsection {\arabic{subsection}.}
+\def\thesubsubsection {\arabic{subsubsection}.}
+%\titleformat{command}[shape]{format}{label}{sep}{before}[after]
+\titleformat{\section}[block]
+  {\scshape\fillast}
+  {\bfseries\footnotesize\textcolor{sectcolor}\thesection\enspace}
+  {1ex minus 0.1ex}
+  {\color{sectcolor}\normalsize}
+
+%\titleformat{\section}{\normalfont\bf}{\makebox[2em][r]{\thesection}}{0.5em}{\periodafter}
+\titleformat{\subsection}[runin]{\normalfont\bf}{\makebox[2em][r]{\thesection\thesubsection}}{0.5em}{\periodafter}
+%\titleformat{\subsubsection}[runin]{\normalfont\bf}{\makebox[2em][r]{\thesection\thesubsection\thesubsubsection}}{0.5em}{\periodafter}
+\titleformat{\subsubsection}[runin]{\normalfont\bf}{\makebox[2em][r]{}}{0.5em}{\periodafter}
+%  format    \titlespacing*{<command>}{<left>}{<beforesep>}{<aftersep>}[<right>]
+%  star      kills indentation of subsequent paragraph
+%  command   is \section, \subsection, etc.
+%  left      is left margin except in the ...margin and drop shape
+%  beforesep is vertical space before title
+%  aftersep  is separation between title and text
+%  right     is right margin (only for hang, block, or display shape)
+%\titlespacing*{\section}{-2.5em}{1.3ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+\titlespacing*{\section}{1.5em}{1.3ex plus 1ex minus .2ex}{1.3ex plus .2ex}
+\titlespacing{\subsection}{1.5em}{0em}{1.3ex plus .2ex}
+\titlespacing{\subsubsection}{1.5em}{0em}{1.3ex plus .2ex}
+%}}} end titlesec
+% begin titletoc {{{
+\usepackage{titletoc}
+\contentsmargin{0pt}
+
+\titlecontents{section}[50pt]% left
+{\addvspace{2pt}}% above
+{\small\scshape\llap{\thecontentslabel}\ % before with label
+\small}
+{\small\scshape}% before without label
+{\titlerule*[1pc]{.}\footnotesize~\thecontentspage.} % filler and page
+[\addvspace{1pt}]% after
+
+%\titlecontents{section}[-2pt]% left
+%{\addvspace{3pt}}% above
+%{\small\scshape\llap{\thecontentslabel}\ % before with label
+%\small}
+%{\small\scshape}% before without label
+%{,\footnotesize~\thecontentspage.} % filler and page
+%[\addvspace{2pt}]% after
+
+
+\titlecontents*{subsection}[2pt]
+{\small\filright}{\scshape\thecontentslabel\ }{\scshape}
+{,\footnotesize~\thecontentspage}[.\quad ][. ]
+
+\titlecontents*{subsubsection}[1.5pc]
+{\footnotesize\filright}{\scshape(\thecontentslabel)\ }{\scshape}
+{,~\thecontentspage}[.\quad ][.\quad ][]
+% Following is a kluge because I've elsewhere defined
+% that a dot follows a section name. If I make
+% contentsname empty, a dot will appear by itself. If I
+% avoid defining contentsname, the LaTeX default
+% definition takes over. I can't seem to gobble or
+% phantom, but making it all white causes it to
+% disappear, although it now consumes some vertical
+% space.
+\renewcommand\contentsname{\color{white}}
+\setcounter{tocdepth}{2}
+% end titletoc }}}
+
+\usepackage[nottoc]{tocbibind}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage[bookmarks=true]{hyperref}
+\hypersetup{colorlinks,citecolor=black,linkcolor=blue!50!darkgray}
+%\renewcommand\contentsname{}
+
+\usepackage[english]{babel}
+\usepackage{rotating}
+\usepackage{hanging}
+%
+% BEGIN FONTS
+%
+% Most of what follows came from googling xelatex math
+% fonts and Minion Pro and trying a lot of things that
+% did not work including the minionpro package,
+% mathspec, mathdesign, and more
+%
+% The main thing that does seem to work is to explicitly
+% identify the location of the otf fonts: ~/Library/Fonts/
+%
+\usepackage[T1]{fontenc}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+% Following redefines \question to produce a question
+% mark but does not execute the redefinition until
+% *after* the preamble---hence, \question must be
+% defined in the document body
+\usepackage[math-style=ISO]{unicode-math} % try sans-style=upright
+\usepackage{scalefnt}
+\usepackage{xltxtra}
+\defaultfontfeatures{Scale=MatchLowercase,Mapping=tex-text}
+% MinionPro as main font
+\setmainfont[
+  Path = /Users/mjmics/Library/Fonts/,
+  BoldFont = MinionPro-Bold.otf,
+  ItalicFont = MinionPro-It.otf,
+  BoldItalicFont = MinionPro-BoldIt.otf
+]{MinionPro-Regular.otf}
+% MyriadPro as sans font
+\setsansfont[
+  Numbers={OldStyle,Proportional},LetterSpace=3,
+  Path = /Users/mjmics/Library/Fonts/
+]{MyriadPro-Regular.otf}
+% Source Code Pro as monofont
+\setmonofont{Source Code Pro}
+% Tex Gyre Termes as math font except ...
+\setmathfont{texgyretermes-math.otf}
+% Use as much of MinionPro and MyriadPro in math as possible
+\setmathfont[
+  range=\mathit/{num,latin,Latin,greek,Greek},
+  Path = /Users/mjmics/Library/Fonts/
+]{MinionPro-It.otf}
+%\setmathfont[
+%  range=\mathsf/{num,latin,Latin,greek,Greek},
+%  Path = /Users/mjmics/Library/Fonts/
+%]{MyriadPro-Regular.otf}
+\setmathfont[
+  range=\mathsfit/{num,latin,Latin,greek,Greek},
+  Path = /Users/mjmics/Library/Fonts/
+]{MyriadPro-It.otf}
+\setmathfont[
+  range=\mathbfsfit/{num,latin,Latin,greek,Greek},
+  Path = /Users/mjmics/Library/Fonts/
+]{MyriadPro-BoldIt.otf}
+\let\mathbf\mathbfsf
+\let\mathbfit\mathbfsfit
+\usepackage{pifont}
+% END FONTS
+%
+%\everymath{\fam 1\relax}
+%\everydisplay{\fam 1\relax}
+\def\log{\mathop{\rm log}\nolimits}
+\usepackage[font=sc,labelsep=period,format=hang]{caption}
+\usepackage[ragged]{sidecap}
+\definecolor{title}{RGB}{20,180,20}
+\definecolor{sectcolor}{rgb}{0.0,0.3,0.4}
+\definecolor{solutioncolor}{rgb}{0.3,0.5,0.4}
+\definecolor{solutionNcolor}{rgb}{0.1,0.4,0.1}
+\definecolor{authordatecolor}{RGB}{150,150,150}
+\definecolor{remarkcolor}{rgb}{0.5,0.5,0.5}
+\definecolor{OrangeRed}{rgb}{1,0.27,0}
+\newcommand{\ored}[1]{\textcolor{OrangeRed}{#1}}
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily}
+\lstdefinestyle{tinyr}{language=R,basicstyle=\ttfamily\tiny,columns=fixed}
+\lstdefinestyle{smallr}{language=R,basicstyle=\ttfamily\small,columns=fixed}
+ \lstset{language=R,basicstyle=\scriptsize\ttfamily,columns=fixed}
+\lstdefinelanguage{Maxima}{
+  keywords={addrow,addcol,zeromatrix,ident,augcoefmatrix,ratsubst,diff,ev,tex,%
+    with_stdout,nouns,express,depends,load,submatrix,div,grad,curl,%
+    rootscontract,solve,part,assume,sqrt,integrate,abs,inf,exp},
+  sensitive=true,
+  comment=[n][\itshape]{/*}{*/}
+}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.9}
+\usepgflibrary{shapes}
+\usetikzlibrary{automata}
+\usetikzlibrary{arrows}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{fit}
+\usetikzlibrary{shapes}
+\pgfdeclarelayer{edgelayer}
+\pgfdeclarelayer{nodelayer}
+\pgfsetlayers{background,edgelayer,nodelayer,main}
+\DeclareMathOperator\erf{erf}
+\newcommand{\SE}{SE}
+\newcommand{\SSE}{SSE}
+\newcommand{\MSE}{MSE}
+\newcommand{\SSR}{SSR}
+\newcommand{\SST}{SST}
+\newcommand{\SSxx}{SS_{xx}}
+\newcommand{\SSxy}{SS_{xy}}
+\newcommand{\SSyy}{SS_{yy}}
+\newcommand{\VIF}{VIF}
+\usepackage{xfrac} % for diagonal fractions in text
+
+\newif\ifarticlemode
+\articlemodetrue
+
+\usepackage{booktabs} % better-looking tables
+\usepackage{parskip}
+\usepackage{ragged2e}
+\newcommand{\source}[1]{%
+  \nobreak\parbox[t]{0.9\linewidth}{\raggedleft #1}% Placing a quote source
+}%
+\usepackage{comment} % to process only what I'm working on now
+\usepackage[group-separator={,}]{siunitx} % format large numerals
+\newcommand{\stdBoxScale}{0.6}
+%
+% practice quizzes and exams
+%
+% declare a file for solutions
+%\newwrite\tempfile
+% use Alpha letters for answer choices to questions
+\newcounter{choiceLetter}
+\newcommand{\choice}{\item\addtocounter{enumi}{1}}
+\newcommand{\CorrectChoice}{%
+\Writetofile{solutions}{{\bfseries{\textcolor{solutionNcolor}{\arabic{question}.}}}\enspace
+\textcolor{solutioncolor}{\theenumi\ is the correct answer.}}%
+  \item\addtocounter{enumi}{1}%
+}
+\newenvironment{choices}{\begin{list}{\labelenumi}{\setlength\itemindent{0.0in}% 
+                \setlength\listparindent{0.5in}%
+                \setlength\labelwidth{0.50in}%
+                \setlength\itemsep{0.0pt}%
+                \setlength\parsep{0pt}%
+                \setlength\leftmargin{0.5in}%
+\setcounter{enumi}{1}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi.\ }
+}}{\end{list}}
+\newenvironment{oneparchoices}{\begin{list}{\labelenumi}{\setlength\itemindent{0.0in}% 
+                \setlength\listparindent{0.5in}%
+                \setlength\labelwidth{0.50in}%
+                \setlength\itemsep{0.0pt}%
+                \setlength\parsep{0pt}%
+                \setlength\leftmargin{0.5in}%
+\setcounter{enumi}{1}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\renewcommand{\labelenumi}{\theenumi.\ }
+}}{\end{list}}
+% following works to color solutions and let them
+% follow the questions
+% \renewenvironment{solution}{%
+% \par\setlength\parindent{-0.05in}%
+% \begingroup\textcolor{solutioncolor}\bgroup%
+% }{\egroup\endgroup}
+\expandafter\let\csname solution\endcsname\relax
+\expandafter\let\csname endsolution\endcsname\relax
+\usepackage{answers}
+\Newassociation{solution}{Solution}{solutions}
+\renewenvironment{Solution}[1]{}{\par}
+% terms list uses term, shortintertext, conc, shrt,lbl
+\newcommand{\term}[1]{\noindent\textcolor{lbl}{#1}}
+\usepackage{mathtools} % for \shortintertext
+\definecolor{conc}{rgb}{0.10,0.5,0.10}
+\definecolor{shrt}{rgb}{0.95,0.6,0.00}
+\definecolor{lbl}{rgb}{0.00,0.5,0.60}

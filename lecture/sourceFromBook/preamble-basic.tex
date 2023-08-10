@@ -1,0 +1,92 @@
+\RequirePackage{pdfmanagement-testphase}
+\DeclareDocumentMetadata{testphase=tagpdf,activate=tagging}
+%\DeclareDocumentMetadata{testphase=tagpdf,activate=tagging,uncompress}
+\documentclass[12pt]{article}
+%                                 colors
+\input{colorsettings}
+\usepackage[breaklinks=true,colorlinks=true,urlcolor=linklabelcolor,linkcolor=linklabelcolor,bookmarks=true]{hyperref}
+%                                 titles, sections, toc,
+%                                 geometry
+\input{titlessectionstoc.tex}
+
+%                                 graphics
+\usepackage{graphicx}
+
+%                                 lists
+\input{listsettings.tex}
+
+%                                 figures
+\input{figuresettings.tex}
+
+%                                 listings
+\input{listingssettings.tex}
+%                                 tikz pgf settings
+
+\input{tikzsettings.tex}
+
+%                                 tables
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{colortbl}
+
+%                                 fontsettings
+%\input{fontsettings.tex}
+%\input{fontsettings-baskf.tex}
+%\input{fontsettings-caslonpro.tex}
+%\input{fontsettings-erewhon.tex}
+\input{fontsettings-fbb.tex}
+%\input{fontsettings-fell.tex}
+
+%                                 misc
+\input{dbnotation.tex}
+\input{widths.tex}
+\input{miscsettings.tex}
+\usepackage{calc}
+\usepackage{framed}
+
+%                                 figures-only display
+\usepackage[floats,tightpage]{preview}
+\setlength\PreviewBorder{12pt}
+%                                 macro defined by
+%                                 pandoc
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+%                                 pandoc syntax
+%                                 highlighting
+\input{pandocSyntax}
+\newcommand{\titletag}[1]{\tagpdfparaOff\tagstructbegin{tag=Title}\tagmcbegin{tag=Title}%
+#1\tagmcend\tagstructend\tagpdfparaOn}
+
+\makeatletter
+\newcommand{\mysection}[1]{%
+  \@ifstar{%
+    \tagpdfparaOff\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}%
+    \section*{#1}\tagmcend\tagstructend\tagpdfparaOn%
+  }{%
+    \tagpdfparaOff\tagstructbegin{tag=H1}\tagmcbegin{tag=H1}%
+    \section{#1}\tagmcend\tagstructend\tagpdfparaOn%
+  }%
+}%
+\makeatother
+
+\newcommand{\mysubsection}[1]{\tagpdfparaOff\tagstructbegin{tag=H2}\tagmcbegin{tag=H2}%
+\subsection{#1}\tagmcend\tagstructend\tagpdfparaOn}
+
+\lstset{language=SQL,upquote=true}
+\newcommand{\qq}{\symbol{34}} % 34 is the decimal ascii code for "
+\LetLtxMacro{\OldIncludegraphics}{\includegraphics}
+\renewcommand{\includegraphics}[2][]{\OldIncludegraphics[%
+  height=6cm,%
+  #1]{#2}}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces}%
+  {\par}
+%                                 document
+
+\begin{document}
+\input{\jobname.tex}
+\end{document}
