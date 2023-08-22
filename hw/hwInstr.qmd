@@ -207,9 +207,8 @@ Use these boards and post-it notes and just bring the results to class to presen
 
 There is a lot of software for doing affinity diagrams, but the overhead is significant and it's harder for a group of people to interact with tools that are inherently meant for one person, one keyboard, one mouse.  If you have a bunch of post-it pads and are sitting around a posterboard display on a wall or a conference table, you can generate a lot more material faster.  By the way, you could just do stuff on a wall as @Holtzblatt2005 recommends, but then you have to figure out what to do with 500 -- 1,000 post-it notes afterward.  The display board gives you something you can fold up.  If you tie it tightly enough or cover the surface with fixative spray or tape or staples, you may find that post-its will retain their positioning.
 
-### Miro
-One final addition to this section is that I have actually had good luck with a software package called Miro, formerly known as Realtime Boards. This is web-based collaborative diagramming software that all members of the group can access at once from their own machines. I like it because of that and because it looks good on my thirty inch monitor when I'm grading assignments. Although I am generally against software for affinity diagramming, this is a wonderful exception to the rule. And it is free for students!
-(N.B. After I wrote this, Figma was updated to include much of the functionality of Miro, so feel free to use it instead.)
+### Figjam
+One final addition to this section is that students have actually had good luck with a software package called FigJam. This is web-based collaborative diagramming software that all members of the group can access at once from their own machines. I like it because of that and because it looks good on my thirty inch monitor when I'm grading assignments. Although I am generally against software for affinity diagramming, this is a wonderful exception to the rule. And it is free for students!
 
 ## Milestone 3. personas
 

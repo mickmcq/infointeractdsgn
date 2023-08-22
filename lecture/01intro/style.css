@@ -40,4 +40,8 @@ p.date {
   flex: 1;
 }
 
+.reveal .slide-logo {
+  top: 0;
+  right: 12px
+}
 

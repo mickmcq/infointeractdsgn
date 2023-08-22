@@ -1,6 +1,6 @@
 # POLICIES
 
-## Accessible, Inclusive, and Compliant Statement
+## Disability and Access
 The university is committed to creating an accessible
 and inclusive learning environment consistent with
 university policy and federal and state law. Please let
@@ -40,6 +40,10 @@ FERPA. The recordings should not be shared outside the
 class in any form. Violation of this restriction by a
 student could lead to Student Misconduct proceedings.
 
+## Artificial intelligence
+The creation of artificial intelligence tools for widespread use is an exciting innovation. These tools have both appropriate and inappropriate uses in classwork. The use of artificial intelligence tools (such as ChatGPT) in this class
+is strictly prohibited. This includes using AI to generate ideas, outline an approach, answer questions, solve problems, or create original language. All work in this course must be your own or created in group work, where allowed.
+
 ## Personal Pronouns
 Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: [https://utdirect.utexas.edu/apps/ais/chosen_name/](https://utdirect.utexas.edu/apps/ais/chosen_name/). I will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc). Please advise me of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit [https://utexas.instructure.com/courses/633028/pages/profile-pronouns](https://utexas.instructure.com/courses/633028/pages/profile-pronouns). More resources available on the Gender and Sexuality Center’s website, [https://www.utgsc.org](https://www.utgsc.org).
 
@@ -48,7 +52,16 @@ Professional courtesy and sensitivity are especially important with respect to i
 Any student who faces challenges securing their food or housing and believes this may affect their performance in the course is urged to contact the Dean of Students for support. UT maintains the UT Outpost ([https://deanofstudents.utexas.edu/emergency/utoutpost.php](https://deanofstudents.utexas.edu/emergency/utoutpost.php)) which is a free on-campus food pantry and career closet. Furthermore, please notify the professor if you are comfortable in doing so. This will enable him to provide any resources that he may possess.
 
 ## Mental Health Information
-I urge students who are struggling for any reason and who believe that it might impact their performance in the course to reach out to me if they feel comfortable. This will allow me to provide any resources or accommodations that I can. If immediate mental health assistance is needed, call the Counseling and Mental Health Center (CMHC) at 512-471-3515 or you may also contact Bryce Moffett, LCSW (iSchool CARE counselor) at 512-232-2983. Outside CMHC business hours (8am-5pm, Monday-Friday), contact the CMHC 24/7 Crisis Line at 512-471-2255.
+Students who are struggling for any reason and who believe that it might impact their performance in the course are urged to reach out to Bryce Moffett if they feel comfortable. This will allow her to provide any resources or accommodations that she can. If immediate mental health assistance is needed, call the Counseling and Mental Health Center (CMHC) at 512-471-3515 or you may also contact Bryce Moffett, LCSW (iSchool CARE counselor) at 512-232-4449. Bryce’s office is located in FAC18S and she holds drop in Office Hours on Wednesday from 2-3pm. For urgent mental health concerns, please contact the CMHC 24/7 Crisis Line at 512-471-2255.
+
+## Carrying of Handguns on Campus
+Students in this class should be aware of the following university policies related to Texas’ Open Carry Law:
+Students in this class who hold a license to carry are asked to review the
+[university policy regarding campus carry](https://www.utexas.edu/campus-carry#ac).
+
+- Individuals who hold a license to carry are eligible to carry a concealed handgun on campus, including in most outdoor areas, buildings and spaces that are accessible to the public, and in classrooms.
+- It is the responsibility of concealed-carry license holders to carry their handguns on or about their person at all times while on campus. Open carry is NOT permitted, meaning that a license holder may not carry a partially or wholly visible handgun on campus premises or on any university driveway, street, sidewalk or walkway, parking lot, parking garage, or other parking area.
+- Per my right, I prohibit carrying of handguns in my personal office. Note that this information will also be conveyed to all students verbally during the first week of class. This written notice is intended to reinforce the verbal notification, and is not a “legally effective” means of notification in its own right.
 
 ## LGBTQIA+ Community
 As an institution committed to creating a safe and inclusive learning environment, The University of Texas at Austin strictly prohibits discrimination, harassment, or marginalization based on sexual orientation or gender identity under Title IX. If you encounter any discrimination or harassment, please seek support from the Title IX office.
@@ -75,4 +88,14 @@ Furthermore, you can include a "preferred name" by viewing the following link to
 class rosters, which come with the student’s legal name (unless an addition of a
 preferred name is made):
 [https://utdirect.utexas.edu/apps/ais/chosen_name/](https://utdirect.utexas.edu/apps/ais/chosen_name/).
+
+## TITLE IX DISCLOSURE
+
+Beginning January 1, 2020, Texas Education Code, Section 51.252 (formerly known as Senate Bill 212) requires all employees of Texas universities, including faculty, to report to the Title IX Office any information regarding incidents of sexual harassment, sexual assault, dating violence, or stalking that is disclosed to them. Texas law requires that all employees who witness or receive information about incidents of this type (including, but not limited to, written forms, applications, one-on-one conversations, class assignments, class discussions, or third-party reports) must report it to the Title IX Coordinator. Before talking with me, or with any faculty or staff member about a Title IX-related incident, please remember that I will be required to report this information.
+
+Although graduate teaching and research assistants are not subject to Texas Education Code, Section 51.252, they are mandatory reporters under federal Title IX regulations and are required to report a wide range of behaviors we refer to as sexual misconduct, including the types of misconduct covered under Texas Education Code, Section 51.252. Title IX of the Education Amendments of 1972 is a federal civil rights law that prohibits discrimination on the basis of sex – including pregnancy and parental status – in educational programs and activities. The Title IX Office has developed supportive ways and compiled campus resources to support all impacted by a Title IX matter.
+
+If you would like to speak with a case manager, who can provide support, resources, or academic accommodations, in the Title IX Office, please email:  supportandresources@austin.utexas.edu. Case managers can also provide support, resources, and accommodations for pregnant, nursing, and parenting students.
+
+For more information about reporting options and resources, please visit: https://titleix.utexas.edu, contact the Title IX Office via email at: titleix@austin.utexas.edu, or call 512-471-0419.
 

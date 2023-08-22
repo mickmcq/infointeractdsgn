@@ -7,7 +7,7 @@ format:
     theme:
       - lux
       - theme.scss
-bibliography: syllabus.bib
+bibliography: master.bib
 ---
 
 # Description
@@ -49,13 +49,13 @@ Mick McQuaid
 1616 Guadalupe St, Room 5.402
 
 ## Office Hours
-MW 1415--1515, iSchool - West Mall Location, Flawn Academic Center 2304 Whitis Ave, Suite 18 or by appointment at my UTA office
+MW 1415--1515, iSchool - West Mall Location, Flawn Academic Center 2304 Whitis Ave, Suite 18, Room 18A, or by appointment at my UTA office
 
 ## Academic Assistant
-Samarth Nayyar
+Swaraj Saha
 
 ## Academic Assistant Email
-samarthnayyar@utexas.edu
+swarajsaha@utexas.edu
 
 # Objectives - skills
 
@@ -111,7 +111,7 @@ samarthnayyar@utexas.edu
 # Materials
 
 ## Textbook
-We will rely on portions of four books: @Cooper2014, @Dodson2006, @Holtzblatt2005, and @Rosenfeld2015. I am apparently allowed to put three chapters of any book on Canvas, and I have done so with these books. In addition, some of them are available for free at the library.
+We will rely on portions of five books: @Cooper2014, @Dodson2006, @Holtzblatt2005, @Rogers2023, and @Rosenfeld2015. I am apparently allowed to put three chapters of any book on Canvas, and I have done so with these books. In addition, some of them are available for free at the library.
 
 The study guide (on Canvas) is the only other required textbook for the course.
 
@@ -202,16 +202,15 @@ Attendance, 10 points (your fraction of attendance is your attendance grade, for
 I plan to grade assignments within two weeks of their due date except where circumstances interfere.
 The grading scale used along with the grade components follow.
 
-- A  >= 94.0%
-- A- >= 90.0% & < 94%
-- B+ >= 87.0% & < 90%
-- B  >= 83.0% & < 87%
-- B- >= 80.0% & < 83%
-- C+ >= 77.0% & < 80.0%
-- C  >= 73.0% & < 77.0%
-- C- >= 70.0% & < 73.0%
-- D  >= 60.0% & < 70.0%
-- F  < 60.0%
+## Grade Components
+- Milestones: 3 at 5 points each; 2 at 10 points each
+- Exercises: 8 at 5 points each
+- Exam: 1 takehome at 15 points
+- Attendance: total of 10 points (fraction of total attendance)
+
+## Grading Scale
+
+{{< include _gradescale.qmd >}}
 
 ## Attendance
 I will take attendance every day and your percentage of attendance will count for ten percent of your grade.
