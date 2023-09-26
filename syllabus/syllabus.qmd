@@ -5,9 +5,11 @@ format:
   html:
     toc: true
     theme:
-      - lux
       - theme.scss
 bibliography: master.bib
+mainfont: "Tex Gyre Schola"
+monofont: JetBrainsMono Nerd Font
+mathfont: Tex Gyre Schola Math
 ---
 
 # Description
@@ -49,13 +51,13 @@ Mick McQuaid
 1616 Guadalupe St, Room 5.402
 
 ## Office Hours
-MW 1415--1515, iSchool - West Mall Location, Flawn Academic Center 2304 Whitis Ave, Suite 18, Room 18A, or by appointment at my UTA office
+MW 1415--1515, iSchool - West Mall Location, Flawn Academic Center 2304 Whitis Ave, Suite 18, Room 18A, or by appointment at my UTA office or by appointment on Zoom at [https://utexas.zoom.us/my/mickmcquaid](https://utexas.zoom.us/my/mickmcquaid)
 
 ## Academic Assistant
-Swaraj Saha
+Tejasvi Shiv
 
 ## Academic Assistant Email
-swarajsaha@utexas.edu
+`tejasvishiv@utexas.edu`
 
 # Objectives - skills
 
