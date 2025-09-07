@@ -1,0 +1,365 @@
+---
+title: "Info & Interaction Design:<br>Vis Theory"
+author: Mick McQuaid
+date: today
+bibliography: master.bib
+format:
+  revealjs:
+    logo: iSchoolLogo.png
+    theme: moon
+    css: style.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    controls: true
+    controls-layout: bottom-right
+    center: true
+    embed-resources: true
+---
+
+::: {.r-fit-text}
+Week FOURTEEN
+:::
+
+# grammar of graphics
+
+## @Wilkinson2005
+chapter 2, how to make a pie
+
+::: {.notes}
+The chapter is titled How to make a pie
+and it illustrates two different ways to
+make a pie chart. Wilkinson begins by
+noting that pie charts are ubiquitous and
+loved by managers while hated by
+statisticians, both without
+justification. They are just a way to
+visualize data.
+:::
+
+##
+
+![](fiSimplePie.png)
+
+::: {.notes}
+One approach to making a pie is simple.
+Start with the information, do the
+process of making the pie chart, and
+render the result. If we follow this
+process, the emphasis is on the result
+and this is common but, according to
+Wilkinson, inadequate graphical practice.
+
+Many programs have ways to select pie
+chart, then fill in the information, then
+see the pie. Wilkinson suggests that this
+is wrong. We should choose the pie much
+later in the process.
+:::
+
+##
+
+![](fiDataToGraphic.png)
+
+::: {.notes}
+Instead, Wilkinson suggests this
+approach, taking quite a few steps before
+choosing the particular pie shape. Let's
+review those steps.
+
+(Review steps)
+
+This picture only shows the ingredients
+and their dependencies. It does not tell
+how to assemble them.
+:::
+
+##
+
+![](fiACLSdata.png)
+
+::: {.notes}
+Here is the data for our pie. The main
+conclusion we can draw from this data is
+that more females than males believe
+there is bias favoring males in peer
+review. It takes a while to arrive at
+this conclusion because there is a lot to
+read. It might be nice to have a quick
+way to see this.
+:::
+
+##
+
+![](fiSubtables.png)
+
+::: {.notes}
+The first process is to extract the data
+we need from the data as a whole. This is
+the process labeled "variables" in the
+data flow diagram and it takes us from
+data to a variable set.
+:::
+
+##
+
+![](fiCrosstab.png)
+
+::: {.notes}
+The next process is called "algebra" and
+consists of crosstabulating, or joining
+the two subtables together, giving a more
+manageable variable set.
+:::
+
+##
+
+![](fiApplyScales.png)
+
+::: {.notes}
+The next process is called "scales" and
+converts the variable set into integers.
+In practice, software usually does this
+for you but it is still an important step
+and you must at least know how software
+does it. For example, I have often seen
+people inadvertently come away from a
+software package with a counterintuitive
+scaling where 5 means none and 1 means
+frequently.
+:::
+
+##
+
+![](fiComputeStats.png)
+
+::: {.notes}
+The next step is statistics and here we
+see the computation of the summary
+proportions or percentages.
+:::
+
+##
+
+![](fiConstructGeom.png)
+
+::: {.notes}
+The next step is to construct geometry
+and now we first see a graphical element.
+It does not yet take on the
+characteristic pie shape, it is simply
+any area proportional to the statistics.
+:::
+
+##
+
+![](fiApplyCoords.png)
+
+::: {.notes}
+Next we convert cartesian coordinates
+into polar coordinates, turning the
+rectangles into pie slices having a
+radius and angle.
+:::
+
+##
+
+![](fiComputeAesth.png)
+
+::: {.notes}
+Next we compute aesthetics, which are the
+things we can see. Now the pie slices
+take on their positions, colors, and
+labels.
+:::
+
+##
+
+![](fiPairPies.png)
+
+::: {.notes}
+Finally, we are ready to ship the result
+to the renderer. Here is an example of
+how we might do that, a list of
+instructions to the renderer that result
+from our processes.
+:::
+
+## CODA
+Syntax and Semantics
+
+::: {.notes}
+We've just seen
+an intro to syntax
+which is one of two parts
+of the grammar of graphics
+:::
+
+##
+Subsequent chapters
+of Part I treat
+each of the concepts
+
+::: {.notes}
+so there is a chapter for algebra,
+a chapter for scales, and so on, one for each of the process bubbles in the data flow diagram of how to make a pie
+:::
+
+##
+The GoG also
+includes semantics
+
+::: {.notes}
+This is the more visualization-
+oriented part of the book according
+to Wilkinson's definition of
+visualization, which is more
+restrictive than popular definitions
+:::
+
+##
+Semantics include
+space, time, and uncertainty
+
+::: {.notes}
+Notice that the first two are
+potentially representations
+or concepts we wish to visualize
+while the third is strictly a
+concept that we wish to visualize.
+
+In other words, we may wish to visualize
+space and time, but they are also
+potentially vehicles for visualizing
+other concepts.
+:::
+
+##
+These concepts are treated
+mathematically in Part II
+of GoG
+
+::: {.notes}
+I'm skipping this because we
+don't have time to give it the
+weight it deserves and a brief
+lecture with a lot of equations
+won't be very memorable unless
+you already have a math background
+:::
+
+---
+
+[Part II]{.r-fit-text}
+
+## Semantics
+We could look at any of the chapters, such as Time or Uncertainty, but we'll just look at Space for now
+
+## Space
+Four perspectives on space
+
+- Terminology
+- Mathematical Space
+- Psychological Space
+- Graphing Space
+
+## Terminology
+- graphics frame: a set of tuples ranging over all possible values in the domain of a $p$-dimensional varset
+- tuple: a pair $(a,b)$
+- $n$-tuple: a set $\{a_1,a_2,\ldots,a_n\}$ (note that this means that only pairs and sets can be depicted)
+- graph: a subset of these tuples (note that Wilkinson separate defines graphs differently and we'll have to deal with that in a few slides from now)
+- graphic: the perceptual realization of a graph
+
+## Two kinds of space
+- preceding definitions say that a graph is just a concept, not what we see: the graphic is what we see
+- this means there are two kinds of space
+  - underlying space (any space with a mathematical definition)
+  - represented space (what we see: always 2$D$ or 3$D$)
+
+## Example: beadlet anemones
+![](fiBeadletAnemones.png)
+
+::: {.notes}
+These are tiny creatures, about two inches in diameter when fully grown, that live on rocks in oceans and estuaries. They often form colonies that can be diagrammed. Notice that the rock is 3$D$ but the diagram is 2$D$.
+:::
+
+## A minimum spanning tree of a rock covered with beadlet anemones
+![](fiMinSpanningTree.png)
+
+::: {.notes}
+A minimum spanning tree is a mathematical construct you can derive from any group of like objects with some differing distances between them. The tree shows one path from a root (one of the beadlet anemones) to any branch or leaf (another beadlet anemone). You don't need to know the mathematical properties right now, just that more than one is possible for any given set of objects (usually a social network in real life) and one may be better than another. In this case, you would need to know something about beadlet anemones to understand which minimum spanning tree is best.
+:::
+
+## A different layout of the same tree
+![](fiDifferentMST.png)
+
+::: {.notes}
+Here is a different minimum spanning tree of the beadlet anemones. It is mathematically identical to the one above except that it does not capture the geographic relationship of the anemones. The only difference is that the distance between the unlinked points is not meaningful. Only the links have meaning.
+:::
+
+## Display space and underlying space
+The display space and the underlying space can have different relationships. If the display space misses information about the underlying space, we may not be able to understand the graphic. The graphic may reflect only part of the graph.
+
+## Graphics as a mapping function
+$f: S\rightarrow P$, where $S$ is the underlying mathematical space and $P$ is a Euclidean displace space represented by a *position* aesthetic. (Aesthetics are the things you can see, like texture, orientation, color, etc.)
+
+To fully understand the graphic, you need to know the function $f$ and the underlying mathematical space $S$.
+
+## Three perspectives on space
+- Mathematical
+- Psychological
+- Graphical
+
+## Mathematical space
+Mathematical spaces have topological properties, for instance
+
+- values may be on a continuum
+- values may be categorical and hence isolated from each other
+- values may lie in a compact region
+- values may lie in an unbounded region
+
+## Topological space
+- a topological space $S$ is a set $X$ and a collection $T$ of subsets of $X$ satisfying these axioms
+  - the empty set and $X$ are in $T$
+  - the union of any number of sets in $T$ is also in $T$
+  - the intersection of any two sets in $T$ is also in $T$
+
+## Yet more terms
+- the elements of $X$ are points
+- The set $T$ is a topology on $X$
+- the elements of $T$ are the open sets of $X$
+- a subset of $X$ is closed if its complement is open
+- any set $B$ is a basis for $T$ if every member of $T$ is a union of members of $B$
+
+## Using the terms
+We could go on to define topologies of the real number line using the previous definitions, but for now we'll just consider connected, totally disconnected, and discrete spaces
+
+## Connected spaces
+We can draw a line between any two points and that line can be meaningful, for example the two points could be temperatures and the line could represent the number of degrees between those temperatures
+
+## Totally disconnected spaces
+Each point is in a category so you can't draw a meaningful line between the categories. For example, each point is a species of bird and a line between two of them has no metric meaning
+
+## Discrete spaces
+
+
+
+# References
+
+::: {#refs}
+:::
+
+---
+
+::: {.r-fit-text}
+END
+:::
+
+---
+
+Colophon
+
+This slideshow was produced using `quarto`
+
+Fonts are *League Gothic* and *Lato*
+

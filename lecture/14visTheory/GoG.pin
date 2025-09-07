@@ -1,0 +1,169 @@
+[font=Myriad Web Pro 300px]
+[text-color=#B0FFFF]
+[shading-color=#111122]
+[stage-color=#111122]
+[#111122]
+
+--[text-color=#86E9A9]
+grammar
+of graphics
+
+--
+Wilkinson (2005)
+chapter 2
+
+--
+PIE
+# The chapter is titled How to make a pie
+# and it illustrates two different ways to
+# make a pie chart. Wilkinson begins by
+# noting that pie charts are ubiquitous and
+# loved by managers while hated by
+# statisticians, both without
+# justification. They are just a way to
+# visualize data.
+
+--[fiSimplePie.png]
+# One approach to making a pie is simple.
+# Start with the information, do the
+# process of making the pie chart, and
+# render the result. If we follow this
+# process, the emphasis is on the result
+# and this is common but, according to
+# Wilkinson, inadequate graphical practice.
+#
+# Many programs have ways to select pie
+# chart, then fill in the information, then
+# see the pie. Wilkinson suggests that this
+# is wrong. We should choose the pie much
+# later in the process.
+
+--[fiDataToGraphic.png]
+# Instead, Wilkinson suggests this
+# approach, taking quite a few steps before
+# choosing the particular pie shape. Let's
+# review those steps.
+#
+# (Review steps)
+#
+# This picture only shows the ingredients
+# and their dependencies. It does not tell
+# how to assemble them.
+
+--[fiACLSdata.png]
+# Here is the data for our pie. The main
+# conclusion we can draw from this data is
+# that more females than males believe
+# there is bias favoring males in peer
+# review. It takes a while to arrive at
+# this conclusion because there is a lot to
+# read. It might be nice to have a quick
+# way to see this.
+
+--[fiSubtables.png]
+# The first process is to extract the data
+# we need from the data as a whole. This is
+# the process labeled "variables" in the
+# data flow diagram and it takes us from
+# data to a variable set.
+
+--[fiCrosstab.png]
+# The next process is called "algebra" and
+# consists of crosstabulating, or joining
+# the two subtables together, giving a more
+# manageable variable set.
+
+--[fiApplyScales.png]
+# The next process is called "scales" and
+# converts the variable set into integers.
+# In practice, software usually does this
+# for you but it is still an important step
+# and you must at least know how software
+# does it. For example, I have often seen
+# people inadvertently come away from a
+# software package with a counterintuitive
+# scaling where 5 means none and 1 means
+# frequently.
+
+--[fiComputeStats.png]
+# The next step is statistics and here we
+# see the computation of the summary
+# proportions or percentages.
+
+--[fiConstructGeom.png]
+# The next step is to construct geometry
+# and now we first see a graphical element.
+# It does not yet take on the
+# characteristic pie shape, it is simply
+# any area proportional to the statistics.
+
+--[fiApplyCoords.png]
+# Next we convert cartesian coordinates
+# into polar coordinates, turning the
+# rectangles into pie slices having a
+# radius and angle.
+
+--[fiComputeAesth.png]
+# Next we compute aesthetics, which are the
+# things we can see. Now the pie slices
+# take on their positions, colors, and
+# labels.
+
+--[fiPairPies.png]
+# Finally, we are ready to ship the result
+# to the renderer. Here is an example of
+# how we might do that, a list of
+# instructions to the renderer that result
+# from our processes.
+
+--
+CODA:
+Syntax and Semantics
+
+--
+We've just seen
+an intro to syntax
+# which is one of two parts
+# of the grammar of graphics
+
+--
+Subsequent chapters
+of Part I treat
+each of these concepts
+# so there is a chapter for algebra,
+# a chapter for scales, and so on
+
+--
+The GoG also
+includes semantics
+# This is the more visualization-
+# oriented part of the book according
+# to Wilkinson's definition of
+# visualization, which is more
+# restrictive than popular definitions
+
+--
+Semantics include
+space, time, and uncertainty
+# Notice that the first two are
+# potentially representations
+# while the third is strictly a
+# concept that we wish to visualize.
+# In other words, we may wish to visualize
+# space and time, but they are also
+# potentially vehicles for visualizing
+# other concepts.
+
+--
+These concepts are treated
+mathematically in Part II
+of GoG
+# I'm skipping this because we
+# don't have time to give it the
+# weight it deserves and a brief
+# lecture with a lot of equations
+# won't be very memorable unless
+# you already have a math background
+
+--
+END

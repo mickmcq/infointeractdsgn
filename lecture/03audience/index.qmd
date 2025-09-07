@@ -1,24 +1,47 @@
 ---
-title: Info & Interaction Design, Audience
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Audience"
+subtitle: "Info & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+html-math-method:
+  method: mathml
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: JetBrainsMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
 Week THREE
 :::
+
+# But first ... A public service announcement
+![](fiBDPslideFall2025.jpg)
 
 # But first ... Draw a face
 - It was supposed to convince you that you can draw
@@ -29,12 +52,16 @@ Week THREE
 
 # Crazy Eights
 
+$\langle$ Pause for video $\rangle$
+
 ## Annotated! And speedy!
 
 ![](fiCrazyEights1.png)
 
 ::: {.notes}
 This example included not only after the fact annotation but a lot of additional frames in the time it took most students to complete one page. Ordinarily I don't preach annotations but I think that, if you have extra time, it helps to document your work. Speed is the priority, though, always.
+
+Design is not rocket science. For the most part, there are not secrets. You are competing with people who can do the same things you can do. If you can do them faster, you have a distinct advantage.
 :::
 
 ## Easy to understand at a glance
@@ -55,7 +82,7 @@ I originally encouraged starting with pencil and going over it, but now I think 
 
 # Audience
 
-## Academic Communities
+## Main (Old) Academic Communities
 
 - Human Factors in Schools of Engineering
 - Human Computer Interaction in Schools of Computer Science & in iSchools
@@ -124,6 +151,21 @@ diffusion of technological innovation in productive
 organizations. This concern has led to many psychological
 studies of groups of users of information systems in
 organizations.
+:::
+
+## Academic communities new to HCI
+- Visual Design in Schools of Art & Design
+- Studies of groups of people in Sociology and Social Work
+- Product Design groups in Business Schools
+
+These are not new communities but they have only recently branched into HCI or, more commonly UX. Since they don't have much history in HCI/UX, I don't have much to say about them but they do matter in the current landscape. Their long history in their *parent* areas gives a clue about their likely contribution to HCI/UX.
+
+::: {.notes}
+*Visual design* is a field that has long been concerned with aesthetics, so they are less focused on the user than are other fields.
+
+*Social work* is more focused on the community than are other fields. In particular, they study the impact of technology on underserved groups. They take a critical view of the user experience offered by Big Tech.
+
+*Product design* is more focused on market segmentation than the other disciplines that care about user experience.
 :::
 
 ## Epochs in Human Computer Interaction
@@ -546,15 +588,13 @@ financial decisions, knowing that these meetings might have the
 potential to serve other purposes.
 
 (4) Finally, an Indian example I had the misfortune to
-witness was a CHI design competition where an Indian student
-had devised a hardware / software platform to assist bus
-conductors in a rural state. This was a small tablet-like
-device that would be carried by the conductor who would
-talk to the passengers to learn their destinations and enter
-them into the device, and be able to shout out stops to the
-driver at appropriate times. It was a complicated
-bottlenecky system. To
-show the audience that there were conductors on buses and
+witness (and reported on previously) was a CHI design competition where an
+Indian student had devised a hardware / software platform to assist bus
+conductors in a rural state. This was a small tablet-like device that would be
+carried by the conductor who would talk to the passengers to learn their
+destinations and enter them into the device, and be able to shout out stops to
+the driver at appropriate times. It was a complicated bottlenecky system.
+To show the audience that there were conductors on buses and
 that crowding on buses made it difficult to communicate
 stops, he showed many slides to
 illustrate. When someone asked why not let
@@ -575,6 +615,9 @@ not without seeking some understanding of complicated
 fragile networks of infrastructure that account for so much
 of the variation in health between communities.
 :::
+
+## Disabilities: Permanent, Temporary, Situational, and Cognitive
+![](fiDisabilitiesIncCognitive.png)
 
 ## Disability-specific design
 UT-Austin is notable as a disability-friendly campus, according to [https://www.collegeconsensus.com/rankings/best-disability-friendly-colleges/](https://www.collegeconsensus.com/rankings/best-disability-friendly-colleges/)

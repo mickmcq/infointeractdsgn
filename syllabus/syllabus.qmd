@@ -1,5 +1,6 @@
 ---
-title: "UT-Austin iSchool Syllabus<br>I320U<br>Information and Interaction Design<br>Fall 2023"
+title: "Information and Interaction Design"
+subtitle: "I320U<br>Fall 2025<br>UT Austin iSchool Syllabus"
 date: today
 format:
   html:
@@ -7,9 +8,9 @@ format:
     theme:
       - theme.scss
 bibliography: master.bib
-mainfont: "Tex Gyre Schola"
+mainfont: TeX Gyre Schola
 monofont: JetBrainsMono Nerd Font
-mathfont: Tex Gyre Schola Math
+mathfont: TeX Gyre Schola Math
 ---
 
 # Description
@@ -22,7 +23,7 @@ Important note:
 The information presented in this syllabus is subject to expansion, contraction, change, or stasis during the semester. In case of conflict between versions, the copy on Canvas takes precedence.
 
 ## Course Number
-28390
+29685
 
 ## Prerequisites
 
@@ -33,10 +34,10 @@ The information presented in this syllabus is subject to expansion, contraction,
 MW 1230--1400
 
 ## Place
-PMA 5.124
+JES A217A
 
 ## Dates
-August 21--December 4, 2023
+August 25--December 8, 2025
 
 ## Final Exam
 Take-home, due at our official exam time
@@ -48,16 +49,16 @@ Mick McQuaid
 `mcq@utexas.edu`
 
 ## Office
-1616 Guadalupe St, Room 5.402
+UTA, 1616 Guadalupe St, Room 5.402
 
 ## Office Hours
-MW 1415--1515, iSchool - West Mall Location, Flawn Academic Center 2304 Whitis Ave, Suite 18, Room 18A, or by appointment at my UTA office or by appointment on Zoom at [https://utexas.zoom.us/my/mickmcquaid](https://utexas.zoom.us/my/mickmcquaid)
+By appointment at my UTA office or by appointment on Zoom at [https://utexas.zoom.us/my/mickmcquaid](https://utexas.zoom.us/my/mickmcquaid)
 
 ## Academic Assistant
-Tejasvi Shiv
+Dhruvi Ghopani
 
 ## Academic Assistant Email
-`tejasvishiv@utexas.edu`
+`dg44982@utexas.edu`
 
 # Objectives - skills
 
@@ -126,74 +127,73 @@ You should only write or draw in the notebook and not staple or paste scans or p
 You should bring a phone or tablet or some device with a camera to class and be prepared to photograph your work to share it with the class.
 
 ## Technology
-Except for Framer, specific software packages will not be taught in this course. Students should use judgment to select and use helpful software and should share their experiences with different software packages during discussion. Different students have different software needs. It makes sense to try a lot of different software packages to keep you open-minded but to polish your skills with a few to help you meet tight deadlines.
+Except for Figma and Framer, specific software packages will not be taught in this course. Students should use judgment to select and use helpful software and should share their experiences with different software packages during discussion. Different students have different software needs. It makes sense to try a lot of different software packages to keep you open-minded but to polish your skills with a few to help you meet tight deadlines.
 
 # Schedule
 The estimated course schedule follows. All dates, lecture topics, and assignments are subject to reasonable change at the discretion of your instructor.  Any changes will be announced in class.
 
-# Schedule
-
-[Week 1 (21 Aug, 23 Aug)]{.weekn}
+[Week 1 (25 Aug, 27 Aug)]{.weekn}
 Introduction, Team options ---
 Design thinking exercise
 
-[Week 2 (28 Aug, 30 Aug)]{.weekn}
+[Week 2 (3 Sep)]{.weekn}
+(Note that Monday is Labor Day) ---
 Background radiation ---
 Exercise 1, 05 points (drawing a face $+$ 2 examples of good design)
 
-[Week 3 (6 Sep)]{.weekn}
-(Note that Monday is Labor Day) ---
+[Week 3 (8 Sep, 10 Sep)]{.weekn}
 Audience ---
 Milestone 1,                          05 points (proj focus)
 
-[Week 4 (11 Sep, 13 Sep)]{.weekn}
+[Week 4 (15 Sep, 17 Sep)]{.weekn}
 Contextual Inquiry ---
 Exercise 2, 05 points (picking up a key $+$ 2 examples of good design)
 
-[Week 5 (18 Sep, 20 Sep)]{.weekn}
+[Week 5 (22 Sep, 24 Sep)]{.weekn}
 Personas ---
 No graded work due
 
-[Week 6 (25 Sep, 27 Sep)]{.weekn}
+[Week 6 (29 Sep, 01 Oct)]{.weekn}
 Scenarios ---
 Milestone 2,                          10 points (contextual inquiry) 
 
-[Week 7 (2 Oct, 4 Oct)]{.weekn}
+[Week 7 (06 Oct, 08 Oct)]{.weekn}
 Prototyping ---
 Exercise 3, 05 points (widget redesign $+$ 2 examples of good design)
 
-[Week 8 (9 Oct, 11 Oct)]{.weekn}
+[Week 8 (13 Oct, 15 Oct)]{.weekn}
 Personal Information ---
 Milestone 3,                          05 points (personas)
 
-[Week 9 (16 Oct, 18 Oct)]{.weekn}
+[Week 9 (20 Oct, 22 Oct)]{.weekn}
 Information ---
 Exercise 4, 05 points (record interaction $+$ 2 examples of good design)
 
-[Week 10 (23 Oct, 25 Oct)]{.weekn}
+[Week 10 (27 Oct, 29 Oct)]{.weekn}
 Information design patterns ---
 Milestone 4,                          05 points (scenarios)
 
-[Week 11 (30 Oct, 1 Nov)]{.weekn}
+[Week 11 (03 Nov, 05 Nov)]{.weekn}
 Finding information ---
+Navigating information ---
 Exercise 5, 05 points (ambient notification $+$ 2 examples of good design)
 
-[Week 12 (6 Nov, 8 Nov)]{.weekn}
-Navigating information ---
+[Week 12 (10 Nov, 12 Nov)]{.weekn}
+Visualization ---
 Exercise 6, 05 points (corporate directory $+$ 2 examples of good design)
 
-[Week 13 (13 Nov, 15 Nov)]{.weekn}
-Visualization ---
+[Week 13 (17 Nov, 19 Nov)]{.weekn}
+Visual demos ---
 Exercise 7, 05 points (captions $+$ 2 examples of good design)
 
 [Fall Break!]{.weekn}
 
-[Week 14 (27 Nov, 29 Nov)]{.weekn}
-Visual design theories ---
+[Week 14 (01 Dec, 03 Dec)]{.weekn}
+Conclusion ---
 Milestone 5                           10 points (prototype)
 
-[Week 15 (4 Dec)]{.weekn}
-Summary ---
+[Week 15 (08 Dec)]{.weekn}
+Presentations ---
 Exercise 8, 05 points (elevator $+$ 2 examples of good design);
 Peer eval, project grades;
 Final exam, 15 points

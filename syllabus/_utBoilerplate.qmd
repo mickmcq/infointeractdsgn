@@ -1,5 +1,16 @@
 # POLICIES
 
+*Important Note:* The policies of the University are undergoing change. The following *may* be superseded by the policies at [https://utexas.instructure.com/courses/1377522](https://utexas.instructure.com/courses/1377522), which is a Canvas course containing the honor code which you *must* adhere to, as well as much of the following information. A better URL may be [https://utexas.instructure.com/enroll/TP964H](https://utexas.instructure.com/enroll/TP964H) if for some reason you are not enrolled in the site.
+
+## Attendance
+All concerns about attendance recording must be resolved within 72 hours of the class session in question. In other words, you can't come to the instructor weeks later and insist you were present on such-and-such a day.
+
+## Assignment Submission
+All assignments must be submitted via Canvas. No assignment should be submitted via email. Any assignment submitted via email will receive a grade of zero. It may be tempting to try to submit assignments via email when you have trouble with Canvas but the correct response is to contact tech support and resolve the problem with Canvas.
+
+## Extra credit and grade rounding
+There is no extra credit available in this class and grades are not rounded. You receive exactly the letter grade corresponding to the score you achieve.
+
 ## Disability and Access
 The university is committed to creating an accessible
 and inclusive learning environment consistent with
@@ -11,7 +22,7 @@ student with a disability, or think you may have a
 disability, and need accommodations please contact
 Disability and Access (D&A). Please refer to D&A’s
 website for contact and more information:
-[http://diversity.utexas.edu/disability/](http://diversity.utexas.edu/disability/).
+[http://community.utexas.edu/disability/](http://community.utexas.edu/disability/).
 If you are already registered with D&A , please deliver
 your Accommodation Letter to me as early as possible in
 the semester so we can discuss your approved
@@ -42,10 +53,10 @@ student could lead to Student Misconduct proceedings.
 
 ## Artificial intelligence
 The creation of artificial intelligence tools for widespread use is an exciting innovation. These tools have both appropriate and inappropriate uses in classwork. The use of artificial intelligence tools (such as ChatGPT) in this class
-is permitted but must be documented. Usually, you should include a disclaimer at the end of the assignment as a separate paragraph telling which generative AI tool was used, e.g., ChatGPT, and what it was used for. Failure to document will be considered a cheating offense, punishable under the rules for academic integrity.
+is permitted but must be documented. Usually, you should include a lengthy disclaimer at the end of the assignment as a separate Appendix telling which generative AI tool was used, e.g., ChatGPT, and what it was used for, including the final, revised prompts for each answer generated. Failure to document will be considered a cheating offense, punishable under the rules for academic integrity. The disclaimer must be specific and thorough. A brief, vague statement will not be considered sufficient.
 
 ## Personal Pronouns
-Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: [https://utdirect.utexas.edu/apps/ais/chosen_name/](https://utdirect.utexas.edu/apps/ais/chosen_name/). I will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc). Please advise me of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit [https://utexas.instructure.com/courses/633028/pages/profile-pronouns](https://utexas.instructure.com/courses/633028/pages/profile-pronouns). More resources available on the Gender and Sexuality Center’s website, [https://www.utgsc.org](https://www.utgsc.org).
+Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with differences of race, culture, religion, politics, sexual orientation, gender identity & expression, and nationalities. Class rosters are provided to the instructor with the student’s legal name, unless they have added a “chosen name” with the registrar’s office, which you can do so here: [https://utdirect.utexas.edu/apps/ais/chosen_name/](https://utdirect.utexas.edu/apps/ais/chosen_name/). I will gladly honor your request to address you by a name that is different from what appears on the official roster, and by the pronouns you use (she/he/they/ze, etc). Please advise me of any changes early in the semester so that I may make appropriate updates to my records. For instructions on how to add your pronouns to Canvas, visit [https://utexas.instructure.com/courses/633028/pages/profile-pronouns](https://utexas.instructure.com/courses/633028/pages/profile-pronouns).
 
 
 ## Basic Needs Security
@@ -66,21 +77,19 @@ Students in this class who hold a license to carry are asked to review the
 ## LGBTQIA+ Community
 As an institution committed to creating a safe and inclusive learning environment, The University of Texas at Austin strictly prohibits discrimination, harassment, or marginalization based on sexual orientation or gender identity under Title IX. If you encounter any discrimination or harassment, please seek support from the Title IX office.
 
-Additionally, we encourage you to complete the Campus Climate Survey by following the link:
+Formerly, I encouraged students to complete the Campus Climate Survey. The link I have been given for that appears to now be inactive and I can't find a replacement.
+
+That link was:
 [https://app.smartsheet.com/b/form/d70ce9db84a3403ab00394e4617f8f3b](https://app.smartsheet.com/b/form/d70ce9db84a3403ab00394e4617f8f3b)
+
+I did find the following URL which indicates a possible future survey:
+[https://sites.utexas.edu/mental-health-institute/school-climate-improvement/](https://sites.utexas.edu/mental-health-institute/school-climate-improvement/) but the page is currently ambiguous.
 
 If you experience any form of discrimination or harassment, please contact the Title IX office for support. If you do not wish to contact the UT Title IX office, you may view confidential community resources at
 [https://titleix.utexas.edu/community-resources-confidential](https://titleix.utexas.edu/community-resources-confidential)
-. The Gender and
-Sexuality Center, found at
-[https://diversity.utexas.edu/genderandsexuality/](https://diversity.utexas.edu/genderandsexuality/)
-, offers
-resources and support for LGBTQIA+ students, and I encourage you to visit their
-website for more information or to contact the professional staff at
-[https://diversity.utexas.edu/genderandsexuality/contact/](https://diversity.utexas.edu/genderandsexuality/contact/)
-. Lastly, the GSC offers a
-handy website to view GSC student group affiliates at
-[https://diversity.utexas.edu/genderandsexuality/student-groups/](https://diversity.utexas.edu/genderandsexuality/student-groups/).
+.
+
+The links I used to give to find more information about the LGBTQIA+ community are all broken and googling doesn't reveal any replacements. I would like to know of any relevant resources students have found that I could then include in this space.
 
 I am committed to creating a safe and inclusive learning environment for all students.  This includes fostering an environment of respect, openness, and understanding in the classroom and actively working to address any discrimination or harassment that may occur. If you wish to display your pronouns on your Canvas page, you can find a guide here:
 [https://utexas.instructure.com/courses/633028/pages/profile-pronouns](https://utexas.instructure.com/courses/633028/pages/profile-pronouns).
@@ -98,4 +107,10 @@ Although graduate teaching and research assistants are not subject to Texas Educ
 If you would like to speak with a case manager, who can provide support, resources, or academic accommodations, in the Title IX Office, please email:  supportandresources@austin.utexas.edu. Case managers can also provide support, resources, and accommodations for pregnant, nursing, and parenting students.
 
 For more information about reporting options and resources, please visit: https://titleix.utexas.edu, contact the Title IX Office via email at: titleix@austin.utexas.edu, or call 512-471-0419.
+
+## Texas Senate Bill 17
+Texas Senate Bill 17, the recent law that outlaws diversity, equity, and inclusion programs at public colleges and universities in Texas, does not in any way affect content, instruction or discussion in a course at public colleges and universities in Texas. Expectations regarding academic freedom for teaching and class discussion have not been altered post-SB 17, and students should not feel the need to censor their speech pertaining to topics pertaining to race and racism, structural inequality, LGBTQ+ issues, or diversity, equity, and inclusion.
+
+## University Writing Center
+I strongly encourage you to use the services offered by the University Writing Center. The UWC offers 45-minute, one-on-one consultations with UT students on any piece of writing. You may visit up to three times per short paper and more frequently for long projects. Consultants can work with you once per day. The consultants are well trained, and the cost of the service is covered in your tuition. If you wish to make an appointment, you may do so through the UWC website: uwc.utexas.edu.
 

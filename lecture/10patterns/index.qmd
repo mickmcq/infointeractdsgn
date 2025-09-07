@@ -1,0 +1,140 @@
+---
+title: "Info & Interaction Design: Patterns"
+author: Mick McQuaid
+date: today
+bibliography: master.bib
+format:
+  revealjs:
+    logo: iSchoolLogo.png
+    theme: moon
+    css: style.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    controls: true
+    controls-layout: bottom-right
+    center: true
+---
+
+::: {.r-fit-text}
+Week TEN
+:::
+
+---
+
+::: {.r-fit-text}
+DESIGN PATTERNS AGAIN
+:::
+
+## Design Patterns, Why?
+::: {.incremental}
+- I've already told you I don't believe in the Design Patterns Bunny ...
+- So, why an entire lecture devoted to Design Patterns?
+- The reason is that @Tidwell2020 has come up with a rationale that *may* work
+- @Tidwell2020 catalogs an exhaustive set of interaction design patterns
+- Organizing your thinking this way *may* help---let's try it
+:::
+
+## Categories
+- Cognition and Behavior Related to Interface Design, p 11
+- Information Architecture Patterns, p 39, AASI
+- Navigation Design Patterns, p 142, catLovers
+- Screen Layout Patterns, p 226, DLSS
+- Mobile Interface Patterns, p 305, ETG
+- List Patterns, p 340, JGRH CO
+- Action Patterns, p 383, Monkey Business
+- Complex Data Patterns, p 446, The Latte Lab
+- Forms Patterns, p 476, UX Girliez
+
+## Cognition and behavior patterns
+::: {.container}
+:::: {.col}
+- safe exploration
+- instant gratification
+- satisficing
+- changes in midstream
+- deferred choices
+- incremental construction
+- habituation
+::::
+:::: {.col}
+- microbreaks
+- spatial memory
+- prospective memory
+- streamlined repetition
+- keyboard only
+- social media, social proof, and collaboration
+::::
+:::
+
+## Note on these patterns
+These cognitive patterns differ from all the patterns in the rest of the book. The patterns you're going to be surveying are prescriptions for interface elements. These are human cognition and behavior patterns. Let's look at an example.
+
+## Safe exploration
+
+*"Let me explore without getting lost or getting into trouble."*
+
+::: {.notes}
+This pattern corresponds to three of the @Nielsen1994 guidelines:
+
+1. Visibility of system status
+2. Match between system and real world
+3. User control and freedom
+:::
+
+## How to support safe exploration?
+- Multilevel undo (one of the action patterns Monkey Business can explore)
+- Predictable back button (no back button hijacking or interstitials ...)
+
+## Another example: Satisficing
+::: {.incremental}
+- portmanteau of satisfying and sufficing, coined by Herbert Simon in 1957
+- used in psychology and economics to describe people accepting the first "good enough" solution to a problem
+- thinking about an optimal solution represents additional work and there's a tradeoff
+:::
+
+## Supporting satisficing
+::: {.incremental}
+- calls to action
+- short labels
+- use layout to communicate meaning
+- escape hatches
+- reduce visual complexity, e.g., with hierarchy
+:::
+
+## Your part
+- Make a few Google Slide slides as a group, including a title with your names
+- Give us a feel of your category of patterns, along with a few examples
+- Merge what you've done into the class slideshow at
+  [https://docs.google.com/presentation/d/1FXauE830Ok7DMCMUeS7IAUG4XnlDo11I2cd6fElFQm0/edit?usp=sharing](https://docs.google.com/presentation/d/1FXauE830Ok7DMCMUeS7IAUG4XnlDo11I2cd6fElFQm0/edit?usp=sharing)
+- One person from each group pastes in the group's slides
+- You present them on Wednesday
+
+## Why present?
+According to Edgar Dale, you remember:
+
+- 10% of what you read
+- 20% of what you hear
+- 30% of what you see
+- 50% of what you see and hear
+- 70% of what you discuss
+- 80% of what you experience
+- 95% of what you teach
+
+# References
+
+::: {#refs}
+:::
+
+---
+
+::: {.r-fit-text}
+END
+:::
+
+# Colophon
+
+This slideshow was produced using `quarto`
+
+Fonts are *League Gothic* and *Lato*
+

@@ -1,0 +1,6 @@
+I got the image from
+https://meryl.net/companies-accessibility-disabilities/
+
+The actual source is Arbetsförmedlingen.se and is based on
+the earlier Microsoft Inclusive Design Toolkit image but
+including cognitive disabilities.

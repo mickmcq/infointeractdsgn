@@ -1,0 +1,128 @@
+---
+title: "Info & Interaction Design:<br>Conclusion"
+author: Mick McQuaid
+date: today
+bibliography: master.bib
+format:
+  revealjs:
+    embed-resources: true
+    logo: iSchoolLogo.png
+    theme: moon
+    css: style.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    controls: true
+    controls-layout: bottom-right
+    center: true
+---
+
+::: {.r-fit-text}
+Week FOURTEEN
+:::
+
+# Summary
+
+## Two things
+- interaction design
+- information design
+
+## Interaction design
+- design thinking
+- iterative design cycle
+
+##
+![](fiDoubleDiamond.png)
+
+##
+![](fiIterativeSWdevel.png)
+
+## Sketching
+![](fiJagerWangSketch.png)
+
+## Positioning
+![](fiTriangle.png)
+
+## Audiences
+![](fiBabyBubblehead.png)
+
+## Interaction Design
+- Contextual Inquiry
+- Personas
+- Scenarios
+- Prototypes
+- User Testing
+
+## Contextual Inquiry
+![](fiAffinityAftermath.png)
+
+## Personas
+![](fiPersonaCreation.png)
+
+## Scenarios
+![](fiStoryboardExample.png)
+
+## Prototypes
+![](fiElementarySchoolDesign.png)
+
+## Prototypes - Lofi vs Hifi
+![](fiSketchPrototype.png)
+
+## Prototype Components - Layout
+![](fiLayoutPrimitives.png)
+
+## Prototype Components - Type
+![](fiDrKnowMenu3.png)
+
+## Prototype Components - Color
+![](fiGooglingColorWords.png)
+
+## Prototype Components - Microinteractions
+![](fiActions.png)
+
+## Prototype Components - Animation
+![](fiIllusionOfLife2.jpg)
+
+## Information
+- Personal Information
+- Finding Information
+- Navigating Information
+
+## Personal Information
+![](fiNeedsPlusInfo.png)
+
+## Finding Information
+![](fiPageRank.png)
+
+## Navigating Information
+![](fiInfoHiding.png)
+
+## Information Design
+- Visual Information
+- Theory
+- Practice
+
+## Visual Information
+![](fiUnicodeV12Update.jpg)
+
+## Theory
+![](fiGestaltPrinc1.png)
+
+## Practice
+![](fiDiagramTypes.png)
+
+# Final Presentations
+In the next class, you'll present your work to the class. With eight groups, we can afford about eight minutes for each presentation. You'll focus on the prototype and the design decisions that got you there. It would be nice for everyone in your group to speak because it's good practice, but it's not necessary. Think of this as an opportunity to share what you've learned.
+
+---
+
+::: {.r-fit-text}
+END
+:::
+
+# Colophon
+
+This slideshow was produced using `quarto`
+
+Fonts are *League Gothic* and *Lato*
+

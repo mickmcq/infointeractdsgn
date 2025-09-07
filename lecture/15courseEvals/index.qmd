@@ -1,0 +1,117 @@
+---
+title: "Info & Interaction Design:<br>Shameless Plug<br>for good course evals"
+author: Mick McQuaid
+date: today
+format:
+  revealjs:
+    embed-resources: true
+    logo: iSchoolLogo.png
+    theme: moon
+    css: style.css
+    transition: slide
+    background-transition: fade
+    preview-links: auto
+    controls: true
+    controls-layout: bottom-right
+    center: true
+---
+
+::: {.r-fit-text}
+Week FOURTEEN
+:::
+
+# Why I need good course evals
+::: {.incremental}
+- primary way I'm judged
+- validates my approach
+:::
+
+# My approach
+::: {.incremental}
+- Concept + Skill approach
+- Open Educational Resources approach
+- Exam approach
+- Portfolio approach
+:::
+
+## Concepts + Skills
+::: {.incremental}
+- Skills are much more popular than concepts
+- But concepts are long run wins
+- Skills get you your first job
+- Concepts get you promoted
+:::
+
+## Concepts
+::: {.incremental}
+- Once you have a job, you'll be competing with people who know Figma as well as you do
+- Slightly better Figma expertise will not impact your promotions
+- Thinking is what will separate you from the competition
+- A command of the concepts powers thinking
+:::
+
+## Skills, 1 of 2
+::: {.incremental}
+- Figma is the flavor of the month
+- Believe it or not, it will not last your whole career
+- It's more important for you to be able to adapt than to know all there is to know about one tool
+- Soon, you'll have to start over, so learning to learn is what matters
+:::
+
+## Skills, 2 of 2
+::: {.incremental}
+- I've been requiring sketchbooks for nearly twenty years
+- Over and over, former students tell me it was the most important part of their education, not just in this class
+- Sketching is a *durable* skill
+- You may think genAI will replace it, but I'm betting otherwise
+:::
+
+## Open Educational Resources approach
+::: {.incremental}
+- You didn't have to buy any books for this course
+- The textbook industry is a racket of which I don't want to take part
+- As the textbook industry changes to a subscriber model, it is more important than ever to resist it
+- By the way, all the course materials are made with free, open source software
+:::
+
+## Final Exam approach
+::: {.incremental}
+- The traditional exam is not something you can use in your life
+- I keep refining my approach to make it more relevant to your careers
+- Case in point: the exam will be a user test
+:::
+
+## Portfolio approach
+::: {.incremental}
+- This class builds your portfolio, an essential component for your career
+- You don't turn in things that can't go in your portfolio (yes, even the sketches)
+:::
+
+# Information design
+::: {.incremental}
+- Most info design courses show you pretty pictures and emphasize techniques for copying them
+- I have tried to share the underpinnings of these pictures so you can use the ideas to make pictures no one has yet seen, not just copy current fashions
+- The theories of Bertin and Wilkinson are *durable*---you can keep using them for many years, both to understand and to create
+:::
+
+# Reasonable grading
+::: {.incremental}
+- I believe grading should be competency based, not competitive
+- I can still reward the best students with heartfelt recommendation letters
+:::
+
+# Conclusion
+I hope you enjoyed this course and learned a lot, both in concepts and skills! Keep in touch!
+
+---
+
+::: {.r-fit-text}
+END
+:::
+
+# Colophon
+
+This slideshow was produced using `quarto`
+
+Fonts are *League Gothic* and *Lato*
+

@@ -1,19 +1,39 @@
 ---
-title: Info & Interaction Design, Background Radiation
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Background Radiation"
+subtitle: "Info & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+html-math-method:
+  method: mathml
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: JetBrainsMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
@@ -140,7 +160,7 @@ Popular for a series of beautiful books whose distinctive style has been widely 
 I have sometimes listed URLs of importance to UX people. Link rot has attacked each such list with a relentlessness that has left me relying more and more on Google and Wikipedia, as well as pdf captures.
 
 ::: {.notes}
-There is a vast amount of scholarship on link rot as of 2015, some of it in the legal arena because of its impact on reading US Supreme Court opinions. Schemes to overcome link rot such as doi and URI have been proposed, developed, and ignored since the beginning of the web.
+There is a vast amount of scholarship on link rot, some of it in the legal arena because of its impact on reading US Supreme Court opinions. Schemes to overcome link rot such as doi and URI have been proposed, developed, and ignored since the beginning of the web.
 There are vastly many services designed to defeat link rot, from Pinboard to the Internet Archive's Wayback Machine, to URL shorteners, but link rot appears to be winning.
 
 Take the people listed above. Some of them have a blog for a while, then abandon it and start a blog with a different title to reflect their current interests. They may use Twitter or Instagram or other means to convey their ideas, yet it is the people themselves who remain important over time, not the different addresses of their various activities.
@@ -150,7 +170,7 @@ The same can be said of institutions. Many institutions have *shadow* websites t
 
 ## Institutions
 
-HCI academic programs in North America include Berkeley, Carnegie-Mellon, U Colorado - Boulder, Georgia Tech, U Indiana, U Iowa, U Maryland, U Michigan, MIT, U Toronto
+HCI academic programs in North America include Berkeley, Carnegie-Mellon, U Colorado - Boulder, Georgia Tech, U Indiana, U Iowa, U Maryland, U Michigan, MIT, U Toronto, and more.
 
 The *New York Times* has adapted amazingly to its online home in the past ten years. The rapidity with which the *Times* updates its view of information design is exemplary and at this time, you should certainly be studying it as an information artifact as much as you may use it.
 
@@ -163,7 +183,7 @@ CSS is another required technology. You should understand enough about the use o
 JSON is one of the most important ways of organizing information online, another being XML. You should be able to manipulate structures in at least these two containers.
 
 ::: {.notes}
-You may use any language to manipulate JSON, including JavaScript, but understanding JSON and XML requires study separate from that of JavaScript.
+You may use any language to manipulate JSON, including JavaScript, but understanding JSON and XML requires study separate from that of JavaScript. The inventor of JSON (who said that its pronunciation is *Jason*) proudly wrote the rules of JSON on a business card to emphasize its simplicity.
 :::
 
 ## Design Guidelines from Vendors
@@ -187,7 +207,7 @@ Formerly, I gave the following URL for Microsoft. It still exists, although the 
 
 Watch the documentaries *Helvetica* and *Objectified* as well as the videos by Bill Moggridge that accompany his textbook on HCI.
 
-*Hacker News* is my preferred news source. You should try to at least skim it weekly to improve your picture of information technology in general.
+*Hacker News* is my preferred news source. You should try to at least skim it weekly to improve your picture of information technology in general. It also makes sense to read Andrew Ng's weekly newsletters about AI, *The Batch* and *Data Points*.
 
 ::: {.notes}
 *Krebs On Security* is the only information security blog you should read. Again, check it at least weekly or whenever anyone asks you about information security issues. Bear in mind when you read about security that it represents a terrific opportunity for con artists. Some IT security people thrive on producing no measurable output and are often smooth talkers, able to answer any argument decisively but without imparting any understanding. IT security will typically demand all kinds of knowledge about every aspect of an organization and is in a position to use that to improve its power position within an organization.
@@ -262,6 +282,16 @@ A still more recent survey is at [https://uxtools.co/survey-2020/](https://uxtoo
 ## Trends in Design Tools
 
 ![](fiMostExcitingTools.png){fig-alt="barchart of most exciting tools of 2022, with Figma the main favorite"}
+
+## Figma's IPO
+
+![](figmaDebut.png){fig-alt="Figma's IPO news article"}
+
+::: {.notes}
+Figma's IPO was a big deal. Offered at 33USD, shares immediately sold for ~120USD. As of September 2025, the price has settled down to about 70USD. The company still doesn't face significant competition. Figma is certainly the flavor of the month for designers. What could dethrone it? AI? Better integration with code? You have to keep monitoring competitors and keep trying to use their new products to know when to shift.
+
+Remember that no tool is likely to outlast your career! Your strongest skill is your adaptability. Get good at Figma but don't just be a Figma jockey. I have corporate clients who beg me to teach concepts rather than skills because they say that they can always outsource skills. They can hire a Figma jockey temporarily. The people they want to hire for keeps are people with ideas. So the other question besides how to be adaptable is how to have ideas. Nobel Prize winner Linus Pauling said that the best way to have a good idea is to have a lot of ideas.
+:::
 
 ## Wikipedia
 
