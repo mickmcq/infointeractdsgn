@@ -1,0 +1,109 @@
+---
+title: "Design Systems"
+subtitle: "Information & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
+    controls: true
+    controls-layout: edges
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
+---
+
+# [Week FOURTEEN]{.r-fit-text}
+
+# An important exercise
+- the task is simple
+- the context is complicated
+- I need to tell you the inspiration for this
+- the payoff may be a useful portfolio piece
+
+# The task
+- Prototype a simple interaction---but with the constraints of a design system
+- You may have done this interaction before, but unconstrained
+
+# Why constraints?
+- I read an article by Jon Kolko, a respected design educator
+- He said that recruiters are disappointed by ninety percent of junior portfolios
+- Junior portfolios usually highlight unconstrained design work
+- Students pick their projects and design them for the best of all possible worlds
+- That's not realistic
+- So what is realistic?
+
+# Your constraints
+- You will use a particular design system
+- That design system may or may not have Figma downloads
+- That design system may really be created exclusively for developers
+- You have to quickly familiarize yourself with it and do a narrowly constrained task *within* it
+
+# The task
+![](fiOpenClose.png)
+
+# The overview
+- Work as a pair (may be one trio if there's an odd number of students)
+- Go to one of the boxes in the FigJam file
+- Add your first names before the URL
+- Use the design system represented by the URL to design the interaction of clicking / tapping on the magnifying glass to open the search panel
+
+# Some details
+- You may not be allowed to use a gradient
+- You are certainly constrained to a particular color palette
+- You may be constrained to a particular icon for the magnifying glass
+- You will certainly be constrained to use a particular typeface that you may not have and therefore have to acquire
+- You should probably not use Lorem Ipsum text but instead something plausible for the company whose design system you're using (not Fancy Title and Thing!)
+- You should probably fill in the body images and copy
+
+# Half the battle
+- You have to understand the design system---that won't be easy
+- You have to familiarize yourself with the culture of the design system
+- Your result should differ from those of other students
+
+# The other half
+- Keep track of what you try and why you don't use it
+- Keep a notepad open with that information so you can add it to your portfolio so the recruiter understands your process
+
+# Troubleshooting
+- Some of you may find yourselves completely stuck
+- You should try to stay with it but, if you can't, there is a resource where you can find another design system to try
+- That resource is [https://designsystemsrepo.com/design-systems](https://designsystemsrepo.com/design-systems), the place where I got these design systems
+- It is a last resort, though, this is supposed to be a hard exercise
+- (Don't pick one of the easy ones, e.g., Apple, Google, Msft, if you do switch)
+
+# [END]{.r-fit-text}
+
+# References
+
+::: {#refs}
+:::
+
+# Colophon
+
+This slideshow was produced using `quarto`
+
+Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
+

@@ -1,26 +1,52 @@
 ---
-title: "Info & Interaction Design: Information"
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Information"
+subtitle: "Information & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
-::: {.r-fit-text}
-Week NINE
-:::
+# [Week NINE]{.r-fit-text}
 
 # Information
+- Information Overload
+- Information itself
+- Information Structure
+  - Unstructured Information
+  - Semi-structured Information
+  - Structured Information (relational, hierarchical, networked)
+- Information Concepts (Big data, Memes)
+- Organizing Information (labeling, card sorting, evaluating schemes)
+- Information Design Patterns
 
 ## Information Overload
 - An old concept
@@ -49,14 +75,14 @@ Following is one approach to examining information. There are others. Notable ex
 
 ## Unstructured information
 - Term "unstructured" may be misleading
-- There is structure but it follows no strict rules
+- There is structure but it is *unlabeled*
 - Examples include news articles and blog posts
 - "Unstructured" is a matter of degree and is best understood by comparing it to semistructured and structured information
 
 ::: {.notes}
 The term unstructured information may be a bit misleading. It typically refers to information that is indeed structured but whose content does not follow very strict rules.
 
-For example, a news article or a blog post could be considered unstructured information. An article usually has a title but not always. It does not follow a strict rule as to whether or not it is titled or subtitled. It may or may not have pictures. It may have varying numbers of paragraphs, tables, diagrams, comments from users, links to related articles, or other features. The key is that it is completely flexible about these things and the person who presents the article does not have to think about conveying the structure of the article to a computer program, only to a human reader. Human readers are much more forgiving of lapses in structure than are computer programs.
+For example, a news article or a blog post could be considered unstructured information. An article usually has a title but not always. It does not follow a strict rule as to whether or not it is titled or subtitled. It may or may not have pictures. It may have varying numbers of paragraphs, tables, diagrams, comments from users, links to related articles, or other features. It may have a listed author or not. The key is that it is completely flexible about these things and the person who presents the article does not have to think about conveying the structure of the article to a computer program, only to a human reader. Human readers are much more forgiving of lapses in structure than are traditional computer programs.
 
 This lack of structure is really a matter of degree and is best understood by comparing it to the following terms.
 :::
@@ -80,15 +106,18 @@ It is a hallmark of semistructured information that some human intervention is r
 - Obeys strict rules
 - Can be processed rapidly in large volumes
 - Can be easily aggregated to tell, for instance, how many orange shirts size L were ordered on game days in the 2021 season
-- Often passed from one computer program to another
+- Often passed from one traditional computer program to another
 - Uses techniques to diminish the effect of human error, such as bar code readers
 - Usually presented as relations (tables with rows and columns) or hierarchies (trees)
 
 ::: {.notes}
-Structured information obeys strict rules and can be processed rapidly in large volumes and can be aggregated easily to determine, for instance, how many orange shirts in size L were ordered on game days in the 2021 season. Structured information is often passed from one computer program to another. Systems that process structured information use various techniques to diminish the effects of human error, including bar code readers, credit card readers, qr code readers, nfc readers and similar devices to obtain information. When human input is needed, it is often restricted. For instance, when a fast-food cashier takes an order, they often press a touchscreen area with a picture of the item being ordered rather than trying to type a name or a price, both of which are supplied by a computer program reading the touchscreen.
+Structured information obeys strict rules and can be processed rapidly in large volumes and can be aggregated easily to determine, for instance, how many orange shirts in size L were ordered on game days in the 2021 season. Structured information is often passed from one traditional computer program to another. Systems that process structured information use various techniques to diminish the effects of human error, including bar code readers, credit card readers, qr code readers, nfc readers and similar devices to obtain information. When human input is needed, it is often restricted. For instance, when a fast-food cashier takes an order, they often press a touchscreen area with a picture of the item being ordered rather than trying to type a name or a price, both of which are supplied by a computer program reading the touchscreen.
 
-Most structured information in and between large organizations is presented in one of two main ways, as relations or as hierarchies.
+Most structured information in and between large organizations is presented in one of two main ways, as relations or as hierarchies. There is also networked information, but we'll consider that later.
 :::
+
+##
+![](fiRelationHierarchyNetwork.png)
 
 ## Relational data
 - By far the most prevalent *within* organizations
@@ -142,6 +171,44 @@ The second most frequent way to store enterprise data is in a hierarchical forma
 A key characteristic of this hierarchical form is that it can present exactly the same data as in the relational form above. In other words, the above hierarchy could be converted to tables of rows and columns. Many computer programs just translate between one form and the other, depending on immediate needs.
 :::
 
+## Supply chain information
+- Information flows between productive enterprises
+- Usually have a channel captain who dictates information format
+- Typically use XML
+- XML can be read by humans but is inefficient for internal processing
+
+::: {.notes}
+Supply chains typically have a channel captain, such as Walmart in the retail world or General Motors in the US automotive world. These channel captains can dictate the flow of information through the supply chain. They typically use formal documents structured as XML or some conceptually similar format to communicate with other members of the supply chain, even though internally they are much more likely to use relational databases to organize information.
+
+XML stands for eXtensible Markup Language and it belongs to the same family as HTML and SGML, as well as other such markup languages. XML is easy to transport between organizations but inefficient for detailed processing. Humans can look at XML documents and figure out what they mean or are supposed to mean. XML documents can even contain definitions of themselves within the document to help an unfamiliar reader figure them out.
+
+When I say that XML is inefficient for detailed processing, I am contrasting it with enterprise databases. These require painstaking development and rules for entering data but allow an enterprise to say, update its inventory on a website in real time. An external partner can not afford the expense of writing directly to an enterprise database with its draconian requirements. Moreover, I do not want to let my external partners write directly to my enterprise database. The speed with which I can process a transaction depends on my ability to control glitches in the enterprise database.
+
+Hopefully you can see that these two fundamentally different ways of organizing information can achieve different but complementary goals: exchanging information with external partners and using information internally.
+:::
+
+## Networked information
+- Network may mean connections between computers
+- Network may be used in the sense of network science, which studies all networked phenomena, such as social networks
+
+::: {.notes}
+The term *network* is used in two main ways in the computing world.  Both of these senses are critical for an understanding of the flow of information but they are very very different.
+
+The first, and oldest, sense of the word is to describe the physical connections between computers. This includes the hardware and software that allows one computer to communicate with another computer and with larger groups of computers including the largest group of computers, the internet.
+
+The second sense in which the word *network* is used comes from the emerging discipline of network science.  This field of study has only been named in the past twenty-five years but draws on ideas dating back much further. It is relevant to us because it explains the behavior of all kinds of networks, including computer networks. Recent advances in network science have identified phenomena like *the long tail* and growth and decline of online communities such as Facebook and Myspace.
+:::
+
+## Social network influence on navigation
+All commercial interests have recognized the significance of social networks and have devised ways to exploit social networks to influence navigation. Many navigational features in common use today are the result of specialists in a new field called network science drawing together research in many fields to understand human behavior and influence in networks. They use terms like betweenness centrality and network closeness. Major figures in the field include M.E.J. Newman, Stanley Wasserman, Albert-László Barabási, Duncan Watts, and Lada Adamic.
+
+##
+![](fiPoliticalBlogs.png)
+
+::: {.notes}
+For example, this visualization by @Adamic2005 of the community structure of political blogs, made the cover of the New York Times, due to its graphic demonstration of the polarization of US politics. The notable feature is that it is rare for the blue and red blogs to connect to any blogs with dissimilar views.
+:::
+
 ## Big data
 - Usually means data too big to be processed on a single computer, instead requiring a cluster
 - Sometimes means VVVV, where the Vs stand for Volume, Velocity, Variety, Variability (sometimes adding an extra V for more bigness)
@@ -155,6 +222,13 @@ A major breakthrough for everyday computing occurred when the founders of Google
 The way in which these very inexpensive connected computers work together is in a kind of tree structure, where one computer at the top of the tree gives orders to other computers in the tree and receives results from them.
 
 Two key characteristics of this approach are that no one computer in the tree has all the data and that no one computer is unique. These two characteristics enable scalability and fault-tolerance.
+:::
+
+##
+![](fiSelfishGeneCover.png)
+
+::: {.notes}
+The Selfish Gene (1976) slipcover
 :::
 
 ## Memes
@@ -175,7 +249,34 @@ Examples of memes are tunes, ideas, catch-phrases, clothes fashions, ways of mak
 In the years since Dawkins coined the term, it has become popular to study the concept of memes and to track memes, thanks to the Web. Our awareness of memes as a force informs our interaction design in many ways. There can be no doubt that the most successful users of the web, such as Google and Facebook, maintain a keen sensitivity to memes. As a thought exercise, examine an electronic artifact, such as a website or smartphone app, and try to identify the presence and influence of any memes upon it. As a similar thought exercise, try to identify memes in your own work.
 :::
 
-## Organizing information
+## Human computation
+- Relatively new field in computer science
+- Asks people to do what machines can't
+- Gameifies tasks, such as identifying craters on the moon
+- Origin of captchas
+
+::: {.notes}
+Historically it has been difficult to obtain judgments of humans to label enough things to help computers. Recently, under the banner of human computation, scientists have developed ways to turn small tasks that are difficult for computers into games that are fun to play. An example would be to recognize birds species in pictures. By carefully arranging for different people to try to label the same picture, it is possible to obtain useful labels. Pornographers also use the results of this research to defeat captchas, which are themselves outgrowths of this research. Visitors to pornographic sites or other sites with illicit content, are asked to solve captchas to obtain admittance. These captchas are ones that the host site's robots encountered while trying to harvest content from competitors or other gated communities.
+
+While human computation was hailed as the solution to spam ten years ago, it has turned out to have some value and some unexpected consequences.
+:::
+
+## Learning navigational behavior
+- Google learns from user navigational behavior
+- Search behavior is bartered by information brokers
+- LSOs (locally stored objects) are often used instead of cookies, as are tracking pixels
+- A-B testing is the most common tool for understanding navigational behavior between two items (and for multiple items, the multi-armed bandit)
+
+::: {.notes}
+We have discussed the overwhelming influence of Google and its skill in rapidly changing information artifacts by learning the navigational behavior of its users. We have discussed the sharing of consumer information by commercial interests on the web through information brokers. We have discussed the local storage of tracking information on individual devices and some ways, such as LSOs (locally stored objects) used by commercial interests to thwart privacy preservation. We discussed the fact that many large websites, as well as many local network storage appliances, are better served by Google search than by any designed navigational aids. We considered the implications of that situation for expending effort to design navigational aids.
+
+One thing I may have neglected to mention is A-B testing, a common practice where commercial websites compare the conversion rates of two features by randomly assigning visitors to one (A) or the other (B). This is a common way to choose design features. The conversion rate is the rate at which visits to a commercial site are converted to successful commercial transactions.
+:::
+
+## Flexibility of representation
+We have touched on the notion that information structures are more or less amenable to change. Brittle structures may be symptomatic of technical shortcomings or may be symptoms of authoritarian governance. We discussed whether the speed with which we can modify an information artifact matters in a given context. We saw that we may put together an information artifact with little planning if we expect to take advantage of user behavior to improve it but that, if we can can not or will not change an information artifact after publishing it, we can not realize the value of understanding navigational behavior.
+
+# Organizing information
 
 Designers use an almost folkloric understanding of how people organize information to design information artifacts to work with rather than against people. Some of the borrowings from other disciplines studying the organization of information include the following.
 
@@ -185,6 +286,17 @@ Famously, Melvil Dewey reserved many labels in his library classification system
 
 ## Card sorting
 Card sorting is a common way to elicit labels. You can give a person a set of cards with terms written on them and ask the person to sort the cards into piles of similar terms. Then ask them to name the piles. This is typically called an open card sort, described by @Spencer2009. An alternative might be to provide a set of category cards in addition to the content cards and ask a person to place the content cards adjacent to the appropriate category card. This exemplifies a closed card sort, described by  @Spencer2009. There are many variations of card sorts and an extensive literature on using them to label concepts.
+
+::: {.notes}
+Card sort is a means of understanding the labels people use to describe things of interest. There can be cognitive dissonance in the labeling of information containers and card sorting as a means to overcome it. We can connect the concepts of information hiding and labeling to see how labeling helps to limit information overload.
+:::
+
+##
+![](fiCardSortB.jpg)
+
+:::{.notes}
+example card sort
+:::
 
 ## Interrater reliability
 After you conduct a card sort, how do you evaluate your results? If you've recorded several people sorting the same cards, you can measure interrater reliability, using Cohen's 𝜅 (pronounced Kappa). 
@@ -300,6 +412,7 @@ kappa2(twentyitems)
         z = 0.294
   p-value = 0.769
 ```
+
 </small>
 
 ::: {.notes}
@@ -435,76 +548,6 @@ Supervision in this case may be very limited. For example, a person can identify
 A common approach to helping a machine to group things together is to provide a training set and a testing set, a set of things that have been grouped to train the machine and a set of unlabeled things to evaluate the outcome of the machine's training.
 :::
 
-## Human computation
-- Relatively new field in computer science
-- Asks people to do what machines can't
-- Gameifies tasks, such as identifying craters on the moon
-- Origin of captchas
-
-::: {.notes}
-Historically it has been difficult to obtain judgments of humans to label enough things to help computers. Recently, under the banner of human computation, scientists have developed ways to turn small tasks that are difficult for computers into games that are fun to play. An example would be to recognize birds species in pictures. By carefully arranging for different people to try to label the same picture, it is possible to obtain useful labels. Pornographers also use the results of this research to defeat captchas, which are themselves outgrowths of this research. Visitors to pornographic sites or other sites with illicit content, are asked to solve captchas to obtain admittance. These captchas are ones that the host site's robots encountered while trying to harvest content from competitors or other gated communities.
-
-While human computation was hailed as the solution to spam ten years ago, it has turned out to have some value and some unexpected consequences.
-:::
-
-## Networked information
-- Network may mean connections between computers
-- Network may be used in the sense of network science, which studies all networked phenomena, such as social networks
-
-::: {.notes}
-The term *network* is used in two main ways in the computing world.  Both of these senses are critical for an understanding of the flow of information but they are very very different.
-
-The first, and oldest, sense of the word is to describe the physical connections between computers. This includes the hardware and software that allows one computer to communicate with another computer and with larger groups of computers including the largest group of computers, the internet.
-
-The second sense in which the word *network* is used comes from the emerging discipline of network science.  This field of study has only been named in the past twenty-five years but draws on ideas dating back much further. It is relevant to us because it explains the behavior of all kinds of networks, including computer networks. Recent advances in network science have identified phenomena like *the long tail* and growth and decline of online communities such as Facebook and Myspace.
-:::
-
-## Supply chain information
-- Information flows between productive enterprises
-- Usually have a channel captain who dictates information format
-- Typically use XML
-- XML can be read by humans but is inefficient for internal processing
-
-::: {.notes}
-Supply chains typically have a channel captain, such as Walmart in the retail world or General Motors in the US automotive world. These channel captains can dictate the flow of information through the supply chain. They typically use formal documents structured as XML or some conceptually similar format to communicate with other members of the supply chain, even though internally they are much more likely to use relational databases to organize information.
-
-XML stands for eXtensible Markup Language and it belongs to the same family as HTML and SGML, as well as other such markup languages. XML is easy to transport between organizations but inefficient for detailed processing. Humans can look at XML documents and figure out what they mean or are supposed to mean. XML documents can even contain definitions of themselves within the document to help an unfamiliar reader figure them out.
-
-When I say that XML is inefficient for detailed processing, I am contrasting it with enterprise databases. These require painstaking development and rules for entering data but allow an enterprise to say, update its inventory on a website in real time. An external partner can not afford the expense of writing directly to an enterprise database with its draconian requirements. Moreover, I do not want to let my external partners write directly to my enterprise database. The speed with which I can process a transaction depends on my ability to control glitches in the enterprise database.
-
-Hopefully you can see that these two fundamentally different ways of organizing information can achieve different but complementary goals: exchanging information with external partners and using information internally.
-:::
-
-# Connecting Concepts
-
-The following concepts: card sort, monitoring navigation, monitoring social networks, and flexibility of information representation, all come together to give us tools to build information containers. Let us briefly review them.
-
-## Understanding labels
-
-We discussed card sort as a means of understanding the labels people use to describe things of interest. We considered the issue of cognitive dissonance in the labeling of information containers and card sorting as a means to overcome it. We can connect the concepts of information hiding and labeling to see how labeling helps to limit information overload.
-
-## Learning navigational behavior
-- Google learns from user navigational behavior
-- Search behavior is bartered by information brokers
-- LSOs (locally stored objects) are often used instead of cookies, as are tracking pixels
-- A-B testing is the most common tool for understanding navigational behavior
-
-::: {.notes}
-We have discussed the overwhelming influence of Google and its skill in rapidly changing information artifacts by learning the navigational behavior of its users. We have discussed the sharing of consumer information by commercial interests on the web through information brokers. We have discussed the local storage of tracking information on individual devices and some ways, such as LSOs (locally stored objects) used by commercial interests to thwart privacy preservation. We discussed the fact that many large websites, as well as many local network storage appliances, are better served by Google search than by any designed navigational aids. We considered the implications of that situation for expending effort to design navigational aids.
-
-One thing I may have neglected to mention is A-B testing, a common practice where commercial websites compare the conversion rates of two features by randomly assigning visitors to one (A) or the other (B). This is a common way to choose design features. The conversion rate is the rate at which visits to a commercial site are converted to successful commercial transactions.
-:::
-
-## Social network influence on navigation
-All commercial interests have recognized the significance of social networks and have devised ways to exploit social networks to influence navigation. Many navigational features in common use today are the result of specialists in a new field called network science drawing together research in many fields to understand human behavior and influence in networks. They use terms like betweenness centrality and network closeness. Major figures in the field include M.E.J. Newman, Stanley Wasserman, Albert-László Barabási, Duncan Watts, and Lada Adamic.
-
-## Information structure
-
-We have extensively discussed how and whether information is structured, using as a principle the degree to which human intervention is required to process information. We have discussed hierarchical and relational ways of organizing and storing information.
-
-## Flexibility of representation
-We have touched on the notion that information structures are more or less amenable to change. Brittle structures may be symptomatic of technical shortcomings or may be symptoms of authoritarian governance. We discussed whether the speed with which we can modify an information artifact matters in a given context. We saw that we may put together an information artifact with little planning if we expect to take advantage of user behavior to improve it but that, if we can can not or will not change an information artifact after publishing it, we can not realize the value of understanding navigational behavior.
-
 # Information Design Patterns
 We discussed several elements that information architecture authors have referred to as information design patterns. To determine whether these elements deserve the label of *design pattern*, we must examine the coinage and past use of the term.
 
@@ -517,6 +560,13 @@ The term *design pattern* is popularly used in many ways. Popular usage leads to
   a problem, it can be used in many different situations
 - An enumeration of the consequences of the use of the pattern in a given context
 - Patterns are formalized best practices
+
+##
+![](fiPatternLanguageCover.jpg)
+
+::: {.notes}
+This is the cover of the first of Alexander's books describing his architectural ideas.
+:::
 
 ## Design patterns were first observed
 Design patterns originated as a architectural concept by
@@ -573,6 +623,13 @@ This key aspect was the notion of a *quality that
 Specific and non-obvious combinations of
   characteristics could support this quality.
 
+##
+![](fiDesignPatternsCover.jpg)
+
+::: {.notes}
+This is the cover of the book that revolutionized software design for the next decade. This book popularized object-oriented design.
+:::
+
 ## Gang of Four book
 @Gamma1994 exploded on the software
   scene and propelled Alexander to greater fame at the
@@ -584,7 +641,7 @@ The GoF argue that great writers use patterns, e.g., all
   successful plays or stories.
 The GoF refer to *tragically flawed hero* or
   *boy-meets-girl, boy-loses-girl* as patterns with
-  infinite variety
+  infinite variety.
 The GoF book serves two purposes, to tell what patterns
   are and to catalog 23 well-known patterns.
 
@@ -662,20 +719,16 @@ Abby Warburg, scion of the Warburg banking family of Hamburg, was not interested
 - Our job as designers is to find the context of use by the community and organize according to it
 - What is enduring on the web or in apps? Why? (Much is forced by monopolies, but some is driven by community)
 
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon
 
 This slideshow was produced using `quarto`
 
-Fonts are *League Gothic* and *Lato*
+Fonts are *Roboto* and *Roboto Light*, as well as *STIX TWO Math* for math
 

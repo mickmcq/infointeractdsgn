@@ -343,15 +343,11 @@ Let me underscore two things about this anecdote. First, the audience was very d
 Does that mean that these people all suck and are cultural imperialists? No, it means that it is hard to put yourself into the shoes of another. Every day I read in the blogs that Samsung or Google or Apple is a complete idiot because of some UI feature that someone doesn't like. Really? *Really?* No, they are not idiots. They have a hard job.
 :::
 
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon

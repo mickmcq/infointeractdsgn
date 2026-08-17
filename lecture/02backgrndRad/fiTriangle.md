@@ -11,7 +11,7 @@
     \draw[relat] (a00) -- (a02);
     \draw[relat] (a01) -- (a02);
 
-    \node[chentinyattr]  (a03) at (2.5,2.0)  {ui\\ designer};
+    \node[chentinyattr]  (a03) at (2.5,2.0)  {product\\ designer};
     \node[chentinyattr]  (a04) at (2.5,3.2)  {ux\\ designer};
     \node[chentinyattr]  (a05) at (2.5,4.3)  {ux\\ researcher};
     \node[chentinyattr]  (a06) at (1.2,0.7)  {visual\\ designer};

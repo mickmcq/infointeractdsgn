@@ -1,24 +1,89 @@
 ---
-title: Info & Interaction Design, Scenarios
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Scenarios"
+subtitle: "Info & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+    include-in-header:
+      text: |
+        <style>
+        @font-face {font-family: VictorMono Nerd Font; src: url("/Users/mm223266/Library/Fonts/VictorMonoNerdFont-Regular.ttf"); font-style:normal;}
+        @font-face {font-family: VictorMono Nerd Font Italic; src: url("/Users/mm223266/Library/Fonts/VictorMonoNerdFont-Italic.ttf"); font-style:italic,oblique;}
+        @font-face {font-family: VictorMono Nerd Font Bold; src: url("/Users/mm223266/Library/Fonts/VictorMonoNerdFont-Bold.ttf"); font-weight:bold;}
+        pre, code {font-family: VictorMono Nerd Font, monospace;}
+        code.sourceCode span.co {font-style: italic;}
+        code.sourceCode span.fu {font-weight: bold;}
+        </style>
+html-math-method:
+  method: mathml
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
 Week SIX
 :::
+
+# Interview insights
+
+## Your ideas
+
+You came up with the following interview insights after reflecting on interviews you did in class:
+
+- don't ask yes or no questions
+- be open in your questions
+- realized some questions were repetitive
+- make it feel more natural
+- need to be able to listen and come up with followup questions on the spur of the moment
+- can't just follow a script
+- say what they said back
+- let them know you're actively listening
+
+## More ideas
+- important to note hesitation (and maybe body language)
+- important to note things they don't say
+- avoid taking notes
+- scenario based questions are valuable because they often don't want to talk about themselves
+- make the interviewee more comfortable
+- make it a conversation
+- respect the interviewee's time
+- make sure your question are relevant
+- choose the environment carefully
+- "tell me how you felt during that experience"
+
+## Still more ideas
+- "in what situations will stakeholders be using our product?"
+- hard to come up with questions on the spot
+- hard to concentrate with a lot of distractions
+
 
 # Scenarios
 
@@ -86,12 +151,10 @@ There are many ways to convey dialog or thoughts in storyboards. You don't alway
 
 ## How to use scenarios
 
-::: {.incremental}
 - represent the story of the work
 - represent a successful process
 - inject the personas into their work
 - illustrate what you found from contextual inquiry
-:::
 
 ## types of scenario frames
 
@@ -99,13 +162,11 @@ There are many ways to convey dialog or thoughts in storyboards. You don't alway
 
 ## Characteristics
 
-::: {.incremental}
 - Readable like a comic strip
 - One step per frame
 - Rough user interfaces
 - Manual actions
 - Cartoons of people
-:::
 
 ## Evaluate the scenario
 - include words where a stranger would not understand
@@ -163,6 +224,7 @@ Here's an example from class where the student used the hat and the ponytails to
 - Mick is concerned about size and placement of straps when carried
 - Mick is concerned about comparative prices
 - Mick is impressed by aura Luigi has among photogs
+- Look at [https://www.luigicases.com/](https://www.luigicases.com)
 
 ## remember the blank panels?
 
@@ -172,15 +234,17 @@ Here's an example from class where the student used the hat and the ponytails to
 
 ![](fiPreparePanels3.jpg)
 
+## Adjustments
+- Planning the time for each step allows you to adjust 
+- It turned out that, in their case, people wanted to read right to left instead of top to bottom
+- It turned out that they didn't show enough high points of the story with four panels
+- They wound up using five big panels and four small ones
+
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon

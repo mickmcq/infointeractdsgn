@@ -1,38 +1,53 @@
 ---
-title: "Info & Interaction Design: Patterns"
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Patterns"
+subtitle: "Information & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
-::: {.r-fit-text}
-Week TEN
-:::
+# [Week TEN]{.r-fit-text}
 
----
-
-::: {.r-fit-text}
-DESIGN PATTERNS AGAIN
-:::
+# [DESIGN PATTERNS AGAIN]{.r-fit-text}
 
 ## Design Patterns, Why?
-::: {.incremental}
 - I've already told you I don't believe in the Design Patterns Bunny ...
 - So, why an entire lecture devoted to Design Patterns?
 - The reason is that @Tidwell2020 has come up with a rationale that *may* work
 - @Tidwell2020 catalogs an exhaustive set of interaction design patterns
 - Organizing your thinking this way *may* help---let's try it
+
+::: {.notes}
+First, we'll take a quick look at @Tidwell2020. The book is mostly sections about different kinds of patterns plus an introductory part. Let's list those.
 :::
 
 ## Categories
@@ -45,6 +60,10 @@ DESIGN PATTERNS AGAIN
 - Action Patterns, p 383, Monkey Business
 - Complex Data Patterns, p 446, The Latte Lab
 - Forms Patterns, p 476, UX Girliez
+
+::: {.notes}
+The introductory part is about Cognition and Behavior Related to Interface Design. The rest are all about interface design patterns. Let's look at the first category, the intro.
+:::
 
 ## Cognition and behavior patterns
 ::: {.container}
@@ -67,8 +86,16 @@ DESIGN PATTERNS AGAIN
 ::::
 :::
 
+::: {.notes}
+These are actually patterns in your mind, not in interface design. You probably have a natural proclivity for safe exploration, instant gratification, etc. Let's touch on one of these patters, safe exploration. But first, make sure you understand the difference between these and the rest of the patterns.
+:::
+
 ## Note on these patterns
 These cognitive patterns differ from all the patterns in the rest of the book. The patterns you're going to be surveying are prescriptions for interface elements. These are human cognition and behavior patterns. Let's look at an example.
+
+::: {.notes}
+(Just read the slide)
+:::
 
 ## Safe exploration
 
@@ -80,35 +107,49 @@ This pattern corresponds to three of the @Nielsen1994 guidelines:
 1. Visibility of system status
 2. Match between system and real world
 3. User control and freedom
+
+Can you relate to this? Have you experienced any apps that didn't allow you undo or backtrack? When you can undo or backtrack, how often do you do so?
 :::
 
 ## How to support safe exploration?
-- Multilevel undo (one of the action patterns Monkey Business can explore)
+- Multilevel undo (that's an action pattern for anyone choosing action patterns when we break into groups to study these)
 - Predictable back button (no back button hijacking or interstitials ...)
 
+::: {.notes}
+By the way, what is an interstitial? Can anyone tell me what an interstitial is? It's usually defined as a page that appears between the user and the content they want to see. It can be a dialog box or something similar that blocks your progress until you address it.
+:::
+
 ## Another example: Satisficing
-::: {.incremental}
 - portmanteau of satisfying and sufficing, coined by Herbert Simon in 1957
 - used in psychology and economics to describe people accepting the first "good enough" solution to a problem
 - thinking about an optimal solution represents additional work and there's a tradeoff
+
+::: {.notes}
+Herbert Simon was a Nobel Prize winner who studied decision making. He was interested in how people actually make decisions, not how they should make decisions. He found that people often make "satisficing" decisions. This means they accept the first good enough solution rather than the optimal solution. This is because finding the optimal solution requires more time and effort, and often the first good enough solution is sufficient. The concept of satisficing is important in design because it helps us understand that users often prefer quick, simple solutions over complex, optimal ones. This is why we often design interfaces that make it easy to find and use good enough solutions.
 :::
 
 ## Supporting satisficing
-::: {.incremental}
 - calls to action
 - short labels
 - use layout to communicate meaning
 - escape hatches
 - reduce visual complexity, e.g., with hierarchy
+
+::: {.notes}
+What could you do as a designer to support satisficing? These are all examples. Some are actually microexamples in the sense that they solve extremely small problems. What problems do you perceive that these tools solve? Mostly they just speed up the process that the user is already doing in service of a larger goal.
 :::
 
 ## Your part
-- Make a few Google Slide slides as a group, including a title with your names
+- Choose one of the pattern categories from @Tidwell2020
+- Make a few Google Slide slides as a group, including a title (the chosen category) with your names
 - Give us a feel of your category of patterns, along with a few examples
-- Merge what you've done into the class slideshow at
-  [https://docs.google.com/presentation/d/1FXauE830Ok7DMCMUeS7IAUG4XnlDo11I2cd6fElFQm0/edit?usp=sharing](https://docs.google.com/presentation/d/1FXauE830Ok7DMCMUeS7IAUG4XnlDo11I2cd6fElFQm0/edit?usp=sharing)
+- Merge what you've done into the class slideshow, which Dhruvi will share
 - One person from each group pastes in the group's slides
 - You present them on Wednesday
+
+::: {.notes}
+Now, an exercise: do the steps on the slide, preferably in a group of four. (Dhruvi should choose the group size based on attendance and layout of the room. But keep in mind that there are only eight categories, so Dhruvi may want to assign categories to groups.)
+:::
 
 ## Why present?
 According to Edgar Dale, you remember:
@@ -121,20 +162,20 @@ According to Edgar Dale, you remember:
 - 80% of what you experience
 - 95% of what you teach
 
+::: {.notes}
+Because many educators believe what Dale says, it may work better to have you present your understanding of a category of patterns to others than to read or hear about it.
+:::
+
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon
 
 This slideshow was produced using `quarto`
 
-Fonts are *League Gothic* and *Lato*
+Fonts are *Roboto* and *Roboto Light*
 

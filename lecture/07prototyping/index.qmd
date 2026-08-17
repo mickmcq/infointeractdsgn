@@ -1,19 +1,38 @@
 ---
-title: "Info & Interaction Design: Prototyping"
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Prototyping"
+subtitle: "Information & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
@@ -170,13 +189,11 @@ Read this article for a lesson in knowledge representation, inertia, standards b
 
 # Typography
 
-::: {.incremental}
 - You're experiencing it right now!
 - I'm using default typefaces!
 - People have prejudices, e.g., Comic Sans, Papyrus
 - It's not just fonts!
 - LaTeX and Adobe InDesign do the best spacing and line breaking
-:::
 
 ::: {.notes}
 Some authors give very definite advice when space is constrained: use this or that typeface, use only serif or only sans serif type, set only ragged right or only justified. This seems like banal advice to me. It is predicated on the fact that you may not have much time to devote to typography, certainly not as much as someone who majors in typography!
@@ -474,13 +491,11 @@ modest in his conclusions.
 
 ## Past advice
 
-::: {.incremental}
 - Layout on a twelve column grid
 - Easy to reduce to 9,6 or 8,4 for responsiveness
 - But @Pickering2022 advises against this
 - They claim it's too rigid
 - Instead, they urge you to learn a dozen reusable components and endlessly combine them
-:::
 
 ## CSS
 
@@ -948,20 +963,16 @@ It's all done with curves!
 You could hand this to the developer and say "Animate this transition!" Instead, Val Head illustrates a motion comp of the transition in her video at [https://youtu.be/Itsg48crOjM](https://youtu.be/Itsg48crOjM).
 :::
 
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon
 
 This slideshow was produced using `quarto`
 
-Fonts are *League Gothic* and *Lato*
+Fonts are *Roboto* and *Roboto Light*
 

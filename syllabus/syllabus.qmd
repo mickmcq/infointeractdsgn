@@ -4,6 +4,7 @@ subtitle: "I320U<br>Fall 2025<br>UT Austin iSchool Syllabus"
 date: today
 format:
   html:
+    embed-resources: true
     toc: true
     theme:
       - theme.scss
@@ -174,6 +175,7 @@ Information design patterns ---
 Milestone 4,                          05 points (scenarios)
 
 [Week 11 (03 Nov, 05 Nov)]{.weekn}
+Guest Speaker: Ron Vutpakdi, ExxonMobil (05 Nov) ---
 Finding information ---
 Navigating information ---
 Exercise 5, 05 points (ambient notification $+$ 2 examples of good design)

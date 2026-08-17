@@ -1,78 +1,52 @@
 ---
-title: Info & Interaction Design<br>Personas
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Personas"
+subtitle: "Info & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+html-math-method:
+  method: mathml
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
 Week FIVE
 :::
 
-# But first ... A year ago last week ...
-
-## Figma acquisition by Adobe
-- Should we keep using Figma?
-- Should we switch to Framer or Penpot or go back to Sketch?
-- [Should we try to develop multiple escape routes?]{.emph}
-
-## What's the problem?
-- Adobe has a long history of buying companies and ruining / destroying their products
-- Adobe has a direct competitor to Figma
-- Acquisitions in big tech are usually disastrous for the consumer
-- There's even a tumblr devoted to publishing optimistic statements by acquired CEOs followed by later announcements of closure ([https://ourincrediblejourney.tumblr.com/](https://ourincrediblejourney.tumblr.com/))
-
-## Where is more info about this?
-
-::: {.incremental}
-- Hacker News: [https://news.ycombinator.com/item?id=32850178](https://news.ycombinator.com/item?id=32850178)
-- [https://hunterwalk.com/2022/09/19/why-figma-is-worth-20b-and-other-observations-from-the-adobe-acquisition/](https://hunterwalk.com/2022/09/19/why-figma-is-worth-20b-and-other-observations-from-the-adobe-acquisition/)
-- [https://adamnash.blog/2022/09/16/figma-a-random-walk-in-palo-alto/](https://adamnash.blog/2022/09/16/figma-a-random-walk-in-palo-alto/)
-- [https://finance.yahoo.com/video/adobe-figma-deal-ive-never-193650708.html](https://finance.yahoo.com/video/adobe-figma-deal-ive-never-193650708.html)
-- [https://www.cnbc.com/2022/08/25/figma-growing-inside-microsoft-testing-longtime-deal-with-adobe.html](https://www.cnbc.com/2022/08/25/figma-growing-inside-microsoft-testing-longtime-deal-with-adobe.html)
-:::
-
-## Questions
-- Everybody hates Adobe. Why? (Subscriptions?)
-- Isn't it possible that this acquisition will fail? (Yes) [(No)]{.emph}
-- Might the FTC block the deal? (Unlikely) [(they didn't)]{.emph}
-- The co-inventor of Figma has already moved on. Why? [https://madebyevan.com/](https://madebyevan.com/) (That's what they do)
-- What will Adobe do? (retire XD? retire Figma? ruin both?)
-
-::: {.notes}
-Will Adobe get the Figma team? No. Evan Wallace has already moved on. Dylan Field has just been given a billion dollars and asked to choose between sitting in a lot of meetings with empty suits explaining to him why they won't change their business to suit him OR go pursue his passions. Which would you choose?
-
-Plus, Adobe doesn't need the team. If they get patents to Figma's technology, they are set to move Creative Cloud to the cloud for real. Figma runs well on any machine. Does Creative Cloud? It will, soon. I'd buy Adobe stock in a heartbeat right now. No dividend this year, though.
-:::
-
-## Why do we care?
-- Reliance on Figma
-- Pace of innovation at Figma
-- Sketch is mac-only (for now)
-
 # Recap, Previously on Info & Interaction Design
 
 - Contextual Inquiry
 - Mood boards
-- Triangles (oops! let's do them now)
 - Picking up a key
-
-# Your version of the triangle
-![](fiTriangle.png){fig-align="center"}
-
-Place yourself and your preferred job title in the triangle, wherever you belong, and include the vertices.
-Submit a photo of it to Canvas.
 
 # Protocol and verbal analysis
 
@@ -224,17 +198,11 @@ The PDCA cycle can be traversed over and over, indefinitely. There are four main
 
 Also see @Pruitt2003.
 
-# Up next, small group contextual inquiry
+# [END]{.r-fit-text}
 
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon

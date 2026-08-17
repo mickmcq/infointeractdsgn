@@ -1,19 +1,51 @@
 ---
-title: Info & Interaction Design, Intro
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Introduction"
+subtitle: "Info & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+    include-in-header:
+      text: |
+        <style>
+        @font-face {font-family: VictorMono Nerd Font; src: url("/Users/mm223266/Library/Fonts/VictorMonoNerdFont-Regular.ttf"); font-style:normal;}
+        @font-face {font-family: VictorMono Nerd Font Italic; src: url("/Users/mm223266/Library/Fonts/VictorMonoNerdFont-Italic.ttf"); font-style:italic,oblique;}
+        @font-face {font-family: VictorMono Nerd Font Bold; src: url("/Users/mm223266/Library/Fonts/VictorMonoNerdFont-Bold.ttf"); font-weight:bold;}
+        pre, code {font-family: VictorMono Nerd Font, monospace;}
+        code.sourceCode span.co {font-style: italic;}
+        code.sourceCode span.fu {font-weight: bold;}
+        </style>
+html-math-method:
+  method: mathml
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
@@ -365,15 +397,11 @@ H.R. McMaster hates Powerpoint. Like Lou Gerstner at IBM, McMaster banned Powerp
 Beware of "good" Powerpoint. Students sometimes tell me that the problem with PP is that it is not well done. I have one student whose father built a lucrative second career out of preparing slick PP for others. He had been a photo slide show specialist in the days when Kodak was big and had simply learned its replacement. I have no doubt that he does "good" PP. He makes a very good living at it. That does not excuse the people who pay him for it and the audiences who evaluate it (the PP) rather than whatever the subject of the PP is. There is, of course, an industry of PP consultants to tell you what colors and words and transitions and fonts and punctuation to use. Do not waste your time, at least this semester, listening to them. Everything that they say is either wrong or is a diluted version of information you can obtain straight from @Arnheim1974 or @Bertin2011 among other sources. Go to the source to learn about design. Avoid mixing your design education with a PP education.
 :::
 
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon

@@ -713,15 +713,11 @@ Why are these elevator buttons bad? There could be a variety of problems. You mi
 One well-traveled pundit claims that this is what he sees whenever he looks at a hotel shower! I tend to agree and I have to admit I waste a lot of water in hotels trying to figure out how to get the right temperature!
 :::
 
+# [END]{.r-fit-text}
+
 # References
 
 ::: {#refs}
-:::
-
----
-
-::: {.r-fit-text}
-END
 :::
 
 # Colophon

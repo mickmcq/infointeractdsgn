@@ -1,20 +1,38 @@
 ---
-title: "Info & Interaction Design:<br>Conclusion"
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    embed-resources: true
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
+title: "Conclusion"
+subtitle: "Information & Interaction Design"
+author:
+  - name: Mick McQuaid
+    email: mcq@utexas.edu
+    affiliations: University of Texas at Austin
+date: last-modified
+date-format: "DD MMM YYYY"
+execute:
+  echo: true
+format: 
+  clean-revealjs:
+    slide-number: false
+    logo: quarto.png
+    footer-logo-link: "https://quarto.org"
+    sc-sb-title: false
+    header-logo: iSchoolLogoLight.png
+    header-logo-link: "https://ischool.utexas.edu"
+    subtitle-as-header: false
     controls: true
-    controls-layout: bottom-right
-    center: true
+    controls-layout: edges
+filters:
+  - reveal-header
+  - autofade.lua
+slide-level: 2
+number-sections: false
+engine: knitr
+embed-resources: true
+bibliography: master.bib
+monofont: VictorMono Nerd Font
+mathfont: TeX Gyre Math
+menu:
+  side: 'right'
+css: "style.css"
 ---
 
 ::: {.r-fit-text}
@@ -111,18 +129,16 @@ Week FOURTEEN
 ## Practice
 ![](fiDiagramTypes.png)
 
-# Final Presentations
-In the next class, you'll present your work to the class. With eight groups, we can afford about eight minutes for each presentation. You'll focus on the prototype and the design decisions that got you there. It would be nice for everyone in your group to speak because it's good practice, but it's not necessary. Think of this as an opportunity to share what you've learned.
+# [END]{.r-fit-text}
 
----
+# References
 
-::: {.r-fit-text}
-END
+::: {#refs}
 :::
 
 # Colophon
 
 This slideshow was produced using `quarto`
 
-Fonts are *League Gothic* and *Lato*
+Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
 
