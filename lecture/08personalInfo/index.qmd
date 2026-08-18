@@ -2,9 +2,7 @@
 title: "Personal Information"
 ---
 
-::: {.r-fit-text}
-Week EIGHT
-:::
+# [Week EIGHT]{.r-fit-text}
 
 # The second half of the course
 
@@ -332,16 +330,4 @@ Distributing storage to the web may reduce bloat but also reduces privacy and in
 - Exploitation is conducted via search or navigation, usually navigation.
 - Exploitation depends, in part, on information uniqueness and the spectrum from informative vs action-oriented items.
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto* and *Roboto Light*
-
+{{< include endMatter.md >}}

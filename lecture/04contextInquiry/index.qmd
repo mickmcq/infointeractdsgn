@@ -2,9 +2,7 @@
 title: "Contextual Inquiry"
 ---
 
-::: {.r-fit-text}
-Week FOUR
-:::
+# [Week FOUR]{.r-fit-text}
 
 # But first ... Project Focus
 
@@ -383,16 +381,4 @@ Note that there are three levels of affinity labels and one level of affinity no
 - Do both sides in the interview
 - If you're a group of three, do two on one; if four, break into two pairs
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
-
+{{< include endMatter.md >}}

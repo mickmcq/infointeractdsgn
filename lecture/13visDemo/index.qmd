@@ -132,16 +132,4 @@ Design and share a microinteraction.
 ## More about microinteractions
 Read @Saffer2013!
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
-
+{{< include endMatter.md >}}

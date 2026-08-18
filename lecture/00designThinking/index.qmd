@@ -2,43 +2,31 @@
 title: "Design Thinking"
 ---
 
-::: {.r-fit-text}
-Day ONE
-:::
+# [Day ONE]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-How to Start?
-:::
+# [How to Start?]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-Read the syllabus?
-:::
+# [Read the syllabus?]{.r-fit-text}
 
 (eventually we'll hafta, but it's a boring way to start)
 
 ---
 
-::: {.r-fit-text}
-Go around the room saying our names?
-:::
+# [Go around the room saying our names?]{.r-fit-text}
 
 (eventually we'll hafta, but better if we're energized)
 
 ---
 
-::: {.r-fit-text}
-Get the juices flowing!
-:::
+# [Get the juices flowing!]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-WHY?
-:::
+# [WHY?]{.r-fit-text}
 
 ---
 
@@ -48,9 +36,7 @@ I need to know something about you and this is a very revealing exercise.
 
 ---
 
-::: {.r-fit-text}
-EDIPT
-:::
+# [EDIPT]{.r-fit-text}
 
 ::: {.notes}
 What the heck does that mean? (Empathize, Define, Ideate, Prototype, Test)
@@ -70,21 +56,15 @@ That's one view of the design thinking process. I'd like you to engage in that p
 
 ---
 
-::: {.r-fit-text}
-‹watch video›
-:::
+# [‹watch video›]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-Now do what they did!
-:::
+# [Now do what they did!]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-Materials
-:::
+# [Materials]{.r-fit-text}
 
 - three pages
 - some index cards (about 6)
@@ -93,9 +73,7 @@ Materials
 
 ---
 
-::: {.r-fit-text}
-Form Groups
-:::
+# [Form Groups]{.r-fit-text}
 
 - first form a pair with someone like you
 - then form a group of four with a pair that identifies differently from you (gender, ethnicity, or other identity factors)
@@ -103,9 +81,7 @@ Form Groups
 
 ---
 
-::: {.r-fit-text}
-Protocol
-:::
+# [Protocol]{.r-fit-text}
 
 - Empathize (interview)
 - Define (list of needs)
@@ -114,9 +90,7 @@ Protocol
 
 ---
 
-::: {.r-fit-text}
-‹interview›
-:::
+# [‹interview›]{.r-fit-text}
 
 - break into pairs so everyone gets a chance to be interviewer and interviewee
 - interview is about supporting new year's resolutions
@@ -124,9 +98,7 @@ Protocol
 
 ---
 
-::: {.r-fit-text}
-‹make a list of needs›
-:::
+# [‹make a list of needs›]{.r-fit-text}
 
 - analyze the interview
 - be sure to think about what they meant, not just what they said
@@ -134,9 +106,7 @@ Protocol
 
 ---
 
-::: {.r-fit-text}
-‹storyboard›
-:::
+# [‹storyboard›]{.r-fit-text}
 
 - draw four panels of cartoons on the ideate page
 - show a successful interaction with an app
@@ -145,9 +115,7 @@ Protocol
 
 ---
 
-::: {.r-fit-text}
-‹prototype›
-:::
+# [‹prototype›]{.r-fit-text}
 
 - now use the index cards
 - draw a few main app screens
@@ -167,9 +135,7 @@ Protocol
 
 ---
 
-::: {.r-fit-text}
-what did we learn?
-:::
+# [what did we learn?]{.r-fit-text}
 
 - give me your insights about each phase and write them in your sketchbook
 - phases were
@@ -186,21 +152,15 @@ I casually mention on this slide that you should write something in your sketchb
 
 ---
 
-::: {.r-fit-text}
-‹intros›
-:::
+# [‹intros›]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-‹syllabus›
-:::
+# [‹syllabus›]{.r-fit-text}
 
 ---
 
-::: {.r-fit-text}
-‹canvas›
-:::
+# [‹canvas›]{.r-fit-text}
 
 ::: {.notes}
 I've five readings on Canvas. These include two books that you will use to prepare your milestones, @Cooper2014 and @Holtzblatt2005. By the way, there is a newer edition of Holtzblatt, but I don't like it because it doesn't much except for interrupting itself every few paragraphs to remind us that there are smartphones now. Duh! Another reading is @Dodson2006, which will be useful throughout the semester to support your sketching. Next, we have @Rosenfeld2015, which will help with the second half of the course on information design. Finally, we have @Rogers2023. This is a brand new book on interaction design.
@@ -209,16 +169,4 @@ I should add that the librarian told me that I'm only allowed to put three chapt
 
 :::
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
-
+{{< include endMatter.md >}}

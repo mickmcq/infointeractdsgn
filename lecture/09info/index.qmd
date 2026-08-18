@@ -686,16 +686,4 @@ Abby Warburg, scion of the Warburg banking family of Hamburg, was not interested
 - Our job as designers is to find the context of use by the community and organize according to it
 - What is enduring on the web or in apps? Why? (Much is forced by monopolies, but some is driven by community)
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto* and *Roboto Light*, as well as *STIX TWO Math* for math
-
+{{< include endMatter.md >}}

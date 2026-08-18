@@ -379,16 +379,4 @@ No matter what a prospective employer tells you, the telltale signs in a maturit
 You may, however, wish to work in a low maturity organization if you are being brought in as an educator and have the latitude within your job description to improve the information maturity of the organization. A high information maturity organization might be better suited to a junior employee, interested in learning from an optimized environment.
 :::
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
-
+{{< include endMatter.md >}}

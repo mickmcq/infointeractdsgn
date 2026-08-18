@@ -2,9 +2,7 @@
 title: "Personas"
 ---
 
-::: {.r-fit-text}
-Week FIVE
-:::
+# [Week FIVE]{.r-fit-text}
 
 # Recap, Previously on Info & Interaction Design
 
@@ -162,16 +160,4 @@ The PDCA cycle can be traversed over and over, indefinitely. There are four main
 
 Also see @Pruitt2003.
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
-
+{{< include endMatter.md >}}

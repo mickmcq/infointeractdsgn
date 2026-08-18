@@ -2,9 +2,7 @@
 title: "Scenarios"
 ---
 
-::: {.r-fit-text}
-Week SIX
-:::
+# [Week SIX]{.r-fit-text}
 
 # Interview insights
 
@@ -194,16 +192,4 @@ Here's an example from class where the student used the hat and the ponytails to
 - It turned out that they didn't show enough high points of the story with four panels
 - They wound up using five big panels and four small ones
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
-
+{{< include endMatter.md >}}

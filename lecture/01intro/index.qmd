@@ -2,9 +2,7 @@
 title: "Introduction"
 ---
 
-::: {.r-fit-text}
-Day TWO
-:::
+# [Day TWO]{.r-fit-text}
 
 ## Materials You Need
 
@@ -193,9 +191,7 @@ information we’ll see on the next slide.
 
 ---
 
-::: {.r-fit-text}
-*a message received and understood*
-:::
+# [*a message received and understood*]{.r-fit-text}
 
 ::: {style="text-align: right;"}
 &mdash; Claude Shannon
@@ -261,9 +257,7 @@ One definition you will find in in a dictionary is the preceding.
 
 ---
 
-::: {.r-fit-text}
-*Design is all about constraints.*
-:::
+# [*Design is all about constraints.*]{.r-fit-text}
 
 ::: {style="text-align: right"}
 &mdash; Charles Eames,<br>in an interview
@@ -351,16 +345,4 @@ H.R. McMaster hates Powerpoint. Like Lou Gerstner at IBM, McMaster banned Powerp
 Beware of "good" Powerpoint. Students sometimes tell me that the problem with PP is that it is not well done. I have one student whose father built a lucrative second career out of preparing slick PP for others. He had been a photo slide show specialist in the days when Kodak was big and had simply learned its replacement. I have no doubt that he does "good" PP. He makes a very good living at it. That does not excuse the people who pay him for it and the audiences who evaluate it (the PP) rather than whatever the subject of the PP is. There is, of course, an industry of PP consultants to tell you what colors and words and transitions and fonts and punctuation to use. Do not waste your time, at least this semester, listening to them. Everything that they say is either wrong or is a diluted version of information you can obtain straight from @Arnheim1974 or @Bertin2011 among other sources. Go to the source to learn about design. Avoid mixing your design education with a PP education.
 :::
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
-
+{{< include endMatter.md >}}

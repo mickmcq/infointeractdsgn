@@ -2,9 +2,7 @@
 title: "Audience"
 ---
 
-::: {.r-fit-text}
-Week THREE
-:::
+# [Week THREE]{.r-fit-text}
 
 # But first ... A public service announcement
 ![](fiBDPslideFall2025.jpg)
@@ -679,16 +677,4 @@ Why are these elevator buttons bad? There could be a variety of problems. You mi
 One well-traveled pundit claims that this is what he sees whenever he looks at a hotel shower! I tend to agree and I have to admit I waste a lot of water in hotels trying to figure out how to get the right temperature!
 :::
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
-
+{{< include endMatter.md >}}

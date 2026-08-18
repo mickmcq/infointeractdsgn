@@ -17,9 +17,7 @@ format:
     embed-resources: true
 ---
 
-::: {.r-fit-text}
-Week FOURTEEN
-:::
+# [Week FOURTEEN]{.r-fit-text}
 
 # grammar of graphics
 
@@ -351,9 +349,7 @@ Each point is in a category so you can't draw a meaningful line between the cate
 
 ---
 
-::: {.r-fit-text}
-END
-:::
+# [END]{.r-fit-text}
 
 ---
 

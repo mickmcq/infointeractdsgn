@@ -65,16 +65,4 @@ title: "Shameless plug<br>for good course evals"
 # Conclusion
 I hope you enjoyed this course and learned a lot, both in concepts and skills! Keep in touch!
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
-
+{{< include endMatter.md >}}

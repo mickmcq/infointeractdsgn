@@ -533,16 +533,4 @@ conceived acronym, I will accept GRIP:
 
 We explored these when surveying prototyping in week 7.
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
-
+{{< include endMatter.md >}}

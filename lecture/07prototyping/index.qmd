@@ -2,9 +2,7 @@
 title: "Prototyping"
 ---
 
-::: {.r-fit-text}
-Week SEVEN
-:::
+# [Week SEVEN]{.r-fit-text}
 
 # lofi
 
@@ -69,9 +67,7 @@ Sketchbook pages exhibited in  @Buxton2007, pp 194--5
 
 ##
 
-::: {.r-fit-text}
-〈pause for color video〉
-:::
+# [〈pause for color video〉]{.r-fit-text}
 
 ## Problem: App in video ceased to exist!
 - Taken off App store
@@ -262,9 +258,7 @@ the language, but make each letter look more like the other.
 ## conflict between legibility and readability
 ![](fiRandN.png)
 
-::: {.r-fit-text}
-〈pause for *kern type* exercise at [https://type.method.ac](https://type.method.ac)〉
-:::
+# [〈pause for *kern type* exercise at [https://type.method.ac](https://type.method.ac)〉]{.r-fit-text}
 
 ::: {.notes}
 From left to right, you can read this as decreasing in legibility and increasing in readability, demonstrating that a compromise must be reached.
@@ -397,9 +391,7 @@ Because of the early liturgical emphasis of typography, there are vastly many va
 
 ##
 
-::: {.r-fit-text}
-〈pause for *extreme emphasis* exercise〉
-:::
+# [〈pause for *extreme emphasis* exercise〉]{.r-fit-text}
 
 ::: {.notes}
 For this exercise, I'll play a video, `~/Movies/ux/extremeEmphasis.mov`, which is a monologue by Robin Wiliams. Your task is to sketch some of the things he says in appropriate letters in your sketchbook. While the video plays, don't try to actually do the lettering. Instead, make notes of which lines you would like to letter, then, after the video, go back and try some fancy lettering of those lines.
@@ -470,9 +462,7 @@ Let's look at @Pickering2022 for layout advice, all web-based
 
 ---
 
-::: {.r-fit-text}
-*Everything in web design is a box*
-:::
+# [*Everything in web design is a box*]{.r-fit-text}
 
 ::: {.notes}
 Here they quote Rachel Andrew. Notice that not everything looks like a box but, on the web, everything takes up a boxlike space.
@@ -897,9 +887,7 @@ Appeal
 
 ##
 
-::: {.r-fit-text}
-〈pause for illusion of life video〉
-:::
+# [〈pause for illusion of life video〉]{.r-fit-text}
 
 ## Things you can animate
 - Position
@@ -930,16 +918,4 @@ It's all done with curves!
 You could hand this to the developer and say "Animate this transition!" Instead, Val Head illustrates a motion comp of the transition in her video at [https://youtu.be/Itsg48crOjM](https://youtu.be/Itsg48crOjM).
 :::
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto* and *Roboto Light*
-
+{{< include endMatter.md >}}

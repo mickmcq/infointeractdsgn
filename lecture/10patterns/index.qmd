@@ -133,16 +133,4 @@ According to Edgar Dale, you remember:
 Because many educators believe what Dale says, it may work better to have you present your understanding of a category of patterns to others than to read or hear about it.
 :::
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto* and *Roboto Light*
-
+{{< include endMatter.md >}}

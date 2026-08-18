@@ -61,16 +61,4 @@ title: "Design Systems"
 - It is a last resort, though, this is supposed to be a hard exercise
 - (Don't pick one of the easy ones, e.g., Apple, Google, Msft, if you do switch)
 
-# [END]{.r-fit-text}
-
-# References
-
-::: {#refs}
-:::
-
-# Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *Roboto*, *Roboto Light*, and *Victor Mono Nerd Font*
-
+{{< include endMatter.md >}}
