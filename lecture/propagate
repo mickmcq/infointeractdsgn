@@ -1,0 +1,30 @@
+
+
+dest=~/other/mickmcquaid.com/jekyll/mickmcq.github.io/infointeractdsgn/
+for d in \
+  00designThinking \
+  01intro \
+  02backgrndRad \
+  03audience \
+  04contextInquiry \
+  05personas \
+  06scenarios \
+  07prototyping \
+  07supplement \
+  08personalInfo \
+  09info \
+  10patterns \
+  11findingInfo \
+  12visInfo \
+  13visDemo \
+  14conclusion \
+  14designSystems \
+  14visTheory
+do
+  if [ -f "$d/index.html" ]
+  then
+    cp -p "$d/index.html" "$dest/$d/index.html"
+  else
+    echo "propagate: skipping $d, no index.html" >&2
+  fi
+done
