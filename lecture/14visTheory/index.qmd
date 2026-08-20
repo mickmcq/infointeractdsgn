@@ -1,20 +1,5 @@
 ---
-title: "Info & Interaction Design:<br>Vis Theory"
-author: Mick McQuaid
-date: today
-bibliography: master.bib
-format:
-  revealjs:
-    logo: iSchoolLogo.png
-    theme: moon
-    css: style.css
-    transition: slide
-    background-transition: fade
-    preview-links: auto
-    controls: true
-    controls-layout: bottom-right
-    center: true
-    embed-resources: true
+title: "Vis Theory"
 ---
 
 # [Week FOURTEEN]{.r-fit-text}
@@ -342,20 +327,5 @@ Each point is in a category so you can't draw a meaningful line between the cate
 
 
 
-# References
-
-::: {#refs}
-:::
-
----
-
-# [END]{.r-fit-text}
-
----
-
-Colophon
-
-This slideshow was produced using `quarto`
-
-Fonts are *League Gothic* and *Lato*
+{{< include endMatter.md >}}
 
