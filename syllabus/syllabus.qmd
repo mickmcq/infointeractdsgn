@@ -26,6 +26,9 @@ The information presented in this syllabus is subject to expansion, contraction,
 ## Course Number
 29685
 
+## Canvas
+[https://utexas.instructure.com/courses/1456631](https://utexas.instructure.com/courses/1456631)
+
 ## Prerequisites
 
 - I301 Intro to Informatics
@@ -155,6 +158,7 @@ Personas ---
 No graded work due
 
 [Week 6 (28 Sep, 30 Sep)]{.weekn}
+Guest speaker: Daniel Pogue, ExxonMobil ---
 Scenarios ---
 Milestone 2,                          10 points (contextual inquiry) 
 
