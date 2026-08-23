@@ -1,6 +1,9 @@
 ---
 title: "Information and Interaction Design"
-subtitle: "I320U<br>Fall 2026<br>UT Austin iSchool Syllabus"
+subtitle: |
+  I320U\
+  Fall 2026\
+  UT Austin iSchool Syllabus
 date: today
 format:
   html:
@@ -8,6 +11,30 @@ format:
     toc: true
     theme:
       - theme.scss
+  pdf:
+    pdf-engine: xelatex
+    sansfont: TeX Gyre Schola
+    documentclass: scrartcl
+    classoption:
+      - DIV=11
+    papersize: letter
+    geometry:
+      - margin=1in
+    toc: true
+    toc-depth: 2
+    colorlinks: true
+    linkcolor: utblue
+    urlcolor: utblue
+    citecolor: utgreen
+    include-in-header:
+      text: |
+        \usepackage{xcolor}
+        \definecolor{utblue}{HTML}{39729E}
+        \definecolor{utgreen}{HTML}{046307}
+        \definecolor{utorange}{HTML}{BF5700}
+        \newcommand{\weekn}[1]{{\color{utorange}\bfseries\itshape #1}}
+filters:
+  - weekn.lua
 bibliography: master.bib
 mainfont: TeX Gyre Schola
 monofont: JetBrainsMono Nerd Font
@@ -24,7 +51,7 @@ Important note:
 The information presented in this syllabus is subject to expansion, contraction, change, or stasis during the semester. In case of conflict between versions, the copy on Canvas takes precedence.
 
 ## Course Number
-29685
+30525
 
 ## Canvas
 [https://utexas.instructure.com/courses/1456631](https://utexas.instructure.com/courses/1456631)
@@ -123,7 +150,7 @@ We will rely on portions of five books: @Cooper2014, @Dodson2006, @Holtzblatt200
 The study guide (on Canvas) is the only other required textbook for the course.
 
 ## Notebook
-You should bring a paper notebook to class every day and be prepared to upload pictures from it frequently. The notebook should be the size of the Moleskine Cahier notebook, 5 $\times$ 8.25 inches. It is widely available in packs of three for about 15\textsc{usd}. Substitute any sketchbook of similar size, e.g., Malvern Books has Leuchturm sketchbooks, which have higher quality paper than Moleskine but are more expensive. Why do I insist on this size? You actually draw differently on larger notebooks due to the average shape and size of the human hand.
+You should bring a paper notebook to class every day and be prepared to upload pictures from it frequently. The notebook should be the size of the Moleskine Cahier notebook, 5 $\times$ 8.25 inches. It is widely available in packs of three for about 15 [usd]{.smallcaps}. Substitute any sketchbook of similar size, e.g., Malvern Books has Leuchturm sketchbooks, which have higher quality paper than Moleskine but are more expensive. Why do I insist on this size? You actually draw differently on larger notebooks due to the average shape and size of the human hand.
 
 You should only write or draw in the notebook and not staple or paste scans or photos into it. All the work in the notebook should be in pen or pencil, preferably pencil.
 
