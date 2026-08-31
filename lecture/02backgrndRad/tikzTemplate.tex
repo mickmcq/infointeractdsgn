@@ -1,0 +1,30 @@
+%                                 template for knitr tikz
+%                                 chunks in this deck.
+%                                 knitr compiles svg figures
+%                                 via latex -> dvi -> dvisvgm,
+%                                 so this must stay dvi-safe:
+%                                 no fontspec, no otf fonts.
+%                                 the %% ... %% tokens must
+%                                 each sit on a line of their
+%                                 own; knitr inserts after
+%                                 them rather than replacing
+%                                 them.
+\documentclass[
+%% TIKZ_CLASSOPTION %%
+]{standalone}
+\usepackage[T1]{fontenc}
+%                                 type1 stand-ins for the
+%                                 deck fonts (Fira Sans /
+%                                 Fira Mono)
+\usepackage{FiraSans}
+\usepackage{FiraMono}
+%                                 the same color and tikz node
+%                                 styles the standalone
+%                                 figures use, from
+%                                 texmf-local
+\input{colorsettings}
+\input{tikzsettings}
+%% EXTRA_TIKZ_PREAMBLE_CODE %%
+\begin{document}
+%% TIKZ_CODE %%
+\end{document}

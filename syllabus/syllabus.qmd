@@ -54,7 +54,7 @@ The information presented in this syllabus is subject to expansion, contraction,
 30525
 
 ## Canvas
-[https://utexas.instructure.com/courses/1456631](https://utexas.instructure.com/courses/1456631)
+[https://utexas.instructure.com/courses/1456671](https://utexas.instructure.com/courses/1456671)
 
 ## Prerequisites
 
@@ -150,7 +150,7 @@ We will rely on portions of five books: @Cooper2014, @Dodson2006, @Holtzblatt200
 The study guide (on Canvas) is the only other required textbook for the course.
 
 ## Notebook
-You should bring a paper notebook to class every day and be prepared to upload pictures from it frequently. The notebook should be the size of the Moleskine Cahier notebook, 5 $\times$ 8.25 inches. It is widely available in packs of three for about 15 [usd]{.smallcaps}. Substitute any sketchbook of similar size, e.g., Malvern Books has Leuchturm sketchbooks, which have higher quality paper than Moleskine but are more expensive. Why do I insist on this size? You actually draw differently on larger notebooks due to the average shape and size of the human hand.
+You should bring a paper notebook to class every day and be prepared to upload pictures from it frequently. The notebook should be the size of the [Moleskine Cahier](https://www.moleskine.com/en-us/shop/notebooks/journals/cahier-journals/) notebook, 5 $\times$ 8.25 inches. It is widely available in packs of three for about 15 [usd]{.smallcaps} (more expensive at the official site). Substitute any sketchbook of similar size, e.g., Malvern Books has Leuchturm sketchbooks, which have higher quality paper than Moleskine but are more expensive. Why do I insist on this size? You actually draw differently on larger notebooks due to the average shape and size of the human hand.
 
 You should only write or draw in the notebook and not staple or paste scans or photos into it. All the work in the notebook should be in pen or pencil, preferably pencil.
 
@@ -172,7 +172,7 @@ Background radiation ---
 Exercise 1, 05 points (drawing a face $+$ 2 examples of good design)
 
 [Week 3 (9 Sep)]{.weekn}
-Note that Monday is Labor Day
+Note that Monday is Labor Day ---
 Audience ---
 Milestone 1,                          05 points (proj focus)
 
@@ -181,6 +181,7 @@ Contextual Inquiry ---
 Exercise 2, 05 points (picking up a key $+$ 2 examples of good design)
 
 [Week 5 (21 Sep, 23 Sep)]{.weekn}
+Guest speaker: Hanna Melo Fugulin, American Foundation for the Blind ---
 Personas ---
 No graded work due
 

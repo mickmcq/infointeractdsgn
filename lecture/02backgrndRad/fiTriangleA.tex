@@ -1,0 +1,64 @@
+%                                 example answer for the
+%                                 roles triangle exercise:
+%                                 one student's now and future
+%                                 positions on the triangle
+\definecolor{ambitioncolor}{rgb}{0.90,0.10,0.10}
+
+\tikzset{
+  ambitionbubble/.style={
+    align=center,
+    draw=ambitioncolor,
+    fill=ambitioncolor,
+    thick,
+%                                 center, not base, so the
+%                                 bubble sits exactly on its
+%                                 coordinate
+    anchor=center,
+    text=white,
+    shape=ellipse,
+    minimum size=3pt,
+    opacity=0.95,
+    inner sep=4pt,
+    font=\ttfamily\small
+  },
+  ambitionarrow/.style={
+    ->,
+    >=stealth,
+    very thick,
+    opacity=0.9,
+    draw=ambitioncolor,
+%                                 the dvi route colors arrow
+%                                 tips by fill, the pdf route
+%                                 by draw, so set both
+    fill=ambitioncolor
+  },
+  ambitioncaption/.style={
+    align=center,
+    anchor=base,
+    text=chenattrcolor,
+    font=\ttfamily\small
+  }
+}
+
+\begin{center}
+  \begin{tikzpicture}[xscale=1.7,show background rectangle]
+  \tikzstyle{background rectangle}=[rounded corners,fill=bkgroundcolor]
+
+    \node[chenattr]      (a00) at (2.5,6.0)    {psych};
+    \node[chenattr]      (a01) at (0.0,0)      {graphics};
+    \node[chenattr]      (a02) at (5.0,0)      {coding};
+
+    \draw[relat] (a00) -- (a01);
+    \draw[relat] (a00) -- (a02);
+    \draw[relat] (a01) -- (a02);
+
+%                                 near the apex
+    \node[ambitionbubble] (b00) at (2.5,4.9)   {now};
+%                                 the centroid of the triangle
+    \node[ambitionbubble] (b01) at (2.5,2.0)   {future};
+
+    \draw[ambitionarrow] (b00) -- (b01);
+
+    \node[ambitioncaption] at (2.5,-1.1) {ambition: psych student $\rightarrow$ product designer};
+  \end{tikzpicture}
+\end{center}
