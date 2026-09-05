@@ -356,4 +356,24 @@ Let me underscore two things about this anecdote. First, the audience was very d
 Does that mean that these people all suck and are cultural imperialists? No, it means that it is hard to put yourself into the shoes of another. Every day I read in the blogs that Samsung or Google or Apple is a complete idiot because of some UI feature that someone doesn't like. Really? *Really?* No, they are not idiots. They have a hard job.
 :::
 
+# Day TWO of Week TWO
+
+## First, let's look at the triangles
+- See if you can find patterns
+- See if you can find people like you
+- Keep in mind that you will be colleagues for a long time to come!
+  - What does that mean?
+  - How does that affect your interactions?
+
+## Now, a Figma exercise
+- animate the transition on the following slide
+- There are vastly many ways to do it
+- If you can, allow the user to go back to the initial state
+- Yes, this is a test, but no, it won't be graded
+- We need to know what you already know about Figma to prepare appropriate lessons
+
+## Animate this transition
+![](fiOpenClose.png){fig-alt="Two screens, the first with the search box closed; the second with it open"}
+
 {{< include endMatter.md >}}
+

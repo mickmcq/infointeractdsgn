@@ -387,7 +387,9 @@ When submitting your assignments please the keep a few things in check, for the 
    - jpg
    - png
    - pdf
-6. Every exercise must be accompanied by two hand-drawn sketches of good design. These will serve several purposes: (1) improving your hand-eye coordination for sketching at the whiteboard, for instance (graduates often tell me they spend 2/5 of their time at the whiteboard!), (2) refining your idea of what constitutes good design, (3) recording your progress in sketching, and (4) sharing examples of good design with others. Please note that design is created by humans, so pictures of trees or mountain ranges are not acceptable. Each sketch should be of one good design, rather than, say, a street scene with many designed artifacts. It should be apparent at a glance what you mean as a good design.
+6. Every exercise must be accompanied by two hand-drawn sketches of good design. These will serve several purposes: (1) improving your hand-eye coordination for sketching at the whiteboard, for instance (graduates often tell me they spend 2/5 of their time at the whiteboard!), (2) refining your idea of what constitutes good design, (3) recording your progress in sketching, and (4) sharing examples of good design with others. Please note that design is created by humans, so pictures of trees or mountain ranges are not acceptable. Each sketch should be of one good design, rather than, say, a street scene with many designed artifacts. It should be apparent at a glance what you mean as a good design. Following is an example from a former student.
+
+![](fiJagerWangSketch.png){fig-alt="hand drawn sketch of a table-top tripod with some hatching and cross-hatching"}
 
 ### Using your sketchbook
 
