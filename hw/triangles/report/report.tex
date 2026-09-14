@@ -1,0 +1,272 @@
+% Compile with lualatex
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=2.1cm]{geometry}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\captionsetup{font=small,labelfont=bf}
+
+\definecolor{psy}{RGB}{46,110,180}   % toward psychology
+\definecolor{gfx}{RGB}{225,120,20}   % toward graphics
+\definecolor{cod}{RGB}{0,140,120}    % toward coding
+\definecolor{meanred}{RGB}{180,30,40}
+
+\title{Ambition Mapping: Where the Class Stands, and Where It Is Headed\\
+\large Information \& Interaction Design --- triangle sketches of 31 August 2026}
+\author{Analysis of 28 student submissions}
+\date{2 September 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Data and method}
+Each student sketched a triangle whose vertices are the course's three reference
+disciplines --- \textbf{psychology}, \textbf{graphics} (visual design), and
+\textbf{coding} --- and placed two marks inside it: where their skills sit
+\emph{now} and where they want to be in the \emph{future}, joined by an arrow.
+All 28 submissions were read visually and each mark was converted to an
+approximate barycentric weighting over the three vertices (visual estimates,
+roughly $\pm 10$ points). Nineteen students used the canonical vertex set (one
+substituted the synonym ``design'' for graphics); these are plotted together in
+Figure~\ref{fig:agg}. The remaining nine redrew the triangle around other
+vertices (informatics, business, leadership, marketing, career roles) and are
+summarized separately in Table~\ref{tab:reframed}, since their positions are
+not commensurable with the shared frame.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[x=1cm,y=1cm,
+  varrow/.style={-{Stealth[length=2.4mm,width=1.9mm]}, line width=0.8pt, opacity=0.78},
+  lab/.style={font=\tiny, text=black!60, inner sep=0.6pt}]
+
+% ---- triangle frame -------------------------------------------------
+\coordinate (P) at (6.5,11.258);
+\coordinate (G) at (0,0);
+\coordinate (C) at (13,0);
+\draw[black!70, line width=1pt] (P) -- (G) -- (C) -- cycle;
+\node[above, font=\bfseries] at ($(P)+(0,0.15)$) {Psychology};
+\node[below, align=center, font=\bfseries] at ($(G)+(0.4,-0.15)$) {Graphics\\ \normalfont\small (visual design)};
+\node[below, font=\bfseries] at ($(C)+(-0.3,-0.15)$) {Coding};
+
+% centroid
+\path (barycentric cs:P=1,G=1,C=1) coordinate (cen);
+\draw[black!45] ($(cen)+(-0.13,0)$) -- ($(cen)+(0.13,0)$)
+                ($(cen)+(0,-0.13)$) -- ($(cen)+(0,0.13)$);
+
+% ---- student vectors: dot = now, arrowhead = future -----------------
+% 1 Brunell
+\fill[psy] (barycentric cs:P=15,G=40,C=45) circle (1.7pt) node[lab,anchor=north]{1};
+\draw[psy,varrow] (barycentric cs:P=15,G=40,C=45) -- (barycentric cs:P=40,G=30,C=30);
+% 2 Chen
+\fill[psy] (barycentric cs:P=25,G=25,C=50) circle (1.7pt) node[lab,anchor=west]{2};
+\draw[psy,varrow] (barycentric cs:P=25,G=25,C=50) -- (barycentric cs:P=33,G=33,C=34);
+% 3 Fernandez (nudged +2/-2 from Brunell's identical estimate for legibility)
+\fill[psy] (barycentric cs:P=17,G=42,C=41) circle (1.7pt) node[lab,anchor=south]{3};
+\draw[psy,varrow] (barycentric cs:P=17,G=42,C=41) -- (barycentric cs:P=25,G=35,C=40);
+% 4 Guizar
+\fill[psy] (barycentric cs:P=30,G=30,C=40) circle (1.7pt) node[lab,anchor=north]{4};
+\draw[psy,varrow] (barycentric cs:P=30,G=30,C=40) -- (barycentric cs:P=40,G=20,C=40);
+% 5 Kamle
+\fill[psy] (barycentric cs:P=45,G=50,C=5) circle (1.7pt) node[lab,anchor=east]{5};
+\draw[psy,varrow] (barycentric cs:P=45,G=50,C=5) -- (barycentric cs:P=75,G=15,C=10);
+% 6 Kim
+\fill[psy] (barycentric cs:P=15,G=45,C=40) circle (1.7pt) node[lab,anchor=east]{6};
+\draw[psy,varrow] (barycentric cs:P=15,G=45,C=40) -- (barycentric cs:P=39,G=31,C=30);
+% 7 Kumar
+\fill[cod] (barycentric cs:P=45,G=35,C=20) circle (1.7pt) node[lab,anchor=south]{7};
+\draw[cod,varrow] (barycentric cs:P=45,G=35,C=20) -- (barycentric cs:P=35,G=15,C=50);
+% 8 Melendez Gonzalez
+\fill[psy] (barycentric cs:P=25,G=30,C=45) circle (1.7pt) node[lab,anchor=north]{8};
+\draw[psy,varrow] (barycentric cs:P=25,G=30,C=45) -- (barycentric cs:P=50,G=25,C=25);
+% 9 Nguyen, Lucas
+\fill[cod] (barycentric cs:P=40,G=35,C=25) circle (1.7pt) node[lab,anchor=east]{9};
+\draw[cod,varrow] (barycentric cs:P=40,G=35,C=25) -- (barycentric cs:P=35,G=25,C=40);
+% 10 Nguyen, Nikki
+\fill[psy] (barycentric cs:P=30,G=25,C=45) circle (1.7pt) node[lab,anchor=west]{10};
+\draw[psy,varrow] (barycentric cs:P=30,G=25,C=45) -- (barycentric cs:P=40,G=25,C=35);
+% 11 Robinson
+\fill[psy] (barycentric cs:P=30,G=35,C=35) circle (1.7pt) node[lab,anchor=east]{11};
+\draw[psy,varrow] (barycentric cs:P=30,G=35,C=35) -- (barycentric cs:P=45,G=20,C=35);
+% 12 Sadberry
+\fill[psy] (barycentric cs:P=40,G=40,C=20) circle (1.7pt) node[lab,anchor=east]{12};
+\draw[psy,varrow] (barycentric cs:P=40,G=40,C=20) -- (barycentric cs:P=55,G=22,C=23);
+% 13 Tchao
+\fill[psy] (barycentric cs:P=28,G=32,C=40) circle (1.7pt) node[lab,anchor=north]{13};
+\draw[psy,varrow] (barycentric cs:P=28,G=32,C=40) -- (barycentric cs:P=42,G=28,C=30);
+% 14 Torres, Jacklynn
+\fill[gfx] (barycentric cs:P=70,G=20,C=10) circle (1.7pt) node[lab,anchor=north east]{14};
+\draw[gfx,varrow] (barycentric cs:P=70,G=20,C=10) -- (barycentric cs:P=30,G=60,C=10);
+% 15 Tsan
+\fill[psy] (barycentric cs:P=35,G=40,C=25) circle (1.7pt) node[lab,anchor=east]{15};
+\draw[psy,varrow] (barycentric cs:P=35,G=40,C=25) -- (barycentric cs:P=45,G=25,C=30);
+% 16 Urquiza Sanchez
+\fill[psy] (barycentric cs:P=25,G=35,C=40) circle (1.7pt) node[lab,anchor=east]{16};
+\draw[psy,varrow] (barycentric cs:P=25,G=35,C=40) -- (barycentric cs:P=41,G=29,C=30);
+% 17 Vann (nudged +1/+1/-2 from Robinson's identical estimate for legibility)
+\fill[psy] (barycentric cs:P=31,G=36,C=33) circle (1.7pt) node[lab,anchor=south]{17};
+\draw[psy,varrow] (barycentric cs:P=31,G=36,C=33) -- (barycentric cs:P=40,G=40,C=20);
+% 18 Villarreal
+\fill[gfx] (barycentric cs:P=75,G=15,C=10) circle (1.7pt) node[lab,anchor=south west]{18};
+\draw[gfx,varrow] (barycentric cs:P=75,G=15,C=10) -- (barycentric cs:P=20,G=70,C=10);
+% 19 Wu
+\fill[psy] (barycentric cs:P=25,G=20,C=55) circle (1.7pt) node[lab,anchor=west]{19};
+\draw[psy,varrow] (barycentric cs:P=25,G=20,C=55) -- (barycentric cs:P=55,G=20,C=25);
+
+% ---- class mean vector ----------------------------------------------
+\draw[white, line width=2.8pt] (barycentric cs:P=33.8,G=33.0,C=33.2) -- (barycentric cs:P=41.3,G=29.9,C=28.8);
+\draw[meanred, -{Stealth[length=3.2mm,width=2.6mm]}, line width=1.5pt]
+  (barycentric cs:P=33.8,G=33.0,C=33.2) -- (barycentric cs:P=41.3,G=29.9,C=28.8);
+\fill[meanred] (barycentric cs:P=33.8,G=33.0,C=33.2) circle (2.1pt);
+\node[meanred, font=\scriptsize\bfseries, anchor=west, fill=white, fill opacity=0.75, text opacity=1, inner sep=1pt]
+  at ($(barycentric cs:P=41.3,G=29.9,C=28.8)+(0.18,0.14)$) {class mean};
+
+% ---- legend ----------------------------------------------------------
+\begin{scope}[shift={(0.1,10.9)}]
+  \node[anchor=north west, font=\small\bfseries] at (0,0.45) {now $\bullet\!\longrightarrow$ future};
+  \fill[psy] (0.1,-0.35) circle (1.7pt);
+  \draw[psy,varrow] (0.1,-0.35) -- (1.1,-0.35);
+  \node[anchor=west, font=\small] at (1.2,-0.35) {toward psychology (15)};
+  \fill[gfx] (0.1,-0.95) circle (1.7pt);
+  \draw[gfx,varrow] (0.1,-0.95) -- (1.1,-0.95);
+  \node[anchor=west, font=\small] at (1.2,-0.95) {toward graphics (2)};
+  \fill[cod] (0.1,-1.55) circle (1.7pt);
+  \draw[cod,varrow] (0.1,-1.55) -- (1.1,-1.55);
+  \node[anchor=west, font=\small] at (1.2,-1.55) {toward coding (2)};
+  \fill[meanred] (0.1,-2.15) circle (2.1pt);
+  \draw[meanred, -{Stealth[length=3.2mm,width=2.6mm]}, line width=1.5pt] (0.1,-2.15) -- (1.1,-2.15);
+  \node[anchor=west, font=\small] at (1.2,-2.15) {class mean shift};
+\end{scope}
+\end{tikzpicture}
+\caption{All 19 canonical-frame self-placements on one triangle. Each dot is a
+student's \emph{now}; the arrowhead is their \emph{future}. Numbers key to
+Table~\ref{tab:students}. The gray cross marks the centroid (equal thirds);
+note the class-mean \emph{now} sits almost exactly on it. Arrows are colored by
+the vertex whose weight the student gains most. Positions are visual estimates
+from hand-drawn sketches ($\pm 10$ points); two pairs of coincident \emph{now} points (1/3 and 11/17)
+were nudged apart minimally for legibility.}
+\label{fig:agg}
+\end{figure}
+
+\section*{Findings}
+
+\paragraph{1. The dominant motion is a flow toward psychology, not a collapse
+to the center.} Fifteen of the 19 plotted students gain psychology weight
+(median gain $\approx$ 15 points); the class mean moves from
+$(34,33,33)$ --- statistically indistinguishable from the perfectly balanced
+centroid --- to $(41,30,29)$, i.e.\ $+7.5$ psychology, $-3.1$ graphics,
+$-4.4$ coding. Average distance from the centroid barely changes
+(only 9 of 19 end \emph{closer} to it), so the class is not simply
+``converging on balance'': it is rotating its collective weight toward the
+human-understanding vertex while keeping graphics and coding as a retained base.
+Several students said this outright, e.g.\ ``I want to \ldots{} better
+understand the psychology behind them'' (Brunell).
+
+\paragraph{2. Coding is a starting asset, almost never a destination.} Most
+\emph{now} marks sit in the lower half of the triangle, on or near the
+graphics--coding edge --- consistent with the cohort's self-described
+identities (informatics, CS, data, UX-engineering students). Only two students
+(Kumar, L.~Nguyen) move \emph{toward} coding, and both frame it as rounding out
+a design-heavy profile rather than specializing.
+
+\paragraph{3. Two dramatic counter-flows toward graphics.} Villarreal and
+J.~Torres are the only students whose futures are \emph{more} specialized than
+their present: both start high under the psychology vertex and traverse nearly
+the full psychology--graphics edge, landing just above the graphics vertex
+(``ambition: psych $\to$ graphics''; ``informatics student $\to$ UX
+researcher''). They are the visually largest displacements in the figure.
+
+\paragraph{4. The reframed triangles tell the complementary story: apex
+$\to$ center.} Among the nine students who replaced the canonical vertices
+(Table~\ref{tab:reframed}), the recurring pattern is a \emph{now} placed
+directly under the vertex naming their current major or role (informatics,
+business, data science) and a \emph{future} at the balanced center --- an
+explicit ``I am one-dimensional today and want to diversify.'' Substituted
+vertices are revealing in themselves: students most often swapped
+\emph{psychology} out for their home discipline, suggesting the human vertex is
+the least-owned identity coming into the course.
+
+\paragraph{5. Ambitions cluster on hybrid product roles.} Of the 24 students
+who wrote an ambition caption, the named destinations are overwhelmingly
+generalist: \textbf{product designer} ($\approx$7, including ``healthcare
+product designer''), \textbf{UX designer/researcher} ($\approx$5),
+\textbf{product manager} (3), then one each of product marketer, technical
+sales, data engineer/analyst, app designer, mobile-app design, and ``AI
+societal-impacts researcher.'' The modal narrative arc, stated almost
+verbatim by nine students, is \emph{``informatics student $\to$
+product/UX designer.''}
+
+\paragraph{6. Process observations.} Format was highly uniform (two circled
+marks, one arrow, monochrome pen/pencil, dated 8/31, an ``ambition:'' caption;
+only one submission carried no written note). At least five sketches show
+erased and repositioned marks --- students visibly deliberated over where they
+stand. One outlier (Low) mapped seven career roles across a
+communication/marketing/tech triangle instead of two points, the most
+elaborated submission in the set.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Canonical-frame students plotted in Figure~\ref{fig:agg}. Weights are
+visual estimates of (psychology, graphics, coding) in percent.}
+\label{tab:students}
+\begin{tabularx}{\textwidth}{@{}r l c c >{\RaggedRight\arraybackslash}X@{}}
+\toprule
+\# & Student & Now $(p,g,c)$ & Future $(p,g,c)$ & Stated ambition \\
+\midrule
+1 & Brunell, Erika & (15, 40, 45) & (40, 30, 30) & more graphics + the psychology behind them \\
+2 & Chen, Yu-Hsin & (25, 25, 50) & (33, 33, 34) & CS student $\to$ product designer \\
+3 & Fernandez, Andres & (15, 40, 45) & (25, 35, 40) & human-centered DS $\to$ data engineer/analyst \\
+4 & Guizar, Angelina & (30, 30, 40) & (40, 20, 40) & informatics $\to$ mobile app design/developer \\
+5 & Kamle, Prachiti & (45, 50, 5) & (75, 15, 10) & UX designer $\to$ UI/UX researcher \\
+6 & Kim, Alex & (15, 45, 40) & (40, 30, 30) & UX student $\to$ design \\
+7 & Kumar, Nikitha & (45, 35, 20) & (35, 15, 50) & UX $\to$ product designer \\
+8 & Melendez Gonzalez, Isabella & (25, 30, 45) & (50, 25, 25) & informatics $\to$ UX designer \\
+9 & Nguyen, Lucas & (40, 35, 25) & (35, 25, 40) & informatics UX $\to$ UX engineer / product designer \\
+10 & Nguyen, Nikki & (30, 25, 45) & (40, 25, 35) & data analytics $\leftrightarrow$ UX designer \\
+11 & Robinson, Asher & (30, 35, 35) & (45, 20, 35) & --- \\
+12 & Sadberry, Lauren & (40, 40, 20) & (55, 22, 23) & UX design/research $\to$ AI societal-impacts researcher \\
+13 & Tchao, Jennie & (28, 32, 40) & (42, 28, 30) & --- \\
+14 & Torres, Jacklynn & (70, 20, 10) & (30, 60, 10) & informatics $\to$ UX researcher \\
+15 & Tsan, Yasmine & (35, 40, 25) & (45, 25, 30) & UX-design informatics $\to$ product designer \\
+16 & Urquiza Sanchez, Ivonne & (25, 35, 40) & (40, 30, 30) & informatics $\to$ healthcare product designer \\
+17 & Vann, Jacob & (30, 35, 35) & (40, 40, 20) & --- \\
+18 & Villarreal, Novily & (75, 15, 10) & (20, 70, 10) & ``psych $\to$ graphics'' \\
+19 & Wu, Ivan & (25, 20, 55) & (55, 20, 25) & UX engineer $\to$ product / UX designer \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{The nine students who redrew the triangle around their own vertices.
+Their placements are not plotted in Figure~\ref{fig:agg} because the frames are
+not commensurable.}
+\label{tab:reframed}
+\begin{tabularx}{\textwidth}{@{}l >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X >{\RaggedRight\arraybackslash}X@{}}
+\toprule
+Student & Their vertices & Movement & Stated ambition \\
+\midrule
+Choday, Nishant & HC data-science student / product manager / software developer & student apex $\to$ center & balance of all three roles \\
+Datla, Vibha & data science / people-facing / product-centered & DS apex $\to$ center & data scientist $\to$ technical sales \\
+Jayanthi, Ashvin & information--data science / graphics / coding & apex $\to$ center & informatics $\to$ product manager \\
+Kiran, Nidhi & business / design / coding & business apex $\to$ center & business $\to$ product manager \\
+Low, Chloe & communication / marketing / tech--data science & 7-role landscape converging bottom-center & advertising + DS student $\to$ product marketer \\
+Maytesyan, Natalie & psychology / business / coding & coding-lean $\to$ centroid & software engineer $\to$ equal balance of all three \\
+Pudu, Pranav & leadership / psych--UI/UX / coding & center $\to$ leadership apex & --- \\
+Smith, Zachary & informatics / graphics / coding & apex $\to$ center & informatics $\to$ product designer \\
+Torres, Javier & informatics / graphics / apps & apex $\to$ slightly toward center & informatics $\to$ app designer \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section*{Caveats}
+Positions were read visually from hand-drawn, unscaled sketches; barycentric
+weights are estimates with roughly $\pm 10$-point uncertainty, and edge cases
+(erased and redrawn marks, ambiguous arrowheads) were resolved by the
+accompanying written captions where available. Counts by movement direction are
+robust to this uncertainty; individual coordinates are indicative only.
+
+\end{document}

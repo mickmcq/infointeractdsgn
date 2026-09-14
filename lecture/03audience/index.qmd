@@ -614,12 +614,16 @@ Don Norman is the single person who has done the most to popularize HCI in the p
 
 Most bad design examples remind us of the importance of signifiers and the danger of cognitive dissonance.
 
-- that aspect of a thing you can interact with that
+There is that aspect of a thing you can interact with that
 suggests how to interact with it
-- can be done well or poorly
-- central concept for individual user
-- often skeuomorphic
-- flat design opposes notion of need for signifiers
+
+It can be done well or poorly
+
+It is the central concept for individual user
+
+It is often skeuomorphic
+
+Flat design opposes notion of need for signifiers
 :::
 
 ## Flat design risks
