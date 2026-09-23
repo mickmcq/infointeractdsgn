@@ -4,11 +4,12 @@ title: "Personas"
 
 # [Week FIVE]{.r-fit-text}
 
-# Recap, Previously on Info & Interaction Design
+# Previously on Info & Interaction Design
 
-- Contextual Inquiry
-- Mood boards
 - Picking up a key
+- Many of you didn't follow instructions ... why?
+- I try not to give too many instructions so you can exercise your imagination
+- But I will take off for not following instructions in future exercises
 
 # Protocol and verbal analysis
 
@@ -125,6 +126,27 @@ Most of the items in the list are self-explanatory. The last one, though, needs 
 - Research basis grounds personas in measured reality
 - They are context-specific: one persona for one product
 - Their motivations are explored
+
+## Three kinds of personas
+- Primary personas, the focus of your project
+- Secondary personas, not your focus but satisfied by your app or site
+- Anti personas, people you specifically exclude, people your app or site is not meant to serve
+
+## Things you've learned about using AI for personas
+- Don't use cartoons!
+- Don't name them Maya! (jk)
+- Write long, detailed prompts
+- Include the top level affinity labels and emphasize their importance
+
+## Some personal preferences
+- Readable at a glance---imagine someone sees it while walking down a hallway
+- Landscape---if someone is viewing it onscreen
+- Remove the part they don't read (that's a famous saying from advertising)
+- No scenarios (that's next)
+- Barcharts make it easy to compare the primary, secondary, and anti personas
+- Look at examples online and see what piques your interest
+
+# Cognitive Processing
 
 ## Cognitive processing levels, from @Norman2005
 - Visceral
