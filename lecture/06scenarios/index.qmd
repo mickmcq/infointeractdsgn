@@ -6,9 +6,9 @@ title: "Scenarios"
 
 # Interview insights
 
-## Your ideas
+## Previous ideas
 
-You came up with the following interview insights after reflecting on interviews you did in class:
+Students in a previous semester came up with the following interview insights after reflecting on interviews done in class:
 
 - don't ask yes or no questions
 - be open in your questions
@@ -67,6 +67,13 @@ Now we fast-forward to 1955, when Alfred Hitchcock, like many filmmakers, used s
 
 ::: {.notes}
 The storyboard was a means to an end and the end is seen in this still from *North by Northwest*.
+:::
+
+##
+![](fiStoryboardsByMikeMaltese.jpg){ofig-align="center"}
+
+::: {.notes}
+As a contrast, here is a 1957 storyboard series from the cartoon *What's Opera, Doc* drawn by Mike Maltese.
 :::
 
 ##
