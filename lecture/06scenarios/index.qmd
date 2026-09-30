@@ -153,7 +153,7 @@ Here's an example from class where the student used the hat and the ponytails to
 
 [https://youtu.be/bNh54LNUtv8](https://youtu.be/bNh54LNUtv8)
 
-## let's do a storyboard in Figma
+## let's do a storyboard with paper and pencil
 
 ## divide up canvas like a comic book page
 
@@ -164,7 +164,7 @@ Here's an example from class where the student used the hat and the ponytails to
 - amount of time to decide what each panel will convey
   - 10 min to plan
 - amount of time to spend on each panel
-  - 5 × 4 = 20 min on four panels ✓
+  - for example, 5 × 4 = 20 min on four panels ✓
 
 ## Process
 - start at beginning
@@ -200,3 +200,4 @@ Here's an example from class where the student used the hat and the ponytails to
 - They wound up using five big panels and four small ones
 
 {{< include endMatter.md >}}
+
