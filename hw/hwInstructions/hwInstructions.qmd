@@ -30,6 +30,7 @@ Together, the following milestones constitute a project that determines half of 
 This is the most important and time consuming part of this course. Past projects groups claim to have spent upto 40 hours in meetings to plan and organize their projects. 
 
 The course needs the following submissions:
+
 1. A digital portfolio piece - Should be shared via the web, the website design will not be graded content is what matters. This will be updated with every milestone submission, ideal case a webpage following the structure:
    - A page for each milestone.
    - A section showing all the milestones.
@@ -453,6 +454,7 @@ For this exercise, define a widget to be an object on a device that permits the 
 a knob. Find a real widget in one of the following contexts and redesign it: automobile, department store, kitchen, parking lot, public transit (these are overtly physical contexts, as distinct from cultural or
 other contexts). Present it to the class and receive critiques from other students. Produce a picture in your
 notebook as the focus of the exercise.  The picture should include
+
 1. a rendering of the widget as you found it,
 2. a rendering of the widget as you redesigned it,
 3. some text explaining the problem,
@@ -546,7 +548,8 @@ Instantly his face turned scarlet and the water ran out of his eyes. The stuff w
 
 Design an elevator for a building with 1,000 floors. This is a single elevator compartment that can travel to any floor from ground to the top. You must design a system for selecting floors and for displaying selected floors, as well as for displaying the current location of the elevator.  You are free to imagine any inhabitants of the building, any users of the elevator, but not any extraordinary speed of the elevator.  In other words, assume only current technology is available to physically move the elevator compartment.  As with the previous exercise, present this to the class and receive critiques from other students.
 
-As before, create a poster for your elevator. The poster should include::
+As before, create a poster for your elevator. The poster should include:
+
 1. renderings of any displays and controls,
 2. some text describing what the displays mean and how to operate the controls, 
 3. some text about the users of the elevator and their destinations,
@@ -572,7 +575,9 @@ These may contradict each other but should come to some kind of resolution in a 
 
 ### Extreme Emphasis
 
-Draw about eight panels in your sketchbook from the Robin Williams monologue in the file extreme-emphasis.mp3. This has been sometimes available on Youtube under the title, *Good Morning Vietnam - First Time on Air.* Your goal is to letter the monologue in a way that conveys the extremes of expression in the comedian's voice and face.  The drawings and continuity are not the issue here---any eight moments from the sequence will do. Note that you are not asked to draw pictures of a person, a microphone, a room, nor any other representation that the comedian mentions. You are being asked to draw pictures of the words themselves. Icons or pictures that support the words are okay, but the depictions of the words is the central theme.
+This exercise is done in class. I will play a video, [extremeEmphasis.mov](extremeEmphasis.mov), a monologue by Robin Williams that has sometimes been available on YouTube under the title *Good Morning Vietnam - First Time on Air.* Your task is to letter some of the things he says in your sketchbook, in a way that conveys the extremes of expression in the comedian's voice and face. While the video plays, don't try to do the lettering. Instead, make notes of which lines you would like to letter, then, after the video, go back and try some fancy lettering of those lines, about eight panels in all.
+
+The drawings and continuity are not the issue here---any eight moments from the sequence will do. Note that you are not asked to draw pictures of a person, a microphone, a room, nor any other representation that the comedian mentions. You are being asked to draw pictures of the words themselves. Icons or pictures that support the words are okay, but the depictions of the words is the central theme. The video is in Canvas Files if you want to watch it again afterward.
 
 This exercise is from @Mccloud2006, Chapter 3, page 157, exercise 5.
 
