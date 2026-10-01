@@ -1,0 +1,31 @@
+<head>
+<!--
+Source - https://stackoverflow.com/a
+Posted by pixeline
+Retrieved 2026-01-10, License - CC BY-SA 2.5
+-->
+
+<style type="text/css" media="screen">
+
+table{
+border-collapse:collapse;
+border:1px solid #999999;
+}
+
+table td{
+border:1px solid #999999;
+}
+
+.designers{
+color:#b45309;
+}
+
+.developers{
+color:#0b5fff;
+}
+
+.everyone{
+color:#15803d;
+}
+</style>
+</head>
