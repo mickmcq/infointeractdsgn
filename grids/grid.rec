@@ -1,0 +1,147 @@
+%rec: Class
+%mandatory: Week
+%type: Topics line
+%type: Exercises line
+%type: Reading line
+%type: Assigned line
+%type: Due line
+%type: Media line
+%type: Slides line
+%doc: One record per week of Fa26 I 320U Information and Interaction Design.
++ Class meets Monday and Wednesday. Entries within a field are separated by
++ ';'. A leading '(mon)' or '(mon, wed)' sets the day(s); an entry without a
++ day tag inherits the previous entry's days. Due days are the real Canvas
++ due days, so (fri), (sat), (sun) occur as well.
++   Topics:    lecture topics, from syllabus/syllabus.qmd
++   Exercises: in-class exercises (ungraded Canvas assignments)
++   Reading:   @citekeys from syllabus/master.bib, with chapters in parentheses
++   Assigned:  homework handed out, on the first class day of the week before
++              it is due
++   Due:       homework due; names match the Canvas assignment names
++   Media:     Canvas file names or URLs with a title in parentheses
++   Slides:    deck URLs on mickmcquaid.com with a title in parentheses
+
+Week: 01 (24 Aug)
+Topics:\
+  (mon) Introduction; Syllabus;\
+  (wed) Team options
+Exercises: (mon) Design thinking exercise
+Slides: https://mickmcquaid.com/infointeractdsgn/01intro/ (Intro)
+Assigned: (mon) e1 draw a face + 2 examples of good design
+
+Week: 02 (31 Aug)
+Topics: (mon, wed) Background radiation
+Exercises:\
+  (mon) Triangles;\
+  (wed) Open / close transition
+Reading: @Rogers2023 (ch 1-3)
+Slides: https://mickmcquaid.com/infointeractdsgn/02backgrndRad/ (Background radiation)
+Assigned: (mon) m1 proj focus
+Due: (fri) e1 draw a face + 2 examples of good design
+
+Week: 03 (07 Sep) (Labor Day, no class Monday)
+Topics: (wed) Audience
+Exercises: (wed) Crazy eights
+Media: crazyEights.mp4 (Crazy eights demonstration)
+Slides: https://mickmcquaid.com/infointeractdsgn/03audience/ (Audience)
+Assigned: (wed) e2 picking up a key + 2 examples of good design
+Due: (sun) m1 proj focus
+
+Week: 04 (14 Sep)
+Topics: (mon, wed) Contextual inquiry
+Reading: @Holtzblatt2005 (ch 3-5)
+Slides: https://mickmcquaid.com/infointeractdsgn/04contextInquiry/ (Contextual inquiry)
+Due: (fri) e2 picking up a key + 2 examples of good design
+
+Week: 05 (21 Sep)
+Topics:\
+  (mon) Personas;\
+  (wed) Guest speaker: Hanna Melo Fugulin, American Foundation for the Blind
+Exercises: (mon) AI personas
+Reading: @Cooper2014 (ch 1-3)
+Slides: https://mickmcquaid.com/infointeractdsgn/05personas/ (Personas)
+Assigned: (mon) m2 contextual inquiry
+
+Week: 06 (28 Sep)
+Topics:\
+  (mon) Scenarios;\
+  (wed) Guest speaker: Daniel Pogue, ExxonMobil
+Exercises:\
+  (mon) In-class storyboards;\
+  (wed) Extreme emphasis
+Media: extremeEmphasis.mov (Extreme emphasis monologue)
+Slides: https://mickmcquaid.com/infointeractdsgn/06scenarios/ (Scenarios)
+Assigned: (mon) e3 widget redesign + 2 examples of good design
+Due:\
+  (fri) m2 contextual inquiry;\
+  (sat) m2 peer eval
+
+Week: 07 (05 Oct)
+Topics: (mon, wed) Prototyping
+Reading: @Dodson2006 (ch 1-3)
+Slides: https://mickmcquaid.com/infointeractdsgn/07prototyping/ (Prototyping)
+Assigned: (mon) m3 personas
+Due: (fri) e3 widget redesign + 2 examples of good design
+
+Week: 08 (12 Oct)
+Topics: (mon, wed) Personal information
+Slides: https://mickmcquaid.com/infointeractdsgn/08personalInfo/ (Personal information)
+Assigned: (mon) e4 record interaction + 2 examples of good design
+Due: (fri) m3 personas
+
+Week: 09 (19 Oct)
+Topics: (mon, wed) Information
+Slides: https://mickmcquaid.com/infointeractdsgn/09info/ (Information)
+Assigned: (mon) m4 scenarios
+Due: (fri) e4 record interaction + 2 examples of good design
+
+Week: 10 (26 Oct)
+Topics: (mon, wed) Information design patterns
+Reading: @Tidwell2020
+Slides: https://mickmcquaid.com/infointeractdsgn/10patterns/ (Information design patterns)
+Assigned: (mon) e5 ambient notification + 2 examples of good design
+Due: (fri) m4 scenarios
+
+Week: 11 (02 Nov)
+Topics:\
+  (mon) Finding information;\
+  (wed) Navigating information
+Reading: @Rosenfeld2015 (ch 1-3)
+Slides: https://mickmcquaid.com/infointeractdsgn/11findingInfo/ (Finding information)
+Assigned: (mon) e6 corporate directory + 2 examples of good design
+Due: (sun) e5 ambient notification + 2 examples of good design
+
+Week: 12 (09 Nov)
+Topics: (mon, wed) Visualization
+Exercises: (mon) Bertin exercise
+Reading: @Wilkinson2005, @Bertin2011
+Slides: https://mickmcquaid.com/infointeractdsgn/12visInfo/ (Visualization)
+Assigned: (mon) e7 captions + 2 examples of good design
+Due: (fri) e6 corporate directory + 2 examples of good design
+
+Week: 13 (16 Nov)
+Topics: (mon, wed) Visual demos
+Exercises: (wed) Robert Johnson page
+# Canvas file Tufte2003.pdf; master.bib has only Tufte2001, so no citekey here.
+Reading: Tufte2003.pdf (Tufte)
+Slides: https://mickmcquaid.com/infointeractdsgn/13visDemo/ (Visual demos)
+Assigned: (mon) m5 prototype
+Due: (fri) e7 captions + 2 examples of good design
+
+Week: Fall Break
+
+Week: 14 (30 Nov)
+Topics: (mon, wed) Conclusion
+Reading: @Kolko2025
+Slides: https://mickmcquaid.com/infointeractdsgn/14conclusion/ (Conclusion)
+Assigned: (mon) e8 Thousand Floor Elevator + 2 examples of good design
+Due: (fri) m5 prototype
+
+Week: 15 (07 Dec)
+Topics: (mon) Presentations; Last class day; Final exam period Fri 11 Dec, 1-3PM
+# 15courseEvals is not yet on the site (404 on 30 Sep 2026); run lecture/propagate, then uncomment.
+# Slides: https://mickmcquaid.com/infointeractdsgn/15courseEvals/ (Course evaluations)
+Due:\
+  (mon) e8 Thousand Floor Elevator + 2 examples of good design;\
+  (tue) final peer eval;\
+  (fri) final exam
