@@ -27,6 +27,9 @@ index.html
 *.toc
 lecture/*/index.tex
 
+# --- python bytecode from hw2canvas.py / rec2canvas.py ---
+__pycache__/
+
 # --- macOS / editor noise ---
 .DS_Store
 *~
