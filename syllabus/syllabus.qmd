@@ -121,7 +121,7 @@ Yang Yu
 # Objectives - concepts
 
 - Understand the role of constraints in design.
-- Understand affordances.
+- Understand affordances and signifiers as described in @Norman2013.
 - Understand the history of and basic definitions
     common in interaction design.
 - Understand theories in human computer interaction
@@ -246,6 +246,8 @@ The grading scale used along with the grade components follow.
 ## Grading Scale
 
 {{< include _gradescale.qmd >}}
+
+Note: If you do not complete either of your peer evals, your letter grade for the course will be dropped by one full grade below what you would have achieved otherwise. The peer eval is very important.
 
 ## Attendance
 I will take attendance every day and your percentage of attendance will count for ten percent of your grade.

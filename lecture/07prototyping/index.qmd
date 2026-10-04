@@ -421,6 +421,15 @@ empirically, and $n$ is the number of choices with which the
 user is confronted. The extra $1$ represents the concept *none
 of the above*.
 
+## Recall Fitts's law for comparisonk
+The time to rapidly move to a target depends on the distance to the target and the size of the target.
+
+$$t = a + b \log_2 (2D/W)$$
+
+where $t$ is time, $a$ and $b$ are constants depending on the user and device, $D$ is distance, and $W$ is width (size).
+
+Both laws have a logarithmic curve, rather than a straight line curve, indicating that time increases in a sublinear manner as the variables grow.
+
 ## The magic number seven ± 2
 
 An important publication, @Miller1956, influenced thinking about
@@ -911,8 +920,10 @@ It's all done with curves!
 ::::
 :::
 
-## Problem: Animate this!
+## Remember this?
 ![](fiOpenClose.png)
+
+Now look at Val Head's motion comp of the transition.
 
 ::: {.notes}
 You could hand this to the developer and say "Animate this transition!" Instead, Val Head illustrates a motion comp of the transition in her video at [https://youtu.be/Itsg48crOjM](https://youtu.be/Itsg48crOjM).
