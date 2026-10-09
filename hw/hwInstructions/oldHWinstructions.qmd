@@ -13,64 +13,47 @@ mathfont: Tex Gyre Schola Math
 
 The course has two major components:
 
-1. Milestones [here](#milestones)
+1. Milestones [here](#milestones) 
    These are group activities which together contribute to building a project over the course of the semester.
 2. Exercises [here](#exercises)
    These are individual activities to help to learn concepts taught in the class.
 
-Every graded item below ends with a *grading checklist* that lists exactly what I look for and how many points each item is worth. Items are scored in half-point steps, so you can earn partial credit on any item. Here is how the course points are distributed.
-
-| component | items | points each | total |
-|:----------|:-----:|:-----------:|------:|
-| Milestones 1, 3, 4 | 3 | 5 | 15 |
-| Milestones 2, 5 | 2 | 10 | 20 |
-| Exercises | 8 | 5 | 40 |
-| Take-home exam | 1 | 15 | 15 |
-| Attendance | | | 10 |
-| **Course total** | | | **100** |
-
-: Points at a glance {.striped .hover}
-
 # Milestones
-Together, the following milestones constitute a project that determines a third of your grade (35 of 100 points). The whole project divides into 5 major sprints:
+Together, the following milestones constitute a project that determines half of your grade. The whole project divide into 5 major sprints:
 
-1. Milestone 1, Project Focus, 5 points
-2. Milestone 2, Contextual Inquiry, 10 points
-3. Milestone 3, Personas, 5 points
-4. Milestone 4, Scenarios, 5 points
-5. Milestone 5, Hi-fi Prototype, 10 points
+1. Milestone 1, Project Focus
+2. Milestone 2, Contextual Inquiry
+3. Milestone 3, Personas
+4. Milestone 4, Scenarios
+5. Milestone 5, Hi-fi Prototype
 
-This is the most important and time consuming part of this course. Past project groups claim to have spent up to 40 hours in meetings to plan and organize their projects.
+This is the most important and time consuming part of this course. Past projects groups claim to have spent upto 40 hours in meetings to plan and organize their projects. 
 
-The course needs the following submission:
+The course needs the following submissions:
 
-A digital portfolio piece - Should be shared via the web, the website design will not be graded: content is what matters. This will be updated with every milestone submission, ideal case a webpage following the structure:
+1. A digital portfolio piece - Should be shared via the web, the website design will not be graded content is what matters. This will be updated with every milestone submission, ideal case a webpage following the structure:
    - A page for each milestone.
    - A section showing all the milestones.
-   - A small description of the team and its members.
-   - Team covenants which, if violated, are grounds for expulsion from the team
+   - A small description of the team and it's members.
+   - Etc
+2. Final information deck - A concise summary of the project this will be used to present during the class, ideally following the structure:
+   - A pdf file (can be styled in any format) not a ppt or keynote presentation.
+   - Project and it's explanation.
+   - Team introduction
+   - Explanation of each milestone
+   - Learnings
+   - Etc
 
 ## Create a project website
 
 I currently (at the start of the semester) don't know of your sophistication level with website creation. We will devote some class time to understanding your sophistication level and may devote some additional time based on your response. Keep in mind that the project website is a container for your project documents. You will *not* be graded on website design so, unless you are trying to improve your website design skills for some external reason, you should not waste time on the website except to make it possible for me to find the individual milestone sections, the covenants section, and the id section.
-
-## How milestones are graded
-
-The following rules apply to every milestone. Each milestone also has its own grading checklist at the end of its section.
-
-1. **What is graded.** The milestone's section of your team website, as it stands at the due date. Every member submits the team website URL in Canvas so that the grade can be recorded for each member. If you keep editing the section after the due date, add a dated note saying what changed, so I can tell what was there on time.
-2. **Where it must be.** From the URL you submit, I must be able to reach, in one or two clicks, the section for the milestone being graded, the sections for all earlier milestones, the covenants, and the id section (who is on the team). Work that I cannot find is not graded. This is the only sense in which the website itself matters.
-3. **Legibility.** Diagrams, personas, cartoons, and screens must be readable on screen. If a picture is too small to read, link it to a full-resolution image or to the FigJam board. An unreadable affinity diagram counts as missing.
-4. **Evidence over assertion.** Milestones build on each other: interviews lead to affinity notes, notes lead to key issues, key issues lead to persona behavior patterns, personas lead to scenarios, scenarios lead to the prototype. Each milestone's checklist includes an item for this *through line*. Show the connection explicitly, for example by naming the affinity label or persona a scenario comes from, rather than leaving me to infer it.
-5. **Quantity and polish.** Except where a checklist names a number (such as two interviews per member or at least three scenarios), I grade whether the item is present and does its job, not how long it is or how pretty it looks.
-6. **Partial credit.** Each checklist item is scored in half-point steps. An item that is present but weak earns part of its points; an item that is missing earns none.
 
 ## Diverge, then converge
 
 You must do two things to develop a creative project and meet deadlines. You must first diverge, then converge. Divergence is fun and, in my experience, people spend too much time on it, then go into a frenzy of convergence. You must decide in advance what fraction of your time is spent on each process and be decisive about switching from one mode to the other when your time comes.
 
 The same is true for gathering ideas and implementing them.
-If you've overused the web for a decade or more you probably remember the meme involving Hitler getting bad news in the film *Die Untergang* (2004). People would subtitle the scene endlessly with bad news affecting different hobbies, occupations, sports, or celebrity foulups.
+If you've overused the web for a decade or more you probably remember the meme involving Hitler getting bad news in the film *Die Untergang* (2004). People would subtitle the scene endlessly with bad news affecting different hobbies, occupations, sports, or celebrity foulups. 
 
 Did you know that there were even versions for UX? Yes, UX is everywhere. And UX people seemingly have time to throw up endless websites with internally conflicting advice, eternal truths, urban legends, and the occasional valuable piece of information. During your program here, you need to find a way to better cope with all the UX information coming at you from every direction. You need to share with each other how you get information as well as how recall information when you need it. As you approach a difficult milestone like contextual inquiry, it will be tempting to keep gathering information right up to the last minute. Resist that temptation! You already know too much!
 
@@ -80,7 +63,12 @@ Making a deadline is a convergent process. You don't want to be open to new idea
 
 Establish a website that identifies your team, your
 customer, the problem, and the general direction for
-solution.
+solution.  (*Onsite version of the course only: Be prepared for a critique of your milestone
+similar to the widget redesign critique.  After you
+present this milestone, you must summarize the critiques
+by your classmates on your website.  You will need to do
+this for every milestone, so develop a repeatable
+process.*)
 
 You can use @Holtzblatt2005, chapter 2, to help
 you think about the scope of the project, its
@@ -103,28 +91,13 @@ ten percent of all groups wind up having to enforce
 these, but they may help stave off disaster,
 so everyone should form covenants.
 
-### Milestone 1 grading checklist
-
-Five points, graded from the milestone 1 section of your website.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | Team identification | An id section naming every member, plus a team or project name. |
-| 0.5 | Customer and setting | Who the customer or users are, and the specific workplace or setting you have access to for the contextual inquiry in milestone 2. |
-| 1 | Problem statement | What is wrong now, for whom, and why it matters. A sentence or short paragraph, not a list of features you plan to build. |
-| 1 | Direction and scope | The general direction for a solution, and which kind of tightly scoped project this is in the terms of @Holtzblatt2005, chapter 2 (usability fixes, next generation system, supporting a coherent task, and so on). Out-of-scope items are named. |
-| 1 | Stakeholders | Proposed stakeholders are named and, for each, you address the points listed above: goals, worries, ideas, how to involve them, how to communicate progress, how to understand their way of communicating, and how to communicate the design to them. A table works well. |
-| 1 | Covenants | A covenants section agreed to by all members, naming each member, stating how work and meetings are divided, how decisions are made, and the grounds for expulsion from the group. |
-
-: Milestone 1 checklist {.striped .hover}
-
 ## Milestone 2. contextual inquiry
 Conduct a contextual inquiry for your project
 on a workplace to which you
 have access.
 You can
 use
-@Holtzblatt2005, chapters 3 through
+@Holtzblatt2005, chapters 3 through 
 8 to complete this milestone.
 Also see @Spinuzzi2000 and @Beyer1999.
 
@@ -242,26 +215,6 @@ There is a lot of software for doing affinity diagrams, but the overhead is sign
 ### Figjam
 One final addition to this section is that students have actually had good luck with a software package called FigJam. This is web-based collaborative diagramming software that all members of the group can access at once from their own machines. I like it because of that and because it looks good on my thirty inch monitor when I'm grading assignments. Although I am generally against software for affinity diagramming, this is a wonderful exception to the rule. And it is free for students!
 
-### Milestone 2 grading checklist
-
-Ten points, graded from the milestone 2 section of your website.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 1 | Planning | A schedule or checklist covering the interviews, the interpretation session, and the affinity diagram session, with who does what. The CI process checklist in @Holtzblatt2005 (pp 80--81) is a good model. |
-| 1 | Interview coverage | Each team member conducted two interviews or observations, and the write-up says who conducted each one and when. |
-| 1 | Interview protocol | The questions you asked and the procedure you followed (how you introduced yourself, obtained consent, observed, and closed). One protocol for the team is fine if everyone used it. |
-| 1 | Interview records | Notes for *every* interview. Transcripts, if you recorded, are written and *fully* anonymized: no names, employers, or other identifying details. |
-| 1 | Interpretation session | Documentation that the team met to review the interviews (date, who attended, which interviews were covered) and the affinity notes it produced. Sequence, artifact, or physical models from @Holtzblatt2005, chapters 6 and 7, are included where they fit your project. |
-| 1 | Affinity notes | Enough atomic notes to support a diagram, each one a single observation or quotation from a participant, traceable to an interview. A few dozen notes is too few; @Holtzblatt2005 suggests about 500. |
-| 0.5 | Affinity diagram legible | The whole diagram can be read on screen, or a full-resolution image or FigJam board is linked. |
-| 1 | Bottom level labels | Groups of affinity notes each have a bottom level label with design relevance that highlights a distinction. |
-| 1 | Middle and top level labels | The middle level names work concepts (steps in work, communication strategies, tool use, organizational structure) and the top level states the key issues that will drive the personas. Both levels are present and distinct from each other. |
-| 1 | Label quality | Labels are written in the first person as something an archetypal user might say, use concrete words, and emerge from the notes beneath them rather than from categories you decided in advance. |
-| 0.5 | Website housekeeping | The milestone 1 big picture has been revised to reflect what you learned, the milestone 2 section is easy to find, and the summary of any in-class critique of milestone 1 is posted. |
-
-: Milestone 2 checklist {.striped .hover}
-
 ## Milestone 3. personas
 
 See @Pruitt2003.
@@ -269,25 +222,11 @@ Use @Cooper2014, chapter 3 to complete the persona milestone. The first author o
 
 The persona process involves fewer steps than does the contextual inquiry, so I won't give an overview here. Let me just remind you that each persona's behavior patterns are selected because of the key issues at the top of the affinity diagram. @Cooper2014 describes various ways to research the persona but the way you have done it in this project is through the contextual inquiry.
 
-You must generate a primary persona. These are the focus of your prototype and any scenarios that the prototype will satisfy. You should also develop at least two secondary personas, especially if your contextual inquiry has led you to a complicated picture of goals and means.
+You must generate a primary persona. These are the focus of your prototype and any scenarios that the prototype will satisfy. You should also develop at least two secondary personas, especially if your contextual inquiry has led you to a complicated picture of goals and means. 
 
 Finally, you may benefit from inclusion of one or more anti-personas. These personas define behavior patterns you have explicitly determined to be out-of-scope for your project. I mention this because *overly broad scope* is one of the most severe afflictions to beset student projects. You should welcome anti-personas as a tool you can use to eject aspects of the project that will dilute your focus, sap your energy, and make your direction waver.
 
 Personas sometimes benefit from *dashboard* displays, displays that were once fashionable in data analytics for their resemblance to instrumention of cars or planes. The point of the resemblance is what matters. Dashboards are meant to be instantly readable. It may be easy to create meters along several behavioral axes showing, at a glance, the difference between personas. This is optional but it has clearly helped some groups.
-
-### Milestone 3 grading checklist
-
-Five points, graded from the milestone 3 section of your website.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 1.5 | Primary persona | Exactly one primary persona with a name, a short narrative, goals, and behavior patterns, following @Cooper2014, chapter 3. It is clear that this persona is the focus of the prototype. |
-| 1 | Secondary personas | At least two secondary personas, each with the same elements, and a sentence saying how each differs from the primary persona in goals or means. |
-| 1.5 | Through line | Each behavior pattern is tied to a key issue at the top of your affinity diagram, explicitly, for example by quoting the affinity label it comes from. Personas invented without reference to the contextual inquiry earn nothing here. |
-| 0.5 | Scope | What is out of scope is stated, either as one or more anti-personas or as a short list of behavior patterns you have decided not to serve. |
-| 0.5 | Website housekeeping | The big picture is current, the milestone 3 section is easy to find, and the summary of any in-class critique of milestone 2 is posted. |
-
-: Milestone 3 checklist {.striped .hover}
 
 ## Milestone 4. scenarios
 
@@ -318,20 +257,6 @@ construction of prototypes. Does the prototype fit any
 of your scenarios? Does it seem like that your prototype
 will successfully come into play in these scenarios?
 
-### Milestone 4 grading checklist
-
-Five points, graded from the milestone 4 section of your website.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 1 | Three scenarios | At least three scenarios, each a cartoon of four to six panels, each readable in order without explanation. |
-| 1 | Persona and goal | Each scenario names the persona it features and the goal that persona achieves, and the scenario ends with that goal met. |
-| 2 | Through line | Under each scenario, a line or two states which key issue from the affinity diagram and which persona behavior pattern it addresses. This is the main basis for grading the milestone. |
-| 0.5 | Panel craft | Panels use the four panel types above (manual step, user with lo-fi product, lo-fi screen closeup, behind the scenes) where appropriate, and are clear enough to compare against the prototype in milestone 5. Drawing skill is not graded. |
-| 0.5 | Website housekeeping | The big picture is current, the milestone 4 section is easy to find, and the summary of any in-class critique of milestone 3 is posted. |
-
-: Milestone 4 checklist {.striped .hover}
-
 ## Milestone 5. hi-fi prototype
 The outcome of this milestone should be something viable
 for user testing.  You should not have to modify this
@@ -344,23 +269,6 @@ users.
 You need to show the flow of your application rather than just showing individual screens. You may achieve this with a narrated video or other means you negotiate with the instructor.
 
 The video of your hifi prototype should be a walkthrough of your site or app. It should show the paths that a user takes through the application or site. There should be some narration of the tasks that the user is thinking of while the user achieves their goals using the prototype. It should be clear throughout what the user is doing and why they are doing it. You should state the purpose of the app or site at the beginning, along with the name of the project. This should be followed by each task or path in turn. At the end, there should be some indication that we've reached the end, rather than leaving us to wonder if some of the video was cut off.
-
-### Milestone 5 grading checklist
-
-Ten points, graded from the milestone 5 section of your website, which must link to the walkthrough video. You may also upload the video to Canvas.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 2 | Viable for testing | The prototype is interactive enough that a test participant could attempt each scenario's task without a team member driving. Mid-fi is fine; a set of static pictures is not. |
-| 2 | Flow, not screens | For each scenario from milestone 4, the path a user takes through the prototype is present from start to finish, including what happens after each tap or click. |
-| 1.5 | Scenario fit | The prototype plainly supports the scenarios and personas from milestones 3 and 4. Where the design departed from a scenario, you say so and why. |
-| 0.5 | Video opening | The video begins by stating the project name and the purpose of the app or site. |
-| 2 | Video tasks | The video walks through each task or path in turn, with narration of what the user is trying to do and thinking at each step. |
-| 1 | Video clarity | It is clear throughout what the user is doing and why; the screen is legible and the audio is audible. |
-| 0.5 | Video ending | The video ends with a clear indication that it has ended, rather than cutting off. |
-| 0.5 | Website housekeeping | The video is linked from the milestone 5 section, all five milestone sections, the covenants, and the id section are easy to find, and the summary of any in-class critique of milestone 4 is posted. |
-
-: Milestone 5 checklist {.striped .hover}
 
 ## Final project presentation
 You will have about eight minutes to present your work to the class, including any questions you're asked by the instructor. You will focus on the prototype and the design decisions that got you there (you've been making design decisions since you established your project focus). It is up to you to articulate which design decisions mattered. Think of the presentation as an opportunity to share what you've learned.
@@ -469,13 +377,12 @@ The following paragraphs give general guidelines about your sketchbook, your pro
 When submitting your assignments please the keep a few things in check, for the sake of example we will be considering you are submitting the assignment called "Picking up a key":
 
 1. The file name should not have any spaces and no need to include your name in the file name.
-2. Every exercise submission has at least three files: the exercise itself and two sketches of good design (see item 6). Name them with a two-digit number followed by the exercise name:
-   - 01pickingUpAKey.jpg (the exercise)
-   - 02pickingUpAKey.jpg (first sketch of good design)
-   - 03pickingUpAKey.jpg (second sketch of good design)
-   - 04pickingUpAKey.jpg and so on, if the exercise itself needs more than one page.
-   The Canvas assignment for each exercise lists the exact file names it expects.
-3. Each file should be one photograph or scan of one sketchbook page, right side up, in focus, evenly lit, with the whole page visible and no fingers or furniture in the frame.
+2. If the submission has only one file then name the file as *PickingUpAKey.jpg*.
+3. If the submission has multiple files then name the files as:
+   - 01pickingUpAKey.jpg
+   - 02pickingUpAKey.jpg
+   - 03pickingUpAKey.jpg
+   - And so on....
 4. Do not combine multiple files submissions into a zip or folder, upload them one by one.
 5. Accepted formats are (Please stick to these formats ONLY):
    - jpg
@@ -484,20 +391,6 @@ When submitting your assignments please the keep a few things in check, for the 
 6. Every exercise must be accompanied by two hand-drawn sketches of good design. These will serve several purposes: (1) improving your hand-eye coordination for sketching at the whiteboard, for instance (graduates often tell me they spend 2/5 of their time at the whiteboard!), (2) refining your idea of what constitutes good design, (3) recording your progress in sketching, and (4) sharing examples of good design with others. Please note that design is created by humans, so pictures of trees or mountain ranges are not acceptable. Each sketch should be of one good design, rather than, say, a street scene with many designed artifacts. It should be apparent at a glance what you mean as a good design. Following is an example from a former student.
 
 ![](fiJagerWangSketch.png){fig-alt="hand drawn sketch of a table-top tripod with some hatching and cross-hatching"}
-
-### How exercises are graded
-
-Every graded exercise is worth 5 points, split the same way every time. Items are scored in half-point steps.
-
-| points | part | what I look for |
-|:------:|:-----|:----------------|
-| 3 | The exercise | The exercise's own grading checklist, found at the end of its instructions, lists the items and their points. These always add to 3. |
-| 1 | Two sketches of good design | 0.5 each. A sketch earns its half point when it is hand drawn by you, shows one human-designed artifact, and makes apparent at a glance what the design is and why it is good. A short label naming the object is welcome. No credit for a photograph, a traced image, natural scenery, or a scene containing many designed objects. |
-| 1 | Submission and craft | 0.5 for following the file rules above: correct names, accepted format, one file per upload. 0.5 for photographs that are in focus, evenly lit, right side up, and show the whole page. A sketch I cannot read cannot earn exercise points either. |
-
-: How each exercise's 5 points are allocated {.striped .hover}
-
-Exercises are hand drawn in your sketchbook unless the exercise says otherwise. Drawing skill is never graded. Clarity is: the question is always whether a classmate could tell what you meant without you explaining it.
 
 ### Using your sketchbook
 
@@ -548,16 +441,6 @@ This exercise is drawn from the 1964 book *Thinking with a pencil* by Henning Ne
 
 step 3 of drawing a face, from @Nelms1964, page 17
 
-#### Draw a face grading checklist
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 1 | Face 1 | A left-facing profile in the top third of the page, drawn freehand before reading steps 2 and 3. |
-| 1 | Face 2 | A left-facing profile in the middle third with the eye placed halfway between the top of the skull and the chin. Construction lines showing how you planned it are welcome. |
-| 1 | Face 3 | A left-facing profile in the bottom third, built on a dime and a half dollar (or substitute disks), with the circles visible or evident. |
-
-: Draw a face, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
-
 ### Picking up a key
 Your task is to produce a comic strip of 7 to 9 panels based on a five sentence story, where you alter the last of the five sentences and the identity of the main character. The exercise comes from @Mccloud2006, Chapter 1.  On page 13 is a five-sentence story, told in 8 panels.  The character is supposed to be a man.  Change the character to a woman or creature or a different man.  Change the last sentence (about the lion) to a different ending.  Choose your own number of panels, anywhere from 7 to 9 panels.\
 
@@ -565,21 +448,9 @@ Tell the story your own way. The five sentences are (1) A man is walking. (2) He
 
 ![fragment of mccloud's making comics, p 13](fiPickingKey.jpg)
 
-#### Picking up a key grading checklist
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | Panel count and order | 7 to 9 panels whose reading order is unmistakable. |
-| 0.5 | Changed character | The main character is clearly not the man in @Mccloud2006; a woman, a creature, or a visibly different man. |
-| 1 | Four story beats | Walking, finding the key, carrying it to a locked door, and unlocking the door are each shown so a reader can identify them. |
-| 0.5 | New ending | The last sentence is replaced by an ending of your own, and the pictures make the new ending clear. |
-| 0.5 | Readable story | A classmate who has not read the five sentences could retell your story from the strip alone. |
-
-: Picking up a key, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
-
 ### Widget redesign
 
-For this exercise, define a widget to be an object on a device that permits the user of the device to change its state in some way, such as the ubiquitous five way rocker switch on classic feature phones or
+For this exercise, define a widget to be an object on a device that permits the user of the device to change its state in some way, such as the ubiquitous five way rocker switch on classic feature phones or 
 a knob. Find a real widget in one of the following contexts and redesign it: automobile, department store, kitchen, parking lot, public transit (these are overtly physical contexts, as distinct from cultural or
 other contexts). Present it to the class and receive critiques from other students. Produce a picture in your
 notebook as the focus of the exercise.  The picture should include
@@ -595,21 +466,6 @@ The pictures will be assembled into a file for the entire class to see. Critique
 
 (This exercise was developed by John Zimmerman at CMU.)
 
-#### Widget redesign grading checklist
-
-The six required elements of the picture are worth 0.5 points each.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | Widget as found | A rendering of a real widget (something a user operates to change a device's state) from one of the five contexts: automobile, department store, kitchen, parking lot, public transit. |
-| 0.5 | Widget as redesigned | A rendering of your redesign, clearly distinguishable from the original. |
-| 0.5 | The problem | Text stating what is wrong with the widget as found, for whom, and in what situation. |
-| 0.5 | Why the redesign solves it | Text connecting each change you made to the problem you stated. |
-| 0.5 | Directions | Directions for interacting with the redesigned widget, written for a first-time user. |
-| 0.5 | Similar widgets | A list of other real widgets that are similar, because of either the human interaction or the system input. |
-
-: Widget redesign, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
-
 ### Record interaction
 
 Spend a total of 25 minutes interacting with an app and documenting your experience, using mainly a series of about three dozen to four dozen pictures, each about 2 cm to 3 cm square. The interaction itself may last only a minute of the 25 minutes or perhaps it is used intermittently during the 25 minutes. Employ very few words. Pictures should tell the story. Make it clear how the app display changes and what your interactions with the app are. Be specific. I should not have to wonder what the consequence was of pushing a particular button. I'm not looking for impressionism as much as something that the developer of the app could learn from. Only include enough about the surroundings to clarify the interaction. In other words, if it is a jogging monitor app, I don't need to see a bunch of pictures of a person running around. One at the start and end are probably enough unless you have issues caused by the surroundings.
@@ -618,40 +474,17 @@ Spend a total of 25 minutes interacting with an app and documenting your experie
 
 One strategy might be to start with a screen recording and then to determine which frames are critical to understanding, then to draw only those frames and use drawing skill to make them come alive so that we see action rather than stasis.
 
-#### Record interaction grading checklist
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | Picture series | About three dozen to four dozen pictures, each roughly 2 to 3 cm square, in an unmistakable order. |
-| 0.5 | Very few words | The pictures carry the story; words are limited to labels a developer would need. |
-| 1 | Action and consequence | For each interaction, the picture shows what you did (tap, swipe, type, wait) and the next picture shows how the display changed. I should never have to wonder what pressing something did. |
-| 0.5 | Surroundings | Surroundings appear only where they clarify the interaction, typically at the start and end. |
-| 0.5 | Narrative | A clear beginning and end, and a sequence a developer of the app could learn from. |
-
-: Record interaction, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
-
 ### Ambient notification
 
-Develop an ambient notification *device* to improve email. Notification can be of anything related to email.
+Develop an ambient notification *device* to improve email. Notification can be of anything related to email. 
 
 Device means a physical device. This device is not a PC or phone or smartwatch. It is a device that blends into the environment and provides some kind of notification of something related to email. You have a lot of discretion because I do not specify the environment, only that it has to blend into some environment. You must choose some specific environment but it is fine if that environment is kitchen, bedroom, office, car, or something else. The device will presumably be able to receive signals of some kind, such as wifi network or other but do not assume that it is a multipurpose device receiving signals for other reasons. Just limit yourself to its ability to provide something that relates to incoming email. The notifications may appeal to any or all senses: sight, sound, smell, touch, taste. Bear in mind that all interruptions have a cost to attention, sleep, social activities, or whatever is being interrupted. You must record the device in situ in your sketchbook and upload a photo or photos to the dropbox.
 
 (This exercise was developed by John Zimmerman at CMU.)
 
-#### Ambient notification grading checklist
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | A device | A single-purpose physical device for email notification. Not a PC, phone, tablet, or smartwatch, and not an app. |
-| 1 | In situ | A specific environment is chosen and the device is drawn in place in it, so I can see how it blends in. |
-| 1 | What and how | The sketch and a few words make clear what about email it notifies (new message, message from a particular person, unread count, and so on) and through which sense or senses. |
-| 0.5 | Cost of interruption | You show or state how the device respects the attention of the person it notifies: how it can be ignored, when it stays quiet, or what it does not do. |
-
-: Ambient notification, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
-
 ### Corporate directory navigator
 
-For this exercise, assume your design will be accessed on a smartwatch. It is a tiny display, so the traditional tree hierarchy won't fit. You have to think of an alternative.
+For this exercise, assume your design will be accessed on a QVGA (320 $\times$ 240) phone.  There may be a numeric keypad and a five way rocker button, but not much else.
 
 Design a system to navigate a corporate hierarchical directory.  Plan it for Globocide Corp., which has 40,000 employees worldwide. There are seven main hierarchies of unequal depth and we'd like to be able to
 traverse them. We'd like to be able to find the path from any given employee to the CEO.  We'd like to get a
@@ -660,18 +493,7 @@ a given employee? Who are the peers of an employee? We'd also like to get a pict
 comparison with its peers.  How many are in the division? How tall is its hierarchy?  How does its
 shape differ from peer divisions?
 
-Your design should be shown in a series of sketches that work on a very small display resolution and show interactions and their effects.
-
-#### Corporate directory navigator grading checklist
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | Smartwatch constraint | Screens are drawn square, their contents are plausible at that size, and the only controls assumed are those on a smartwatch. |
-| 1 | Interactions and effects | The series of sketches shows which key the user presses and what the screen does in response, for every transition. |
-| 1 | Required tasks | The sketches cover all three task families: the path from an employee to the CEO; an employee's surroundings (how dense the region is, how many are above and below, who the peers are); and a division compared with its peers (size, depth, shape). |
-| 0.5 | Scale | The design copes with 40,000 employees and seven hierarchies of unequal depth, for example through search, paging, summarizing, or zooming, rather than working only for a toy example. |
-
-: Corporate directory navigator, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
+Your design should be shown in a series of sketches that work at QVGA resolution and show interactions and their effects.
 
 ### Captions
 
@@ -702,7 +524,7 @@ revealing. A kilometre away the Ministry of Truth, his place of work, towered va
 
 The Ministry of Truth---Minitrue, in Newspeak[^1]---was startlingly different from any other object in sight. It was an enormous pyramidal structure of glittering white concrete, soaring up, terrace after terrace, 300 metres into the air. From where Winston stood it was just possible to read, picked out on its white face in elegant lettering, the three slogans of the Party:
 
-[^1]: Newspeak was the official language of Oceania. For an account of its structure and etymology see the Appendix to *1984*.
+[^1]: Newspeak was the official language of Oceania. For an account of its structure and etymology see Appendix.
 
 ~~~
               WAR IS PEACE
@@ -722,18 +544,6 @@ Instantly his face turned scarlet and the water ran out of his eyes. The stuff w
 *End excerpt from __1984__.*
 
 
-#### Captions grading checklist
-
-If the two series do not fit on one page, submit the exercise as more than one file (01captions, 02captions, ...), followed by the two sketches of good design.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 1 | First series | About eight panels. Every caption is taken from the excerpt word for word, and far from all of the excerpt is used. |
-| 1 | Second series | About eight panels using *exactly* the same captions as the first series, with a different series of pictures. |
-| 1 | Choices | The two series each convey what is happening in the scene. Important things are kept and unimportant things are left out, and the pictures add to the captions rather than merely illustrating them. |
-
-: Captions, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
-
 ### Thousand floor elevator
 
 Design an elevator for a building with 1,000 floors. This is a single elevator compartment that can travel to any floor from ground to the top. You must design a system for selecting floors and for displaying selected floors, as well as for displaying the current location of the elevator.  You are free to imagine any inhabitants of the building, any users of the elevator, but not any extraordinary speed of the elevator.  In other words, assume only current technology is available to physically move the elevator compartment.  As with the previous exercise, present this to the class and receive critiques from other students.
@@ -741,28 +551,13 @@ Design an elevator for a building with 1,000 floors. This is a single elevator c
 As before, create a poster for your elevator. The poster should include:
 
 1. renderings of any displays and controls,
-2. some text describing what the displays mean and how to operate the controls,
+2. some text describing what the displays mean and how to operate the controls, 
 3. some text about the users of the elevator and their destinations,
 4. some text about any problems related to the extremely large number of possible destinations, and
 5. some text about how you solve any problems related to the very large number of possible destinations.
 
 As before, you will critique the work of other students. Consider roughly the same three criteria, problem and
 user statement, solution, and craft.  Question whether the poster really addresses problems with a 1,000 floor elevator and its users, whether the presentation offers genuine solutions, and the craft of the poster.
-
-#### Thousand floor elevator grading checklist
-
-The five required elements of the poster are worth 0.5 points each, and the remaining half point is for respecting the constraint.
-
-| points | item | what I look for |
-|:------:|:-----|:----------------|
-| 0.5 | Displays and controls | Renderings of every display and control, inside and outside the compartment as needed. |
-| 0.5 | How it works | Text describing what the displays mean and how to operate the controls. |
-| 0.5 | Users and destinations | Text about who rides this elevator and where they are going. |
-| 0.5 | Problems of scale | Text about the problems created by 1,000 possible destinations, such as selection, error correction, and display of position. |
-| 0.5 | Solutions | Text about how your design solves each problem you named. |
-| 0.5 | Constraint respected | A single compartment moving at speeds possible with current technology; the design does not escape the problem by assuming extraordinary speed or multiple cars. |
-
-: Thousand floor elevator, 3 points plus 1 for sketches of good design plus 1 for submission and craft {.striped .hover}
 
 ## Other Exercises
 
@@ -774,7 +569,7 @@ In class, someone advanced the claim that we must design for the lowest common d
 
 Two of the arguments I can think of are advanced in the Kurt Vonnegut short story *Harrison Bergeron*, 1961. Be aware when you consider it that it has been interpreted literally and as meaning the precise opposite of its literal meaning. In other words, it has been interpreted by some as warning against the dangers of catering to the least common denominator and by others as warning against the dangers of worrying about catering to the least common denominator. The former interpretation is favored by Fox News. The latter interpretation is favored by literary critics and the author of the story. I do say that in the hope of prejudicing you in favor of the latter interpretation but the fact that the story functions to support two opposing points of view serves to illustrate the fact that a device can serve two completely different groups of social commentators with two completely different kinds of analytical skills and abilities.
 
-Please discuss the notion of a design target population and reaching them with respect to this least common denominator idea and alternatives.
+Please discuss the notion of a design target population and reaching them with respect to this least common denominator idea and alternatives. 
 Please produce some written assertions in a Google Drive document.
 These may contradict each other but should come to some kind of resolution in a summary. When I say resolution, I don't mean that you must agree. That resolution could be that there are two (or n) points of view. In such a case, the summary will enumerate and briefly descrbe them. If you are in agreement, then describe that upon which you agree.
 
@@ -925,14 +720,14 @@ The components of the marking system should be robust but
 have little intrinsic value (note that this does *not*
 mean that it will be cheap to implement) so that they
 will not be destroyed or recycled.
-Use a *Gestalt*, so more is received than sent,
+Use a *Gestalt*, so more is received than sent, 
 use a *systems approach*, so
   elements of the communications system link to
   each other, index to each other, are
-  co-presented and reciprocally reinforcing, and
+  co-presented and reciprocally reinforcing, and 
 use *redundancy*, where some elements of the
   system can be degraded or lost without substantial
-  damage to the system's capacity to communicate.
+  damage to the system's capacity to communicate. 
 
 ### Waiting in line
 
@@ -1086,10 +881,10 @@ Narrow your focus to a subset of possible users, situations, and relevant proble
 
 ### Ambient notification
 
-The following two graphics come from an article called ...
+The following two graphics come from an article called ... 
 [Notification Hell](http://www.theverge.com/2015/3/26/8292213/olio-smartwatch-hands-on).
 
-It may be worthwhile to revisit your ambient notification exercise with this in mind. Also, you may want to consider the article,
+It may be worthwhile to revisit your ambient notification exercise with this in mind. Also, you may want to consider the article, 
 [Tyranny of the Minimum Viable Product](https://medium.com/\@jonhpittman/the-tyranny-of-the-minimum-viable-product-fb25e2e57e6e),
 which describes a problem that startups in the Internet of Things seem to exhibit when they try to apply *design* to their efforts.
 

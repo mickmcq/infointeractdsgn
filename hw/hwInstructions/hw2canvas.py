@@ -6,8 +6,8 @@ This script renders it with pandoc (citations resolved from master.bib),
 splits it at the headings, and writes
 
   * a Canvas page "Rules for all milestones": the project overview, the
-    project-website and diverge/converge advice, the final presentation,
-    milestone critiques, and project management;
+    project-website advice, how milestones are graded, diverge/converge,
+    the final presentation, milestone critiques, and project management;
   * a Canvas page "Rules for all exercises": file naming, the two sketches
     of good design, sketchbook, diverge/converge, time, storytelling, and
     the post-submission reflections;
@@ -227,6 +227,10 @@ def tidy(frag):
     frag = frag.replace("<figure>", "<div>").replace("</figure>", "</div>")
     frag = frag.replace(' data-fig-alt="', ' alt="')
     frag = re.sub(r"<figcaption[^>]*>(.*?)</figcaption>", r"<p><i>\1</i></p>", frag, flags=re.S)
+    # Grading checklists are tables; give them visible borders in the Canvas editor.
+    frag = re.sub(r"<table\b[^>]*>", '<table style="border-collapse:collapse;width:100%;margin-bottom:12px">', frag)
+    frag = re.sub(r"<(th|td)\b([^>]*)>", r'<\1\2 style="border:1px solid #bbb;padding:4px 8px;vertical-align:top">', frag)
+    frag = re.sub(r"<caption>(.*?)</caption>", r'<caption style="caption-side:bottom;font-style:italic;text-align:left;padding-top:4px">\1</caption>', frag, flags=re.S)
     return frag
 
 
@@ -288,9 +292,9 @@ def build_milestone_rules(doc, file_ids, warnings):
             "instructions are in its Description on the Assignments page; the rules and "
             "advice below apply to all of them.</p>")
     body += doc.section_html((MS,), include_children=False, heading=False)
-    for path in ((MS, "Create a project website"), (MS, "Diverge, then converge"),
-                 (MS, "Final project presentation"), (MS, "Milestone critiques"),
-                 (MS, "Project management")):
+    for path in ((MS, "Create a project website"), (MS, "How milestones are graded"),
+                 (MS, "Diverge, then converge"), (MS, "Final project presentation"),
+                 (MS, "Milestone critiques"), (MS, "Project management")):
         body += doc.section_html(path, demote=0)
     body += footer()
     return rewrite_images(tidy(doc.with_notes(body)), file_ids, warnings)

@@ -421,7 +421,7 @@ empirically, and $n$ is the number of choices with which the
 user is confronted. The extra $1$ represents the concept *none
 of the above*.
 
-## Recall Fitts's law for comparisonk
+## Recall Fitts's law for comparison
 The time to rapidly move to a target depends on the distance to the target and the size of the target.
 
 $$t = a + b \log_2 (2D/W)$$
