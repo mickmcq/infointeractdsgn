@@ -30,6 +30,10 @@ title: "Personal Information"
 ## What is personal information?
 Discuss!
 
+Break into pairs and spend five minutes coming up with five examples of personal information and (at least) one reason why each is personal
+
+Some examples of reasons:
+
 - With whom it is shared
 - Scope of sharing (doctor, spouse, heirs)
 - Importance of information (passwords)
@@ -38,7 +42,7 @@ Discuss!
 
 ## Definitions from NSF
 - In 2005, the National Science Foundation sponsored a workshop on Personal Information Management, attended by many scholars publishing in that field
-- Information from it (and several subsequent workshsops) was saved at
+- Information from it (and several subsequent workshops) was saved at
   [PIM Resources](http://pim.ischool.washington.edu/index.htm), which no longer exists (a good substitute is at [PIM Resources](https://pim.famnit.upr.si/wiki/index.php/Personal_Information_Management_(PIM)_resources))
 - It was two years before the iPhone irrevocably changed the landscape of personal information environments
 - Much of the discussion, though, was technology independent and has lasting value
@@ -76,7 +80,7 @@ The PIM Resources link doesn't work as of 2024-10-14 09:57 and the Wayback Machi
 ## History
 - Physical compartments for scrolls and parchments
 - Benjamin Franklin wrote about his struggles with it
-- Vanevar Bush wrote "As we may think" in 1945
+- Vannevar Bush wrote "As we may think" in 1945
 - Lansdale coined the term in 1988
 
 # Personal information systems
@@ -103,7 +107,7 @@ study of personal information systems by doing the
 
 ## Knives in the home
 - You've just won a complete set of knives
-- WHere to put them?
+- Where to put them?
   - One cabinet for knives?
   - Distribute them throughout the home
 - Raises question of task context
@@ -202,10 +206,10 @@ search window.
 ## Exercise: share best practices
 
 1. Form a pair.
-2. Share a google doc between you two and me.
-3. Each person writes three paragraphs describing your personal information process: (1) what you do, (2) what works well about it, and (3) what does not work well about it.
-4. Discuss the resulting paragraphs
-5. Write two paragraphs as a pair describing (1) what strengths you agree on, and (2) what weaknesses you agree on. An optional third paragraph describes your disagreements.
+2. Open this [Google Doc](https://docs.google.com/document/d/1z_sne7tGthdoOo8pK39X0LQYJOoxGLdLPqfRxGubKtQ/edit?usp=sharing)
+3. Each person writes three paragraphs describing your personal information process: (1) what you do, (2) what works well about it, and (3) what does not work well about it. (5 min)
+4. Discuss the resulting paragraphs. (5 min)
+5. Write two paragraphs as a pair describing (1) what strengths you agree on, and (2) what weaknesses you agree on. An optional third paragraph describes your disagreements. (5 min)
 
 ## Readings
 
@@ -275,7 +279,7 @@ study.
 - Personal information management affects mood and is affected by it
 - Anxiety is typically expressed with respect to PIM
 
-## Related activitie and areas
+## Related activities and areas
 - Cog psych and cognitive science
 - HCI and human information interaction
 - Group information management
@@ -300,7 +304,7 @@ Distributing storage to the web may reduce bloat but also reduces privacy and in
 ## Example: nb
 - [nb](https://github.com/xwmx/nb) is on github
 - Described there as "a command line and local web note‑taking, bookmarking, archiving, and knowledge base application"
-- Discussed on [Hacker News](https://news.ycombinator.com/item?id=33130060) yesterday
+- Discussed on [Hacker News](https://news.ycombinator.com/item?id=33130060)
 - Features: open source, plain text data storage, encryption, filtering, pinning, tagging, search, Git-backed versioning and syncing, Pandoc-based conversion, wiki-style linking, terminal and gui web browsing, inline images, todos with tasks, notebooks, folders, color themes, plugins
 
 ## Example: nb (continued)
@@ -313,8 +317,8 @@ Distributing storage to the web may reduce bloat but also reduces privacy and in
 1. Divide into pairs.
 2. Identify an online discussion of PKM.
 3. Find the most popular examples of PKM.
-4. Post the list to a google doc created by me.
-5. Investigate them and report to the class, unless your list conflicts with someone else's, in which case, choose different PKMs.
+4. Post the list to this [google doc](https://docs.google.com/document/d/1OTyU_NGIh2po9YQjEiK4M9VJjWn80nehRnAbo9R_MsQ/edit?usp=sharing).
+5. Investigate them and report to the class.
 
 # Personal Information Curation
 
@@ -329,5 +333,14 @@ Distributing storage to the web may reduce bloat but also reduces privacy and in
 - The curation lifecycle proposed consists of keeping, managing, and exploiting personal information.
 - Exploitation is conducted via search or navigation, usually navigation.
 - Exploitation depends, in part, on information uniqueness and the spectrum from informative vs action-oriented items.
+
+## Exercise: re-finding audit
+
+1. Form a pair.
+2. Open this [Google Doc](URL).
+3. Each person picks three items kept at least a month ago: one photo, one file or document, and one message, bookmark, or note. Choose items you are comfortable naming. (2 min)
+4. Take turns. Your partner times how long you take to re-find each item on your own device, and notes whether you navigated (folders, albums, scrolling) or searched (typed a query). (6 min)
+5. Together, decide whether each of you behaved as a filer or a piler, and whether that matches what you wrote in the best practices exercise. (4 min)
+6. Report to the class: did navigation dominate, as @Whittaker2011 claims? Were items found near where they are used, as the knife analogy predicts? (3 min)
 
 {{< include endMatter.md >}}
