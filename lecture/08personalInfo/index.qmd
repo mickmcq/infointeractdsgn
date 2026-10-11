@@ -334,10 +334,10 @@ Distributing storage to the web may reduce bloat but also reduces privacy and in
 - Exploitation is conducted via search or navigation, usually navigation.
 - Exploitation depends, in part, on information uniqueness and the spectrum from informative vs action-oriented items.
 
-## Exercise: re-finding audit
+## Exercise: re-finding audit {.scale85}
 
 1. Form a pair.
-2. Open this [Google Doc](URL).
+2. Open this [Google Doc](https://docs.google.com/document/d/1HVJxXfQKiBWyxdVKajeStZiwUp_wWTXdPp9KoiJxwvg/edit?usp=sharing).
 3. Each person picks three items kept at least a month ago: one photo, one file or document, and one message, bookmark, or note. Choose items you are comfortable naming. (2 min)
 4. Take turns. Your partner times how long you take to re-find each item on your own device, and notes whether you navigated (folders, albums, scrolling) or searched (typed a query). (6 min)
 5. Together, decide whether each of you behaved as a filer or a piler, and whether that matches what you wrote in the best practices exercise. (4 min)
