@@ -69,6 +69,16 @@ Yet most online forms allow the person filling them in some flexibility and may 
 It is a hallmark of semistructured information that some human intervention is required to process it because some entered information can not be anticipated.
 :::
 
+## Discussion: the field that broke the form
+
+1. Think of an online form that asked for something its rules could not accept: a name with the wrong characters, an address without a street number, a gender box with two choices, a date before 1900. (1 min)
+2. Tell your neighbor what you entered and what happened next. Did a program reject it, or did a person have to deal with it? (3 min)
+3. Report to the class. We will sort the examples into failures of structure and failures of the designer's imagination. (4 min)
+
+::: {.notes}
+The point is to connect the definition of semistructured information, that a human must intervene when input can not be anticipated, to the designer's responsibility. Every example a student offers is a case where the form's structure was stricter than the world. Ask whether loosening the rule (free text) or widening it (more choices) would have been the better fix, and who pays for each: the program, the clerk, or the person filling in the form.
+:::
+
 ## Structured information
 - Obeys strict rules
 - Can be processed rapidly in large volumes
@@ -136,6 +146,21 @@ The second most frequent way to store enterprise data is in a hierarchical forma
 
 ::: {.notes}
 A key characteristic of this hierarchical form is that it can present exactly the same data as in the relational form above. In other words, the above hierarchy could be converted to tables of rows and columns. Many computer programs just translate between one form and the other, depending on immediate needs.
+:::
+
+## Exercise: from waybill to tables {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/179DIwjTMiLYlAWyyf1J6RVH2THpBl8aTI6I8Fy19Y7A/edit?usp=sharing).
+3. Convert the waybill hierarchy on the previous slide into relational tables. Name each table, list its columns, and say which column links it to another table. Remember that good tables are long and thin. (6 min)
+4. Add a second shipment from the same sender with three commodities. What changes in your tables? What changes in the hierarchy? (3 min)
+5. Decide which form you would send to a partner company and which you would keep in your own database, and why. (2 min)
+6. Report to the class. (4 min)
+
+::: {.notes}
+A reasonable answer has four tables: Sender, Recipient, Shipment, and Commodity, with Shipment holding keys to Sender and Recipient and each Commodity row holding a key to its Shipment. Adding a shipment adds rows and no columns. In the hierarchy, by contrast, the whole Sender block is repeated for every shipment. Students who put all the commodity columns into one wide Shipment table have rediscovered why tables should be long and thin: ask them what happens with a fourth commodity.
+
+Step 5 sets up the next slide. The hierarchy is what you send; the tables are what you keep.
 :::
 
 ## Supply chain information
@@ -214,6 +239,17 @@ The Selfish Gene (1976) slipcover
 Examples of memes are tunes, ideas, catch-phrases, clothes fashions, ways of making pots or of building arches. Just as genes propagate themselves in the gene pool by leaping from body to body via sperms or eggs, so memes propagate themselves in the meme pool by leaping from brain to brain via a process which, in the broad sense, can be called imitation. If a scientist hears, or reads about, a good idea, he passes it on to his colleagues and students. He mentions it in his articles and his lectures. If the idea catchs on, it can be said to propagate itself, spreading from brain to brain. As my colleague N. K. Humphrey neatly summed up an earlier draft of this chapter: 'memes should be regarded as living structures, not just metaphorically but technically. When you plant a fertile meme in my mind you literally parasitize my brain, turning it into a vehicle for the meme’s propagation in just the way that a virus may parasitize the genetic mechanism of a host cell. And this isn’t just a way of talking—the meme for, say, “belief in life after death” is actually realized physically, millions of times over, as a structure in the nervous systems of individual men the world over.'
 
 In the years since Dawkins coined the term, it has become popular to study the concept of memes and to track memes, thanks to the Web. Our awareness of memes as a force informs our interaction design in many ways. There can be no doubt that the most successful users of the web, such as Google and Facebook, maintain a keen sensitivity to memes. As a thought exercise, examine an electronic artifact, such as a website or smartphone app, and try to identify the presence and influence of any memes upon it. As a similar thought exercise, try to identify memes in your own work.
+:::
+
+## Discussion: memes in your own artifact
+
+1. With a neighbor, pick an app one of you used today. (1 min)
+2. Find two features that are there because other apps had them first: a gesture, a layout, an icon, a sound, a phrase. (3 min)
+3. For each, decide: did it spread because it works, or does it work because it spread? (2 min)
+4. Report to the class. (4 min)
+
+::: {.notes}
+This is Dawkins's thought exercise from the previous notes, done aloud. Expect pull-to-refresh, the hamburger menu, the heart, infinite scroll, stories, the floppy-disk save icon, blue underlined links. Keep the list on the board. It returns at the end of the deck, where the question becomes whether any of these memes deserve the name *design pattern*. A meme only has to copy well. A pattern has to explain why it should be copied.
 :::
 
 ## Human computation
@@ -478,6 +514,54 @@ When I run these, they give slightly different results. I'm not sure how much th
 
 Light's 𝜅 is briefly described in @Hallgren2012. That tutorial gives R code for several versions of 𝜅, including Cohen's weighted 𝜅, described above as `kappa2()`, and both Fleiss's and Light's 𝜅.
 
+## Exercise: card sort with 𝜅 {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1qg0lVt48EhVifsQVdpq3cHVyUEjMgMJ3gcaqxxGjE-w/edit?usp=sharing).
+3. Working alone, do a closed card sort: place each of the twenty items on the next slide into exactly one of the five categories. Do not look at your partner's sort. (4 min)
+4. Compare. Count the items you agreed on and divide by 20 to get $p_o$. For each category, multiply the number of items you put there by the number your partner put there, add the five products, and divide by 400 to get $p_e$. Then $𝜅 = \frac{p_o-p_e}{1-p_e}$. Or paste both columns into `kappa2()`. (5 min)
+5. Discuss the items you disagreed on. Would a different label, or a sixth category, have removed the disagreement? (3 min)
+6. Report your 𝜅 and your worst item to the class. (4 min)
+
+::: {.notes}
+This replaces the random numbers from the preceding slides with real ratings, so students see that $p_e$ is not a formality. With five categories used about equally, $p_e$ is near 0.2, so 70% agreement gives a 𝜅 near 0.6, below the 0.7 cutoff I was taught. Pairs that agree on 17 or more items reach 0.8.
+
+The items were chosen so that several are genuinely ambiguous: parking permit, football tickets, transcript request, housing contract, dining plan, laptop loan, emergency alerts. Those are where disagreements should cluster. The remedy in step 5 is the real lesson: the fix for low 𝜅 is a better labeling scheme, not a more lenient rater.
+
+If time permits, paste every pair's two columns into one matrix and run `kappam.fleiss()` for the whole class.
+:::
+
+## Card sort items {.scale85}
+
+Categories: **Academics**, **Money**, **Health and Safety**, **Campus Life**, **Technology**
+
+:::: {.columns}
+::: {.column width="50%"}
+1. Final exam schedule
+2. Tuition payment deadline
+3. Parking permit
+4. Wifi setup
+5. Counseling appointment
+6. Library hours
+7. Football tickets
+8. Transcript request
+9. Password reset
+10. Scholarship application
+:::
+::: {.column width="50%"}
+11. Gym membership
+12. Course registration
+13. Housing contract
+14. Campus bus routes
+15. Flu shot clinic
+16. Student org fair
+17. Laptop loan program
+18. Emergency alert sign-up
+19. Dining plan
+20. Academic advising
+:::
+::::
+
 ## Grouping information items
 - Classical approach uses similar attributes
 - Prototype approach uses comparison to a specific thing
@@ -490,6 +574,16 @@ some people studying animals have proposed labeling the classification of animal
 Psychologists who study grouping used to believe in the notion that people group things together by a process that can be approximated by counting similar attributes shared by different things.
 
 More recently, psychologists led by Eleanor Rosch have claimed that people hold mental images of what they call prototypes of groups. Here the word prototype is NOT related to the sense in which we use it in this class. The prototype for grouping is a thing that best represents the group. For example, an early experiment found that, for North Americans, the robin is the prototype for birds. Rather than evaluating attributes of other things, the mental process to group things together as birds is to compare them to the mental picture of the robin.
+:::
+
+## Discussion: name the prototype
+
+1. On paper, without talking, write the first example that comes to mind for each of these: a bird, a piece of furniture, a tool, a vehicle, a social media app, a website. (1 min)
+2. Compare with your neighbors. (2 min)
+3. Show of hands for each word. How many of us wrote the same thing? Does this class have a robin? (4 min)
+
+::: {.notes}
+Rosch's claim predicts strong convergence on the first four: something like robin or cardinal, chair, hammer, car. The last two are the interesting ones. If the class converges on one app or one website, ask whether that is a prototype in Rosch's sense or a monopoly in the sense of the last slide of this deck. If the class does not converge, ask what that says about designing navigation for a category that has no prototype.
 :::
 
 ## Flat and hierarchical grouping
@@ -659,6 +753,19 @@ If you feel tempted to talk about implementation, do
 Keep the solution a description, not an
   evaluation of itself.
 
+## Exercise: write a pattern {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1YJgmaeRYalHzdibaPegfAyJ11-jMtnAy9JBzv_Cpw7Q/edit?usp=sharing).
+3. Choose one element that information architects call a pattern: tabbed menu, hub-and-spoke, breadcrumbs, hamburger menu, infinite scroll, or faceted search.
+4. Write it in the Gang of Four's four parts. The name must work in conversation. The problem must say when the element applies. The solution must describe elements, relationships, and responsibilities, with no implementation. The consequences must name at least two trade-offs. (8 min)
+5. Read the entry of the pair above yours in the doc (the first pair reads the last). Mark anything in their solution that belongs under consequences, and any consequence they missed. (4 min)
+6. Report to the class: which part was hardest to write, and why? (4 min)
+
+::: {.notes}
+Expect thin solutions and easy consequences, especially for elements people have suffered, such as infinite scroll. Expect names that are really descriptions of implementation (hamburger menu names the icon, not the problem). Both observations set up the next slide's claim that these elements are structural elements, not yet design patterns. Keep the doc open; the closing discussion returns to it.
+:::
+
 ## Design patterns in information architecture
 - Not (in my view) real design patterns
 - They are anything commonly used on the web, such as "tabbed menus", "hierarchies", or "hub-and-spoke" structures
@@ -685,5 +792,15 @@ Abby Warburg, scion of the Warburg banking family of Hamburg, was not interested
 - There is this quality that cannot be named that characterizes what communities find useful and enduring
 - Our job as designers is to find the context of use by the community and organize according to it
 - What is enduring on the web or in apps? Why? (Much is forced by monopolies, but some is driven by community)
+
+## Discussion: what endures
+
+1. With a neighbor, name one feature of the web or of apps that has lasted twenty years and one that has died. (2 min)
+2. For the one that lasted, is it enduring because a community finds it useful, or because a monopoly imposes it? Would it pass the four-part test you just applied? (3 min)
+3. Report to the class. (5 min)
+
+::: {.notes}
+Bring back the meme list from earlier in the deck. Some of those memes will be on the enduring list. The question for each is whether anyone can state its problem, solution, and consequences well enough that a designer who had never seen it could decide when to use it. That is the difference between an observation that something spread and a pattern that says why it should.
+:::
 
 {{< include endMatter.md >}}
