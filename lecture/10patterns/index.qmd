@@ -17,16 +17,16 @@ title: "Patterns"
 First, we'll take a quick look at @Tidwell2020. The book is mostly sections about different kinds of patterns plus an introductory part. Let's list those.
 :::
 
-## Categories
-- Cognition and Behavior Related to Interface Design, p 11
-- Information Architecture Patterns, p 39, AASI
-- Navigation Design Patterns, p 142, catLovers
-- Screen Layout Patterns, p 226, DLSS
-- Mobile Interface Patterns, p 305, ETG
-- List Patterns, p 340, JGRH CO
-- Action Patterns, p 383, Monkey Business
-- Complex Data Patterns, p 446, The Latte Lab
-- Forms Patterns, p 476, UX Girliez
+## Some Categories
+- Cognition and Behavior Related to Interface Design
+- Information Architecture Patterns, p 39
+- Navigation Design Patterns, p 142
+- Screen Layout Patterns, p 226
+- Mobile Interface Patterns, p 305
+- List Patterns, p 340
+- Action Patterns, p 383
+- Complex Data Patterns, p 446
+- Forms Patterns, p 476
 
 ::: {.notes}
 The introductory part is about Cognition and Behavior Related to Interface Design. The rest are all about interface design patterns. Let's look at the first category, the intro.
@@ -107,16 +107,25 @@ What could you do as a designer to support satisficing? These are all examples. 
 :::
 
 ## Your part
-- Choose one of the pattern categories from @Tidwell2020
+- I'll assign one of the pattern categories from @Tidwell2020
 - Make a few Google Slide slides as a group, including a title (the chosen category) with your names
 - Give us a feel of your category of patterns, along with a few examples
-- Merge what you've done into the class slideshow, which Dhruvi will share
+- Merge what you've done into the class slideshow, which I will share
 - One person from each group pastes in the group's slides
-- You present them on Wednesday
+- You present them
 
 ::: {.notes}
-Now, an exercise: do the steps on the slide, preferably in a group of four. (Dhruvi should choose the group size based on attendance and layout of the room. But keep in mind that there are only eight categories, so Dhruvi may want to assign categories to groups.)
+Now, an exercise: do the steps on the slide, preferably in a group of four. (I should choose the group size based on attendance and layout of the room. But keep in mind that there are only eight categories, so I may want to assign categories to groups.)
 :::
+
+## Groups and categories
+- Alpha. Chapter 3, Getting Around: Navigation, Signposts, and Wayfinding
+- Bravo. Chapter 7, Lists of Things
+- Charlie. Chapter 10, Getting Input from Users: Forms and Controls
+- Delta. Chapter 4, Layout of Screen Elements
+- Echo. Chapter 5, Visual Style and Aesthetics
+- Foxtrot. Chapter 2, Organizing the Content: Information Architecture and Application Structure
+- Golf. Chapter 9, Showing Complex Data
 
 ## Why present?
 According to Edgar Dale, you remember:
