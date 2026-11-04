@@ -185,7 +185,7 @@ When I first wrote this slide the question was whether conversational interfaces
 
 1. Form a pair.
 2. Open this [Google Doc](https://docs.google.com/document/d/1LcU7G2DetB0hnQAfT6oW1UpyukMwpRn_cTTjNNKk3qs/edit?usp=sharing).
-3. Each person thinks of a thing you can picture but cannot name: a part of an everyday object, a typographic mark, a gesture, a pattern you have seen on a building. Write a one-sentence description for your partner. (2 min)
+3. Each person thinks of a thing you can picture but cannot name: e.g., a part of an everyday object, a typographic mark, a gesture, a pattern you have seen on a building. Write a one-sentence description for your partner. (2 min)
 4. Swap. Find your partner's thing with a search engine, text only. Record every query you type and stop after five failures. (5 min)
 5. Find the same thing with a conversational interface. Record the number of turns and whether it was right. Then ask it where its answer came from. (4 min)
 6. Report to the class: which channel found it, which query finally worked, and what the conversational interface said about its sources. If it learned the name from a forum, who writes next year's forum post? (5 min)
