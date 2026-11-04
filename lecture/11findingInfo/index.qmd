@@ -61,6 +61,8 @@ industry may change in the near future.
 Reading: Page and Brin, 1998. The
 PageRank Citation Ranking:  Bringing Order to the Web.
 [stanford IL pub](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf)
+(dead as of November 2026; use the
+[Wayback Machine copy](https://web.archive.org/web/20200101020038/http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf))
 
 Also, the Wikipedia entry on PageRank has some wonderful
 graphics illustrating the basic concept.
@@ -68,6 +70,23 @@ graphics illustrating the basic concept.
 
 ##
 ![](fiPageRank.png)
+
+## Exercise: PageRank by hand {.scale85}
+
+Four pages. A links to B and to C. B links to C. C links to A. D links to C. Nothing links to D.
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1S5pjDMohxzzjNv-n9gfBzriARlSZHn8xeSqfhmgZDuk/edit?usp=sharing).
+3. Draw the graph. Give every page a rank of 1/4. Use the simplified rule from the Wikipedia article: a page's new rank is the sum, over the pages that link to it, of each linking page's rank divided by its number of outgoing links. Each of you computes two rounds alone, then compare. (6 min)
+4. Rank the four pages. Then guess where the ranks would settle if you kept going. (2 min)
+5. D's owner wants a higher rank. D has no money and controls only page D. What can D do? What if D could create a hundred more pages? (4 min)
+6. Report to the class: your ranking after two rounds, and D's best move. (4 min)
+
+::: {.notes}
+Round one gives A 1/4, B 1/8, C 5/8, D 0. Round two gives A 5/8, B 1/8, C 1/4, D 0. The ranks oscillate and settle at A 0.4, B 0.2, C 0.4, D 0, because C hands everything to A, A splits between B and C, and B hands everything to C. Students who get a sum other than 1 have double counted or forgotten to divide by the number of outgoing links.
+
+D's rank is zero after the first round and stays there, however many links D adds, because only inbound links count. That is the premise of @Page1999 and the premise of the entire search engine optimization industry: D needs A, B, or C to link to it. The hundred extra pages are a link farm. If they link to each other and to D and nowhere else, the simplified rule lets them capture all the rank over time, because rank flows in and never flows out. This is the *rank sink* that led Page and Brin to add the damping factor, their random surfer who occasionally jumps to an arbitrary page, and it is why Google spends real money detecting farms. Hold onto D; the gaming the system slide later in the deck is D's story at scale.
+:::
 
 ##
 ![](fiInfoScent.png)
@@ -108,16 +127,158 @@ Further reading:
 [Information scent](https://www.nngroup.com/articles/information-scent/)
 :::
 
+## Exercise: follow the scent {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1Oc9MBFtocilj1tkS88U9-rs_vqcgl_RKqsEZjdo_Yns/edit?usp=sharing).
+3. Each person writes one task to be done on a site you can both reach, phrased as a goal and not as a page name: *find out how to appeal a parking citation*, or *find whether this backpack can be returned after thirty days*. Do not pick a site you know well. (2 min)
+4. Take turns. The navigator starts at the site's home page and works toward the goal without using search, thinking aloud. The recorder writes down every link label clicked and, after each click, whether the navigator said the goal felt closer or farther. Stop when the goal is reached or the navigator gives up. (8 min)
+5. Together, find the click where the scent was weakest. Rewrite that one label so it would have carried the scent. (3 min)
+6. Report to the class: how many clicks, where the scent failed, and your rewritten label. (4 min)
+
+::: {.notes}
+Expect navigators to give up after three or four clicks once the goal stops feeling closer, which is @Pirolli1999's prediction done live. Expect the scent to die at labels like *Resources*, *About*, and *Services*, which name the organization's view of itself rather than anything a visitor wants. The words the navigator uses while thinking aloud are the words the labels should have used; the recorder's transcript shows the gap.
+
+The ban on search is there to make navigation visible. If a pair finishes early, let them repeat the task with search allowed and compare. The recorder's list of clicks is a clickstream collected by hand, which is worth saying out loud, because the analytics slides later in the deck are about collecting the same thing by machine for millions of visitors.
+:::
+
 ## Limits of search engines
 - Search by example
 - Search for things for which you have no name
 - Link rot
 
+## Discussion: rot in this deck {.scale85}
+
+The notes in this deck cite these pages, most of them written down in 2015. With a neighbor:
+
+1. Open two of them. Does each still resolve? To the same page, or to a redirect, a paywall, a bot wall, or a 404? (3 min)
+2. For one that fails, look it up on the [Wayback Machine](https://web.archive.org/). How old is the newest capture? (3 min)
+3. Report to the class: which links should I replace, and with what? (3 min)
+
+<small>
+[PageRank paper, Stanford InfoLab](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf)\
+[Tracking the scent of information, APA Monitor](http://www.apa.org/monitor/2012/03/information.aspx)\
+[Credibility in social media, Wiley](https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.1209)\
+[Gaming Twitter to troll, Ars Technica](http://arstechnica.com/business/2015/05/how-someone-spent-pennies-to-troll-women-people-of-color-via-promoted-tweets/)\
+[Security maturity, Krebs on Security](http://krebsonsecurity.com/2015/04/whats-your-security-maturity-level/)\
+[Filers vs pilers, Forbes](http://www.forbes.com/sites/bwoo/2013/02/20/are-you-a-filer-or-piler/) (week eight)\
+[Filers vs pilers, The Economist](http://www.economist.com/node/1489224) (week eight)
+</small>
+
+::: {.notes}
+Checked by script on 2 November 2026: the Stanford PDF, which is the assigned reading for this deck, returned a server error; the Economist page returned 404; Forbes and Wiley refused the script with 403, which may be a bot wall rather than rot, so a browser may get through; Ars Technica answered but silently redirected to a different section of the site; the APA page redirected from http to https; Krebs and NNGroup were fine. Run the check again the morning of class, since the answer changes.
+
+The point for the slide before this one: a search engine can find only what is still there. Link rot is a limit of the Web itself, not of the engine, and the remedies are institutional (DOIs, the Internet Archive, publishers that keep URLs stable) rather than algorithmic. Ask who pays for the Wayback Machine and what happens if nobody does. A model's answer with web search turned off is a snapshot too: it has a cutoff date instead of a 404, and it does not say so unless asked.
+:::
+
 ## Conversational interfaces
-- Initial hype
-- The long game
+- Asking an assistant now replaces searching for many questions
+- The answer arrives without the path
 - First mover advantage vs market dominance
 - Corrosive influence of OpenAI on StackOverflow
+
+::: {.notes}
+When I first wrote this slide the question was whether conversational interfaces would survive their hype. They did, and for a growing share of questions people now ask an assistant first and a search engine second, or never. The next several slides take up what that changes for the ideas in this deck: scent, ranking, who gets paid, and where the evidence of what people want goes. Most of the ideas survive. What moves is where they apply.
+:::
+
+## Exercise: the thing with no name {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1LcU7G2DetB0hnQAfT6oW1UpyukMwpRn_cTTjNNKk3qs/edit?usp=sharing).
+3. Each person thinks of a thing you can picture but cannot name: a part of an everyday object, a typographic mark, a gesture, a pattern you have seen on a building. Write a one-sentence description for your partner. (2 min)
+4. Swap. Find your partner's thing with a search engine, text only. Record every query you type and stop after five failures. (5 min)
+5. Find the same thing with a conversational interface. Record the number of turns and whether it was right. Then ask it where its answer came from. (4 min)
+6. Report to the class: which channel found it, which query finally worked, and what the conversational interface said about its sources. If it learned the name from a forum, who writes next year's forum post? (5 min)
+
+::: {.notes}
+Fallback things for students who go blank: the plastic tip of a shoelace (aglet), the dent in the bottom of a wine bottle (punt), the dot on an *i* (tittle), the wire cage on a champagne cork (muselet), the cardboard sleeve on a coffee cup (zarf), the groove between the nose and upper lip (philtrum), the little plastic table in a pizza box (pizza saver), the loop that holds the end of a belt (keeper), the paragraph mark (pilcrow).
+
+Expect text search to work only once someone discovers the trick of describing function and context rather than appearance, or of typing *what is the name of the* and landing on a forum thread where a human answered the same question years ago. Expect the conversational interface to be faster and, now and then, confidently wrong, which is the credibility problem of the next section arriving early.
+
+The last question in step 6 is the StackOverflow bullet on the previous slide. The forum answers that the model summarizes were written by people paid in reputation on a site whose traffic the model is now diverting. Search by example and the nameless thing are the two cases on the limits slide that conversational interfaces handle better than keyword search, and the closing question is the price.
+:::
+
+## Answers instead of results
+- A results page is a menu of patches; an answer is one patch
+- Scent was carried by labels; now it has to be carried by the prose
+- The user judges a paragraph that has no author
+
+::: {.notes}
+@Pirolli1999 assumed a forager choosing among patches and following scent from one to the next. A results page is that menu. An answer engine serves the meal, and the path disappears. There is no click after which the goal feels closer or farther, so the follow the scent exercise cannot even be run on an answer. What the user evaluates instead is the prose itself: does it sound like it knows?
+
+This did not begin with chat. Featured snippets and knowledge panels had already made a large share of searches *zero click* before any assistant existed. Generated overviews at the top of results pages extend the same move, and chat assistants complete it. The information diet narrows to one patch chosen by someone else, and the design decisions that used to live in labels and link ordering now live in which sentences get written and which sources get named.
+
+The paragraph has no author. Every credibility concept on the slides that follow was written for sources with authors, publishers, and dates. Hold that thought for the credibility section.
+:::
+
+## The engine is still underneath
+- Assistants with web access search first, then summarize
+- Ranking decides what the model reads
+- Generative engine optimization is SEO's second act
+
+::: {.notes}
+An assistant that answers questions about current events is not reciting its training data. It issues searches, retrieves the top results, and writes from them. The ranking still happens; it is just one layer down, where the user cannot see it. Page D from the PageRank exercise is still stuck at zero, and now D cannot even see the list it is missing from.
+
+So the gaming continues under a new name, generative engine optimization. The tactics are being present on the sites models read heavily, such as Wikipedia and Reddit; writing in short declarative sentences that quote well; publishing structured data; and, lately, files addressed to crawlers describing what a site contains. Ask students whether any of this is different in kind from the link farm, or only in audience.
+
+With web search turned off, the assistant answers from a snapshot with a cutoff date, which is link rot in a new costume: the page is gone and nothing says so.
+:::
+
+## Exercise: check the citations {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1I4ay79VR1XbIP3--g8bKdHJjL_wCCTZE-LClQ6STIZg/edit?usp=sharing).
+3. Agree on a factual question with a checkable answer that neither of you knows: a date, a number, who did what. Avoid anything from the past week. (2 min)
+4. One of you asks a search engine and records the top three results. The other asks an assistant with web search on and records the answer and every source it cites. (4 min)
+5. Open each cited source. For every sentence in the answer, mark whether a cited page says it, says something near it, or does not say it. (6 min)
+6. Ask the assistant again with web search off. What changed? (2 min)
+7. Report to the class: your counts of supported, near, and unsupported sentences, and whether the cited pages were among the search engine's top three. (4 min)
+
+::: {.notes}
+Expect the cited pages to be real and mostly to overlap with the search engine's top results, which is the previous slide made visible. Expect a mix of supported and *near* sentences, because the model paraphrases past what the source says, and a few unsupported ones, often the most specific numbers. Expect the search-off answer to drift on dates and figures or to decline, which is the snapshot problem.
+
+Two things to draw out. First, precision and accuracy, concepts seven and eight on the credibility slide coming up, are suddenly measurable for an answer in a way they never were for a results page, because the answer makes claims and the page only made a list. Second, a cited answer looks more credible than an uncited one even when the citation does not support the sentence, so the footnote itself has become a credibility cue that a designer can place honestly or dishonestly. Keep the counts on the board; the credibility slides refer back to them.
+:::
+
+## Who pays for the answer?
+- Search paid publishers in visits
+- An answer keeps the visit
+- Licensing deals, crawler blocking, and paying per crawl
+- The compensation question, turned around
+
+::: {.notes}
+The search engines slide asked whether users should be compensated for the information they give a search engine. The live version of that question now runs the other way: should publishers be compensated for the pages a model learned from, and what happens to the incentive to publish when the visit never arrives? A search engine paid content providers in traffic, which they turned into advertising and subscriptions. That is why providers made themselves easy quarry, as the information scent notes put it. An answer engine keeps the visit.
+
+The responses so far are of three kinds: licensing deals, in which large publishers and forums sell access to their archives to model makers; blocking, in which hosting and delivery companies refuse AI crawlers by default; and attempts to charge crawlers per page fetched. Add lawsuits over training data. The examples change every semester, so refresh them before class.
+
+The question for designers is Simon's again. If attention is the scarce resource and the answer engine captures it, who will write the next page the engine needs? Someone must forage for the forager. The StackOverflow bullet was an early case of the same problem.
+:::
+
+## Where did the questions go?
+- Help demand used to be visible: videos, threads, search logs
+- Now it is a private chat transcript held by the AI vendor
+- The application vendor loses the signal, and the health proxy fades
+- The clickstream became a transcript
+
+::: {.notes}
+The getting help slides treat YouTube videos and forum threads as a proxy for the health of an application, because they are visible evidence of what people need help with. When people ask an assistant instead, that evidence stops being public. The application's vendor no longer sees it, the forum no longer accumulates it, and the only party that knows what users of a product do not understand is the company running the assistant.
+
+This is also an analytics point, ahead of the analytics slides in the second half of the deck. A clickstream records what people did. A transcript records what they wanted, in their own words, with their misconceptions intact. It is richer than anything my former student at Microsoft had, and it is held by a third party. Ask who should be allowed to read it, and whether an application vendor could ever buy it back.
+:::
+
+## Exercise: sketch the results page {.scale85}
+
+1. Form a pair. Sketchbooks out, pencil.
+2. Each person sketches the page you would get, five years from now, after typing a question. Decide four things: list, answer, or both; where the sources live; how the page shows how sure it is; and what one click costs the user. One page, no erasing. (5 min)
+3. Trade sketchbooks. On your partner's page, mark everything that is hidden and when it would appear, and any comparison the user has to make between two places. (3 min)
+4. Together, decide which of the two pages a publisher would prefer and which an advertiser would prefer, and whether either is the one the user would prefer. (3 min)
+5. Hold the pages up. Report to the class one design choice and who it serves. (5 min)
+
+::: {.notes}
+Expect hybrids: an answer on top, a list below. Expect sources pushed to the bottom or into footnotes, which is an information hiding decision worth naming as such when the hiding and comparison slides come up later. Expect almost no one to have an idea for showing confidence, because nobody has solved it; hedging words, source counts, and color have all been tried and all are easy to game. That gap is the open design problem of this decade and a fair thing to say out loud.
+
+Ten blue links lasted twenty-five years. Ask whether it was a pattern in the week nine sense: what problem did it solve? One answer is that it left the choice of patch to the forager and made the cost of a wrong choice one click. Whatever replaces it has to say what it does with that choice. The publisher and advertiser question in step 4 is the previous two slides applied to a drawing.
+:::
 
 ## Information credibility
 ![](fiCredibility.png)
@@ -143,7 +304,7 @@ credibility include the following.
 <small>
 
 1. Technical knowledge, skill or expertise
-2. Consistency of actions, values, meathods, 
+2. Consistency of actions, values, methods, 
    measures, principles, expectations, and 
    outcomes (definition of journalistic integrity 
    from Wikipedia)
@@ -160,6 +321,22 @@ credibility include the following.
 
 ::: {.notes}
 Some of these concepts are discussed in @Rieh2008, where the authors found that college students are mainly interested in whether information is related to a topic and whether it is new, interesting, and convenient. The observed students were less interested in authority, readability, and recency when forming credibility judgments. This contrasts with previous studies of adults where adults were concerned with whether they found information to be accurate, current, novel, objective, reliable, authoritative, trustworthy, understandable, well-written, comprehensive, easy to obtain, and on topic.
+:::
+
+## Exercise: rate a source {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1t4pzVriHhDJ_hyOGHIWrmTvwU9xaxlMSCo9QV0Fva80/edit?usp=sharing).
+3. Agree on one factual claim you have both seen online this month and are not sure about. (2 min)
+4. Each person finds one page that supports or refutes it, as fast as you can. Before reading closely, write one sentence saying whether you believe the page and why. (4 min)
+5. Now score your page from 1 to 3 on each of the nine credibility concepts. Leave a blank wherever you have no way to know. (5 min)
+6. Compare your one sentence with your scores. Which concepts drove the snap judgment? Are they the ones @Rieh2008 found in college students, or the ones found in adults? (3 min)
+7. Report to the class: how many blanks you left, and the one concept that did the most work. (4 min)
+
+::: {.notes}
+Expect blanks to cluster on pecuniary interest, precision, and falsifiability. Those are the concepts that take work to assess, and the blank count is the finding. Expect the one-sentence reasons to be about relevance, recency, and whether the page agrees with what the student already thought, which is concept five, and which matches what @Rieh2008 found in students. The order of steps matters: the snap judgment has to be written down before the scoring, or students will reverse-engineer a respectable reason.
+
+The point is not to shame anyone. It is that the list of concepts and the actual behavior diverge, and that a designer who displays credibility cues, such as bylines, dates, citations, badges, and disclosure statements, needs to know which cues users read and which they skip. The next slide, on getting help, is about an information market where credibility is read almost entirely from community signals.
 :::
 
 ## Getting help
@@ -200,20 +377,48 @@ Stack Overflow pays to a given product may serve as an
 index of that product's health.
 :::
 
-## Exercise: comparing help for two browsers
 
-<small>
+## Exercise: help as a health signal {.scale85}
 
-Form an ad hoc group. Identify two browsers, such as Chrome, Firefox, Safari, or others. (Firefox and Chrome are easiest to study because they are heavily programmable and offer a lot of customization possibilities that may require help, such as skinning, global or domain-specific CSS add-ons, and other plugins.)  Contrast the Youtube videos and user communities offering help for the two browsers.
+1. Form a group of four and pick two browsers. Chrome and Firefox are the easiest because both are heavily customizable, so people need help with themes, user CSS, and extensions.
+2. Open this [Google Doc](https://docs.google.com/document/d/1RNVbDPeRrp5-PjW3rvxgDOWxMx0_g41Q8Xy3Zfi-DUc/edit?usp=sharing).
+3. Split into two pairs. One pair studies the YouTube help for both browsers; the other studies the official user community for both. Each pair fills in its half of the table on the next slide. (8 min)
+4. Regroup and compare halves. Decide which browser is healthier, and name the one number that most swayed you. (3 min)
+5. Decide whether the vendor could fake that number. If so, which number would you trust instead? (2 min)
+6. Report to the class. (5 min)
 
-Compare the health of the browsers in terms of instructional videos.
-Identify features of videos that alter your perception of the video. This could include things like the presence of ads before the videos (what does that tell you?), logos on videos, tenor of discussions, propensity of video maker to reply in discussions, number and range of videos by maker, presence of features like channels to organize videos, and more.
+## What to record {.scale85}
 
-Compare the communities supporting the two browsers and 
-identify differences in focus, emphasis, direction, and 
-mission. Be specific about numbers of posts, recency of posts, topics of posts, and other salient features in community forums. What is the attitude of moderators? Do the moderators express an attitude? How transparent are moderation features?
+:::: {.columns}
+::: {.column width="50%"}
+**YouTube pair**, for the query *〈browser〉 custom CSS*
 
-</small>
+1. videos uploaded in the past year
+2. age and view count of the top result
+3. whether the maker has a channel devoted to the browser
+4. whether the maker is monetized: sponsor segments, Patreon, merchandise
+5. whether the maker replies to comments
+6. tenor of the comments
+:::
+::: {.column width="50%"}
+**Community pair**, for the official forum or subreddit
+
+1. posts in the past seven days
+2. time to first reply on five recent threads
+3. whether a moderator or vendor employee replied
+4. tone of moderation
+5. whether the rules and the moderation log are visible
+6. the three most common topics
+:::
+::::
+
+::: {.notes}
+The previous slide claims that the supply of help is a proxy for the health of an application. This exercise asks students to operationalize the proxy, then to doubt it. Step 5 sets up the gaming the system slide later in the deck: view counts can be bought, forum posts can be seeded, and a vendor that moderates its own forum can delete the complaints.
+
+When I first wrote this exercise, pre-roll ads were a signal that a maker had an audience. Now ads run before nearly everything, so the better question is whether the maker is monetized by the audience itself. View counts are dominated by a few old videos; the count of uploads in the past year is the better signal of health because it measures current demand for help. I do not predict which browser wins. The answer has changed since 2015 and will change again.
+
+If the room is small, drop the YouTube half and have pairs do the community half for both browsers.
+:::
 
 # Navigating Information
 
@@ -225,7 +430,7 @@ Knowing what's going on is a lifelong occupation. You can not expect to use know
 A sub-sub-sub-sub-section
 
 ::: {.notes}
-Yes, search analysis, the most popular tool to shape the structure of information artifacts in 2015 when I wrote this, was little more than a footnote in the principle information architecture book. Moreover, what he says in the first sentence about intrusiveness could not be taken seriously in a post-Snowden world.
+Yes, search analysis, the most popular tool to shape the structure of information artifacts in 2015 when I wrote this, was little more than a footnote in the principal information architecture book. Moreover, what he says in the first sentence about intrusiveness could not be taken seriously in a post-Snowden world.
 
 This is not to criticize Morville. Other than the new edition of his book, he seems to have put the term information architecture into the background, dwelling instead on the interconnectedness of things.
 
@@ -234,6 +439,42 @@ If we look at other texts on information architecture, the situation is no bette
 So, what can we do to improve our understanding and use of the few insights that have been gained in the world of information architecture?
 
 Most easily, we can look at the problems we need to solve. Beyond that, we can examine available tools, both conceptual tools and commercial tools to see what problems are being addressed. But a comprehensive account of information architecture will have to wait, and may only ever appear under a different label.
+:::
+
+## Exercise: read a search log {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](URL).
+3. The next slide is one week of searches typed into a university department's own site: the query, how many times it was typed, how many results the site returned, and how often a result was clicked. Group the queries by what the searcher wanted. (4 min)
+4. Find the queries for which the site has no page, and the queries for which it has pages that nobody clicks. Those are different problems. Name each problem. (4 min)
+5. Propose three changes: a page to add, a label to rename, and a synonym to teach the search box. Say which rows of the log justify each change. (4 min)
+6. Report to the class. (4 min)
+
+## One week of site search {.scale85}
+
+| Query | Searches | Results | Clicked a result |
+|:------|---------:|--------:|-----------------:|
+| canvas | 212 | 0 | |
+| office hours | 164 | 38 | 71% |
+| advising | 131 | 12 | 64% |
+| degree plan | 97 | 9 | 18% |
+| internship | 88 | 21 | 55% |
+| q drop | 76 | 0 | |
+| transcript | 63 | 5 | 12% |
+| capstone | 59 | 14 | 80% |
+| printing | 47 | 2 | 83% |
+| drop a class | 41 | 0 | |
+| bursar | 31 | 0 | |
+| tuition | 29 | 4 | 14% |
+| wifi | 28 | 0 | |
+| withdraw | 22 | 3 | 9% |
+
+::: {.notes}
+The log is invented, but every row is a pattern I have seen in real logs. A reasonable grouping: getting into the course system (canvas); dropping a course (q drop, drop a class, withdraw); paying (bursar, tuition); records (transcript); facilities (printing, wifi); the program itself (advising, office hours, degree plan, internship, capstone).
+
+Zero results with many searches is a vocabulary problem or missing content. Canvas is the single biggest need on the site and the site evidently calls it something else, such as *learning management system*. Q drop is the word students use at UT; the site uses the registrar's word, *withdraw*, which has a page that almost nobody clicks because it does not say *drop*. Results with low click-through is a scent problem: pages exist for degree plan, transcript, and tuition, but their titles do not match what people typed, or the department does not own the answer and should link out to the registrar and the bursar instead of returning its own weak matches.
+
+The three changes most pairs should reach: one page about dropping a course that uses all three words; the withdraw label renamed; and the synonym canvas equals whatever the site calls it. This is Morville's footnote done by hand, with a table and no tool, which is the roll-your-own analysis promised on the Google analytics slide coming up. It is also the follow the scent exercise from the other side: there, students generated the clickstream; here, they read one.
 :::
 
 ## Analytics
@@ -306,10 +547,14 @@ We define information architecture as
 - The art and science of organizing and labeling web sites, intranets, online communities, and software to support usability and findability.
 - An emerging community of practice focused on bringing principles of design and architecture to the digital landscape.
 
+Findability now has a second audience (about half of all Internet traffic): the crawler and the agent, which read metadata, not layout.
+
 </small>
 
 ::: {.notes}
 This definition troubles me for several reasons. Part 1 is too vague and part 3 is too self-serving. Part 2 seems the best except that there is not a demonstrable art or science to information architecture and usability is the province of all designers. Really the only word in the definition that makes sense to me is *findability*. This is the key contribution of information architecture as far as I can tell. I would therefore define information architecture as the collection of techniques used by the builders of information artifacts to improve the findability of information.
+
+That definition assumed a human doing the finding. A site now has two other readers: the crawler that feeds a model, and the agent that browses on a user's behalf and never shows the user the page. Automated traffic has been roughly half of all web traffic for years, according to the annual bot reports from Imperva and Cloudflare; check the current year's figure before class. Neither reader reads layout. Both read structure and metadata, so consistent labels, clean hierarchies, structured data, and metadata that is actually exposed matter more than they did when the audience was only human. This is a late vindication of the metadata slide coming up: the shop that hoarded metadata its customers never saw would today be invisible to the readers that decide whether a human ever arrives.
 :::
 
 ## Information architecture tools
@@ -341,7 +586,7 @@ I use a folding text editor, another example of information hiding. A folding ed
 
 Menus are examples of information hiding. The design of a menu represents choices about which information to hide at a moment when other information is exposed.
 
-All this suggests you need to know which information to hide and when before you think about specific tools for information hiding. You need to know which information matters when and why. Within the past 72 hours I as a consumer have undertaken an online transaction that went through several steps, represented in part by a numbered list at the top of the display and separate pages shaded to focus on each step of the display---and some of the information needed on one panel was trapped on another panel, while irrelevant information was available on the panel I could not complete. What is the problem? Do they not see from clickstreams that their users have to go back and forth between these panels to convert? Do they not do walkthroughs with their wireframes? Is management so brittle that they can not easily fix things they notice? Or have thay not considered information hiding? I, as the customer, can not see inside the black box. All I know is that there are a number of ways any complicated commercial experience can go wrong.
+All this suggests you need to know which information to hide and when before you think about specific tools for information hiding. You need to know which information matters when and why. Within the past 72 hours I as a consumer have undertaken an online transaction that went through several steps, represented in part by a numbered list at the top of the display and separate pages shaded to focus on each step of the display---and some of the information needed on one panel was trapped on another panel, while irrelevant information was available on the panel I could not complete. What is the problem? Do they not see from clickstreams that their users have to go back and forth between these panels to convert? Do they not do walkthroughs with their wireframes? Is management so brittle that they can not easily fix things they notice? Or have they not considered information hiding? I, as the customer, can not see inside the black box. All I know is that there are a number of ways any complicated commercial experience can go wrong.
 :::
 
 ## Information comparison
@@ -359,6 +604,16 @@ A successful example I see on commercial websites is mailing address comparisons
 Others are less successful. At one time Google produced a lot of warnings in email about potential adversarial links in the email. Unfortunately, the theming capability of Gmail did not take this into account so it was quite easy to retheme the mailbox so that the suspect headings blended in with the *safe* headings. I suspect that this problem stopped for multiple reasons, probably including analysis of online behavior.
 :::
 
+## Discussion: what your app hides
+
+1. With a neighbor, open the app each of you used most today. Name three things it hides on its first screen, and say when each one gets exposed. (3 min)
+2. Name one comparison it makes you do across two screens, holding a value in your head. Could the two be side by side? (3 min)
+3. Report to the class. (4 min)
+
+::: {.notes}
+Expect settings, account details, older messages, and the total price until the last step of a purchase. The last one is hiding done against the user, and is worth naming as such. For comparisons, expect two products, two flights, two apartment listings, a message and the message it replies to, and a photo before and after an edit. The word *when* in step 1 is the lesson from the information hiding notes: hiding is a decision about time, about which information matters at which moment, before it is a decision about menus, folds, or tabs.
+:::
+
 ## Organizational information maturity
 *Da real woild jist ain't like dat!*
 
@@ -367,7 +622,7 @@ Others are less successful. At one time Google produced a lot of warnings in ema
 :::
 
 ::: {.notes}
-One of the most frequent objections to academia is that *da real woild jist ain't like dat!* Some people in IT organizations tell me that they never use the theories they learned in school. Interestingly, no one employed at Google or Apple or Microsoft or Adobe tells me that. Instead, people at the most competitive firms often ask extremely probing questions at the limits of academic knowledge. So I must suggest that you consider the maturity of an organization before labeling its place in the real world. There are maturity metrics in all brances of information technology. I recently came across one described by Brian Krebs, the person whose blog you should read regularly if you read nothing else about information security. See
+One of the most frequent objections to academia is that *da real woild jist ain't like dat!* Some people in IT organizations tell me that they never use the theories they learned in school. Interestingly, no one employed at Google or Apple or Microsoft or Adobe tells me that. Instead, people at the most competitive firms often ask extremely probing questions at the limits of academic knowledge. So I must suggest that you consider the maturity of an organization before labeling its place in the real world. There are maturity metrics in all branches of information technology. I recently came across one described by Brian Krebs, the person whose blog you should read regularly if you read nothing else about information security. See
 [security maturity](http://krebsonsecurity.com/2015/04/whats-your-security-maturity-level/) and note that this model is easy to understand and verify, having three levels.
 
 @Proenca2016 surveys twenty-two information systems maturity models. These models have an average of about five levels of maturity described and contain definitions for maturity of management of the information resource, as well as prescriptions for attaining higher levels of maturity or at least characteristics of organizations having varying levels of maturity.
@@ -377,6 +632,22 @@ One example is found in @Spruit2015, which surveys models of master data (this i
 No matter what a prospective employer tells you, the telltale signs in a maturity metric table speak clearly to organizational maturity with respect to information. You have to identify the relevant signs for the way information is treated in the enterprise. For example, you should ask about metadata and not be satisfied by vague answers like *we should do a better job on metadata*. The same is true for tools, both conceptual and commercial. If an organization uses deskilling tools and outsources critical skills, its information maturity level must be low.
 
 You may, however, wish to work in a low maturity organization if you are being brought in as an educator and have the latitude within your job description to improve the information maturity of the organization. A high information maturity organization might be better suited to a junior employee, interested in learning from an optimized environment.
+:::
+
+## Exercise: the maturity interview {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1F1cHtbCu5gJVPgc3xcr70M2StJ7dNayhCQv7IOXX_nU/edit?usp=sharing).
+3. Each person writes three questions to ask a prospective employer that would reveal how the organization treats information: its metadata, its tools, and who is allowed to change what. A good question is one where a vague answer is itself an answer. (4 min)
+4. Take turns. The interviewer asks. The employer answers as an organization at level one or two of the five levels in @Spruit2015, without saying so and without lying outright. (5 min)
+5. Swap roles. This time the employer answers as a level four or five organization. (4 min)
+6. Together, rewrite the one question that failed to separate the two. (2 min)
+7. Report to the class your best question and the vague answer it drew. (4 min)
+
+::: {.notes}
+The five levels in @Spruit2015 are initial, repeatable, defined process, managed and measurable, and optimized. Good questions sound like these: who owns the definition of *customer* and what happens when two systems disagree about a customer's address; when did you last retire a tool, and why; can another team get your data without emailing you; where is the metadata written down, and who reads it. The level-one tell is the answer from the notes, *we should do a better job on that*, delivered sincerely. The level-five answer to the third question is Amazon's rule that every unit exposes an API.
+
+Students who have interviewed will recognize that these questions are rarely asked, and that interviewers are rarely asked anything revealing by candidates. The exercise closes the deck because it turns everything before it into something a student can use next spring.
 :::
 
 {{< include endMatter.md >}}
