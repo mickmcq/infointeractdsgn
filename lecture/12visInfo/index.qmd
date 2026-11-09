@@ -6,9 +6,329 @@ title: "Visual Information"
 
 # Visual Information
 
-## Bertin
+## Semiology of graphics
 
-〈 Pause for Bertin slideshow 〉
+pioneering work in data visualization
+
+## Semiology of graphics
+
+the name of the textbook for what I'd like to teach you today
+
+## Semiology of graphics
+
+how to make graphics systematically
+
+## Semiology of graphics
+
+you may think graphics are separate from information
+
+## Semiology of graphics
+
+you may think graphics should be constructed by artists
+
+## Semiology of graphics
+
+what about a graphics system to express information?
+
+## Semiology of graphics
+
+it does not belong to the artist
+
+## Semiology of graphics
+
+:::: {.columns}
+::: {.column width="40%"}
+it does not belong to the artist
+
+Salvador Dali is pictured at right
+:::
+::: {.column width="60%"}
+![](fiBertinDali.jpg){height="500"}
+:::
+::::
+
+## Semiology of graphics
+
+it belongs to anyone communicating information
+
+## Information needs graphics
+
+give me half an hour to convince you of this
+
+## First an exercise
+
+please take 5 minutes to sketch a graphic
+
+## A table from the Census Bureau
+
+:::: {.columns}
+::: {.column width="30%"}
+a subset of manufacturing data
+:::
+::: {.column width="70%"}
+![](fiBertinFactFinder.png)
+:::
+::::
+
+## Industry in Oregon counties
+
+:::: {.columns}
+::: {.column width="30%"}
+36 counties: all mfg subsectors, total sales, hours worked, wages
+:::
+::: {.column width="70%"}
+![](fiBertinOregonTable.png)
+:::
+::::
+
+## How would you graphically portray some or all?
+
+:::: {.columns}
+::: {.column width="30%"}
+whole table available at: Canvas > Files > misc > ocounties.pdf
+:::
+::: {.column width="70%"}
+![](fiBertinOregonTable.png)
+:::
+::::
+
+## Pretend you're going to give the table & sketch to an assistant to polish
+
+:::: {.columns}
+::: {.column width="30%"}
+whole table available at: Canvas > Files > misc > ocounties.pdf
+:::
+::: {.column width="70%"}
+![](fiBertinOregonTable.png)
+:::
+::::
+
+## {.center}
+
+![](fiBertinOregonTable.png)
+
+## While you do that I'll show some images
+
+I image googled statistics on Oregon counties
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregonTableFull.png)
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon1.png)
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon2.jpg)
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon3.png)
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon4.jpg)
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon5.png){height="500"}
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon6.png)
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon7.png){height="500"}
+:::
+::::
+
+## While you do that I'll show some images
+
+:::: {.columns}
+::: {.column width="30%"}
+I image googled statistics on Oregon counties
+:::
+::: {.column width="70%"}
+![](fiBertinOregon8.png)
+:::
+::::
+
+## This textbook was unknown in English-speaking countries until ...
+
+![](fiBertinSemiologyCover.jpg){height="500"}
+
+## ... this very popular book made it okay for quant people to talk about graphics ...
+
+![](fiBertinTufteCover.jpg){height="500"}
+
+## The basic problem you just tackled
+
+![](fiBertinBasicProblem.jpg){height="520"}
+
+## The basic problem you just tackled
+
+![](fiBertinBasicProblemTop.jpg){height="520"}
+
+## The basic problem you just tackled
+
+![](fiBertinBasicProblemBottom.jpg){height="520"}
+
+## You chose retinal variables matched to relationships
+
+![](fiBertinRetinalVariables.jpg){height="520"}
+
+## Let's drill down into one retinal variable, color
+
+![](fiBertinColorDrill.jpg){height="520"}
+
+## Imagine some statistic for each county
+
+![](fiBertinFrance0.jpg){height="520"}
+
+## We can easily perceive bins by value
+
+![](fiBertinFrance1.jpg){height="520"}
+
+## We can try the color spectrum but what's wrong?
+
+![](fiBertinFrance2.jpg){height="520"}
+
+## We see the spectrum as a wheel not as a line
+
+:::: {.columns}
+::: {.column width="35%"}
+![](fiBertinColorWheel.jpg){width="100%"}
+:::
+::: {.column width="65%"}
+![](fiBertinFrance2.jpg){height="520"}
+:::
+::::
+
+## We can do better by 'cutting' the wheel in a different place
+
+![](fiBertinFrance3.jpg){height="520"}
+
+## Another solution uses contours with the original color choice
+
+![](fiBertinFrance4.jpg){height="520"}
+
+## What do you think of this color choice?
+
+![](fiBertinFrance5.jpg){height="520"}
+
+## Pretty and without meaning
+
+![](fiBertinFrance5.jpg){height="520"}
+
+## Exercise: repair a color scale {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1XsJmz15Q1YxyZPu2LnwTFEkuxtbG1VYMBd0kzLSwLFk/edit?usp=sharing).
+3. Look again at the spectrum map of France, the one with the rainbow legend. Write one question about the departments it answers quickly and one it fails. (2 min)
+4. Sketch three legends for the same seven bins: one varying value alone from light to dark, one cutting the color wheel somewhere other than red, and one using two hues that diverge from the zero bin. (5 min)
+5. For each legend, write one question it answers faster than the other two. (3 min)
+6. Report your best legend and its question to the class. (4 min)
+
+## Back to the exercise
+
+please think about how you would do it now
+
+## A system for producing graphics
+
+underlying these examples is a process for making graphics in which we analyze the information to determine visual aspects best suited to each kind of information ... let's look at that process
+
+## 1. The invariant
+
+begin to analyze the information by identifying the invariant, the thing that will stay the same across all relationships in the graphic, before considering the components, the things that change
+
+## 1. The invariant
+
+the invariant is the topic of the graphic, for instance sales by county, or labor by county ... the invariant gives us the title for the graphic
+
+## Limits of the system
+
+step 1 takes no account of persuasion or provocation because the system strives for the single goal of supporting immediate answers to simple questions about the information
+
+## 2. The components
+
+each component will be represented by a legend on the graph ... the components are what varies, such as sales, type of timber, market rank
+
+## 2. The components
+
+each component has three properties to analyze to determine next steps: order, length, and level ... three words given precise definitions in the system
+
+## 2. The components
+
+order ranges from components considered as raw values to fractions of components governed by some criteria ... for instance workers and workers by county
+
+## 2. The components
+
+length of a component refers to the number of divisions we can identify in it ... fewer than four will lead to special constructions while more than a dozen will lead to standard constructions
+
+## 2. The components
+
+level of a component refers to whether the concept is nominal, ordered, or quantitative
+
+## Back to the exercise
+
+please think again about how you would do it now
 
 ## Visual information example
 
@@ -70,6 +390,15 @@ One point Bertin makes about using more than one retinal variable to depict a co
 
 In this case, my reading is that the various retinal variables work together, reinforcing a consistent reading. It is not surprising that diagrams of this style may be seen in many publications. They serve an informative purpose.
 :::
+
+## Exercise: invariant and components {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/11bnjtobKQ2XNCyBVQnQMHoaIsUc9XLXLNVCHjecE224/edit?usp=sharing).
+3. Choose one of the eight Oregon charts from the Bertin slideshow. The doc lists them by number. Write its invariant as a one-line title. (2 min)
+4. List its components. For each, give its order (raw or fraction), its length (number of divisions), and its level (nominal, ordered, or quantitative). (5 min)
+5. Name the retinal variable carrying each component. Pick the worst match and propose a swap. (4 min)
+6. Report your worst match and your swap to the class. (4 min)
 
 ## Bertin's Theory
 
@@ -525,7 +854,16 @@ an acronym for the concepts covered by that poorly
 conceived acronym, I will accept GRIP:
 :::
 
-# Visual Information Components
+## Exercise: GRIP critique {.scale85}
+
+1. Form a pair.
+2. Open this [Google Doc](https://docs.google.com/document/d/1MAOP9mq7BU_byiusuFYNxzo0GmGz46rSnpoNoYNgGro/edit?usp=sharing).
+3. Open one UT page: the registrar's course schedule, your department's home page, or your Canvas dashboard. (1 min)
+4. Find one instance each of grouping, restatement, implied lines, and popout. Paste a screenshot or describe each in a sentence. (5 min)
+5. Find one violation of each of the four. (4 min)
+6. Report your worst violation and how you would fix it to the class. (4 min)
+
+# Visual Information Elements
 - Color
 - Typography
 - Layout
