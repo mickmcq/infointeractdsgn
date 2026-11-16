@@ -1,0 +1,6 @@
+I need R code to conditionally install the pacman package. Then use pacman::p_load() to load the tidyverse and readxl.
+
+I have a spreadsheet called GlobalSuperstore.xls in the working directory. I need R code to read the tab called Orders from it into a data frame called orders, then View the data frame.
+
+From the orders data frame, I need an R script that shows ggplot-generated boxplots overlaid with jitter plots. The X axis is the column State and the Y axis is Profit. Only the six mostly frequently occurring states in the Country "United States" should be shown. Only consider orders in the Category "Furniture". Each row represents a customer order. If a customer, represented by the column "Customer ID", has more than one order, use the average profit from that customer. So the jitter plot should show one dot per customer rather than one dot per order. The dots in the jitter plot should have an alpha = 0.1 value so they're more visible. The state labels on the X axis should be rotated 45 degrees so they don't overlap. The states should be sorted by descending revenue. The boxes and jitter plots should be colored using the Blues color palette from ColorBrewer. The colors should be dictated by revenue, with the highest revenue state being the darkest blue.
+

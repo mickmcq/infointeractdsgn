@@ -1,0 +1,75 @@
+ ▐▛███▛█   Claude Code v2.1.311
+▝▜██████▀  Fable 5.2 · Claude Enterprise
+ ▝▝   ▝▝   ~/courses/infointeractdsgn/lecture/13visDemo
+
+⚠ Your login expires in 2 days · run /login to renew
+
+❯ I need R code to conditionally install the pacman package. Then use           
+  pacman::p_load() to load the tidyverse and readxl.                            
+                                                                                
+  I have a spreadsheet called GlobalSuperstore.xls in the working directory. I  
+  need R code to read the tab called Orders from it into a data frame called    
+  orders, then View the data frame.                                             
+                                                                                
+  From the orders data frame, I need an R script that shows ggplot-generated    
+  boxplots overlaid with jitter plots. The X axis is the column State and the Y 
+  axis is Profit. Only the six mostly frequently occurring states in the        
+  Country "United States" should be shown. Only consider orders in the Category 
+  "Furniture". Each row represents a customer order. If a customer,             
+  represented by the column "Customer ID", has more than one order, use the     
+  average profit from that customer. So the jitter plot should show one dot per 
+  customer rather than one dot per order. The dots in the jitter plot should    
+  have an alpha = 0.1 value so they're more visible.                            
+
+⏺ # Install pacman only if it's missing, then load packages
+  if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
+  pacman::p_load(tidyverse, readxl)
+
+  # Read the Orders tab
+  orders <- read_excel("GlobalSuperstore.xls", sheet = "Orders")
+  View(orders)
+
+  # US furniture orders only
+  us_furniture <- orders |>
+    filter(Country == "United States", Category == "Furniture")
+
+  # Six most frequently occurring states
+  top_states <- us_furniture |>
+    count(State, sort = TRUE) |>
+    slice_head(n = 6) |>
+    pull(State)
+
+  # One row per customer per state: average profit across that customer's orders
+  customer_profit <- us_furniture |>
+    filter(State %in% top_states) |>
+    group_by(State, `Customer ID`) |>
+    summarize(Profit = mean(Profit), .groups = "drop")
+
+  # Boxplots overlaid with jitter plots
+  ggplot(customer_profit, aes(x = State, y = Profit)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_jitter(width = 0.2, alpha = 0.1) +
+    labs(
+      title = "Average furniture profit per customer, top six US states",
+      x = "State",
+      y = "Average profit per customer"
+    )
+
+  I haven't run this against your spreadsheet; it assumes the standard Global
+  Superstore column names (Country, Category, State, Customer ID, Profit).
+
+  A few choices I made where the request was open:
+
+  - Top six states: these are counted among US furniture orders, not all US
+    orders. To rank by all US orders instead, move the Category == "Furniture"
+    filter to after top_states is computed.
+  - Customers in more than one state: averaging is per customer within each
+    state, so such a customer gets one dot in each state.
+  - Outliers: outlier.shape = NA hides the boxplot's own outlier points, since
+    the jitter layer already draws every customer; without it, outliers would
+    appear twice.
+  - Alpha: alpha = 0.1 makes the dots very faint, which helps show where they
+    overlap but can make sparse states hard to see. Raise it (for example to
+    0.3) if the dots are too hard to see.
+
+✻ Cogitated for 13s · done 5:11 PM

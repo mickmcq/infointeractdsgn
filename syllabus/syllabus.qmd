@@ -247,7 +247,7 @@ The grading scale used along with the grade components follow.
 
 {{< include _gradescale.qmd >}}
 
-Note: If you do not complete either of your peer evals, your letter grade for the course will be dropped by one full grade below what you would have achieved otherwise. The peer eval is very important.
+Note: If you do not complete one or more of your peer evals, your letter grade for the course will be dropped by one full grade below what you would have achieved otherwise. The peer eval is very important.
 
 ## Attendance
 I will take attendance every day and your percentage of attendance will count for ten percent of your grade.

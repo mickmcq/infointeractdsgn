@@ -31,105 +31,138 @@ In the Robert Johnson Page assignment box, provide the stylesheet and a link to 
 
 # Demoing dynamic visual design
 
-## Design a microinteraction
+## Superstore Visualization
+This is a four part exercise.
 
-## What are microinteractions?
-Definition from NNgroup: Microinteractions are trigger-feedback pairs in which (1) the trigger can be a user action or an alteration in the system's state; (2) the feedback is a narrowly targeted response to the trigger and is communicated through small, highly contextual (usually visual) changes in the user interface.
+1. Specify a graphic using Bertin's system
+2. Have an AI generate an R script from your specification
+3. Critique the result against your specification
+4. Revise
+
+## The assistant
+Last week you pretended to give a table and a sketch to an assistant to polish. This week the assistant is an AI. It will write an R script using ggplot2, a package built on the ideas of Bertin and of @Wilkinson2005, whom we meet next week.
 
 ::: {.notes}
-Source for this definition and the following slides [https://www.nngroup.com/articles/microinteractions/](https://www.nngroup.com/articles/microinteractions/)
+The point of the exercise is the specification and the critique, not the chart. The AI will produce a plausible chart from almost any prompt. The question is whether it is the chart you specified and whether it answers your question at a glance.
 :::
 
-## Microinteraction flow
+## The data
+Global Superstore is an Excel spreadsheet recording orders, returns, and people for a fictional store operating worldwide. We will use only the Orders worksheet, where each row is one line of an order.
 
-##
-![](fiMicrointeractionFlow.png)
+## Get the data
+Download the spreadsheet from Canvas > Files > visualization > `GlobalSuperstore.xls`
 
-## Some are, some aren't
+## Set up Posit Cloud
+Posit Cloud runs R and RStudio in your browser, so there is nothing to install.
 
-<small>
+1. Go to [https://posit.cloud](https://posit.cloud)
+2. Sign up for the free plan
+3. In Your Workspace, click New Project, then New RStudio Project
+4. Give the project a name, such as superstore
 
--------------------------------------------------------------------
-*Digital element*   *Is it a microinteraction?*
------------------   -----------------------------------------------
-Scrollbar           Yes: User triggered; visual feedback to
-                    user changing location within a page
+## Upload the data
+1. Find the Files pane in the lower right of RStudio
+2. Click Upload
+3. Click Choose File and select `GlobalSuperstore.xls`
+4. Click OK and wait for the file to appear in the Files pane
 
-Digital alarm       Yes: System triggered; auditory (and visual)
-                    feedback to time condition being met
+## Read the data {.scale85}
+Type the following in the Console pane, one line at a time. The first line may take a few minutes and you only need to run it once.
 
-Button              It depends: If there is no feedback when a user
-                    clicks the button, there is no microinteraction
+```r
+if (!require("pacman")) {
+  install.packages("pacman")
+}
+pacman::p_load(tidyverse,readxl)
+orders <- read_excel("GlobalSuperstore.xls", sheet = "Orders")
+```
 
-Pull-to-refresh
-animation           Yes: User triggered; visual feedback to a user
-                      action
+## Look at the columns
+`glimpse(orders)` lists every column, its type, and its first few values. You can also type `View(orders)` to browse the rows.
 
-GIFs                No: Not triggered by the system or a user
+## {.center}
+Stop here. We will look at the columns together.
 
-Video player        No: It's a feature, not a microinteraction;
-                    volume control would be a microinteraction
----------------     -----------------------------------------------
+::: {.notes}
+Pause to show the columns in Posit Cloud. Point out the kinds of columns: dates (Order Date, Ship Date), places (City, State, Country, Region, Market), categories (Segment, Category, Sub-Category, Ship Mode, Order Priority), and quantities (Sales, Quantity, Discount, Profit, Shipping Cost). Each kind suggests a level: nominal, ordered, or quantitative.
+:::
 
-</small>
+## Part 1: Specify
+Do this part without AI.
 
-## Why?
-Microinteractions can improve a product’s user experience by:
+1. Choose a question the Orders data can answer
+2. Write the invariant as a one-line title
+3. List the components
+4. Match each component to a variable
+5. Sketch the graphic
 
-- Encouraging engagement
-- Displaying system status
-- Providing error prevention
-- Communicating brand
+## The invariant
+The invariant is the topic of the graphic and gives the graphic its title, for instance *Profit by market and product category*.
 
-## Encouraging engagement
+## The components
+For each component, give
 
-##
-![](fiAsanaUnicorn.png)
+- its order (raw or fraction)
+- its length (number of divisions)
+- its level (nominal, ordered, or quantitative)
 
-## Displaying system status
+## The variables
+Name what will carry each component: one of the two dimensions of the plane, or a retinal variable (size, value, texture, color, orientation, or shape).
 
-##
-![](fiLinkedinProgress.png)
+## The sketch
+Sketch the graphic on paper or on a tablet. Include the title, the axes, and a legend for each component.
 
-## Providing error prevention
+## Part 2: Generate
+Give an AI of your choice
 
-##
-![](fiiOSappDelete.png)
+1. Your specification
+2. The output of `glimpse(orders)`, pasted from the Console, so that the AI knows the column names
+3. A request for an R script using ggplot2 that reads the Orders worksheet of `GlobalSuperstore.xls`
 
-## Communicating brand
+Keep a log of every prompt you write.
 
-##
-![](fiGoogleHomeLights.png)
+## Save your prompt log
+The log is a document listing every prompt you wrote, in order. Save it in one of these ways.
 
-## Error prevention
+1. Keep a document open and paste each prompt into it as you send it
+2. When you finish, scroll back through the chat and copy each of your prompts into a document
+3. If your AI offers a share link to the chat, add the link to the document as well
 
-##
-![](fiGapFavorited.png)
+Include prompts that failed. Do not edit them.
 
-## Prevent rework
+## Run the script
+1. In RStudio, click File, then New File, then R Script
+2. Paste the script and save it as `superstore.R`
+3. Click Source to run it
+4. If you see an error, paste the error message back to the AI
 
-##
-![](fiEbayPasswordReqs.png)
+## Part 3: Critique
+Compare the chart to your specification and your sketch.
 
-## Communicate brand
+- Where did the AI depart from your specification?
+- What did the AI choose that you did not ask for, such as a color scale, a sort order, or an axis range?
+- Does each component have a legend?
+- Does the chart answer your question at a glance?
 
-##
-![](fiiMessage.png)
+## Part 4: Revise
+Prompt the AI at least once more to repair what you found in the critique. Note what you changed and why.
 
-## Encouraging engagement
+## Save the chart {.scale85}
+Add this line to the end of the script and run the script again.
 
-##
-![](fiSnapchat.png)
+```r
+ggsave("superstore.png", width = 8, height = 5)
+```
 
-## Auditory microinteraction
+To download a file from Posit Cloud, check its box in the Files pane, click More, then Export.
 
-##
-![](fiXboxOne.png)
+## Turning it in
+In the Superstore Visualization assignment box, provide the following.
 
-## Exercise
-Design and share a microinteraction.
-
-## More about microinteractions
-Read @Saffer2013!
+1. Your specification: invariant, components, variables, and sketch
+2. Your prompt log
+3. The final R script and the final chart
+4. Your critique, including what you revised and why
 
 {{< include endMatter.md >}}
+
