@@ -87,6 +87,31 @@ Stop here. We will look at the columns together.
 Pause to show the columns in Posit Cloud. Point out the kinds of columns: dates (Order Date, Ship Date), places (City, State, Country, Region, Market), categories (Segment, Category, Sub-Category, Ship Mode, Order Priority), and quantities (Sales, Quantity, Discount, Profit, Shipping Cost). Each kind suggests a level: nominal, ordered, or quantitative.
 :::
 
+## Before we begin
+In Canvas > Files > visualization, there is an example of a successful prompt, the resulting R script and the visual output. It's the result of some knowledge of R, knowledge of data visualization, and familiarity with the superstore data.
+
+## What is a boxplot / jitterplot?
+![](srchscrl_time_box.png)
+
+This is an example boxplot jitterplot pair, comparing two conditions in an experiment
+
+## The prompts
+
+::: {.scrollbox}
+{{< include prompts.txt >}}
+:::
+
+## The code
+
+::: {.scrollbox}
+```{.r}
+{{< include box+jitterExample.R >}}
+```
+:::
+
+## The result
+![](box+jitterExample.png)
+
 ## Part 1: Specify
 Do this part without AI.
 
